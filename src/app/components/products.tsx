@@ -1,0 +1,86 @@
+import Card from "./card";
+
+const products = [
+    {
+        name: "Server 1",
+        image: "/server_1.png",
+        href: "/products?category=dell",
+    },
+    {
+        name: "Server 2",
+        image: "/server_2.png",
+        href: "/products?category=hp",
+    },
+    {
+        name: "Server 3",
+        image: "/server_3.png",
+        href: "/products?category=lenovo",
+    },
+    {
+        name: "Server 4",
+        image: "/server_4.png",
+        href: "/products?category=acer",
+    },
+    {
+        name: "Server 5",
+        image: "/server_5.png",
+        href: "/products?category=asus",
+    },
+    {
+        name: "Server 6",
+        image: "/server_6.png",
+        href: "/products?category=apple",
+    },
+];
+
+export default function Featured() {
+    return (
+        <section
+            className="
+            bg-gray-100
+            py-12
+            md:py-16
+          "
+        >
+            <div
+                className="
+              container mx-auto max-w-7xl px-4
+              sm:px-6
+              lg:px-8
+            "
+            >
+                <div className="mb-8 flex flex-col items-center text-center">
+                    <h2
+                        className="
+                  font-display text-3xl leading-tight font-bold tracking-tight
+                  md:text-4xl
+                "
+                    >
+                        Onze Producten
+                    </h2>
+                    <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
+                    <p className="mt-4 max-w-2xl text-center text-muted-foreground">
+                        Vind het perfecte apparaat voor uw behoeften uit onze
+                        zorgvuldig samengestelde collecties
+                    </p>
+                </div>
+                <div
+                    className="
+                grid grid-cols-2 gap-4
+                md:grid-cols-4 md:gap-6
+              "
+                >
+                    {products.map((product) => (
+                        <Card
+                            key={product.name}
+                            name={product.name}
+                            image={product.image}
+                            href={product.href}
+                            price={"80,00"}
+                        />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
