@@ -57,7 +57,7 @@ export default function Hero() {
                     sm:flex-row
                   "
                         >
-                            <a href="/products">
+                            <a href="#products">
                                 <button
                                     className="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 rounded-md has-[&gt;svg]:px-4 bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 hover:shadow-md focus-visible:ring-2 focus-visible:ring-primary/60 h-12 gap-1.5 px-8 transition-colors duration-200"
                                     data-slot="button"
@@ -125,14 +125,13 @@ export default function Hero() {
                     <div
                         className="
                   relative mx-auto hidden aspect-square w-full max-w-md
-                  overflow-hidden rounded-xl border shadow-lg
+                  overflow-hidden
                   lg:block
                 "
                     >
                         <div
                             className="
-                    absolute inset-0 z-10 bg-gradient-to-tr from-primary/20
-                    via-transparent to-transparent
+                    absolute inset-0 z-10 bg 
                   "
                         ></div>
                         <Image
@@ -153,7 +152,7 @@ export default function Hero() {
                                 color: "transparent",
                             }}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            src="/hero.jpg"
+                            src="/logo.png"
                         />
                     </div>
                 </div>

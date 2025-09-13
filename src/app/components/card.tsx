@@ -7,7 +7,7 @@ export default function Card({
     name: string;
     image: string;
     href: string;
-    price: string;
+    price?: string;
 }) {
     return (
         <a
@@ -44,10 +44,18 @@ export default function Card({
                 />
             </div>
             <div className="relative z-20 -mt-6 p-4">
-                <div className="mb-1 text-lg font-medium">{name}</div>
-                <p className="text-sm text-muted-foreground">
-                    ${price} excl. BTW
-                </p>
+                <div
+                    className={`${
+                        !price && "text-center"
+                    } mb-1 text-lg font-medium`}
+                >
+                    {name}
+                </div>
+                {price && (
+                    <p className="text-sm text-muted-foreground">
+                        €{price.replace(/\B(?=(\d{3})+(?!\d))/g, ",")} excl. BTW
+                    </p>
+                )}
             </div>
         </a>
     );

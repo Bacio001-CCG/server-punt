@@ -4,31 +4,33 @@ const products = [
     {
         name: "Server 1",
         image: "/server_1.png",
-        href: "/products?category=dell",
+        href: "/product/1",
     },
     {
         name: "Server 2",
         image: "/server_2.png",
-        href: "/products?category=hp",
+        href: "/product/1",
     },
     {
         name: "Server 3",
         image: "/server_3.png",
-        href: "/products?category=lenovo",
+        href: "/product/1",
     },
     {
         name: "Server 4",
         image: "/server_4.png",
-        href: "/products?category=acer",
+        href: "/product/1",
     },
 ];
 
 export default function Featured() {
     return (
         <section
+            id="featured"
             className="
             py-12
             md:py-16
+                        bg-gray-100
           "
         >
             <div

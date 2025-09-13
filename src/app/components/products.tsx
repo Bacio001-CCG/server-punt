@@ -1,45 +1,19 @@
+import { ArrowRight } from "lucide-react";
 import Card from "./card";
+import Link from "next/link";
+import { get } from "http";
+import { getProducts } from "@/lib/products";
 
-const products = [
-    {
-        name: "Server 1",
-        image: "/server_1.png",
-        href: "/products?category=dell",
-    },
-    {
-        name: "Server 2",
-        image: "/server_2.png",
-        href: "/products?category=hp",
-    },
-    {
-        name: "Server 3",
-        image: "/server_3.png",
-        href: "/products?category=lenovo",
-    },
-    {
-        name: "Server 4",
-        image: "/server_4.png",
-        href: "/products?category=acer",
-    },
-    {
-        name: "Server 5",
-        image: "/server_5.png",
-        href: "/products?category=asus",
-    },
-    {
-        name: "Server 6",
-        image: "/server_6.png",
-        href: "/products?category=apple",
-    },
-];
+const products = (await getProducts(12)) || [];
 
 export default function Featured() {
     return (
         <section
+            id="products"
             className="
-            bg-gray-100
             py-12
             md:py-16
+            flex flex-col items-center
           "
         >
             <div
@@ -74,13 +48,23 @@ export default function Featured() {
                         <Card
                             key={product.name}
                             name={product.name}
-                            image={product.image}
-                            href={product.href}
-                            price={"80,00"}
+                            image={product.imageUrl}
+                            href={`/product/${product.id}`}
+                            price={(product.price / 100).toFixed(2)}
                         />
                     ))}
                 </div>
             </div>
+            <Link
+                href={"/products"}
+                className="mx-auto mt-10 cursor-pointer hover:bg-gray-100 transition-colors duration-300 bg-white border p-2 group rounded-lg px-3 text-sm flex items-center justify-center"
+            >
+                Bekijk alle producten{" "}
+                <ArrowRight
+                    className="inline scale-80 ml-2 h-4 w-4 transition-transform duration-300
+                      group-hover:translate-x-1"
+                />
+            </Link>
         </section>
     );
 }

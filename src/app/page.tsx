@@ -1,6 +1,7 @@
 import Hero from "./components/hero";
 import Featured from "./components/featured";
 import Products from "./components/products";
+import Categories from "./components/categories";
 //relivator.com/
 export default function Home() {
     return (
@@ -9,6 +10,8 @@ export default function Home() {
                 <Hero />
                 <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
             </div>
+            <Categories />
+
             <Featured />
             <Products />
         </main>
