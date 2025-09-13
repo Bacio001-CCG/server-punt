@@ -122,9 +122,9 @@ export default async function Product({
     );
 }
 
-function changeImage(src: any) {
-    const mainImage = document.getElementById("mainImage");
-    if (mainImage) {
-        (mainImage as HTMLImageElement).src = src;
-    }
-}
+// function changeImage(src: any) {
+//     const mainImage = document.getElementById("mainImage");
+//     if (mainImage) {
+//         (mainImage as HTMLImageElement).src = src;
+//     }
+// }
