@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MdArrowDownward } from "react-icons/md";
 
 export default function Hero() {
@@ -57,22 +58,22 @@ export default function Hero() {
                     sm:flex-row
                   "
                         >
-                            <a href="#products">
+                            <Link href="#products">
                                 <button
                                     className="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 rounded-md has-[&gt;svg]:px-4 bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 hover:shadow-md focus-visible:ring-2 focus-visible:ring-primary/60 h-12 gap-1.5 px-8 transition-colors duration-200"
                                     data-slot="button"
                                 >
                                     Bekijk ons aanbod <MdArrowDownward />
                                 </button>
-                            </a>
-                            <a href="/contact">
+                            </Link>
+                            <Link href="/contact">
                                 <button
                                     className="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 rounded-md has-[&gt;svg]:px-4 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground hover:shadow-md focus-visible:ring-2 focus-visible:ring-accent/40 dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-12 px-8 transition-colors duration-200"
                                     data-slot="button"
                                 >
                                     Contacteer ons
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                         <div
                             className="

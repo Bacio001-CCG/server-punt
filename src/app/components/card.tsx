@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Card({
     name,
     image,
@@ -10,7 +12,7 @@ export default function Card({
     price?: string;
 }) {
     return (
-        <a
+        <Link
             className="
                     group relative flex flex-col space-y-4 overflow-hidden
                     rounded-2xl border bg-card shadow transition-all
@@ -57,6 +59,6 @@ export default function Card({
                     </p>
                 )}
             </div>
-        </a>
+        </Link>
     );
 }
