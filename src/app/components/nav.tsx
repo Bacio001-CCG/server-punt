@@ -1,31 +1,33 @@
+import Link from "next/link";
+
 export default function Nav() {
     return (
         <nav className="sticky top-0 z-40 w-full border-b h-[65px] bg-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center gap-6">
-                        <a className="flex items-center gap-2" href="/">
+                        <Link className="flex items-center gap-2" href="/">
                             <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text tracking-tight text-transparent">
                                 ServerPunt
                             </span>
-                        </a>
+                        </Link>
                         <div className="hidden md:flex">
                             <ul className="flex items-center gap-6">
                                 <li>
-                                    <a
+                                    <Link
                                         className="text-sm transition-colors hover:text-primary font-semibold text-primary"
                                         href="/"
                                     >
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
                                         href="/products"
                                     >
                                         Products
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
