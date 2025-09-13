@@ -1,7 +1,7 @@
 import { getProducts } from "@/lib/products";
 import Card from "../components/card";
 
-const products = (await getProducts()) || [];
+const { products = [] } = (await getProducts()) || { products: [] };
 export default async function Products({
     searchParams,
 }: {

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { get } from "http";
 import { getProducts } from "@/lib/products";
 
-const products = (await getProducts(12)) || [];
+const { products = [] } = (await getProducts(12)) || {};
 
 export default function Featured() {
     return (
@@ -44,15 +44,16 @@ export default function Featured() {
                 md:grid-cols-4 md:gap-6
               "
                 >
-                    {products.map((product) => (
-                        <Card
-                            key={product.name}
-                            name={product.name}
-                            image={product.imageUrl}
-                            href={`/product/${product.id}`}
-                            price={(product.price / 100).toFixed(2)}
-                        />
-                    ))}
+                    {Array.isArray(products) &&
+                        products.map((product) => (
+                            <Card
+                                key={product.name}
+                                name={product.name}
+                                image={product.imageUrl}
+                                href={`/product/${product.id}`}
+                                price={(product.price / 100).toFixed(2)}
+                            />
+                        ))}
                 </div>
             </div>
             <Link

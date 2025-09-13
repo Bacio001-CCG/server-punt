@@ -1,6 +1,11 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
+import Cart from "./cart";
 
 export default function Nav() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <nav className="sticky top-0 z-40 w-full border-b h-[65px] bg-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full">
@@ -36,6 +41,7 @@ export default function Nav() {
                         <div className="relative">
                             <div className="relative">
                                 <button
+                                    onClick={() => setIsOpen(!isOpen)}
                                     className="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all duration-200 ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 size-9 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground hover:shadow-md focus-visible:ring-2 focus-visible:ring-accent/40 dark:border-input dark:bg-input/30 dark:hover:bg-input/50 relative h-9 w-9 rounded-full"
                                     data-slot="sheet-trigger"
                                     aria-label="Open cart"
@@ -70,6 +76,7 @@ export default function Nav() {
                                     </span>
                                 </button>
                             </div>
+                            <Cart isOpen={isOpen} setIsOpen={setIsOpen} />
                         </div>
                     </div>
                 </div>

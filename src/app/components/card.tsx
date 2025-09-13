@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Card({
@@ -22,7 +23,9 @@ export default function Card({
             href={href}
         >
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 border-b border-gray-100/50">
-                <img
+                <Image
+                    height={400}
+                    width={400}
                     alt={name}
                     src={image}
                     loading="lazy"
