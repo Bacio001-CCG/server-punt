@@ -14,6 +14,7 @@ export default function Featured() {
             py-12
             md:py-16
             flex flex-col items-center
+            bg-gray-100
           "
         >
             <div
