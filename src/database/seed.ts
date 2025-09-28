@@ -88,16 +88,28 @@ const generateProducts = (
 ) => {
     const products = [];
 
+    const configurations = [
+        "16GB RAM, 512GB SSD",
+        "32GB RAM, 1TB SSD",
+        "8GB RAM, 256GB SSD",
+        "64GB RAM, 2TB SSD",
+        "Standard Configuration",
+        "Enterprise Configuration",
+    ];
+
     for (let i = 0; i < count; i++) {
         const baseName =
             productNames[Math.floor(Math.random() * productNames.length)];
         const variant = Math.floor(Math.random() * 1000);
+        const randomConfig =
+            configurations[Math.floor(Math.random() * configurations.length)];
 
         products.push({
             categoryId,
             name: `${baseName} ${variant}`,
             imageUrl: getRandomImage(),
             description: `High-quality ${baseName.toLowerCase()} with premium features and reliable performance`,
+            configuration: randomConfig,
             price: getRandomPrice(priceRange[0], priceRange[1]),
         });
     }

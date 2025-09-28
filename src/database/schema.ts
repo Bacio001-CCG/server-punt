@@ -9,12 +9,13 @@ export const categoriesTable = pgTable("categories", {
 
 export const productsTable = pgTable("products", {
     id: serial("id").primaryKey(),
-    categoryId: integer("user_id")
+    categoryId: integer("category_id")
         .notNull()
         .references(() => categoriesTable.id, { onDelete: "cascade" }),
     name: text("name").notNull(),
     imageUrl: text("image_url").notNull(),
     description: text("description").notNull(),
+    configuration: text("configuration").notNull(),
     price: integer("price").notNull(),
     createdAt: timestamp("created_at").notNull().defaultNow(),
 });
