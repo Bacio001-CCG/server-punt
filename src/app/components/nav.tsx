@@ -2,9 +2,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import Cart from "./cart";
+import useCart from "@/hooks/useCart";
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
+    const { products } = useCart();
 
     return (
         <nav className="sticky top-0 z-40 w-full border-b h-[65px] bg-white">
@@ -72,7 +74,7 @@ export default function Nav() {
                                         className="inline-flex shrink-0 items-center justify-center gap-1 overflow-hidden border font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3 border-transparent bg-primary text-primary-foreground [a&amp;]:hover:bg-primary/90 absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 text-[10px]"
                                         data-slot="badge"
                                     >
-                                        3
+                                        {products.length}
                                     </span>
                                 </button>
                             </div>
