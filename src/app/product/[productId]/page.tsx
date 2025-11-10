@@ -1,8 +1,6 @@
 import AddProduct from "@/app/components/addProduct";
 import ProductImages from "@/app/components/productImages";
-import useCart from "@/hooks/useCart";
 import { getProduct } from "@/lib/products";
-import Image from "next/image";
 
 export default async function Product({
     params,

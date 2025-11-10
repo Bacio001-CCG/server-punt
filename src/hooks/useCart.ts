@@ -18,7 +18,7 @@ export default create<CartState>()(
                 set(() => {
                     const currentProducts = get().products;
                     const newProducts = currentProducts.filter(
-                        (product, i) => !(product.id === id)
+                        (product) => !(product.id === id)
                     );
                     return { products: newProducts };
                 }),

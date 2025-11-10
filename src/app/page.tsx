@@ -1,5 +1,4 @@
 import Hero from "./components/hero";
-import Featured from "./components/featured";
 import Products from "./components/products";
 import Categories from "./components/categories";
 //relivator.com/

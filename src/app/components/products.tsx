@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Card from "./card";
 import Link from "next/link";
-import { get } from "http";
 import { getProducts } from "@/lib/products";
 
 const { products = [] } = (await getProducts(12)) || {};

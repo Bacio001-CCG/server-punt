@@ -92,7 +92,7 @@ export default function CreateForm({
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="images_url">Extra Foto's</label>
+                    <label htmlFor="images_url">{`Extra Foto's`}</label>
                     <input
                         type="file"
                         name="images_url"
