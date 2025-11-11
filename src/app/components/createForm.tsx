@@ -17,7 +17,6 @@ export default function CreateForm({
             const result = await createProduct(formData);
 
             if (result.success) {
-                console.log("Product created successfully:", result.product);
                 form.reset(); // Reset form on success
             } else {
                 console.error("Failed to create product:", result.error);

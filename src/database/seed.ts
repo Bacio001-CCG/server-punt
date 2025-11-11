@@ -118,16 +118,16 @@ const generateProducts = (
 };
 
 async function seed() {
-    console.log("🌱 Starting database seeding...");
+    console.info("🌱 Starting database seeding...");
 
     try {
         // Clear existing data
-        console.log("Clearing existing data...");
+        console.info("Clearing existing data...");
         await db.delete(productsTable);
         await db.delete(categoriesTable);
 
         // Seed categories
-        console.log("Seeding categories...");
+        console.info("Seeding categories...");
         const categories = await db
             .insert(categoriesTable)
             .values([
@@ -150,10 +150,10 @@ async function seed() {
             ])
             .returning();
 
-        console.log(`✅ Created ${categories.length} categories`);
+        console.info(`✅ Created ${categories.length} categories`);
 
         // Seed products
-        console.log("Seeding products...");
+        console.info("Seeding products...");
 
         const allProducts = [
             ...generateProducts(
@@ -190,13 +190,13 @@ async function seed() {
             const batch = allProducts.slice(i, i + batchSize);
             await db.insert(productsTable).values(batch);
             totalInserted += batch.length;
-            console.log(
+            console.info(
                 `📦 Inserted ${totalInserted}/${allProducts.length} products`
             );
         }
 
-        console.log(`✅ Created ${totalInserted} products total`);
-        console.log("🎉 Database seeding completed successfully!");
+        console.info(`✅ Created ${totalInserted} products total`);
+        console.info("🎉 Database seeding completed successfully!");
     } catch (error) {
         console.error("❌ Error during seeding:", error);
         throw error;

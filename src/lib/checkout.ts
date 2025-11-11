@@ -191,7 +191,7 @@ export async function processCheckout(
                 },
                 redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/checkout/success`,
                 cancelUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/checkout/cancel`,
-                // webhookUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/mollie/webhook`,
+                webhookUrl: `${process.env.NEXT_PUBLIC_WEBHOOK_URL}/api/mollie/webhook`,
                 billingAddress: {
                     givenName: result.data["invoice.firstname"],
                     familyName: result.data["invoice.lastname"],
@@ -209,6 +209,7 @@ export async function processCheckout(
                 locale: "nl_NL",
                 metadata: {
                     salesInvoiceId: response.data.id,
+                    invoiceNumber: response.data.invoiceNumber,
                 },
             },
             {

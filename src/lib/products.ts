@@ -130,17 +130,6 @@ export async function createProduct(formData: FormData) {
         const price = parseFloat(formData.get("price") as string);
         const configuration = formData.get("configuration") as string;
 
-        // Insert into database (you'll need to add this based on your schema)
-        console.log({
-            name,
-            description,
-            categoryId,
-            price,
-            configuration,
-            image_url: mainImageUrl,
-            images_url: additionalImageUrls,
-        });
-
         await db.insert(productsTable).values({
             categoryId,
             name,
