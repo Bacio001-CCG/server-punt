@@ -1,13 +1,10 @@
 import Axios from "axios";
 
-// pinggy.io for forwarding
 export async function POST(request: Request) {
     try {
-        // Check content type to determine how to parse
         const contentType = request.headers.get("content-type");
 
         if (contentType?.includes("application/x-www-form-urlencoded")) {
-            // Handle form data
             const formData = await request.formData();
             const paymentId = formData.get("id") as string;
             const response = await Axios.get(
@@ -44,7 +41,7 @@ export async function POST(request: Request) {
                 );
             }
         }
-
+        // TODO: Update order status
         return new Response("OK", { status: 200 });
     } catch (error: any) {
         console.error(
@@ -53,8 +50,4 @@ export async function POST(request: Request) {
         );
         return new Response("Error", { status: 500 });
     }
-}
-
-export async function GET(request: Request) {
-    return new Response("Webhook endpoint", { status: 200 });
 }

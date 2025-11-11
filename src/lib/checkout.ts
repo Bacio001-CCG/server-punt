@@ -219,7 +219,7 @@ export async function processCheckout(
                 },
             }
         );
-
+        //TODO: Save the delivery info and other info regarding order into DB
         return response2.data._links.checkout.href;
     } catch (error: any) {
         console.error(error.response?.data || error);
