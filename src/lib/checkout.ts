@@ -222,7 +222,9 @@ export async function processCheckout(
         //TODO: Save the delivery info and other info regarding order into DB
         return response2.data._links.checkout.href;
     } catch (error: any) {
-        console.error(error.response?.data || error);
-        throw new Error(error.response?.data.detail);
+        console.error((error as any)?.response?.data || error);
+        throw new Error(
+            (error as any)?.response?.data?.detail || "An error occurred"
+        );
     }
 }
