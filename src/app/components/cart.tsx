@@ -155,7 +155,7 @@ export default function Cart({
                             <div className="space-y-4 text-center">
                                 <Link
                                     href="/checkout"
-                                    className="block rounded-sm bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
+                                    className="block rounded-sm bg-black px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
                                 >
                                     Bestellen (€
                                     {String(getTotalPrice().toFixed(2)).replace(

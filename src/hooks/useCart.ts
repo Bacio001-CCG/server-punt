@@ -8,6 +8,10 @@ type CartState = {
     addProduct: (product: SelectProduct, index: number) => void;
     getTotalPrice: () => number;
     clearProducts: () => void;
+    getGroupedProducts: () => {
+        product: SelectProduct;
+        quantity: number;
+    }[];
 };
 
 export default create<CartState>()(
@@ -35,6 +39,22 @@ export default create<CartState>()(
                     (total, product) => total + product.price,
                     0
                 );
+            },
+            getGroupedProducts: () => {
+                const currentProducts = get().products;
+                const groupedProducts: {
+                    [key: number]: { product: SelectProduct; quantity: number };
+                } = {};
+
+                currentProducts.forEach((product) => {
+                    if (groupedProducts[product.id]) {
+                        groupedProducts[product.id].quantity += 1;
+                    } else {
+                        groupedProducts[product.id] = { product, quantity: 1 };
+                    }
+                });
+
+                return Object.values(groupedProducts);
             },
             clearProducts: () => set(() => ({ products: [] })),
         }),
