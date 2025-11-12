@@ -1,5 +1,5 @@
 import Axios from "axios";
-
+// ssh -p 443 -R0:localhost:3000 qr@free.pinggy.io
 export async function POST(request: Request) {
     try {
         const contentType = request.headers.get("content-type");

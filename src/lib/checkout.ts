@@ -190,7 +190,7 @@ export async function processCheckout(
                     currency: "EUR",
                 },
                 redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/checkout/success`,
-                cancelUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/checkout/cancel`,
+                cancelUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
                 webhookUrl: `${process.env.NEXT_PUBLIC_WEBHOOK_URL}/api/mollie/webhook`,
                 billingAddress: {
                     givenName: result.data["invoice.firstname"],
