@@ -9,7 +9,8 @@
     "lint": "eslint",
     "db:generate": "drizzle-kit generate --dialect=postgresql --schema=src/database/schema.ts --out=./drizzle",
     "db:migrate": "tsx ./src/database/migrate.ts",
-    "db:seed": "tsx ./src/database/seed.ts"
+    "db:seed": "tsx ./src/database/seed.ts",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",

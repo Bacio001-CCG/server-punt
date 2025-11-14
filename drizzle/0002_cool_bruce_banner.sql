@@ -1,0 +1,2 @@
+ALTER TABLE "orders" RENAME COLUMN "email" TO "customer_id";--> statement-breakpoint
+ALTER TABLE "orders" ADD CONSTRAINT "orders_customer_id_customers_id_fk" FOREIGN KEY ("customer_id") REFERENCES "public"."customers"("id") ON DELETE cascade ON UPDATE no action;

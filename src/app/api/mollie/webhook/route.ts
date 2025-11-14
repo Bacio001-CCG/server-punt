@@ -1,4 +1,7 @@
+import { db } from "@/database/connect";
+import { ordersTable } from "@/database/schema";
 import Axios from "axios";
+import { eq } from "drizzle-orm";
 // ssh -p 443 -R0:localhost:3000 qr@free.pinggy.io
 export async function POST(request: Request) {
     try {
@@ -39,9 +42,13 @@ export async function POST(request: Request) {
                         },
                     }
                 );
+                await db
+                    .update(ordersTable)
+                    .set({ status: "paid" })
+                    .where(eq(ordersTable.invoiceId, salesInvoiceId));
             }
         }
-        // TODO: Update order status
+
         return new Response("OK", { status: 200 });
     } catch (error: any) {
         console.error(

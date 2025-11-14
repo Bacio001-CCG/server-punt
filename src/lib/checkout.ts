@@ -2,7 +2,15 @@
 
 import z from "zod";
 import Axios from "axios";
-import { SelectProduct } from "@/database/schema";
+import {
+    customersTable,
+    InsertOrder,
+    orderItemsTable,
+    ordersTable,
+    SelectProduct,
+} from "@/database/schema";
+import { db } from "@/database/connect";
+import { eq } from "drizzle-orm";
 
 export async function processCheckout(
     formObject: {
@@ -137,6 +145,52 @@ export async function processCheckout(
     }
 
     try {
+        // First, try to find existing customer
+        let customerId: number;
+
+        const existingCustomer = await db
+            .select({ id: customersTable.id })
+            .from(customersTable)
+            .where(eq(customersTable.email, result.data.email))
+            .limit(1);
+
+        if (existingCustomer.length > 0) {
+            // Customer exists, use existing ID
+            customerId = existingCustomer[0].id;
+        } else {
+            // Customer doesn't exist, create new one
+            const newCustomer = await db
+                .insert(customersTable)
+                .values({
+                    email: result.data.email,
+                    deliveryMethod: result.data.delivery_method,
+                    deliveryCountry: result.data["delivery.country"] || null,
+                    deliveryFirstname:
+                        result.data["delivery.firstname"] || null,
+                    deliveryLastname: result.data["delivery.lastname"] || null,
+                    deliveryCompany: result.data["delivery.company"] || null,
+                    deliveryAddress: result.data["delivery.address"] || null,
+                    deliveryPostalcode:
+                        result.data["delivery.postalcode"] || null,
+                    deliveryCity: result.data["delivery.city"] || null,
+                    deliveryPhonenumber:
+                        result.data["delivery.phonenumber"] || null,
+                    invoiceCountry: result.data["invoice.country"],
+                    invoiceFirstname: result.data["invoice.firstname"],
+                    invoiceLastname: result.data["invoice.lastname"],
+                    invoiceCompany: result.data["invoice.company"] || null,
+                    invoiceCOCNumber: result.data["invoice.cocNumber"] || null,
+                    invoiceAddress: result.data["invoice.address"],
+                    invoicePostalcode: result.data["invoice.postalcode"],
+                    invoiceCity: result.data["invoice.city"],
+                    invoicePhonenumber:
+                        result.data["invoice.phonenumber"] || null,
+                })
+                .returning({ id: customersTable.id });
+
+            customerId = newCustomer[0].id;
+        }
+
         const response = await Axios.post(
             "https://api.mollie.com/v2/sales-invoices",
             {
@@ -219,7 +273,42 @@ export async function processCheckout(
                 },
             }
         );
-        //TODO: Save the delivery info and other info regarding order into DB
+        const order = await db
+            .insert(ordersTable)
+            .values({
+                customerId: customerId,
+                invoiceId: response.data.id,
+                status: "pending",
+                deliveryMethod: result.data.delivery_method,
+                deliveryCountry: result.data["delivery.country"] || null,
+                deliveryFirstname: result.data["delivery.firstname"] || null,
+                deliveryLastname: result.data["delivery.lastname"] || null,
+                deliveryCompany: result.data["delivery.company"] || null,
+                deliveryAddress: result.data["delivery.address"] || null,
+                deliveryPostalcode: result.data["delivery.postalcode"] || null,
+                deliveryCity: result.data["delivery.city"] || null,
+                deliveryPhonenumber:
+                    result.data["delivery.phonenumber"] || null,
+                invoiceCountry: result.data["invoice.country"],
+                invoiceFirstname: result.data["invoice.firstname"],
+                invoiceLastname: result.data["invoice.lastname"],
+                invoiceCompany: result.data["invoice.company"] || null,
+                invoiceCOCNumber: result.data["invoice.cocNumber"] || null,
+                invoiceAddress: result.data["invoice.address"],
+                invoicePostalcode: result.data["invoice.postalcode"],
+                invoiceCity: result.data["invoice.city"],
+                invoicePhonenumber: result.data["invoice.phonenumber"] || null,
+            } as InsertOrder)
+            .returning({ id: ordersTable.id });
+
+        await db.insert(orderItemsTable).values(
+            products.map((item) => ({
+                orderId: order[0].id,
+                productId: item.product.id,
+                quantity: item.quantity,
+                unitPrice: parseFloat(item.product.price.toFixed(2)),
+            }))
+        );
         return response2.data._links.checkout.href;
     } catch (error: any) {
         console.error((error as any)?.response?.data || error);
