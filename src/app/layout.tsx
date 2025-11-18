@@ -88,16 +88,16 @@ export default function RootLayout({
                             name: "Server Punt",
                             description:
                                 "Specialist in refurbished servers en IT-hardware",
-                            url: "https://serverpunt.nl",
-                            logo: "https://serverpunt.nl/logo.png",
-                            contactPoint: {
-                                "@type": "ContactPoint",
-                                telephone: "+31-123-456-789",
-                                contactType: "customer service",
-                                availableLanguage: "Dutch",
-                            },
+                            url: "https://serverpunt.com",
+                            logo: "https://serverpunt.com/logo.png",
+                            // contactPoint: {
+                            //     "@type": "ContactPoint",
+                            //     telephone: "+31-123-456-789",
+                            //     contactType: "customer service",
+                            //     availableLanguage: "Dutch",
+                            // },
                             address: {
-                                "@type": "PostalAddress",
+                                "@type": "Kraaivenstraat 36, 07 Tilburg",
                                 addressCountry: "NL",
                                 addressLocality: "Nederland",
                             },
