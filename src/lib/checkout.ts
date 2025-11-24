@@ -12,6 +12,12 @@ import {
 import { db } from "@/database/connect";
 import { eq } from "drizzle-orm";
 
+// 1 of 2 servers 40 euro
+// 5 kleine producten 10 euro
+// meer dan 5 kleine producten 15 euro
+
+// meer dan 2 servers geen verzend kosten
+
 export async function processCheckout(
     formObject: {
         [k: string]: FormDataEntryValue;
@@ -194,7 +200,7 @@ export async function processCheckout(
         const response = await Axios.post(
             "https://api.mollie.com/v2/sales-invoices",
             {
-                testmode: true,
+                testmode: process.env.TEST_MODE === "true",
                 profileId: process.env.MOLLIE_PROFILE_ID,
                 status: "issued",
                 recipientIdentifier: result.data.email,
