@@ -13,7 +13,6 @@ export default function Featured() {
             py-12
             md:py-16
             flex flex-col items-center
-            bg-gray-100
           "
         >
             <div
@@ -23,7 +22,7 @@ export default function Featured() {
               lg:px-8
             "
             >
-                <div className="mb-8 flex flex-col items-center text-center">
+                <div className="mb-8 flex flex-col items-left text-left">
                     <h2
                         className="
                   font-display text-3xl leading-tight font-bold tracking-tight
@@ -32,16 +31,16 @@ export default function Featured() {
                     >
                         Onze Producten
                     </h2>
-                    <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
-                    <p className="mt-4 max-w-2xl text-center text-muted-foreground">
+                    <div className="mt-2 h-1 w-38 rounded-full bg-primary"></div>
+                    <p className="mt-4 max-w-2xl text-left text-muted-foreground">
                         Vind het perfecte apparaat voor uw behoeften uit onze
                         zorgvuldig samengestelde collecties
                     </p>
                 </div>
                 <div
                     className="
-                grid grid-cols-2 gap-4
-                md:grid-cols-4 md:gap-6
+                grid grid-cols-3 gap-4
+                md:grid-cols-6 md:gap-6
               "
                 >
                     {Array.isArray(products) &&
@@ -63,7 +62,7 @@ export default function Featured() {
                 Bekijk alle producten{" "}
                 <ArrowRight
                     className="inline scale-80 ml-2 h-4 w-4 transition-transform duration-300
-                      group-hover:translate-x-1"
+                        group-hover:translate-x-1"
                 />
             </Link>
         </section>

@@ -30,7 +30,6 @@ export default function Featured() {
             className="
             py-12
             md:py-16
-                        bg-gray-100
           "
         >
             <div
@@ -57,8 +56,8 @@ export default function Featured() {
                 </div>
                 <div
                     className="
-                grid grid-cols-2 gap-4
-                md:grid-cols-4 md:gap-6
+                grid grid-cols-3 gap-4
+                md:grid-cols-5 md:gap-6
               "
                 >
                     {products.map((product) => (

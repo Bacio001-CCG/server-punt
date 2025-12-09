@@ -197,6 +197,32 @@ export async function processCheckout(
             customerId = newCustomer[0].id;
         }
 
+        let verzendkosten = 0;
+        const serversCount = products.filter(
+            (item) => item.product.categoryId === 7
+        ).length;
+        const smallProductsCount = products.reduce(
+            (acc, item) =>
+                item.product.categoryId !== 7 ? acc + item.quantity : acc,
+            0
+        );
+
+        if (smallProductsCount > 0 && smallProductsCount <= 5) {
+            verzendkosten = 10;
+        }
+
+        if (smallProductsCount > 5) {
+            verzendkosten = 15;
+        }
+
+        if (serversCount === 1 || serversCount === 2) {
+            verzendkosten = 40;
+        }
+
+        if (serversCount > 2) {
+            verzendkosten = 0;
+        }
+
         const response = await Axios.post(
             "https://api.mollie.com/v2/sales-invoices",
             {
@@ -224,15 +250,27 @@ export async function processCheckout(
                     organizationNumber:
                         result.data["invoice.cocNumber"] || null,
                 },
-                lines: products.map((item) => ({
-                    description: item.product.name,
-                    quantity: item.quantity,
-                    unitPrice: {
-                        currency: "EUR",
-                        value: item.product.price.toFixed(2),
-                    },
-                    vatRate: "21",
-                })),
+                lines: products
+                    .map((item) => ({
+                        description: item.product.name,
+                        quantity: item.quantity,
+                        unitPrice: {
+                            currency: "EUR",
+                            value: item.product.price.toFixed(2),
+                        },
+                        vatRate: "21",
+                    }))
+                    .concat([
+                        {
+                            description: "Verzendkosten",
+                            quantity: 1,
+                            unitPrice: {
+                                currency: "EUR",
+                                value: verzendkosten.toFixed(2),
+                            },
+                            vatRate: "21",
+                        },
+                    ]),
             },
             {
                 headers: {

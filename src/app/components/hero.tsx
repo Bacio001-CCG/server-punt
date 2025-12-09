@@ -4,7 +4,7 @@ import { MdArrowDownward } from "react-icons/md";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden py-24 md:py-32">
+        <section className="relative overflow-hidden py-12">
             <div className="bg-grid-black/[0.02] absolute inset-0 bg-[length:20px_20px]"></div>
             <div
                 className="

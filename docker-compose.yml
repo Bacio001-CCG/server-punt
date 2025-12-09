@@ -1,0 +1,12 @@
+services:
+    invserverpunt:
+        build:
+            context: .
+            dockerfile: ./dockerfile
+        restart: always
+        hostname: inv.serverpunt.com
+        env_file:
+            - ./.env
+        container_name: invserverpunt
+        ports:
+            - "3011:3000"
