@@ -53,7 +53,7 @@ ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN npm run build
 
 # Expose the port the app runs on
-EXPOSE 3011
+EXPOSE 3012
 
 # Start the application in production mode
 CMD ["npm", "run", "start"]
