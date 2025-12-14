@@ -1,5 +1,6 @@
 import { db } from "@/database/connect";
 import { ordersTable } from "@/database/schema";
+import { OrderStatus } from "@/enums";
 import Axios from "axios";
 import { eq } from "drizzle-orm";
 // ssh -p 443 -R0:localhost:3000 qr@free.pinggy.io
@@ -44,7 +45,7 @@ export async function POST(request: Request) {
                 );
                 await db
                     .update(ordersTable)
-                    .set({ status: "paid" })
+                    .set({ status: OrderStatus.Paid })
                     .where(eq(ordersTable.invoiceId, salesInvoiceId));
             }
         }
