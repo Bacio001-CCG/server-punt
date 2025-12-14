@@ -1,7 +1,7 @@
 "use server";
 import { db } from "@/database/connect";
 import { productsTable, SelectProduct } from "@/database/schema";
-import { eq, count, ne, inArray } from "drizzle-orm";
+import { eq, count, ne, inArray, and } from "drizzle-orm";
 import { z } from "zod";
 import { writeFile } from "fs/promises";
 import { join } from "path";
@@ -32,7 +32,12 @@ export async function getFeatured(
                 .from(productsTable)
                 .limit(validatedParams.limit || 10)
                 .offset(validatedParams.offset || 0)
-                .where(ne(productsTable.quantityInStock, 0)),
+                .where(
+                    and(
+                        ne(productsTable.quantityInStock, 0),
+                        eq(productsTable.hidden, false)
+                    )
+                ),
             db.select({ value: count() }).from(productsTable),
         ]);
 
@@ -66,7 +71,12 @@ export async function getProducts(
                 .from(productsTable)
                 .limit(validatedParams.limit || 9999)
                 .offset(validatedParams.offset || 0)
-                .where(ne(productsTable.quantityInStock, 0)),
+                .where(
+                    and(
+                        ne(productsTable.quantityInStock, 0),
+                        eq(productsTable.hidden, false)
+                    )
+                ),
             db.select({ value: count() }).from(productsTable),
         ]);
 
@@ -92,7 +102,12 @@ export async function getProduct(id: number): Promise<SelectProduct | null> {
         const [product] = await db
             .select()
             .from(productsTable)
-            .where(eq(productsTable.id, validatedId));
+            .where(
+                and(
+                    eq(productsTable.id, validatedId),
+                    eq(productsTable.hidden, false)
+                )
+            );
 
         return product || null;
     } catch (error) {
@@ -189,7 +204,12 @@ export async function getProductsByBrands(
         const products = await db
             .select()
             .from(productsTable)
-            .where(inArray(productsTable.brandId, brandIds));
+            .where(
+                and(
+                    inArray(productsTable.brandId, brandIds),
+                    eq(productsTable.hidden, false)
+                )
+            );
 
         return products;
     } catch (error) {
@@ -205,7 +225,12 @@ export async function getProductsByCategory(
         const products = await db
             .select()
             .from(productsTable)
-            .where(inArray(productsTable.categoryId, categoryIds));
+            .where(
+                and(
+                    inArray(productsTable.categoryId, categoryIds),
+                    eq(productsTable.hidden, false)
+                )
+            );
 
         return products;
     } catch (error) {

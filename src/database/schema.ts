@@ -58,6 +58,7 @@ export const productsTable = pgTable("products", {
     configuration: text("configuration").notNull(),
     price: integer("price").notNull(),
     quantityInStock: integer("quantity_in_stock").notNull().default(0),
+    hidden: boolean("hidden").notNull().default(false),
     createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
