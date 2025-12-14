@@ -119,7 +119,7 @@ export default function Hero() {
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <polyline points="12 6 12 12 16 14"></polyline>
                                 </svg>
-                                <span>24/7 Klanten Service</span>
+                                <span>z.s.m. verzonden</span>
                             </div>
                         </div>
                     </div>

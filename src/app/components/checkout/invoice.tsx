@@ -63,7 +63,7 @@ export default function InvoiceAddress() {
             </div>
             <div>
                 <label htmlFor="invoice.cocNumber">
-                    KVK nummer (Alleen als bedrijf is ingevulled)
+                    KVK nummer (Alleen als bedrijf is ingevuld)
                 </label>
                 <input
                     type="text"

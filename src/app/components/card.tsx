@@ -6,17 +6,16 @@ export default function Card({
     image,
     href,
     price,
+    stock,
 }: {
     name: string;
     image: string;
     href: string;
     price?: string;
+    stock?: number;
 }) {
-    // Bereken prijs inclusief BTW (21%)
-    const priceExclVAT = price
-        ? parseFloat(price.replace(".", "").replace(",", "."))
-        : 0; // Vervang komma door punt en verwijder duizendtallen
-    const priceInclVAT = (priceExclVAT * 1.21).toFixed(2);
+    const priceExclVAT = parseFloat(price ?? "0").toFixed(2); // Use 1 decimal place
+    const priceInclVAT = (parseFloat(price ?? "0") * 1.21).toFixed(2); // Use 1 decimal place
 
     return (
         <Link
@@ -32,7 +31,7 @@ export default function Card({
                     height={200}
                     width={200}
                     alt={name}
-                    src={image}
+                    src={image ?? "/placeholder.png"}
                     loading="lazy"
                     decoding="async"
                     data-nimg="fill"
@@ -64,10 +63,10 @@ export default function Card({
                 {price && (
                     <div className="text-sm text-muted-foreground">
                         <p className="text-base text-black">
-                            €{price.replace(/\B(?=(\d{3})+(?!\d))/g, ".")} Excl.
-                            BTW
+                            €{priceExclVAT.replace(".", ",")} Excl. BTW
                         </p>
                         <p>€{priceInclVAT.replace(".", ",")} Incl. BTW</p>
+                        <p>{stock}x in vooraad</p>
                     </div>
                 )}
             </div>

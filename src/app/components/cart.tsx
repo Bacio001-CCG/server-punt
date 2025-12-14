@@ -100,13 +100,16 @@ export default function Cart({
                                 )}
                                 {groupedProducts.map((item, index) => (
                                     <li
-                                        key={item.id || index}
+                                        key={item.id}
                                         className="flex items-center gap-4"
                                     >
                                         <Image
                                             width={48}
                                             height={48}
-                                            src={item.imageUrl}
+                                            src={
+                                                item.imageUrl ||
+                                                "/placeholder.png"
+                                            }
                                             alt={item.name}
                                             className="size-16 rounded-sm object-cover"
                                         />

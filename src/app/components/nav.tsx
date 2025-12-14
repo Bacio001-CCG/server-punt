@@ -1,12 +1,32 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cart from "./cart";
 import useCart from "@/hooks/useCart";
+import { SelectBrand, SelectCategory } from "@/database/schema";
+import { getCategories } from "@/lib/categories";
+import { getBrands } from "@/lib/brands";
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     const { products } = useCart();
+    const [categories, setCategories] = useState<SelectCategory[]>([]);
+    const [brands, setBrands] = useState<SelectBrand[]>([]);
+
+    useEffect(() => {
+        async function fetchCategories() {
+            const result = await getCategories();
+            setCategories(result || []);
+        }
+
+        async function fetchBrands() {
+            const result = await getBrands();
+            setBrands(result || []);
+        }
+
+        fetchCategories();
+        fetchBrands();
+    }, []);
 
     return (
         <nav className="sticky top-0 z-40 w-full border-b h-[65px] bg-white">
@@ -35,6 +55,50 @@ export default function Nav() {
                                     >
                                         Products
                                     </Link>
+                                </li>
+                                <li className="relative group">
+                                    <span className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground cursor-pointer">
+                                        Categorieën
+                                    </span>
+                                    <ul
+                                        className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[75vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
+                                        style={{ top: "100%" }}
+                                    >
+                                        {categories.map((category) => (
+                                            <li key={category.id}>
+                                                <Link
+                                                    href={`/products?categories=${encodeURIComponent(
+                                                        category.name
+                                                    )}`}
+                                                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground"
+                                                >
+                                                    {category.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </li>
+                                <li className="relative group">
+                                    <span className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground cursor-pointer">
+                                        Merken
+                                    </span>
+                                    <ul
+                                        className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[75vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
+                                        style={{ top: "100%" }}
+                                    >
+                                        {brands.map((brand) => (
+                                            <li key={brand.id}>
+                                                <Link
+                                                    href={`/products?brands=${encodeURIComponent(
+                                                        brand.name
+                                                    )}`}
+                                                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground"
+                                                >
+                                                    {brand.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </li>
                             </ul>
                         </div>

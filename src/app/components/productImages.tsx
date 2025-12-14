@@ -3,23 +3,20 @@ import Image from "next/image";
 import React from "react";
 
 export default function ProductImages({
-    product,
+    imageUrl,
+    noneMainImagesUrl,
 }: {
-    product: {
-        imageUrl: string;
-        noneMainImagesUrl: string | null;
-    };
+    imageUrl: string;
+    noneMainImagesUrl: string;
 }) {
-    const [selected, setSelected] = React.useState(product.imageUrl);
-    const other = JSON.parse(String(product.noneMainImagesUrl)).map(
-        (url: string) => {
-            return url
-                .replaceAll("\\", "")
-                .replaceAll('"', "")
-                .replaceAll("[", "")
-                .replaceAll("]", "");
-        }
-    );
+    const [selected, setSelected] = React.useState(imageUrl);
+    const other = JSON.parse(String(noneMainImagesUrl)).map((url: string) => {
+        return url
+            .replaceAll("\\", "")
+            .replaceAll('"', "")
+            .replaceAll("[", "")
+            .replaceAll("]", "");
+    });
     return (
         <div className="w-full md:w-1/2 px-4 mb-8">
             <Image
@@ -32,15 +29,15 @@ export default function ProductImages({
             />
             <div className="flex gap-4 py-4 justify-center overflow-x-auto">
                 <Image
-                    onClick={() => setSelected(product.imageUrl)}
+                    onClick={() => setSelected(imageUrl)}
                     height={400}
                     width={400}
-                    src={product.imageUrl}
+                    src={imageUrl}
                     alt="Product"
                     className="w-full h-auto rounded-lg shadow-md mb-4"
                     id="mainImage"
                 />
-                {product.noneMainImagesUrl &&
+                {noneMainImagesUrl &&
                     other.map((url: string, index: number) => (
                         <Image
                             onClick={() => setSelected(url)}

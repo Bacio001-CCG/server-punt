@@ -1,29 +1,97 @@
+"use client";
+import { useEffect, useState } from "react";
+import { getFeatured } from "@/lib/products";
 import Card from "./card";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { SelectProduct } from "@/database/schema";
 
-const products = [
-    {
-        name: "Server 1",
-        image: "/server_1.png",
-        href: "/product/1",
-    },
-    {
-        name: "Server 2",
-        image: "/server_2.png",
-        href: "/product/1",
-    },
-    {
-        name: "Server 3",
-        image: "/server_3.png",
-        href: "/product/1",
-    },
-    {
-        name: "Server 4",
-        image: "/server_4.png",
-        href: "/product/1",
-    },
-];
+function NextArrow(props: any) {
+    const { className, onClick } = props;
+    return (
+        <div
+            className={`${className} text-accent-foreground slick-arrow slick-next`}
+            onClick={onClick}
+            style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "40px",
+                height: "40px",
+                right: "-40px",
+                zIndex: 10,
+                cursor: "pointer",
+                color: "black", // Changed to black
+            }}
+        ></div>
+    );
+}
+
+function PrevArrow(props: any) {
+    const { className, onClick } = props;
+    return (
+        <div
+            className={`${className} slick-arrow slick-prev`}
+            onClick={onClick}
+            style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "40px",
+                height: "40px",
+                left: "-40px",
+                zIndex: 10,
+                cursor: "pointer",
+                color: "black",
+            }}
+        ></div>
+    );
+}
 
 export default function Featured() {
+    const [products, setProducts] = useState<SelectProduct[]>([]);
+
+    useEffect(() => {
+        async function fetchProducts() {
+            const { products = [] } = (await getFeatured(12)) || {};
+            setProducts(products);
+        }
+        fetchProducts();
+    }, []);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
+
     return (
         <section
             id="featured"
@@ -54,22 +122,19 @@ export default function Featured() {
                         vanwege hun betrouwbaarheid en prestaties.
                     </p>
                 </div>
-                <div
-                    className="
-                grid grid-cols-3 gap-4
-                md:grid-cols-5 md:gap-6
-              "
-                >
-                    {products.map((product) => (
-                        <Card
-                            key={product.name}
-                            name={product.name}
-                            image={product.image}
-                            href={product.href}
-                            price={"80,00"}
-                        />
+                <Slider className="h-[335px]" {...settings}>
+                    {products.map((product: SelectProduct) => (
+                        <div key={product.name + product.id} className="px-4">
+                            <Card
+                                name={product.name}
+                                image={product.imageUrl || "/placeholder.png"}
+                                href={`/product/${product.id}`}
+                                price={product.price.toFixed(2)}
+                                stock={product.quantityInStock}
+                            />
+                        </div>
                     ))}
-                </div>
+                </Slider>
             </div>
         </section>
     );

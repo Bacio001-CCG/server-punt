@@ -3,7 +3,7 @@ import Card from "./card";
 import Link from "next/link";
 import { getProducts } from "@/lib/products";
 
-const { products = [] } = (await getProducts(12)) || {};
+const { products = [] } = (await getProducts(24)) || {};
 
 export default function Featured() {
     return (
@@ -22,19 +22,19 @@ export default function Featured() {
               lg:px-8
             "
             >
-                <div className="mb-8 flex flex-col items-left text-left">
+                <div className="mb-8 flex flex-col items-center text-center">
                     <h2
                         className="
                   font-display text-3xl leading-tight font-bold tracking-tight
                   md:text-4xl
                 "
                     >
-                        Onze Producten
+                        Producten
                     </h2>
-                    <div className="mt-2 h-1 w-38 rounded-full bg-primary"></div>
-                    <p className="mt-4 max-w-2xl text-left text-muted-foreground">
-                        Vind het perfecte apparaat voor uw behoeften uit onze
-                        zorgvuldig samengestelde collecties
+                    <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
+                    <p className="mt-4 max-w-2xl text-center text-muted-foreground">
+                        Bekijk onze populairste producten, zorgvuldig
+                        geselecteerd voor jou.
                     </p>
                 </div>
                 <div
@@ -48,9 +48,10 @@ export default function Featured() {
                             <Card
                                 key={product.name}
                                 name={product.name}
-                                image={product.imageUrl}
+                                image={product.imageUrl || "/placeholder.png"}
                                 href={`/product/${product.id}`}
-                                price={(product.price / 100).toFixed(2)}
+                                price={product.price.toFixed(2)}
+                                stock={product.quantityInStock}
                             />
                         ))}
                 </div>

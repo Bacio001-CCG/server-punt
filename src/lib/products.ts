@@ -1,7 +1,7 @@
 "use server";
 import { db } from "@/database/connect";
 import { productsTable, SelectProduct } from "@/database/schema";
-import { eq, count } from "drizzle-orm";
+import { eq, count, ne, inArray } from "drizzle-orm";
 import { z } from "zod";
 import { writeFile } from "fs/promises";
 import { join } from "path";
@@ -15,6 +15,40 @@ const getProductsSchema = z.object({
 const getProductSchema = z.object({
     id: z.number().int().positive("Product ID must be a positive integer"),
 });
+
+export async function getFeatured(
+    limit?: number,
+    offset?: number
+): Promise<{
+    products: SelectProduct[];
+    totalCount: number;
+} | null> {
+    try {
+        const validatedParams = getProductsSchema.parse({ limit, offset });
+
+        const [products, [{ value: totalCount }]] = await Promise.all([
+            db
+                .select()
+                .from(productsTable)
+                .limit(validatedParams.limit || 10)
+                .offset(validatedParams.offset || 0)
+                .where(ne(productsTable.quantityInStock, 0)),
+            db.select({ value: count() }).from(productsTable),
+        ]);
+
+        return {
+            products,
+            totalCount,
+        };
+    } catch (error) {
+        if (error instanceof z.ZodError) {
+            console.error("Validation error in getProducts:", error.issues);
+        } else {
+            console.error("Failed to fetch products:", error);
+        }
+        return null;
+    }
+}
 
 export async function getProducts(
     limit?: number,
@@ -30,8 +64,9 @@ export async function getProducts(
             db
                 .select()
                 .from(productsTable)
-                .limit(validatedParams.limit || 10)
-                .offset(validatedParams.offset || 0),
+                .limit(validatedParams.limit || 9999)
+                .offset(validatedParams.offset || 0)
+                .where(ne(productsTable.quantityInStock, 0)),
             db.select({ value: count() }).from(productsTable),
         ]);
 
@@ -144,5 +179,37 @@ export async function createProduct(formData: FormData) {
     } catch (error) {
         console.error("Failed to create product:", error);
         return { success: false, error: "Failed to create product" };
+    }
+}
+
+export async function getProductsByBrands(
+    brandIds: number[]
+): Promise<SelectProduct[]> {
+    try {
+        const products = await db
+            .select()
+            .from(productsTable)
+            .where(inArray(productsTable.brandId, brandIds));
+
+        return products;
+    } catch (error) {
+        console.error("Failed to fetch products by brands:", error);
+        return [];
+    }
+}
+
+export async function getProductsByCategory(
+    categoryIds: number[]
+): Promise<SelectProduct[]> {
+    try {
+        const products = await db
+            .select()
+            .from(productsTable)
+            .where(inArray(productsTable.categoryId, categoryIds));
+
+        return products;
+    } catch (error) {
+        console.error("Failed to fetch products by category:", error);
+        return [];
     }
 }

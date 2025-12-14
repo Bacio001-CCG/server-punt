@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.slick-prev::before, .slick-next::before {
+  color: var(--color-black) !important;
+}

@@ -1,13 +1,42 @@
 import { getProducts } from "@/lib/products";
 import Card from "../components/card";
+import { getCategories } from "@/lib/categories";
+import { getBrands } from "@/lib/brands";
 
-const { products = [] } = (await getProducts()) || { products: [] };
 export default async function Products({
     searchParams,
 }: {
     searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-    const category = (await searchParams).category;
+    const params = await searchParams;
+    const categories = params.categories
+        ? String(params.categories).split(",")
+        : [];
+    const brands = params.brands ? String(params.brands).split(",") : [];
+
+    const { products = [] } = (await getProducts()) || { products: [] };
+    const catResult = (await getCategories()) || { categories: [] };
+    const brandResult = (await getBrands()) || { brands: [] };
+
+    // Map category names to their corresponding IDs
+    const categoryIds = catResult
+        .filter((category) => categories.includes(category.name))
+        .map((category) => category.id);
+
+    // Map brand names to their corresponding IDs
+    const brandIds = brandResult
+        .filter((brand) => brands.includes(brand.name))
+        .map((brand) => brand.id);
+
+    // Filter products based on category IDs and brand IDs
+    const filteredProducts = products.filter((product) => {
+        const matchesCategory =
+            categoryIds.length === 0 ||
+            categoryIds.includes(product.categoryId);
+        const matchesBrand =
+            brandIds.length === 0 || brandIds.includes(product.brandId || -1);
+        return matchesCategory && matchesBrand;
+    });
 
     return (
         <section
@@ -45,21 +74,16 @@ export default async function Products({
         md:grid-cols-4 md:gap-6
       "
                 >
-                    {products
-                        .filter((p) =>
-                            category
-                                ? p.categoryId == parseInt(String(category))
-                                : true
-                        )
-                        .map((product) => (
-                            <Card
-                                key={product.name}
-                                name={product.name}
-                                image={product.imageUrl}
-                                href={`/product/${product.id}`}
-                                price={(product.price / 100).toFixed(2)}
-                            />
-                        ))}
+                    {filteredProducts.map((product) => (
+                        <Card
+                            key={product.name}
+                            name={product.name}
+                            image={product.imageUrl || "/placeholder.png"}
+                            href={`/product/${product.id}`}
+                            price={(product.price / 100).toFixed(2)}
+                            stock={product.quantityInStock}
+                        />
+                    ))}
                 </div>
             </div>
         </section>
