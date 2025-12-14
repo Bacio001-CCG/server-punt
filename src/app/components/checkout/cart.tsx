@@ -46,7 +46,7 @@ export default function Cart() {
                         <Image
                             width={48}
                             height={48}
-                            src={item.imageUrl}
+                            src={item.imageUrl || "/placeholder.png"}
                             alt={item.name}
                             className="size-16 rounded-sm object-cover"
                         />
