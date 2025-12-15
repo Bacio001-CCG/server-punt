@@ -17,38 +17,45 @@ export default function ProductImages({
             .replaceAll("[", "")
             .replaceAll("]", "");
     });
+
     return (
         <div className="w-full md:w-1/2 px-4 mb-8">
-            <Image
-                height={400}
-                width={400}
-                src={selected}
-                alt="Product"
-                className="w-full h-auto rounded-lg shadow-md mb-4"
-                id="mainImage"
-            />
-            <div className="flex gap-4 py-4 justify-center overflow-x-auto">
+            {/* Main Image */}
+            <div className="w-[400px] h-[400px] mx-auto">
                 <Image
-                    onClick={() => setSelected(imageUrl)}
                     height={400}
                     width={400}
-                    src={imageUrl}
+                    src={selected || "/placeholder.png"}
                     alt="Product"
-                    className="w-full h-auto rounded-lg shadow-md mb-4"
+                    className="w-full h-full object-contain rounded-lg shadow-md"
                     id="mainImage"
                 />
+            </div>
+
+            {/* Thumbnails */}
+            <div className="flex gap-4 py-4 justify-center overflow-x-auto">
+                <div className="w-[100px] h-[100px]">
+                    <Image
+                        onClick={() => setSelected(imageUrl)}
+                        height={100}
+                        width={100}
+                        src={imageUrl || "/placeholder.png"}
+                        alt="Product Thumbnail"
+                        className="w-full h-full object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+                    />
+                </div>
                 {noneMainImagesUrl &&
                     other.map((url: string, index: number) => (
-                        <Image
-                            onClick={() => setSelected(url)}
-                            key={index}
-                            height={400}
-                            width={400}
-                            src={url}
-                            alt={`Thumbnail ${index + 1}`}
-                            className="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
-                            // onClick={() => changeImage(url)}
-                        />
+                        <div key={index} className="w-[100px] h-[100px]">
+                            <Image
+                                onClick={() => setSelected(url)}
+                                height={100}
+                                width={100}
+                                src={url || "/placeholder.png"}
+                                alt={`Thumbnail ${index + 1}`}
+                                className="w-full h-full object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+                            />
+                        </div>
                     ))}
             </div>
         </div>

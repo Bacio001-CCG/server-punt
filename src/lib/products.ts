@@ -1,6 +1,11 @@
 "use server";
 import { db } from "@/database/connect";
-import { productsTable, SelectProduct } from "@/database/schema";
+import {
+    linkedProductsTable,
+    productsTable,
+    SelectLinkedProduct,
+    SelectProduct,
+} from "@/database/schema";
 import { eq, count, ne, inArray, and } from "drizzle-orm";
 import { z } from "zod";
 import { writeFile } from "fs/promises";
@@ -118,6 +123,36 @@ export async function getProduct(id: number): Promise<SelectProduct | null> {
             console.error("Failed to fetch product:", error);
             throw new Error("Failed to fetch product");
         }
+    }
+}
+
+export interface ProductWithLinkedItems extends SelectLinkedProduct {
+    product: SelectProduct | null;
+}
+
+export async function getProductLinkedItems(
+    productId: number
+): Promise<ProductWithLinkedItems[]> {
+    try {
+        const configItems = await db
+            .select()
+            .from(linkedProductsTable)
+            .where(eq(linkedProductsTable.productId, productId));
+
+        const transformedItems = [] as Array<ProductWithLinkedItems>;
+
+        for (const item of configItems) {
+            const linkedProduct = await getProduct(item.linkedProductId);
+            transformedItems.push({
+                ...item,
+                product: linkedProduct,
+            });
+        }
+
+        return transformedItems;
+    } catch (error) {
+        console.error("Failed to fetch product configuration items:", error);
+        return [];
     }
 }
 

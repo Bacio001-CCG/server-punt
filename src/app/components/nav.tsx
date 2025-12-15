@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation"; // Import usePathname
 import Cart from "./cart";
 import useCart from "@/hooks/useCart";
 import { SelectBrand, SelectCategory } from "@/database/schema";
@@ -12,6 +13,7 @@ export default function Nav() {
     const { products } = useCart();
     const [categories, setCategories] = useState<SelectCategory[]>([]);
     const [brands, setBrands] = useState<SelectBrand[]>([]);
+    const pathname = usePathname(); // Use the hook to get the current pathname
 
     useEffect(() => {
         async function fetchCategories() {
@@ -42,7 +44,11 @@ export default function Nav() {
                             <ul className="flex items-center gap-6">
                                 <li>
                                     <Link
-                                        className="text-sm transition-colors hover:text-primary font-semibold text-primary"
+                                        className={`text-sm font-medium transition-colors ${
+                                            pathname === "/"
+                                                ? "font-bold text-primary"
+                                                : "text-muted-foreground hover:text-primary"
+                                        }`}
                                         href="/"
                                     >
                                         Home
@@ -50,7 +56,11 @@ export default function Nav() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
+                                        className={`text-sm font-medium transition-colors ${
+                                            pathname === "/products"
+                                                ? "font-bold text-primary"
+                                                : "text-muted-foreground hover:text-primary"
+                                        }`}
                                         href="/products"
                                     >
                                         Products
