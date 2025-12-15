@@ -3,7 +3,7 @@ import useCart from "@/hooks/useCart";
 import { useEffect, useState } from "react";
 
 export default function InvoiceAddress() {
-    const { getTotalPrice } = useCart();
+    const { getTotalPrice, getVatPrice, getShippingCost } = useCart();
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -126,7 +126,7 @@ export default function InvoiceAddress() {
             >
                 Betalen (
                 {mounted ? (
-                    <>€{String(getTotalPrice().toFixed(2)).replace(".", ",")}</>
+                    <>€{String((getTotalPrice() + getVatPrice() + getShippingCost()).toFixed(2)).replace(".", ",")}</>
                 ) : (
                     "€0,00"
                 )}

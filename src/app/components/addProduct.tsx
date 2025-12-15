@@ -2,14 +2,32 @@
 import { SelectProduct } from "@/database/schema";
 import useCart from "@/hooks/useCart";
 
-export default function AddProduct({ product }: { product: SelectProduct }) {
+type ConfiguredProduct = {
+    product: SelectProduct;
+    quantity: number;
+};
+
+export default function AddProduct({
+    product,
+    configuredProducts,
+}: {
+    product: SelectProduct;
+    configuredProducts?: ConfiguredProduct[];
+}) {
     const { addProduct } = useCart();
+
+    const handleAdd = () => {
+        if (configuredProducts && configuredProducts.length > 0) {
+            addProduct(product, 1, configuredProducts);
+        } else {
+            addProduct(product, 1);
+        }
+    };
+
     return (
         <div className="flex space-x-4 mb-6">
             <button
-                onClick={() => {
-                    addProduct(product, 0);
-                }}
+                onClick={handleAdd}
                 className="bg-black cursor-pointer flex gap-2 items-center text-white px-6 py-2 rounded-md hover:opacity-60 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
                 <svg

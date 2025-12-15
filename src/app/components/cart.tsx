@@ -12,26 +12,15 @@ export default function Cart({
     isOpen: boolean;
     setIsOpen: (isOpen: boolean) => void;
 }) {
-    const { products, removeProduct, getTotalPrice } = useCart();
+    const { products, removeProduct, getTotalPrice, getGroupedProducts } =
+        useCart();
 
     const cartRef = useRef<HTMLDivElement>(null);
 
-    // Group products by ID and calculate quantities
-    const groupedProducts = useMemo(() => {
-        const grouped = products.reduce((acc, product) => {
-            const existingProduct = acc.find((item) => item.id === product.id);
-
-            if (existingProduct) {
-                existingProduct.quantity += 1;
-            } else {
-                acc.push({ ...product, quantity: 1 });
-            }
-
-            return acc;
-        }, [] as Array<(typeof products)[0] & { quantity: number }>);
-
-        return grouped;
-    }, [products]);
+    const groupedProducts = useMemo(
+        () => getGroupedProducts(),
+        [products, getGroupedProducts]
+    );
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -98,61 +87,83 @@ export default function Cart({
                                         Je winkelwagen is leeg.
                                     </p>
                                 )}
-                                {groupedProducts.map((item, index) => (
-                                    <li
-                                        key={item.id}
-                                        className="flex items-center gap-4"
-                                    >
-                                        <Image
-                                            width={48}
-                                            height={48}
-                                            src={
-                                                item.imageUrl ||
-                                                "/placeholder.png"
-                                            }
-                                            alt={item.name}
-                                            className="size-16 rounded-sm object-cover"
-                                        />
-                                        <div className="flex justify-between w-full items-center">
-                                            <div>
-                                                <h3 className="text-sm text-gray-900">
-                                                    {item.name}
-                                                </h3>
+                                {groupedProducts.map((item) => {
+                                    const configuredTotal = (item.product.configuredItems || []).reduce(
+                                        (sub, ci) => sub + ci.product.price * ci.quantity,
+                                        0
+                                    );
+                                    const unitTotal = item.product.price + configuredTotal;
 
-                                                <dl className="mt-0.5 space-y-px text-[10px] text-gray-600">
-                                                    <div>
-                                                        <dt className="inline mr-1">
-                                                            Aantal:
-                                                        </dt>
-                                                        <dd className="inline">
-                                                            {item.quantity}x
-                                                        </dd>
-                                                    </div>
-                                                    <div>
-                                                        <dt className="inline mr-1">
-                                                            Prijs:
-                                                        </dt>
-                                                        <dd className="inline">
-                                                            €
-                                                            {String(
-                                                                (
-                                                                    item.price *
-                                                                    item.quantity
-                                                                ).toFixed(2)
-                                                            ).replace(".", ",")}
-                                                        </dd>
-                                                    </div>
-                                                </dl>
-                                            </div>
-                                            <Trash
-                                                onClick={() => {
-                                                    removeProduct(item.id);
-                                                }}
-                                                className="text-red-500 scale-75 cursor-pointer hover:scale-90 transition-transform"
+                                    return (
+                                        <li
+                                            key={`${item.product.id}-${item.product.configSignature ?? "base"}`}
+                                            className="flex items-start gap-4"
+                                        >
+                                            <Image
+                                                width={48}
+                                                height={48}
+                                                src={
+                                                    item.product.imageUrl ||
+                                                    "/placeholder.png"
+                                                }
+                                                alt={item.product.name}
+                                                className="size-16 rounded-sm object-cover"
                                             />
-                                        </div>
-                                    </li>
-                                ))}
+                                            <div className="flex justify-between w-full items-start">
+                                                <div className="space-y-1">
+                                                    <h3 className="text-sm text-gray-900">
+                                                        {item.product.name}
+                                                    </h3>
+                                                    {item.product.configuredItems &&
+                                                        item.product.configuredItems.length > 0 && (
+                                                            <ul className="ml-4 list-disc text-xs text-gray-600 space-y-0.5">
+                                                                {item.product.configuredItems.map((sub) => (
+                                                                    <li
+                                                                        key={`${sub.product.id}-${sub.quantity}`}
+                                                                    >
+                                                                        {sub.product.name} x {sub.quantity}
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        )}
+
+                                                    <dl className="mt-1 space-y-px text-[10px] text-gray-600">
+                                                        <div>
+                                                            <dt className="inline mr-1">
+                                                                Aantal:
+                                                            </dt>
+                                                            <dd className="inline">
+                                                                {item.quantity}x
+                                                            </dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt className="inline mr-1">
+                                                                Prijs:
+                                                            </dt>
+                                                            <dd className="inline">
+                                                                €
+                                                                {String(
+                                                                    (unitTotal * item.quantity).toFixed(2)
+                                                                ).replace(".", ",")} Excl. BTW
+                                                            </dd>
+
+                                                        </div>
+
+                                                    </dl>
+                                                </div>
+                                                <Trash
+                                                    onClick={() => {
+                                                        removeProduct(
+                                                            item.product.id,
+                                                            item.product.configSignature
+                                                        );
+                                                    }}
+                                                    className="text-red-500 scale-75 cursor-pointer hover:scale-90 transition-transform"
+                                                />
+                                            </div>
+                                        </li>
+                                    );
+                                })}
                             </ul>
 
                             <div className="space-y-4 text-center">
@@ -165,7 +176,7 @@ export default function Cart({
                                         ".",
                                         ","
                                     )}
-                                    )
+                                    ) Excl. BTW
                                 </Link>
                             </div>
                         </div>
