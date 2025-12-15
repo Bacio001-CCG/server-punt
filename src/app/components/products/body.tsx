@@ -182,7 +182,7 @@ export default function Body({
 
                 {/* Product Grid */}
                 <div className="w-3/4">
-                    <div className="mb-8 flex flex-col items-center text-center">
+                    <div className="mb-8 flex-col items-center text-center hidden md:flex">
                         <h2 className="font-display text-3xl leading-tight font-bold tracking-tight md:text-4xl">
                             Onze Producten
                         </h2>
@@ -194,7 +194,7 @@ export default function Body({
                     </div>
                     <div
                         className="
-                        grid grid-cols-2 gap-4
+                        grid grid-cols-1 gap-4
                         md:grid-cols-4 md:gap-6
                     "
                     >
