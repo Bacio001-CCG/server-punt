@@ -18,15 +18,36 @@ import { eq } from "drizzle-orm";
 
 // meer dan 2 servers geen verzend kosten
 
+type ConfiguredItem = { product: SelectProduct; quantity: number };
+type CheckoutProduct = {
+    product: SelectProduct & { configuredItems?: ConfiguredItem[] };
+    quantity: number;
+};
+
 export async function processCheckout(
     formObject: {
         [k: string]: FormDataEntryValue;
     },
-    products: {
-        product: SelectProduct;
-        quantity: number;
-    }[]
+    products: CheckoutProduct[]
 ) {
+    const splitDescription = (text: string, limit = 100) => {
+        if (text.length <= limit) return [text];
+
+        const parts: string[] = [];
+        let remaining = text;
+
+        while (remaining.length > limit) {
+            let cut = remaining.lastIndexOf(" ", limit);
+            if (cut === -1 || cut < limit / 2) {
+                cut = limit;
+            }
+            parts.push(remaining.slice(0, cut).trim());
+            remaining = remaining.slice(cut).trim();
+        }
+
+        if (remaining) parts.push(remaining);
+        return parts;
+    };
     const formCheck = z
         .object({
             email: z.email(),
@@ -251,15 +272,34 @@ export async function processCheckout(
                         result.data["invoice.cocNumber"] || null,
                 },
                 lines: products
-                    .map((item) => ({
-                        description: item.product.name,
-                        quantity: item.quantity,
-                        unitPrice: {
-                            currency: "EUR",
-                            value: item.product.price.toFixed(2),
-                        },
-                        vatRate: "21",
-                    }))
+                    .flatMap((item) => {
+                        const configuredItems = item.product.configuredItems || [];
+                        const configuredTotal = configuredItems.reduce(
+                            (sum, sub) => sum + sub.product.price * sub.quantity,
+                            0
+                        );
+                        const unitPriceValue = item.product.price + configuredTotal;
+
+                        const baseDescription = configuredItems.length
+                            ? `${item.product.name} (incl. ${configuredItems
+                                .map(
+                                    (sub) => `${sub.product.name} x ${sub.quantity}`
+                                )
+                                .join(", ")})`
+                            : item.product.name;
+
+                        const parts = splitDescription(baseDescription, 100);
+
+                        return parts.map((part, idx) => ({
+                            description: part,
+                            quantity: idx === 0 ? item.quantity : 1,
+                            unitPrice: {
+                                currency: "EUR",
+                                value: (idx === 0 ? unitPriceValue : 0).toFixed(2),
+                            },
+                            vatRate: "21",
+                        }));
+                    })
                     .concat([
                         {
                             description: "Verzendkosten",
@@ -346,12 +386,22 @@ export async function processCheckout(
             .returning({ id: ordersTable.id });
 
         await db.insert(orderItemsTable).values(
-            products.map((item) => ({
-                orderId: order[0].id,
-                productId: item.product.id,
-                quantity: item.quantity,
-                unitPrice: parseFloat(item.product.price.toFixed(2)),
-            }))
+            products.map((item) => {
+                const configuredItems = item.product.configuredItems || [];
+                const configuredTotal = configuredItems.reduce(
+                    (sum, sub) => sum + sub.product.price * sub.quantity,
+                    0
+                );
+
+                return {
+                    orderId: order[0].id,
+                    productId: item.product.id,
+                    quantity: item.quantity,
+                    unitPrice: parseFloat(
+                        (item.product.price + configuredTotal).toFixed(2)
+                    ),
+                };
+            })
         );
         return response2.data._links.checkout.href;
     } catch (error: any) {
