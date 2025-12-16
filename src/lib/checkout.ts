@@ -6,8 +6,10 @@ import {
     customersTable,
     InsertOrder,
     orderItemsTable,
+    orderItemsConfigurationTable,
     ordersTable,
     SelectProduct,
+    productsTable,
 } from "@/database/schema";
 import { db } from "@/database/connect";
 import { eq } from "drizzle-orm";
@@ -172,6 +174,55 @@ export async function processCheckout(
     }
 
     try {
+        // Check stock availability for all products
+        for (const item of products) {
+            // Check main product stock
+            const mainProduct = await db
+                .select({
+                    id: productsTable.id,
+                    name: productsTable.name,
+                    quantityInStock: productsTable.quantityInStock
+                })
+                .from(productsTable)
+                .where(eq(productsTable.id, item.product.id))
+                .limit(1);
+
+            if (mainProduct.length === 0) {
+                throw new Error(`Product ${item.product.name} niet gevonden`);
+            }
+
+            if (mainProduct[0].quantityInStock < item.quantity) {
+                throw new Error(
+                    `Product ${item.product.name} heeft onvoldoende voorraad. Beschikbaar: ${mainProduct[0].quantityInStock}, Gevraagd: ${item.quantity}`
+                );
+            }
+
+            // Check configured items stock
+            const configuredItems = item.product.configuredItems || [];
+            for (const configItem of configuredItems) {
+                const configProduct = await db
+                    .select({
+                        id: productsTable.id,
+                        name: productsTable.name,
+                        quantityInStock: productsTable.quantityInStock
+                    })
+                    .from(productsTable)
+                    .where(eq(productsTable.id, configItem.product.id))
+                    .limit(1);
+
+                if (configProduct.length === 0) {
+                    throw new Error(`Configuratie product ${configItem.product.name} niet gevonden`);
+                }
+
+                const totalNeeded = configItem.quantity * item.quantity;
+                if (configProduct[0].quantityInStock < totalNeeded) {
+                    throw new Error(
+                        `Configuratie product ${configItem.product.name} heeft onvoldoende voorraad. Beschikbaar: ${configProduct[0].quantityInStock}, Gevraagd: ${totalNeeded}`
+                    );
+                }
+            }
+        }
+
         // First, try to find existing customer
         let customerId: number;
 
@@ -385,7 +436,7 @@ export async function processCheckout(
             } as InsertOrder)
             .returning({ id: ordersTable.id });
 
-        await db.insert(orderItemsTable).values(
+        const orderItems = await db.insert(orderItemsTable).values(
             products.map((item) => {
                 const configuredItems = item.product.configuredItems || [];
                 const configuredTotal = configuredItems.reduce(
@@ -402,12 +453,26 @@ export async function processCheckout(
                     ),
                 };
             })
-        );
+        ).returning({ id: orderItemsTable.id });
+
+        // Insert configured items into separate table
+        for (let i = 0; i < products.length; i++) {
+            const configuredItems = products[i].product.configuredItems || [];
+            if (configuredItems.length > 0) {
+                await db.insert(orderItemsConfigurationTable).values(
+                    configuredItems.map((item) => ({
+                        orderItemId: orderItems[i].id,
+                        productId: item.product.id,
+                        quantity: item.quantity,
+                    }))
+                );
+            }
+        }
         return response2.data._links.checkout.href;
     } catch (error: any) {
         console.error((error as any)?.response?.data || error);
         throw new Error(
-            (error as any)?.response?.data?.detail || "An error occurred"
+            (error as any)?.response?.data?.detail || error.message || "An error occurred"
         );
     }
 }
