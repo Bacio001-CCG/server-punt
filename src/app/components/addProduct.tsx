@@ -1,6 +1,7 @@
 "use client";
 import { SelectProduct } from "@/database/schema";
 import useCart from "@/hooks/useCart";
+import { toast } from "react-toastify";
 
 type ConfiguredProduct = {
     product: SelectProduct;
@@ -22,6 +23,7 @@ export default function AddProduct({
         } else {
             addProduct(product, 1);
         }
+        toast.success("Product toegevoegd aan winkelwagen!");
     };
 
     return (
