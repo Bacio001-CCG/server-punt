@@ -2,7 +2,10 @@ import Hero from "./components/hero";
 import Products from "./components/products";
 import Categories from "./components/categories";
 import Featured from "./components/featured";
-//relivator.com/
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default function Home() {
     return (
         <main className="flex flex-col gap-y-8">

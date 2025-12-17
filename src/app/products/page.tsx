@@ -3,6 +3,9 @@ import { getCategories } from "@/lib/categories";
 import { getBrands } from "@/lib/brands";
 import Body from "../components/products/body";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function Products({
     searchParams,
 }: {
@@ -27,7 +30,6 @@ export default async function Products({
         .map((brand) => brand.id);
 
     const filteredProducts = products
-        .filter((product) => product.brandId !== null)
         .filter((product) => {
             const matchesCategory =
                 categoryIds.length === 0 ||

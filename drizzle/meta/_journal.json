@@ -36,6 +36,20 @@
       "when": 1762987841741,
       "tag": "0004_lame_butterfly",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1765844375930,
+      "tag": "0005_abnormal_red_shift",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1765844483315,
+      "tag": "0006_broad_dreadnoughts",
+      "breakpoints": true
     }
   ]
 }

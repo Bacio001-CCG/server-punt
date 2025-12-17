@@ -137,6 +137,8 @@ export const ordersTable = pgTable("orders", {
     invoiceCity: text("invoice_city").notNull(),
     invoicePhonenumber: text("invoice_phonenumber"),
     createdAt: timestamp("created_at").notNull().defaultNow(),
+    trackingNumber: text("tracking_number"),
+    deliveryService: text("delivery_service"),
 });
 
 export const auditLogsTable = pgTable("audit_logs", {
@@ -159,6 +161,21 @@ export const orderItemsTable = pgTable("order_items", {
     unitPrice: doublePrecision("unit_price").notNull(),
     createdAt: timestamp("created_at").notNull().defaultNow(),
 });
+
+export const orderItemsConfigurationTable = pgTable(
+    "order_items_configuration",
+    {
+        id: serial("id").primaryKey(),
+        orderItemId: integer("order_item_id")
+            .notNull()
+            .references(() => orderItemsTable.id),
+        productId: integer("product_id")
+            .notNull()
+            .references(() => productsTable.id),
+        quantity: integer("quantity").notNull(),
+        createdAt: timestamp("created_at").notNull().defaultNow(),
+    }
+);
 
 export const usersTable = pgTable("user", {
     id: text("id").primaryKey(),
