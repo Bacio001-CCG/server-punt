@@ -100,7 +100,7 @@ export default function Hero() {
                                     <circle cx="17" cy="18" r="2"></circle>
                                     <circle cx="7" cy="18" r="2"></circle>
                                 </svg>
-                                <span>Verzending door de Benelux</span>
+                                <span>Verzending binnen de Benelux</span>
                             </div>
                             <div className="flex items-center gap-1.5">
                                 <svg

@@ -59,6 +59,10 @@ export default function Body({
         );
     };
 
+    const calculateTotalWithVAT = (subtotal: number) => {
+        return subtotal * 1.21; // 21% VAT
+    };
+
     const getConfiguredProducts = () => {
         return getSelectedProductsDetails()
             .map((item) => {
@@ -281,49 +285,89 @@ flex flex-col items-center
                                 <ul className="space-y-2 mb-4">
                                     <li className="flex justify-between text-sm">
                                         <span>{product.name}</span>
-                                        <span className="font-semibold">
-                                            $
-                                            {product.price
-                                                .toFixed(2)
-                                                .replace(".", ",")}{" "}
-                                            Excl. BTW
-                                        </span>
-                                    </li>{" "}
+                                        <div className="text-right">
+                                            <div className="font-semibold">
+                                                €
+                                                {product.price
+                                                    .toFixed(2)
+                                                    .replace(".", ",")}{" "}
+                                                Excl. BTW
+                                            </div>
+                                            <div className="text-xs text-gray-600">
+                                                €
+                                                {calculateTotalWithVAT(
+                                                    product.price
+                                                )
+                                                    .toFixed(2)
+                                                    .replace(".", ",")}{" "}
+                                                Incl. BTW
+                                            </div>
+                                        </div>
+                                    </li>
                                     {getSelectedProductsDetails().map(
-                                        (item) => (
-                                            <li
-                                                key={item.id}
-                                                className="flex justify-between text-sm"
-                                            >
-                                                <span>
-                                                    {item.name} x{" "}
-                                                    {item.quantity}
-                                                </span>
-                                                <span className="font-semibold">
-                                                    $
-                                                    {(
-                                                        item.price *
-                                                        item.quantity
-                                                    )
-                                                        .toFixed(2)
-                                                        .replace(".", ",")}{" "}
-                                                    Excl. BTW
-                                                </span>
-                                            </li>
-                                        )
+                                        (item) => {
+                                            const subtotal =
+                                                item.price * item.quantity;
+                                            return (
+                                                <li
+                                                    key={item.id}
+                                                    className="flex justify-between text-sm"
+                                                >
+                                                    <span>
+                                                        {item.name} x{" "}
+                                                        {item.quantity}
+                                                    </span>
+                                                    <div className="text-right">
+                                                        <div className="font-semibold">
+                                                            €
+                                                            {subtotal
+                                                                .toFixed(2)
+                                                                .replace(
+                                                                    ".",
+                                                                    ","
+                                                                )}{" "}
+                                                            Excl. BTW
+                                                        </div>
+                                                        <div className="text-xs text-gray-600">
+                                                            €
+                                                            {calculateTotalWithVAT(
+                                                                subtotal
+                                                            )
+                                                                .toFixed(2)
+                                                                .replace(
+                                                                    ".",
+                                                                    ","
+                                                                )}{" "}
+                                                            Incl. BTW
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            );
+                                        }
                                     )}
                                 </ul>
                                 <div className="pt-4 border-t border-gray-300 flex justify-between">
                                     <span className="text-lg font-bold">
                                         Total:
                                     </span>
-                                    <span className="text-lg font-bold text-primary">
-                                        $
-                                        {calculateTotal()
-                                            .toFixed(2)
-                                            .replace(".", ",")}{" "}
-                                        Excl. BTW
-                                    </span>
+                                    <div className="text-right">
+                                        <div className="text-lg font-bold text-primary">
+                                            €
+                                            {calculateTotal()
+                                                .toFixed(2)
+                                                .replace(".", ",")}{" "}
+                                            Excl. BTW
+                                        </div>
+                                        <div className="text-sm text-gray-600">
+                                            €
+                                            {calculateTotalWithVAT(
+                                                calculateTotal()
+                                            )
+                                                .toFixed(2)
+                                                .replace(".", ",")}{" "}
+                                            Incl. BTW
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 

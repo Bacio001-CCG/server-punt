@@ -63,7 +63,7 @@ export default function Nav() {
                                         }`}
                                         href="/products"
                                     >
-                                        Products
+                                        Producten
                                     </Link>
                                 </li>
                                 <li className="relative group">
@@ -74,18 +74,24 @@ export default function Nav() {
                                         className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[75vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
                                         style={{ top: "100%" }}
                                     >
-                                        {categories.map((category) => (
-                                            <li key={category.id}>
-                                                <Link
-                                                    href={`/products?categories=${encodeURIComponent(
-                                                        category.name
-                                                    )}`}
-                                                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground"
-                                                >
-                                                    {category.name}
-                                                </Link>
-                                            </li>
-                                        ))}
+                                        {categories
+                                            .filter(
+                                                (c) =>
+                                                    c.name.toLowerCase() !=
+                                                    "ram"
+                                            )
+                                            .map((category) => (
+                                                <li key={category.id}>
+                                                    <Link
+                                                        href={`/products?categories=${encodeURIComponent(
+                                                            category.name
+                                                        )}`}
+                                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground"
+                                                    >
+                                                        {category.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
                                     </ul>
                                 </li>
                                 <li className="relative group">
@@ -109,6 +115,18 @@ export default function Nav() {
                                             </li>
                                         ))}
                                     </ul>
+                                </li>
+                                <li>
+                                    <Link
+                                        className={`text-sm font-medium transition-colors ${
+                                            pathname === "/about-us"
+                                                ? "font-bold text-primary"
+                                                : "text-muted-foreground hover:text-primary"
+                                        }`}
+                                        href="/about-us"
+                                    >
+                                        Over ons
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

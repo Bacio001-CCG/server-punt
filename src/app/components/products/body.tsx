@@ -3,6 +3,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import Card from "../card";
 import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
+import { Input } from "@/components/ui/input";
 
 export default function Body({
     filteredProducts,
@@ -29,8 +30,8 @@ export default function Body({
 }) {
     const [selectedCategories, setSelectedCategories] = useState<number[]>([]);
     const [selectedBrands, setSelectedBrands] = useState<number[]>([]);
-    const [priceRange, setPriceRange] = useState<[number, number]>([0, 9999]); // Default price range
-    const [stockRange, setStockRange] = useState<[number, number]>([0, 1000]); // Default stock range
+    const [priceRange, setPriceRange] = useState<[number, number]>([0, 5000]);
+    const [stockRange, setStockRange] = useState<[number, number]>([0, 100]);
 
     const toggleCategory = (categoryId: number) => {
         setSelectedCategories((prev) =>
@@ -46,6 +47,38 @@ export default function Body({
                 ? prev.filter((id) => id !== brandId)
                 : [...prev, brandId]
         );
+    };
+
+    const handlePriceInputChange = (index: 0 | 1, value: string) => {
+        const numValue = parseInt(value) || 0;
+        const clampedValue = Math.max(0, Math.min(5000, numValue));
+        const newRange: [number, number] = [...priceRange] as [number, number];
+        newRange[index] = clampedValue;
+
+        // Ensure min doesn't exceed max and vice versa
+        if (index === 0 && clampedValue > priceRange[1]) {
+            newRange[1] = clampedValue;
+        } else if (index === 1 && clampedValue < priceRange[0]) {
+            newRange[0] = clampedValue;
+        }
+
+        setPriceRange(newRange);
+    };
+
+    const handleStockInputChange = (index: 0 | 1, value: string) => {
+        const numValue = parseInt(value) || 0;
+        const clampedValue = Math.max(0, Math.min(100, numValue));
+        const newRange: [number, number] = [...stockRange] as [number, number];
+        newRange[index] = clampedValue;
+
+        // Ensure min doesn't exceed max and vice versa
+        if (index === 0 && clampedValue > stockRange[1]) {
+            newRange[1] = clampedValue;
+        } else if (index === 1 && clampedValue < stockRange[0]) {
+            newRange[0] = clampedValue;
+        }
+
+        setStockRange(newRange);
     };
 
     const displayedProducts = filteredProducts.filter((product) => {
@@ -75,16 +108,44 @@ export default function Body({
                             <hr className="w-2/3 border border-black" />
                         </h4>
                         <div className="flex flex-col gap-2">
-                            <label className="text-sm">
-                                €{priceRange[0]} - €{priceRange[1]}
-                            </label>
+                            <div className="flex items-center gap-2">
+                                <Input
+                                    type="number"
+                                    value={priceRange[0]}
+                                    onChange={(e) =>
+                                        handlePriceInputChange(
+                                            0,
+                                            e.target.value
+                                        )
+                                    }
+                                    min={0}
+                                    max={5000}
+                                    className="w-20 text-sm"
+                                    placeholder="Min"
+                                />
+                                <span className="text-sm">-</span>
+                                <Input
+                                    type="number"
+                                    value={priceRange[1]}
+                                    onChange={(e) =>
+                                        handlePriceInputChange(
+                                            1,
+                                            e.target.value
+                                        )
+                                    }
+                                    min={0}
+                                    max={5000}
+                                    className="w-20 text-sm"
+                                    placeholder="Max"
+                                />
+                            </div>
                             <Slider
                                 value={priceRange}
                                 onValueChange={(values) =>
                                     setPriceRange([values[0], values[1]])
                                 }
                                 min={0}
-                                max={9999}
+                                max={5000}
                                 step={10}
                                 className="w-full"
                             />
@@ -98,16 +159,44 @@ export default function Body({
                             <hr className="w-2/3 border border-black" />
                         </h4>
                         <div className="flex flex-col gap-2">
-                            <label className="text-sm">
-                                {stockRange[0]} - {stockRange[1]} stuks
-                            </label>
+                            <div className="flex items-center gap-2">
+                                <Input
+                                    type="number"
+                                    value={stockRange[0]}
+                                    onChange={(e) =>
+                                        handleStockInputChange(
+                                            0,
+                                            e.target.value
+                                        )
+                                    }
+                                    min={0}
+                                    max={100}
+                                    className="w-20 text-sm"
+                                    placeholder="Min"
+                                />
+                                <span className="text-sm">-</span>
+                                <Input
+                                    type="number"
+                                    value={stockRange[1]}
+                                    onChange={(e) =>
+                                        handleStockInputChange(
+                                            1,
+                                            e.target.value
+                                        )
+                                    }
+                                    min={0}
+                                    max={100}
+                                    className="w-20 text-sm"
+                                    placeholder="Max"
+                                />
+                            </div>
                             <Slider
                                 value={stockRange}
                                 onValueChange={(values) =>
                                     setStockRange([values[0], values[1]])
                                 }
                                 min={0}
-                                max={1000}
+                                max={100}
                                 step={1}
                                 className="w-full"
                             />

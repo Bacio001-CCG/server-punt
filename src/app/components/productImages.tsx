@@ -45,18 +45,20 @@ export default function ProductImages({
                     />
                 </div>
                 {noneMainImagesUrl &&
-                    other.map((url: string, index: number) => (
-                        <div key={index} className="w-[100px] h-[100px]">
-                            <Image
-                                onClick={() => setSelected(url)}
-                                height={100}
-                                width={100}
-                                src={url || "/placeholder.png"}
-                                alt={`Thumbnail ${index + 1}`}
-                                className="w-full h-full object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
-                            />
-                        </div>
-                    ))}
+                    other
+                        .filter((url: string) => url != "")
+                        .map((url: string, index: number) => (
+                            <div key={index} className="w-[100px] h-[100px]">
+                                <Image
+                                    onClick={() => setSelected(url)}
+                                    height={100}
+                                    width={100}
+                                    src={url || "/placeholder.png"}
+                                    alt={`Thumbnail ${index + 1}`}
+                                    className="w-full h-full object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+                                />
+                            </div>
+                        ))}
             </div>
         </div>
     );
