@@ -48,11 +48,13 @@ export default create<CartState>()(
                             (product) =>
                                 product.id === id &&
                                 (configSignature
-                                    ? product.configSignature === configSignature
+                                    ? product.configSignature ===
+                                      configSignature
                                     : true)
                         );
 
-                        if (indexToRemove === -1) return { products: currentProducts };
+                        if (indexToRemove === -1)
+                            return { products: currentProducts };
 
                         const newProducts = [...currentProducts];
                         newProducts.splice(indexToRemove, 1);
@@ -76,7 +78,9 @@ export default create<CartState>()(
                 getTotalPrice: () => {
                     const currentProducts = get().products;
                     return currentProducts.reduce((total, product) => {
-                        const configuredTotal = (product.configuredItems || []).reduce(
+                        const configuredTotal = (
+                            product.configuredItems || []
+                        ).reduce(
                             (subTotal, item) =>
                                 subTotal + item.product.price * item.quantity,
                             0
@@ -89,23 +93,29 @@ export default create<CartState>()(
                     const VAT_RATE = 0.21;
 
                     return currentProducts.reduce((total, product) => {
-                        const configuredTotal = (product.configuredItems || []).reduce(
+                        const configuredTotal = (
+                            product.configuredItems || []
+                        ).reduce(
                             (subTotal, item) =>
                                 subTotal + item.product.price * item.quantity,
                             0
                         );
                         const lineTotal = product.price + configuredTotal;
-                        return (total + lineTotal * VAT_RATE) + get().getShippingCost() * VAT_RATE;
+                        return (
+                            total +
+                            lineTotal * VAT_RATE +
+                            get().getShippingCost() * VAT_RATE
+                        );
                     }, 0);
                 },
                 getShippingCost: () => {
                     const currentProducts = get().products;
 
                     const serversCount = currentProducts.filter(
-                        (item) => item.categoryId === 7
+                        (item) => item.categoryId === 1
                     ).length;
                     const smallProductsCount = currentProducts.reduce(
-                        (acc, item) => (item.categoryId !== 7 ? acc + 1 : acc),
+                        (acc, item) => (item.categoryId !== 1 ? acc + 1 : acc),
                         0
                     );
 
@@ -132,11 +142,16 @@ export default create<CartState>()(
                 getGroupedProducts: () => {
                     const currentProducts = get().products;
                     const groupedProducts: {
-                        [key: string]: { product: CartProduct; quantity: number };
+                        [key: string]: {
+                            product: CartProduct;
+                            quantity: number;
+                        };
                     } = {};
 
                     currentProducts.forEach((product) => {
-                        const key = `${product.id}-${product.configSignature ?? "base"}`;
+                        const key = `${product.id}-${
+                            product.configSignature ?? "base"
+                        }`;
                         if (groupedProducts[key]) {
                             groupedProducts[key].quantity += 1;
                         } else {
