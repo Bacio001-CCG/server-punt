@@ -66,7 +66,7 @@ export default function Hero() {
                                     Bekijk ons aanbod <MdArrowDownward />
                                 </button>
                             </Link>
-                            <Link href="/contact">
+                            <Link href="/about-us#contact">
                                 <button
                                     className="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 rounded-md has-[&gt;svg]:px-4 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground hover:shadow-md focus-visible:ring-2 focus-visible:ring-accent/40 dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-12 px-8 transition-colors duration-200"
                                     data-slot="button"

@@ -142,7 +142,7 @@ export default function AboutUs() {
                     </section>
 
                     {/* Contact */}
-                    <section className="mt-12 text-center">
+                    <section className="mt-12 text-center" id="contact">
                         <h3 className="text-xl font-bold mb-4">
                             Vragen of advies nodig?
                         </h3>

@@ -22,7 +22,7 @@ function NextArrow(props: any) {
                 right: "-40px",
                 zIndex: 10,
                 cursor: "pointer",
-                color: "black", // Changed to black
+                color: "black",
             }}
         ></div>
     );
@@ -72,48 +72,44 @@ export default function Featured() {
         autoplaySpeed: 3000,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1536,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
                 },
             },
             {
-                breakpoint: 768,
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
                 },
             },
             {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
                 },
             },
         ],
     };
 
     return (
-        <section
-            id="featured"
-            className="
-            py-12
-            md:py-16
-          "
-        >
-            <div
-                className="
-              container mx-auto max-w-7xl px-4
-              sm:px-6
-              lg:px-8
-            "
-            >
+        <section id="featured" className="py-12 md:py-16">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-8 flex flex-col items-center text-center">
-                    <h2
-                        className="
-                  font-display text-3xl leading-tight font-bold tracking-tight
-                  md:text-4xl
-                "
-                    >
+                    <h2 className="font-display text-3xl leading-tight font-bold tracking-tight md:text-4xl">
                         Meest Verkocht
                     </h2>
                     <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
@@ -122,19 +118,32 @@ export default function Featured() {
                         vanwege hun betrouwbaarheid en prestaties.
                     </p>
                 </div>
-                <Slider className="h-[335px]" {...settings}>
-                    {products.map((product: SelectProduct) => (
-                        <div key={product.name + product.id} className="px-4">
-                            <Card
-                                name={product.name}
-                                image={product.imageUrl || "/placeholder.png"}
-                                href={`/product/${product.id}`}
-                                price={product.price.toFixed(2)}
-                                stock={product.quantityInStock}
-                            />
-                        </div>
-                    ))}
-                </Slider>
+                <div className="relative mx-auto max-w-6xl">
+                    <Slider
+                        className="h-[350px] sm:h-[380px] md:h-[400px]"
+                        {...settings}
+                    >
+                        {products.map((product: SelectProduct) => (
+                            <div
+                                key={product.name + product.id}
+                                className="px-2"
+                            >
+                                <div className="mx-auto max-w-[280px]">
+                                    <Card
+                                        name={product.name}
+                                        image={
+                                            product.imageUrl ||
+                                            "/placeholder.png"
+                                        }
+                                        href={`/product/${product.id}`}
+                                        price={product.price.toFixed(2)}
+                                        stock={product.quantityInStock}
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </section>
     );

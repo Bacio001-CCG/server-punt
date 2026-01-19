@@ -1,19 +1,20 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation"; // Import usePathname
+import { usePathname } from "next/navigation";
 import Cart from "./cart";
 import useCart from "@/hooks/useCart";
 import { SelectBrand, SelectCategory } from "@/database/schema";
 import { getCategories } from "@/lib/categories";
 import { getBrands } from "@/lib/brands";
+import Image from "next/image";
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     const { products } = useCart();
     const [categories, setCategories] = useState<SelectCategory[]>([]);
     const [brands, setBrands] = useState<SelectBrand[]>([]);
-    const pathname = usePathname(); // Use the hook to get the current pathname
+    const pathname = usePathname();
 
     useEffect(() => {
         async function fetchCategories() {
@@ -35,7 +36,13 @@ export default function Nav() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center gap-6">
-                        <Link className="flex items-center gap-2" href="/">
+                        <Link className="flex items-center" href="/">
+                            <Image
+                                src="/logo.png"
+                                width={60}
+                                height={60}
+                                alt="Logo"
+                            />
                             <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text tracking-tight text-transparent">
                                 ServerPunt
                             </span>

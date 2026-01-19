@@ -39,7 +39,7 @@ export default function Featured() {
                 </div>
                 <div
                     className="
-                grid grid-cols-3 gap-4
+                grid grid-cols-2 gap-4
                 md:grid-cols-6 md:gap-6
               "
                 >
