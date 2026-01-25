@@ -19,9 +19,9 @@ export default function ProductImages({
     });
 
     return (
-        <div className="w-full md:w-1/2 px-4 mb-8">
+        <div className="w-full  px-4 mb-8">
             {/* Main Image */}
-            <div className="w-[400px] h-[400px] mx-auto">
+            <div className=" mx-auto">
                 <Image
                     height={400}
                     width={400}

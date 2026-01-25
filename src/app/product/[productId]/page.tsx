@@ -11,7 +11,6 @@ export default async function Product({
     const product = await getProduct(parseInt(productId));
     const linkedProducts = await getProductLinkedItems(parseInt(productId));
     const categories = await getCategories();
-
     if (!product) {
         return <div>Product niet gevonden.</div>;
     }

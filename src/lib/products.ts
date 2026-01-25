@@ -99,7 +99,10 @@ export async function getProducts(
     }
 }
 
-export async function getProduct(id: number): Promise<SelectProduct | null> {
+export async function getProduct(
+    id: number,
+    showHidden = false
+): Promise<SelectProduct | null> {
     try {
         // Validate the ID parameter
         const { id: validatedId } = getProductSchema.parse({ id });
@@ -107,12 +110,11 @@ export async function getProduct(id: number): Promise<SelectProduct | null> {
         const [product] = await db
             .select()
             .from(productsTable)
-            .where(
-                and(
-                    eq(productsTable.id, validatedId),
-                    eq(productsTable.hidden, false)
-                )
-            );
+            .where(and(eq(productsTable.id, validatedId)));
+
+        if (!showHidden && product?.hidden) {
+            return null;
+        }
 
         return product || null;
     } catch (error) {
@@ -142,7 +144,7 @@ export async function getProductLinkedItems(
         const transformedItems = [] as Array<ProductWithLinkedItems>;
 
         for (const item of configItems) {
-            const linkedProduct = await getProduct(item.linkedProductId);
+            const linkedProduct = await getProduct(item.linkedProductId, true);
             transformedItems.push({
                 ...item,
                 product: linkedProduct,
