@@ -287,7 +287,6 @@ flex flex-col items-center
                                                                                     ".",
                                                                                     ","
                                                                                 )}{" "}
-                                                                            e.a.
                                                                         </button>
                                                                     </div>
                                                                     {selectedProducts.includes(
