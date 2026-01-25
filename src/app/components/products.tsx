@@ -3,9 +3,9 @@ import Card from "./card";
 import Link from "next/link";
 import { getProducts } from "@/lib/products";
 
-const { products = [] } = (await getProducts(24)) || {};
+export default async function Featured() {
+    const { products = [] } = (await getProducts(24)) || {};
 
-export default function Featured() {
     return (
         <section
             id="products"
@@ -46,7 +46,7 @@ export default function Featured() {
                     {Array.isArray(products) &&
                         products.map((product) => (
                             <Card
-                                key={product.name}
+                                key={product.name + product.id}
                                 name={product.name}
                                 image={product.imageUrl || "/placeholder.png"}
                                 href={`/product/${product.id}`}

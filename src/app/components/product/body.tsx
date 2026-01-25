@@ -104,10 +104,10 @@ flex flex-col items-center
                             <h2 className="text-3xl font-bold mb-2">
                                 {product.name}
                             </h2>
-                            <p className="text-gray-700 mb-6">
+                            <p className="text-gray-700 mb-6 whitespace-pre-wrap">
                                 {product.description}
                             </p>
-                            <p className="text-gray-700 mb-6">
+                            <p className="text-gray-700 mb-6 whitespace-pre-wrap">
                                 {product.configuration}
                             </p>
                             <div className="flex flex-col gap-5 mb-5">

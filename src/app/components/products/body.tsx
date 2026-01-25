@@ -81,20 +81,30 @@ export default function Body({
         setStockRange(newRange);
     };
 
-    const displayedProducts = filteredProducts.filter((product) => {
-        const matchesCategory =
-            selectedCategories.length === 0 ||
-            selectedCategories.includes(product.categoryId);
-        const matchesBrand =
-            selectedBrands.length === 0 ||
-            selectedBrands.includes(product.brandId);
-        const matchesPrice =
-            product.price >= priceRange[0] && product.price <= priceRange[1];
-        const matchesStock =
-            product.quantityInStock >= stockRange[0] &&
-            product.quantityInStock <= stockRange[1];
-        return matchesCategory && matchesBrand && matchesPrice && matchesStock;
-    });
+    const displayedProducts = filteredProducts
+        .filter((product) => {
+            const matchesCategory =
+                selectedCategories.length === 0 ||
+                selectedCategories.includes(product.categoryId);
+            const matchesBrand =
+                selectedBrands.length === 0 ||
+                selectedBrands.includes(product.brandId);
+            const matchesPrice =
+                product.price >= priceRange[0] &&
+                product.price <= priceRange[1];
+            const matchesStock =
+                product.quantityInStock >= stockRange[0] &&
+                product.quantityInStock <= stockRange[1];
+            return (
+                matchesCategory && matchesBrand && matchesPrice && matchesStock
+            );
+        })
+        .sort((a, b) => {
+            if (a.categoryId !== b.categoryId) {
+                return a.categoryId - b.categoryId;
+            }
+            return a.name.localeCompare(b.name);
+        });
 
     return (
         <section className="py-12 md:py-16 flex flex-col items-center">
@@ -210,30 +220,34 @@ export default function Body({
                             <hr className="w-2/3 border border-black" />
                         </h4>
                         <ul className="space-y-2">
-                            {categories.map((category) => (
-                                <li
-                                    key={category.id}
-                                    className="flex gap-3"
-                                    onClick={() => toggleCategory(category.id)}
-                                >
-                                    <Checkbox
-                                        checked={selectedCategories.includes(
-                                            category.id
-                                        )}
-                                    />{" "}
-                                    <button
-                                        className={`text-sm ${
-                                            selectedCategories.includes(
-                                                category.id
-                                            )
-                                                ? "text-primary font-bold"
-                                                : "text-muted-foreground"
-                                        }`}
+                            {categories
+                                .filter((c) => c.name.toLowerCase() != "ram")
+                                .map((category) => (
+                                    <li
+                                        key={category.id}
+                                        className="flex gap-3"
+                                        onClick={() =>
+                                            toggleCategory(category.id)
+                                        }
                                     >
-                                        {category.name}
-                                    </button>
-                                </li>
-                            ))}
+                                        <Checkbox
+                                            checked={selectedCategories.includes(
+                                                category.id
+                                            )}
+                                        />{" "}
+                                        <button
+                                            className={`text-sm ${
+                                                selectedCategories.includes(
+                                                    category.id
+                                                )
+                                                    ? "text-primary font-bold"
+                                                    : "text-muted-foreground"
+                                            }`}
+                                        >
+                                            {category.name}
+                                        </button>
+                                    </li>
+                                ))}
                         </ul>
                     </div>
 
