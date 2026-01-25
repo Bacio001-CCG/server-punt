@@ -21,13 +21,13 @@ export default function ProductImages({
     return (
         <div className="w-full  px-4 mb-8">
             {/* Main Image */}
-            <div className=" mx-auto">
+            <div className=" mx-auto max-h-[500px]">
                 <Image
                     height={400}
                     width={400}
                     src={selected || "/placeholder.png"}
                     alt="Product"
-                    className="w-full h-full object-contain rounded-lg shadow-md"
+                    className="w-full h-full object-contain rounded-lg shadow-md max-h-[500px]"
                     id="mainImage"
                 />
             </div>
