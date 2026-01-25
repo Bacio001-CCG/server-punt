@@ -35,14 +35,32 @@ export default function Body({
         window.scrollTo(0, 0);
     }, []);
 
-    const toggleProductSelection = (productId: number) => {
+    const toggleProductSelection = (productId: number, categoryId: number) => {
         setSelectedProducts((prev) => {
-            if (prev.includes(productId)) {
+            // Find if there's already a selected product from the same category
+            const selectedInCategory = prev.find((id) => {
+                const linkedProduct = linkedProducts.find((lp) => lp.id === id);
+                return linkedProduct?.product?.categoryId === categoryId;
+            });
+
+            if (selectedInCategory === productId) {
+                // If clicking the same product, deselect it
                 const newQuantities = { ...quantities };
                 delete newQuantities[productId];
                 setQuantities(newQuantities);
                 return prev.filter((id) => id !== productId);
+            } else if (selectedInCategory) {
+                // If there's a different product selected in this category, replace it
+                const newQuantities = { ...quantities };
+                delete newQuantities[selectedInCategory];
+                newQuantities[productId] = 1;
+                setQuantities(newQuantities);
+                return [
+                    ...prev.filter((id) => id !== selectedInCategory),
+                    productId,
+                ];
             } else {
+                // No product selected in this category, add it
                 setQuantities({ ...quantities, [productId]: 1 });
                 return [...prev, productId];
             }
@@ -228,7 +246,8 @@ flex flex-col items-center
                                                                         className="flex gap-3 cursor-pointer items-center flex-1"
                                                                         onClick={() =>
                                                                             toggleProductSelection(
-                                                                                l.id
+                                                                                l.id,
+                                                                                c.id
                                                                             )
                                                                         }
                                                                     >
@@ -252,7 +271,7 @@ flex flex-col items-center
                                                                                     .product
                                                                                     ?.name
                                                                             }{" "}
-                                                                            - $
+                                                                            - €
                                                                             {parseFloat(
                                                                                 String(
                                                                                     l
@@ -260,9 +279,14 @@ flex flex-col items-center
                                                                                         ?.price
                                                                                 ) ??
                                                                                     "0"
-                                                                            ).toFixed(
-                                                                                2
-                                                                            )}{" "}
+                                                                            )
+                                                                                .toFixed(
+                                                                                    2
+                                                                                )
+                                                                                .replace(
+                                                                                    ".",
+                                                                                    ","
+                                                                                )}{" "}
                                                                             e.a.
                                                                         </button>
                                                                     </div>
