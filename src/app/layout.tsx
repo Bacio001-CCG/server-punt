@@ -16,21 +16,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Server Punt - Betaalbare Servers en Componenten | Refurbished Hardware Nederland",
+    title: "ServerPunt - Betaalbare Servers en Componenten | Refurbished Hardware Nederland",
     description:
-        "Koop refurbished servers, servercomponenten en IT-hardware bij Server Punt. Scherpe prijzen, hoogste kwaliteit. Dell, HP, IBM servers en meer. Gratis verzending vanaf €50.",
+        "Koop refurbished servers, servercomponenten en IT-hardware bij ServerPunt. Scherpe prijzen, hoogste kwaliteit. Dell, HP, IBM servers en meer. Gratis verzending vanaf €50.",
     keywords:
         "refurbished servers, server componenten, dell servers, hp servers, ibm servers, serveronderdelen, it hardware, nederland, goedkope servers, enterprise hardware",
-    authors: [{ name: "Server Punt" }],
-    creator: "Server Punt",
-    publisher: "Server Punt",
+    authors: [{ name: "ServerPunt" }],
+    creator: "ServerPunt",
+    publisher: "ServerPunt",
     robots: "index, follow",
     openGraph: {
         type: "website",
         locale: "nl_NL",
         url: "https://serverpunt.com",
-        siteName: "Server Punt",
-        title: "Server Punt - Betaalbare Refurbished Servers en Componenten",
+        siteName: "ServerPunt",
+        title: "ServerPunt - Betaalbare Refurbished Servers en Componenten",
         description:
             "Specialist in refurbished servers en IT-hardware. Dell, HP, IBM servers en componenten tegen scherpe prijzen. Betrouwbaar en snel geleverd.",
         images: [
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
                 url: "/logo.png",
                 width: 1200,
                 height: 630,
-                alt: "Server Punt - Refurbished Servers en Componenten",
+                alt: "ServerPunt - Refurbished Servers en Componenten",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Server Punt - Betaalbare Refurbished Servers",
+        title: "ServerPunt - Betaalbare Refurbished Servers",
         description:
             "Specialist in refurbished servers en IT-hardware tegen scherpe prijzen.",
         images: ["/logo.png"],
@@ -86,7 +86,7 @@ export default function RootLayout({
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
                             "@type": "Organization",
-                            name: "Server Punt",
+                            name: "ServerPunt",
                             description:
                                 "Specialist in refurbished servers en IT-hardware",
                             url: "https://serverpunt.com",

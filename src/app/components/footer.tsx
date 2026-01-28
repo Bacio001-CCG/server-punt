@@ -16,12 +16,12 @@ export default function Footer() {
                     className="mr-1"
                     alt="Landwind Logo"
                 />
-                Server Punt
+                ServerPunt
             </Link>
 
             <span className="block text-sm text-center text-gray-500">
-                © 2025 Server Punt. All Rights Reserved. -{" "}
-                <Link href={"/tos"}>Algemeene Voorwaarden</Link>
+                © {new Date().getFullYear()} ServerPunt VOF. All Rights
+                Reserved. - <Link href={"/tos"}>Algemeene Voorwaarden</Link>
             </span>
 
             <ul className="flex justify-center mt-5 space-x-5">

@@ -30,6 +30,7 @@ export default function Body({
     const [selectedProducts, setSelectedProducts] = useState<number[]>([]);
     const [quantities, setQuantities] = useState<{ [key: number]: number }>({});
     const [isSpecsOpen, setIsSpecsOpen] = useState(false);
+    const [mainProductQuantity, setMainProductQuantity] = useState(1);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -37,20 +38,17 @@ export default function Body({
 
     const toggleProductSelection = (productId: number, categoryId: number) => {
         setSelectedProducts((prev) => {
-            // Find if there's already a selected product from the same category
             const selectedInCategory = prev.find((id) => {
                 const linkedProduct = linkedProducts.find((lp) => lp.id === id);
                 return linkedProduct?.product?.categoryId === categoryId;
             });
 
             if (selectedInCategory === productId) {
-                // If clicking the same product, deselect it
                 const newQuantities = { ...quantities };
                 delete newQuantities[productId];
                 setQuantities(newQuantities);
                 return prev.filter((id) => id !== productId);
             } else if (selectedInCategory) {
-                // If there's a different product selected in this category, replace it
                 const newQuantities = { ...quantities };
                 delete newQuantities[selectedInCategory];
                 newQuantities[productId] = 1;
@@ -60,7 +58,6 @@ export default function Body({
                     productId,
                 ];
             } else {
-                // No product selected in this category, add it
                 setQuantities({ ...quantities, [productId]: 1 });
                 return [...prev, productId];
             }
@@ -70,6 +67,12 @@ export default function Body({
     const updateQuantity = (productId: number, quantity: number) => {
         if (quantity > 0) {
             setQuantities({ ...quantities, [productId]: quantity });
+        }
+    };
+
+    const updateMainProductQuantity = (quantity: number) => {
+        if (quantity > 0 && quantity <= product.quantityInStock) {
+            setMainProductQuantity(quantity);
         }
     };
 
@@ -90,7 +93,8 @@ export default function Body({
             getSelectedProductsDetails().reduce(
                 (total, item) => total + item.price * item.quantity,
                 0
-            ) + product.price
+            ) +
+            product.price * mainProductQuantity
         );
     };
 
@@ -195,9 +199,12 @@ flex flex-col items-center
                             </div>
                         </div>
                         <div className="flex flex-col gap-5 w-1/3">
-                            <h2 className="text-3xl font-bold mb-4">
-                                {product.name}
-                            </h2>
+                            <div className="flex flex-col gap-3">
+                                <h2 className="text-3xl font-bold">
+                                    {product.name}
+                                </h2>
+                            </div>
+
                             {linkedProducts.length != 0 && (
                                 <div className="flex flex-col gap-5 mb-6">
                                     <div className="flex flex-col gap-2">
@@ -286,7 +293,17 @@ flex flex-col items-center
                                                                                 .replace(
                                                                                     ".",
                                                                                     ","
-                                                                                )}{" "}
+                                                                                )}
+                                                                            {
+                                                                                " - "
+                                                                            }
+                                                                            {
+                                                                                l
+                                                                                    .product
+                                                                                    ?.quantityInStock
+                                                                            }{" "}
+                                                                            in
+                                                                            voorraad
                                                                         </button>
                                                                     </div>
                                                                     {selectedProducts.includes(
@@ -386,15 +403,70 @@ flex flex-col items-center
                                     })}
                                 </div>
                             )}
-
+                            <div className="flex flex-col gap-2 p-4 bg-gray-50 rounded-lg">
+                                <div className="flex justify-between items-center">
+                                    <span className="font-semibold text-sm">
+                                        Aantal basisproduct:
+                                    </span>
+                                    <div className="flex gap-2 items-center">
+                                        <button
+                                            onClick={() =>
+                                                updateMainProductQuantity(
+                                                    mainProductQuantity - 1
+                                                )
+                                            }
+                                            disabled={mainProductQuantity === 1}
+                                            className="px-3 py-1 bg-white border border-gray-300 hover:bg-gray-100 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+                                        >
+                                            -
+                                        </button>
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            max={product.quantityInStock}
+                                            value={mainProductQuantity}
+                                            onChange={(e) =>
+                                                updateMainProductQuantity(
+                                                    parseInt(e.target.value) ||
+                                                        1
+                                                )
+                                            }
+                                            className="w-16 px-2 py-1 border border-gray-300 rounded text-center"
+                                        />
+                                        <button
+                                            onClick={() =>
+                                                updateMainProductQuantity(
+                                                    mainProductQuantity + 1
+                                                )
+                                            }
+                                            disabled={
+                                                mainProductQuantity >=
+                                                product.quantityInStock
+                                            }
+                                            className="px-3 py-1 bg-white border border-gray-300 hover:bg-gray-100 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+                                        >
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                                <span className="text-xs text-gray-600">
+                                    {product.quantityInStock} stuks beschikbaar
+                                </span>
+                            </div>
                             <div className="mb-6">
                                 <ul className="space-y-2 mb-4">
                                     <li className="flex justify-between text-sm">
-                                        <span>{product.name}</span>
+                                        <span>
+                                            {product.name} x{" "}
+                                            {mainProductQuantity}
+                                        </span>
                                         <div className="text-right">
                                             <div className="font-semibold">
                                                 €
-                                                {product.price
+                                                {(
+                                                    product.price *
+                                                    mainProductQuantity
+                                                )
                                                     .toFixed(2)
                                                     .replace(".", ",")}{" "}
                                                 Excl. BTW
@@ -402,7 +474,8 @@ flex flex-col items-center
                                             <div className="text-xs text-gray-600">
                                                 €
                                                 {calculateTotalWithVAT(
-                                                    product.price
+                                                    product.price *
+                                                        mainProductQuantity
                                                 )
                                                     .toFixed(2)
                                                     .replace(".", ",")}{" "}
@@ -454,7 +527,7 @@ flex flex-col items-center
                                 </ul>
                                 <div className="pt-4 border-t border-gray-300 flex justify-between">
                                     <span className="text-lg font-bold">
-                                        Total:
+                                        Totaal:
                                     </span>
                                     <div className="text-right">
                                         <div className="text-lg font-bold text-primary">
@@ -480,6 +553,7 @@ flex flex-col items-center
                             <AddProduct
                                 product={product}
                                 configuredProducts={getConfiguredProducts()}
+                                mainProductQuantity={mainProductQuantity}
                             />
 
                             <Link href="/tos" className="w-full">

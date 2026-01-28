@@ -2,6 +2,7 @@ import { getProducts } from "@/lib/products";
 import { getCategories } from "@/lib/categories";
 import { getBrands } from "@/lib/brands";
 import Body from "../components/products/body";
+import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -160,10 +161,15 @@ export default function AboutUs() {
                                     info@serverpunt.com
                                 </a>
                             </p>
-                            <p>
+                            <Link
+                                href={
+                                    "https://www.google.com/maps/place/Kraaivenstraat+36-07,+5048+AB+Tilburg/@51.5796486,5.0626722,711m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47c695f37fcf8407:0xbedb945330efcde3!8m2!3d51.5796453!4d5.0652471!16s%2Fg%2F11mcfvxcp2?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoASAFQAw%3D%3D"
+                                }
+                                className="text-primary hover:underline"
+                            >
                                 <strong>Adres:</strong> Kraaivenstraat 36-07,
                                 5048 AB Tilburg
-                            </p>
+                            </Link>
                         </div>
                     </section>
                 </div>

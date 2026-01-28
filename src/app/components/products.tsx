@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getProducts } from "@/lib/products";
 
 export default async function Featured() {
-    const { products = [] } = (await getProducts(24)) || {};
+    const { products = [] } = (await getProducts(18)) || {};
 
     return (
         <section

@@ -37,8 +37,8 @@ export async function POST(request: Request) {
                             sourceReference: paymentId,
                         },
                         emailDetails: {
-                            subject: `Factuur ${response.data.metadata.invoiceNumber} betaald - Server Punt`,
-                            body: `Beste klant,\n\nWe hebben uw betaling voor factuur ${response.data.metadata.invoiceNumber} succesvol ontvangen. Hartelijk dank voor uw aankoop bij Server Punt!\n\nMet vriendelijke groet,\nServer Punt`,
+                            subject: `Factuur ${response.data.metadata.invoiceNumber} betaald - ServerPunt`,
+                            body: `Beste klant,\n\nWe hebben uw betaling voor factuur ${response.data.metadata.invoiceNumber} succesvol ontvangen. Hartelijk dank voor uw aankoop bij ServerPunt!\n\nMet vriendelijke groet,\nServerPunt`,
                         },
                     },
                     {
@@ -70,23 +70,32 @@ export async function POST(request: Request) {
 
                     // Reduce stock for each product
                     for (const item of orderItems) {
-                        console.log(`Processing item: productId=${item.productId}, quantity=${item.quantity}`);
+                        console.log(
+                            `Processing item: productId=${item.productId}, quantity=${item.quantity}`
+                        );
 
                         // Get current product stock
                         const product = await db
-                            .select({ quantityInStock: productsTable.quantityInStock })
+                            .select({
+                                quantityInStock: productsTable.quantityInStock,
+                            })
                             .from(productsTable)
                             .where(eq(productsTable.id, item.productId))
                             .limit(1);
 
-                        console.log(`Current stock for product ${item.productId}:`, product);
+                        console.log(
+                            `Current stock for product ${item.productId}:`,
+                            product
+                        );
 
                         if (product.length > 0) {
                             const newStock = Math.max(
                                 0,
                                 product[0].quantityInStock - item.quantity
                             );
-                            console.log(`Updating stock from ${product[0].quantityInStock} to ${newStock}`);
+                            console.log(
+                                `Updating stock from ${product[0].quantityInStock} to ${newStock}`
+                            );
 
                             // Update main product stock
                             await db
@@ -94,7 +103,9 @@ export async function POST(request: Request) {
                                 .set({ quantityInStock: newStock })
                                 .where(eq(productsTable.id, item.productId));
 
-                            console.log(`Stock updated for product ${item.productId}`);
+                            console.log(
+                                `Stock updated for product ${item.productId}`
+                            );
                         }
 
                         // Get and reduce stock for configured items
@@ -108,30 +119,50 @@ export async function POST(request: Request) {
                                 )
                             );
 
-                        console.log(`Configured items found:`, configuredItems.length);
+                        console.log(
+                            `Configured items found:`,
+                            configuredItems.length
+                        );
 
                         for (const configItem of configuredItems) {
-                            console.log(`Processing configured item: productId=${configItem.productId}, quantity=${configItem.quantity}`);
+                            console.log(
+                                `Processing configured item: productId=${configItem.productId}, quantity=${configItem.quantity}`
+                            );
 
                             const configProduct = await db
-                                .select({ quantityInStock: productsTable.quantityInStock })
+                                .select({
+                                    quantityInStock:
+                                        productsTable.quantityInStock,
+                                })
                                 .from(productsTable)
-                                .where(eq(productsTable.id, configItem.productId))
+                                .where(
+                                    eq(productsTable.id, configItem.productId)
+                                )
                                 .limit(1);
 
                             if (configProduct.length > 0) {
                                 const newConfigStock = Math.max(
                                     0,
-                                    configProduct[0].quantityInStock - configItem.quantity
+                                    configProduct[0].quantityInStock -
+                                        configItem.quantity
                                 );
-                                console.log(`Updating configured stock from ${configProduct[0].quantityInStock} to ${newConfigStock}`);
+                                console.log(
+                                    `Updating configured stock from ${configProduct[0].quantityInStock} to ${newConfigStock}`
+                                );
 
                                 await db
                                     .update(productsTable)
                                     .set({ quantityInStock: newConfigStock })
-                                    .where(eq(productsTable.id, configItem.productId));
+                                    .where(
+                                        eq(
+                                            productsTable.id,
+                                            configItem.productId
+                                        )
+                                    );
 
-                                console.log(`Configured stock updated for product ${configItem.productId}`);
+                                console.log(
+                                    `Configured stock updated for product ${configItem.productId}`
+                                );
                             }
                         }
                     }

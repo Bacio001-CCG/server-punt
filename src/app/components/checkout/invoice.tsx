@@ -57,7 +57,7 @@ export default function InvoiceAddress() {
                     type="text"
                     id="invoice.company"
                     className="block w-full border border-gray-300 rounded-md p-2 mt-1"
-                    placeholder="Server Punt"
+                    placeholder="ServerPunt"
                     name="invoice.company"
                 />
             </div>
@@ -78,7 +78,7 @@ export default function InvoiceAddress() {
                     type="text"
                     id="invoice.address"
                     className="block w-full border border-gray-300 rounded-md p-2 mt-1"
-                    placeholder="Kraaivenstraat 36"
+                    placeholder="Kraaivenstraat 36-07"
                     name="invoice.address"
                 />
             </div>
@@ -126,7 +126,16 @@ export default function InvoiceAddress() {
             >
                 Betalen (
                 {mounted ? (
-                    <>€{String((getTotalPrice() + getVatPrice() + getShippingCost()).toFixed(2)).replace(".", ",")}</>
+                    <>
+                        €
+                        {String(
+                            (
+                                getTotalPrice() +
+                                getVatPrice() +
+                                getShippingCost()
+                            ).toFixed(2)
+                        ).replace(".", ",")}
+                    </>
                 ) : (
                     "€0,00"
                 )}

@@ -11,17 +11,19 @@ type ConfiguredProduct = {
 export default function AddProduct({
     product,
     configuredProducts,
+    mainProductQuantity = 1,
 }: {
     product: SelectProduct;
     configuredProducts?: ConfiguredProduct[];
+    mainProductQuantity?: number;
 }) {
     const { addProduct } = useCart();
 
     const handleAdd = () => {
         if (configuredProducts && configuredProducts.length > 0) {
-            addProduct(product, 1, configuredProducts);
+            addProduct(product, mainProductQuantity, configuredProducts);
         } else {
-            addProduct(product, 1);
+            addProduct(product, mainProductQuantity);
         }
         toast.success("Product toegevoegd aan winkelwagen!");
     };

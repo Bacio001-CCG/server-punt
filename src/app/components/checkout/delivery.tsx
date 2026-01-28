@@ -44,7 +44,7 @@ function DeliveryPickup() {
         >
             <div>
                 <h3 className="text-lg font-semibold">
-                    Server Punt, Kraaivenstraat 36, 07 Tilburg
+                    ServerPunt, Kraaivenstraat 36, 07 Tilburg
                 </h3>
                 <p className="text-gray-500">
                     Wij zullen contact met u zoeken via email, voor verder
@@ -99,7 +99,7 @@ function DeliveryDelivery() {
                     type="text"
                     id="delivery.company"
                     className="block w-full border border-gray-300 rounded-md p-2 mt-1"
-                    placeholder="Server Punt"
+                    placeholder="ServerPunt"
                     name="delivery.company"
                 />
             </div>

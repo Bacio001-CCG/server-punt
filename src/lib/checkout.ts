@@ -181,7 +181,7 @@ export async function processCheckout(
                 .select({
                     id: productsTable.id,
                     name: productsTable.name,
-                    quantityInStock: productsTable.quantityInStock
+                    quantityInStock: productsTable.quantityInStock,
                 })
                 .from(productsTable)
                 .where(eq(productsTable.id, item.product.id))
@@ -204,14 +204,16 @@ export async function processCheckout(
                     .select({
                         id: productsTable.id,
                         name: productsTable.name,
-                        quantityInStock: productsTable.quantityInStock
+                        quantityInStock: productsTable.quantityInStock,
                     })
                     .from(productsTable)
                     .where(eq(productsTable.id, configItem.product.id))
                     .limit(1);
 
                 if (configProduct.length === 0) {
-                    throw new Error(`Configuratie product ${configItem.product.name} niet gevonden`);
+                    throw new Error(
+                        `Configuratie product ${configItem.product.name} niet gevonden`
+                    );
                 }
 
                 const totalNeeded = configItem.quantity * item.quantity;
@@ -324,19 +326,23 @@ export async function processCheckout(
                 },
                 lines: products
                     .flatMap((item) => {
-                        const configuredItems = item.product.configuredItems || [];
+                        const configuredItems =
+                            item.product.configuredItems || [];
                         const configuredTotal = configuredItems.reduce(
-                            (sum, sub) => sum + sub.product.price * sub.quantity,
+                            (sum, sub) =>
+                                sum + sub.product.price * sub.quantity,
                             0
                         );
-                        const unitPriceValue = item.product.price + configuredTotal;
+                        const unitPriceValue =
+                            item.product.price + configuredTotal;
 
                         const baseDescription = configuredItems.length
                             ? `${item.product.name} (incl. ${configuredItems
-                                .map(
-                                    (sub) => `${sub.product.name} x ${sub.quantity}`
-                                )
-                                .join(", ")})`
+                                  .map(
+                                      (sub) =>
+                                          `${sub.product.name} x ${sub.quantity}`
+                                  )
+                                  .join(", ")})`
                             : item.product.name;
 
                         const parts = splitDescription(baseDescription, 100);
@@ -346,7 +352,9 @@ export async function processCheckout(
                             quantity: idx === 0 ? item.quantity : 1,
                             unitPrice: {
                                 currency: "EUR",
-                                value: (idx === 0 ? unitPriceValue : 0).toFixed(2),
+                                value: (idx === 0 ? unitPriceValue : 0).toFixed(
+                                    2
+                                ),
                             },
                             vatRate: "21",
                         }));
@@ -373,7 +381,7 @@ export async function processCheckout(
         const response2 = await Axios.post(
             "https://api.mollie.com/v2/payments",
             {
-                description: `Factuur #${response.data.invoiceNumber} - Server Punt`,
+                description: `Factuur #${response.data.invoiceNumber} - ServerPunt`,
                 amount: {
                     value: response.data.amountDue.value,
                     currency: "EUR",
@@ -436,24 +444,27 @@ export async function processCheckout(
             } as InsertOrder)
             .returning({ id: ordersTable.id });
 
-        const orderItems = await db.insert(orderItemsTable).values(
-            products.map((item) => {
-                const configuredItems = item.product.configuredItems || [];
-                const configuredTotal = configuredItems.reduce(
-                    (sum, sub) => sum + sub.product.price * sub.quantity,
-                    0
-                );
+        const orderItems = await db
+            .insert(orderItemsTable)
+            .values(
+                products.map((item) => {
+                    const configuredItems = item.product.configuredItems || [];
+                    const configuredTotal = configuredItems.reduce(
+                        (sum, sub) => sum + sub.product.price * sub.quantity,
+                        0
+                    );
 
-                return {
-                    orderId: order[0].id,
-                    productId: item.product.id,
-                    quantity: item.quantity,
-                    unitPrice: parseFloat(
-                        (item.product.price + configuredTotal).toFixed(2)
-                    ),
-                };
-            })
-        ).returning({ id: orderItemsTable.id });
+                    return {
+                        orderId: order[0].id,
+                        productId: item.product.id,
+                        quantity: item.quantity,
+                        unitPrice: parseFloat(
+                            (item.product.price + configuredTotal).toFixed(2)
+                        ),
+                    };
+                })
+            )
+            .returning({ id: orderItemsTable.id });
 
         // Insert configured items into separate table
         for (let i = 0; i < products.length; i++) {
@@ -472,7 +483,9 @@ export async function processCheckout(
     } catch (error: any) {
         console.error((error as any)?.response?.data || error);
         throw new Error(
-            (error as any)?.response?.data?.detail || error.message || "An error occurred"
+            (error as any)?.response?.data?.detail ||
+                error.message ||
+                "An error occurred"
         );
     }
 }
