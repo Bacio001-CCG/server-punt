@@ -6,7 +6,7 @@ import {
     SelectLinkedProduct,
     SelectProduct,
 } from "@/database/schema";
-import { eq, count, ne, inArray, and } from "drizzle-orm";
+import { eq, count, ne, inArray, and, ilike, or } from "drizzle-orm";
 import { z } from "zod";
 import { writeFile } from "fs/promises";
 import { join } from "path";
@@ -272,6 +272,29 @@ export async function getProductsByCategory(
         return products;
     } catch (error) {
         console.error("Failed to fetch products by category:", error);
+        return [];
+    }
+}
+export async function searchProducts(query: string): Promise<SelectProduct[]> {
+    try {
+        const products = await db
+            .select()
+            .from(productsTable)
+            .where(
+                and(
+                    or(
+                        ilike(productsTable.name, `%${query}%`),
+                        ilike(productsTable.description, `%${query}%`),
+                        ilike(productsTable.configuration, `%${query}%`)
+                    ),
+                    eq(productsTable.hidden, false),
+                    ne(productsTable.quantityInStock, 0)
+                )
+            );
+
+        return products;
+    } catch (error) {
+        console.error("Failed to search products:", error);
         return [];
     }
 }

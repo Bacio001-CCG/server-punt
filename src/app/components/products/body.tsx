@@ -1,9 +1,10 @@
 "use client";
 import { Checkbox } from "@/components/ui/checkbox";
 import Card from "../card";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Input } from "@/components/ui/input";
+import { useSearchParams } from "next/navigation";
 
 export default function Body({
     filteredProducts,
@@ -18,6 +19,8 @@ export default function Body({
         quantityInStock: number;
         categoryId: number;
         brandId: number;
+        description: string | null;
+        configuration: string | null;
     }>;
     categories: Array<{
         id: number;
@@ -28,10 +31,35 @@ export default function Body({
         name: string;
     }>;
 }) {
+    const searchParams = useSearchParams();
+    const searchQuery = searchParams.get("search") || "";
+
     const [selectedCategories, setSelectedCategories] = useState<number[]>([]);
     const [selectedBrands, setSelectedBrands] = useState<number[]>([]);
     const [priceRange, setPriceRange] = useState<[number, number]>([0, 5000]);
     const [stockRange, setStockRange] = useState<[number, number]>([0, 100]);
+
+    // Initialize filters from URL params
+    useEffect(() => {
+        const categoriesParam = searchParams.get("categories");
+        const brandsParam = searchParams.get("brands");
+
+        if (categoriesParam) {
+            const categoryNames = categoriesParam.split(",");
+            const categoryIds = categories
+                .filter((c) => categoryNames.includes(c.name))
+                .map((c) => c.id);
+            setSelectedCategories(categoryIds);
+        }
+
+        if (brandsParam) {
+            const brandNames = brandsParam.split(",");
+            const brandIds = brands
+                .filter((b) => brandNames.includes(b.name))
+                .map((b) => b.id);
+            setSelectedBrands(brandIds);
+        }
+    }, [searchParams, categories, brands]);
 
     const toggleCategory = (categoryId: number) => {
         setSelectedCategories((prev) =>
@@ -55,7 +83,6 @@ export default function Body({
         const newRange: [number, number] = [...priceRange] as [number, number];
         newRange[index] = clampedValue;
 
-        // Ensure min doesn't exceed max and vice versa
         if (index === 0 && clampedValue > priceRange[1]) {
             newRange[1] = clampedValue;
         } else if (index === 1 && clampedValue < priceRange[0]) {
@@ -71,7 +98,6 @@ export default function Body({
         const newRange: [number, number] = [...stockRange] as [number, number];
         newRange[index] = clampedValue;
 
-        // Ensure min doesn't exceed max and vice versa
         if (index === 0 && clampedValue > stockRange[1]) {
             newRange[1] = clampedValue;
         } else if (index === 1 && clampedValue < stockRange[0]) {
@@ -95,8 +121,28 @@ export default function Body({
             const matchesStock =
                 product.quantityInStock >= stockRange[0] &&
                 product.quantityInStock <= stockRange[1];
+
+            // Search filter - check name, description, and configuration
+            const matchesSearch =
+                !searchQuery ||
+                product.name
+                    .toLowerCase()
+                    .includes(searchQuery.toLowerCase()) ||
+                (product.description &&
+                    product.description
+                        .toLowerCase()
+                        .includes(searchQuery.toLowerCase())) ||
+                (product.configuration &&
+                    product.configuration
+                        .toLowerCase()
+                        .includes(searchQuery.toLowerCase()));
+
             return (
-                matchesCategory && matchesBrand && matchesPrice && matchesStock
+                matchesCategory &&
+                matchesBrand &&
+                matchesPrice &&
+                matchesStock &&
+                matchesSearch
             );
         })
         .sort((a, b) => {
@@ -111,6 +157,21 @@ export default function Body({
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex">
                 {/* Sidebar Filter */}
                 <aside className="w-fit pr-6 flex flex-col gap-6">
+                    {/* Search Query Display */}
+                    {searchQuery && (
+                        <div className="flex flex-col gap-2 p-3 bg-primary/10 rounded-lg">
+                            <h4 className="text-sm font-semibold">
+                                Zoekresultaten voor:
+                            </h4>
+                            <p className="text-sm text-primary font-medium">
+                                "{searchQuery}"
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                                {displayedProducts.length} product(en) gevonden
+                            </p>
+                        </div>
+                    )}
+
                     {/* Price Slider */}
                     <div className="flex flex-col gap-2">
                         <h4 className="text-md font-semibold mb-2 relative w-fit">
@@ -287,31 +348,48 @@ export default function Body({
                 <div className="w-3/4">
                     <div className="mb-8 flex-col items-center text-center hidden md:flex">
                         <h2 className="font-display text-3xl leading-tight font-bold tracking-tight md:text-4xl">
-                            Onze Producten
+                            {searchQuery ? `Zoekresultaten` : "Onze Producten"}
                         </h2>
                         <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
                         <p className="mt-4 max-w-2xl text-center text-muted-foreground">
-                            Vind het perfecte apparaat voor uw behoeften uit
-                            onze zorgvuldig samengestelde collecties
+                            {searchQuery
+                                ? `${displayedProducts.length} product(en) gevonden voor "${searchQuery}"`
+                                : "Vind het perfecte apparaat voor uw behoeften uit onze zorgvuldig samengestelde collecties"}
                         </p>
                     </div>
-                    <div
-                        className="
-                        grid grid-cols-1 gap-4
-                        md:grid-cols-4 md:gap-6
-                    "
-                    >
-                        {displayedProducts.map((product) => (
-                            <Card
-                                key={product.id}
-                                name={product.name}
-                                image={product.imageUrl || "/placeholder.png"}
-                                href={`/product/${product.id}`}
-                                price={String(product.price)}
-                                stock={product.quantityInStock}
-                            />
-                        ))}
-                    </div>
+                    {displayedProducts.length === 0 ? (
+                        <div className="text-center py-12">
+                            <p className="text-lg text-muted-foreground">
+                                Geen producten gevonden.
+                            </p>
+                            {searchQuery && (
+                                <p className="text-sm text-muted-foreground mt-2">
+                                    Probeer een andere zoekterm of pas de
+                                    filters aan.
+                                </p>
+                            )}
+                        </div>
+                    ) : (
+                        <div
+                            className="
+                            grid grid-cols-1 gap-4
+                            md:grid-cols-4 md:gap-6
+                        "
+                        >
+                            {displayedProducts.map((product) => (
+                                <Card
+                                    key={product.id}
+                                    name={product.name}
+                                    image={
+                                        product.imageUrl || "/placeholder.png"
+                                    }
+                                    href={`/product/${product.id}`}
+                                    price={String(product.price)}
+                                    stock={product.quantityInStock}
+                                />
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </section>
