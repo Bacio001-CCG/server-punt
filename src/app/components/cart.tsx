@@ -88,15 +88,24 @@ export default function Cart({
                                     </p>
                                 )}
                                 {groupedProducts.map((item) => {
-                                    const configuredTotal = (item.product.configuredItems || []).reduce(
-                                        (sub, ci) => sub + ci.product.price * ci.quantity,
+                                    const configuredTotal = (
+                                        item.product.configuredItems || []
+                                    ).reduce(
+                                        (sub, ci) =>
+                                            sub +
+                                            ci.product.price * ci.quantity,
                                         0
                                     );
-                                    const unitTotal = item.product.price + configuredTotal;
+                                    const unitTotal =
+                                        item.product.price + configuredTotal;
 
                                     return (
-                                        <li
-                                            key={`${item.product.id}-${item.product.configSignature ?? "base"}`}
+                                        <Link
+                                            href={`/product/${item.product.id}`}
+                                            key={`${item.product.id}-${
+                                                item.product.configSignature ??
+                                                "base"
+                                            }`}
                                             className="flex items-start gap-4"
                                         >
                                             <Image
@@ -114,16 +123,29 @@ export default function Cart({
                                                     <h3 className="text-sm text-gray-900">
                                                         {item.product.name}
                                                     </h3>
-                                                    {item.product.configuredItems &&
-                                                        item.product.configuredItems.length > 0 && (
+                                                    {item.product
+                                                        .configuredItems &&
+                                                        item.product
+                                                            .configuredItems
+                                                            .length > 0 && (
                                                             <ul className="ml-4 list-disc text-xs text-gray-600 space-y-0.5">
-                                                                {item.product.configuredItems.map((sub) => (
-                                                                    <li
-                                                                        key={`${sub.product.id}-${sub.quantity}`}
-                                                                    >
-                                                                        {sub.product.name} x {sub.quantity}
-                                                                    </li>
-                                                                ))}
+                                                                {item.product.configuredItems.map(
+                                                                    (sub) => (
+                                                                        <li
+                                                                            key={`${sub.product.id}-${sub.quantity}`}
+                                                                        >
+                                                                            {
+                                                                                sub
+                                                                                    .product
+                                                                                    .name
+                                                                            }{" "}
+                                                                            x{" "}
+                                                                            {
+                                                                                sub.quantity
+                                                                            }
+                                                                        </li>
+                                                                    )
+                                                                )}
                                                             </ul>
                                                         )}
 
@@ -143,25 +165,32 @@ export default function Cart({
                                                             <dd className="inline">
                                                                 €
                                                                 {String(
-                                                                    (unitTotal * item.quantity).toFixed(2)
-                                                                ).replace(".", ",")} Excl. BTW
+                                                                    (
+                                                                        unitTotal *
+                                                                        item.quantity
+                                                                    ).toFixed(2)
+                                                                ).replace(
+                                                                    ".",
+                                                                    ","
+                                                                )}{" "}
+                                                                Excl. BTW
                                                             </dd>
-
                                                         </div>
-
                                                     </dl>
                                                 </div>
                                                 <Trash
-                                                    onClick={() => {
+                                                    onClick={(ev) => {
+                                                        ev.preventDefault();
                                                         removeProduct(
                                                             item.product.id,
-                                                            item.product.configSignature
+                                                            item.product
+                                                                .configSignature
                                                         );
                                                     }}
                                                     className="text-red-500 scale-75 cursor-pointer hover:scale-90 transition-transform"
                                                 />
                                             </div>
-                                        </li>
+                                        </Link>
                                     );
                                 })}
                             </ul>
