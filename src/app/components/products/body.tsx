@@ -4,7 +4,8 @@ import Card from "../card";
 import { useState, useEffect } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Input } from "@/components/ui/input";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { SelectBrand, SelectCategory } from "@/database/schema";
 
 export default function Body({
     filteredProducts,
@@ -22,16 +23,12 @@ export default function Body({
         description: string | null;
         configuration: string | null;
     }>;
-    categories: Array<{
-        id: number;
-        name: string;
-    }>;
-    brands: Array<{
-        id: number;
-        name: string;
-    }>;
+    categories: SelectCategory[];
+    brands: SelectBrand[];
 }) {
     const searchParams = useSearchParams();
+    const router = useRouter();
+    const pathname = usePathname();
     const searchQuery = searchParams.get("search") || "";
 
     const [selectedCategories, setSelectedCategories] = useState<number[]>([]);
@@ -39,7 +36,7 @@ export default function Body({
     const [priceRange, setPriceRange] = useState<[number, number]>([0, 5000]);
     const [stockRange, setStockRange] = useState<[number, number]>([0, 100]);
 
-    // Initialize filters from URL params
+    // Initialize filters from URL params only once
     useEffect(() => {
         const categoriesParam = searchParams.get("categories");
         const brandsParam = searchParams.get("brands");
@@ -59,22 +56,51 @@ export default function Body({
                 .map((b) => b.id);
             setSelectedBrands(brandIds);
         }
-    }, [searchParams, categories, brands]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []); // Only run once on mount
+
+    const updateURL = (categoryIds: number[], brandIds: number[]) => {
+        const params = new URLSearchParams(searchParams.toString());
+
+        if (categoryIds.length > 0) {
+            const categoryNames = categories
+                .filter((c) => categoryIds.includes(c.id))
+                .map((c) => c.name)
+                .join(",");
+            params.set("categories", categoryNames);
+        } else {
+            params.delete("categories");
+        }
+
+        if (brandIds.length > 0) {
+            const brandNames = brands
+                .filter((b) => brandIds.includes(b.id))
+                .map((b) => b.name)
+                .join(",");
+            params.set("brands", brandNames);
+        } else {
+            params.delete("brands");
+        }
+
+        router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    };
 
     const toggleCategory = (categoryId: number) => {
-        setSelectedCategories((prev) =>
-            prev.includes(categoryId)
-                ? prev.filter((id) => id !== categoryId)
-                : [...prev, categoryId]
-        );
+        const newCategories = selectedCategories.includes(categoryId)
+            ? selectedCategories.filter((id) => id !== categoryId)
+            : [...selectedCategories, categoryId];
+
+        setSelectedCategories(newCategories);
+        updateURL(newCategories, selectedBrands);
     };
 
     const toggleBrand = (brandId: number) => {
-        setSelectedBrands((prev) =>
-            prev.includes(brandId)
-                ? prev.filter((id) => id !== brandId)
-                : [...prev, brandId]
-        );
+        const newBrands = selectedBrands.includes(brandId)
+            ? selectedBrands.filter((id) => id !== brandId)
+            : [...selectedBrands, brandId];
+
+        setSelectedBrands(newBrands);
+        updateURL(selectedCategories, newBrands);
     };
 
     const handlePriceInputChange = (index: 0 | 1, value: string) => {
@@ -282,7 +308,7 @@ export default function Body({
                         </h4>
                         <ul className="space-y-2">
                             {categories
-                                .filter((c) => c.name.toLowerCase() != "ram")
+                                .filter((c) => c.hidden === false)
                                 .map((category) => (
                                     <li
                                         key={category.id}

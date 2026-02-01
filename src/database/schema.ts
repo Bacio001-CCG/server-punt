@@ -40,6 +40,7 @@ export const categoriesTable = pgTable("categories", {
     id: serial("id").primaryKey(),
     imageUrl: text("image_url").notNull(),
     name: text("name").notNull(),
+    hidden: boolean("hidden").notNull().default(false),
     createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 

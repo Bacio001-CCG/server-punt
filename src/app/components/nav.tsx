@@ -139,11 +139,7 @@ export default function Nav() {
                                         style={{ top: "100%" }}
                                     >
                                         {categories
-                                            .filter(
-                                                (c) =>
-                                                    c.name.toLowerCase() !==
-                                                    "ram"
-                                            )
+                                            .filter((c) => c.hidden === false)
                                             .map((category) => (
                                                 <li key={category.id}>
                                                     <Link

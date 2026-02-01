@@ -244,6 +244,48 @@ flex flex-col items-center
                                                                         .quantityInStock >
                                                                         0
                                                             )
+                                                            .sort((a, b) => {
+                                                                const nameA =
+                                                                    a.product
+                                                                        ?.name ||
+                                                                    "";
+                                                                const nameB =
+                                                                    b.product
+                                                                        ?.name ||
+                                                                    "";
+                                                                const nameComparison =
+                                                                    nameA.localeCompare(
+                                                                        nameB
+                                                                    );
+
+                                                                if (
+                                                                    nameComparison !==
+                                                                    0
+                                                                ) {
+                                                                    return nameComparison;
+                                                                }
+
+                                                                const priceA =
+                                                                    parseFloat(
+                                                                        String(
+                                                                            a
+                                                                                .product
+                                                                                ?.price
+                                                                        ) ?? "0"
+                                                                    );
+                                                                const priceB =
+                                                                    parseFloat(
+                                                                        String(
+                                                                            b
+                                                                                .product
+                                                                                ?.price
+                                                                        ) ?? "0"
+                                                                    );
+                                                                return (
+                                                                    priceA -
+                                                                    priceB
+                                                                );
+                                                            })
                                                             .map((l) => (
                                                                 <li
                                                                     key={l.id}
