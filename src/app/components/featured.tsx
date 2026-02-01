@@ -114,8 +114,8 @@ export default function Featured() {
                     </h2>
                     <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
                     <p className="mt-4 max-w-2xl text-center text-muted-foreground">
-                        Onze best verkochte servers, gekozen door onze klanten
-                        vanwege hun betrouwbaarheid en prestaties.
+                        Onze best verkochte producten, gekozen door onze klanten
+                        vanwege hun kwaliteit en betrouwbaarheid.
                     </p>
                 </div>
                 <div className="relative mx-auto max-w-6xl">
