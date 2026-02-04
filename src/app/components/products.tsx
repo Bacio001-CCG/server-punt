@@ -2,9 +2,17 @@ import { ArrowRight } from "lucide-react";
 import Card from "./card";
 import Link from "next/link";
 import { getProducts } from "@/lib/products";
+import { getCategories } from "@/lib/categories";
 
 export default async function Featured() {
-    const { products = [] } = (await getProducts(18)) || {};
+    const { products = [] } = (await getProducts()) || {};
+    const categories = await getCategories();
+
+    const filteredProducts = products.filter((product) => {
+        return categories.some(
+            (cat) => cat.id === product.categoryId && !cat.hidden
+        );
+    });
 
     return (
         <section
@@ -43,17 +51,21 @@ export default async function Featured() {
                 md:grid-cols-6 md:gap-6
               "
                 >
-                    {Array.isArray(products) &&
-                        products.map((product) => (
-                            <Card
-                                key={product.name + product.id}
-                                name={product.name}
-                                image={product.imageUrl || "/placeholder.png"}
-                                href={`/product/${product.id}`}
-                                price={product.price.toFixed(2)}
-                                stock={product.quantityInStock}
-                            />
-                        ))}
+                    {Array.isArray(filteredProducts) &&
+                        filteredProducts
+                            .slice(0, 18)
+                            .map((product) => (
+                                <Card
+                                    key={product.name + product.id}
+                                    name={product.name}
+                                    image={
+                                        product.imageUrl || "/placeholder.png"
+                                    }
+                                    href={`/product/${product.id}`}
+                                    price={product.price.toFixed(2)}
+                                    stock={product.quantityInStock}
+                                />
+                            ))}
                 </div>
             </div>
             <Link

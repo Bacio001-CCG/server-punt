@@ -36,7 +36,8 @@ export default async function Products({
                 categoryIds.includes(product.categoryId);
             const matchesBrand =
                 brandIds.length === 0 || brandIds.includes(product.brandId!);
-            return matchesCategory && matchesBrand;
+            const cat = catResult.find((cat) => cat.id === product.categoryId);
+            return matchesCategory && matchesBrand && cat && !cat.hidden;
         })
         .map((product) => ({
             ...product,
