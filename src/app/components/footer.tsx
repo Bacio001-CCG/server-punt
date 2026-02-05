@@ -22,6 +22,8 @@ export default function Footer() {
             <span className="block text-sm text-center text-gray-500">
                 © {new Date().getFullYear()} ServerPunt VOF. All Rights
                 Reserved. - <Link href={"/tos"}>Algemeene Voorwaarden</Link>
+                <br />
+                <Link href={"/privacy"}>Privacy Verklaring</Link>
             </span>
 
             <ul className="flex justify-center mt-5 space-x-5">
