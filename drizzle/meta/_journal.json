@@ -50,6 +50,13 @@
       "when": 1765844483315,
       "tag": "0006_broad_dreadnoughts",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1770504732888,
+      "tag": "0007_smiling_bloodscream",
+      "breakpoints": true
     }
   ]
 }

@@ -133,8 +133,8 @@ flex flex-col items-center
     "
             >
                 <div className="container mx-auto px-4 py-8">
-                    <div className="flex gap-10">
-                        <div className="flex flex-col w-2/3">
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                        <div className="flex flex-col w-full lg:w-2/3">
                             <ProductImages
                                 imageUrl={
                                     product.imageUrl || "/placeholder.png"
@@ -144,11 +144,11 @@ flex flex-col items-center
                                 }
                             />
 
-                            <div className="px-4">
-                                <h2 className="text-3xl font-bold mb-4">
+                            <div className="px-0 sm:px-4 mt-6">
+                                <h2 className="text-2xl sm:text-3xl font-bold mb-4">
                                     {product.name}
                                 </h2>
-                                <p className="text-gray-700 mb-6 whitespace-pre-wrap">
+                                <p className="text-gray-700 mb-6 whitespace-pre-wrap text-sm sm:text-base">
                                     {product.description}
                                 </p>
                                 <div className="flex flex-col gap-4">
@@ -158,7 +158,7 @@ flex flex-col items-center
                                             setIsSpecsOpen(!isSpecsOpen)
                                         }
                                     >
-                                        <h2 className="font-display flex gap-2 text-xl leading-tight font-bold tracking-tight">
+                                        <h2 className="font-display flex gap-2 text-lg sm:text-xl leading-tight font-bold tracking-tight">
                                             <ListIcon
                                                 size={20}
                                                 className="my-auto"
@@ -189,7 +189,7 @@ flex flex-col items-center
                                                 transition={{ duration: 0.3 }}
                                                 style={{ overflow: "hidden" }}
                                             >
-                                                <p className="text-gray-700 whitespace-pre-wrap">
+                                                <p className="text-gray-700 whitespace-pre-wrap text-sm sm:text-base">
                                                     {product.configuration}
                                                 </p>
                                             </motion.div>
@@ -198,21 +198,21 @@ flex flex-col items-center
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-5 w-1/3">
-                            <div className="flex flex-col gap-3">
-                                <h2 className="text-3xl font-bold">
+                        <div className="flex flex-col gap-4 sm:gap-5 w-full lg:w-1/3">
+                            <div className="flex flex-col gap-3 lg:hidden">
+                                <h2 className="text-2xl sm:text-3xl font-bold">
                                     {product.name}
                                 </h2>
                             </div>
 
                             {linkedProducts.length != 0 && (
-                                <div className="flex flex-col gap-5 mb-6">
+                                <div className="flex flex-col gap-4 sm:gap-5 mb-4 sm:mb-6">
                                     <div className="flex flex-col gap-2">
-                                        <h2 className="font-display flex gap-2 text-2xl leading-tight font-bold tracking-tight">
+                                        <h2 className="font-display flex gap-2 text-xl sm:text-2xl leading-tight font-bold tracking-tight">
                                             Product Configureren
                                         </h2>
-                                        <p>
-                                            Kies hieronder de extra onderdellen
+                                        <p className="text-sm sm:text-base">
+                                            Kies hieronder de extra onderdelen
                                             die u aan het basisproduct wilt
                                             toevoegen.
                                         </p>
@@ -227,10 +227,10 @@ flex flex-col items-center
                                         ) {
                                             return (
                                                 <div
-                                                    className="flex  flex-col gap-2"
+                                                    className="flex flex-col gap-2"
                                                     key={c.id}
                                                 >
-                                                    <p className="text-accent-foreground  font-semibold">
+                                                    <p className="text-accent-foreground font-semibold text-sm sm:text-base">
                                                         {c.name}
                                                     </p>
                                                     <ul className="space-y-2">
@@ -307,7 +307,7 @@ flex flex-col items-center
                                                                             onChange={() => {}}
                                                                         />
                                                                         <button
-                                                                            className={`text-sm text-left ${
+                                                                            className={`text-xs sm:text-sm text-left break-words ${
                                                                                 selectedProducts.includes(
                                                                                     l.id
                                                                                 )
@@ -351,7 +351,7 @@ flex flex-col items-center
                                                                     {selectedProducts.includes(
                                                                         l.id
                                                                     ) && (
-                                                                        <div className="flex gap-2 items-center">
+                                                                        <div className="flex gap-2 items-center ml-8">
                                                                             <button
                                                                                 onClick={() =>
                                                                                     updateQuantity(
@@ -364,7 +364,7 @@ flex flex-col items-center
                                                                                             1
                                                                                     )
                                                                                 }
-                                                                                className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded"
+                                                                                className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded text-sm"
                                                                             >
                                                                                 -
                                                                             </button>
@@ -397,7 +397,7 @@ flex flex-col items-center
                                                                                             1
                                                                                     )
                                                                                 }
-                                                                                className="w-16 px-2 py-1 border border-gray-300 rounded text-center"
+                                                                                className="w-12 sm:w-16 px-2 py-1 border border-gray-300 rounded text-center text-sm"
                                                                                 onClick={(
                                                                                     e
                                                                                 ) =>
@@ -430,7 +430,7 @@ flex flex-col items-center
                                                                                             1
                                                                                     )
                                                                                 }
-                                                                                className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded"
+                                                                                className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded text-sm disabled:opacity-50 disabled:cursor-not-allowed"
                                                                             >
                                                                                 +
                                                                             </button>
@@ -445,9 +445,9 @@ flex flex-col items-center
                                     })}
                                 </div>
                             )}
-                            <div className="flex flex-col gap-2 p-4 bg-gray-50 rounded-lg">
+                            <div className="flex flex-col gap-2 p-3 sm:p-4 bg-gray-50 rounded-lg">
                                 <div className="flex justify-between items-center">
-                                    <span className="font-semibold text-sm">
+                                    <span className="font-semibold text-xs sm:text-sm">
                                         Aantal basisproduct:
                                     </span>
                                     <div className="flex gap-2 items-center">
@@ -458,7 +458,7 @@ flex flex-col items-center
                                                 )
                                             }
                                             disabled={mainProductQuantity === 1}
-                                            className="px-3 py-1 bg-white border border-gray-300 hover:bg-gray-100 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+                                            className="px-2 sm:px-3 py-1 bg-white border border-gray-300 hover:bg-gray-100 rounded disabled:opacity-50 disabled:cursor-not-allowed text-sm"
                                         >
                                             -
                                         </button>
@@ -473,7 +473,7 @@ flex flex-col items-center
                                                         1
                                                 )
                                             }
-                                            className="w-16 px-2 py-1 border border-gray-300 rounded text-center"
+                                            className="w-12 sm:w-16 px-2 py-1 border border-gray-300 rounded text-center text-sm"
                                         />
                                         <button
                                             onClick={() =>
@@ -485,7 +485,7 @@ flex flex-col items-center
                                                 mainProductQuantity >=
                                                 product.quantityInStock
                                             }
-                                            className="px-3 py-1 bg-white border border-gray-300 hover:bg-gray-100 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+                                            className="px-2 sm:px-3 py-1 bg-white border border-gray-300 hover:bg-gray-100 rounded disabled:opacity-50 disabled:cursor-not-allowed text-sm"
                                         >
                                             +
                                         </button>
@@ -495,14 +495,14 @@ flex flex-col items-center
                                     {product.quantityInStock} stuks beschikbaar
                                 </span>
                             </div>
-                            <div className="mb-6">
+                            <div className="mb-4 sm:mb-6">
                                 <ul className="space-y-2 mb-4">
-                                    <li className="flex justify-between text-sm">
-                                        <span>
+                                    <li className="flex justify-between text-xs sm:text-sm gap-2">
+                                        <span className="break-words">
                                             {product.name} x{" "}
                                             {mainProductQuantity}
                                         </span>
-                                        <div className="text-right">
+                                        <div className="text-right flex-shrink-0">
                                             <div className="font-semibold">
                                                 €
                                                 {(
@@ -532,13 +532,13 @@ flex flex-col items-center
                                             return (
                                                 <li
                                                     key={item.id}
-                                                    className="flex justify-between text-sm"
+                                                    className="flex justify-between text-xs sm:text-sm gap-2"
                                                 >
-                                                    <span>
+                                                    <span className="break-words">
                                                         {item.name} x{" "}
                                                         {item.quantity}
                                                     </span>
-                                                    <div className="text-right">
+                                                    <div className="text-right flex-shrink-0">
                                                         <div className="font-semibold">
                                                             €
                                                             {subtotal
@@ -567,19 +567,19 @@ flex flex-col items-center
                                         }
                                     )}
                                 </ul>
-                                <div className="pt-4 border-t border-gray-300 flex justify-between">
-                                    <span className="text-lg font-bold">
+                                <div className="pt-4 border-t border-gray-300 flex justify-between gap-2">
+                                    <span className="text-base sm:text-lg font-bold">
                                         Totaal:
                                     </span>
-                                    <div className="text-right">
-                                        <div className="text-lg font-bold text-primary">
+                                    <div className="text-right flex-shrink-0">
+                                        <div className="text-base sm:text-lg font-bold text-primary">
                                             €
                                             {calculateTotal()
                                                 .toFixed(2)
                                                 .replace(".", ",")}{" "}
                                             Excl. BTW
                                         </div>
-                                        <div className="text-sm text-gray-600">
+                                        <div className="text-xs sm:text-sm text-gray-600">
                                             €
                                             {calculateTotalWithVAT(
                                                 calculateTotal()
@@ -600,11 +600,11 @@ flex flex-col items-center
 
                             <Link href="/tos" className="w-full">
                                 <Alert className="">
-                                    <Info className="h-5 w-5 " />
-                                    <AlertTitle className="font-semibold">
+                                    <Info className="h-4 w-4 sm:h-5 sm:w-5" />
+                                    <AlertTitle className="font-semibold text-sm sm:text-base">
                                         Voorwaarden van toepassing
                                     </AlertTitle>
-                                    <AlertDescription className="">
+                                    <AlertDescription className="text-xs sm:text-sm">
                                         Let op: Zodra u iets vanaf onze website
                                         bestelt, zijn onze Algemene Voorwaarden
                                         van toepassing.

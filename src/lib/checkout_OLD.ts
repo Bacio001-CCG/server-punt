@@ -118,11 +118,6 @@ export async function processCheckout(
                     message: "KvK nummer is ongeldig",
                 })
                 .optional(),
-            "invoice.vatNumber": z
-                .string({
-                    message: "BTW nummer is ongeldig",
-                })
-                .optional(),
             "invoice.address": z.string({
                 message: "Adres is ongeldig",
             }),
@@ -161,9 +156,7 @@ export async function processCheckout(
         .refine(
             (data) => {
                 if (data["invoice.company"]) {
-                    return (
-                        data["invoice.cocNumber"] && data["invoice.vatNumber"]
-                    );
+                    return data["invoice.cocNumber"];
                 }
                 return true;
             },
@@ -267,7 +260,6 @@ export async function processCheckout(
                     invoiceLastname: result.data["invoice.lastname"],
                     invoiceCompany: result.data["invoice.company"] || null,
                     invoiceCOCNumber: result.data["invoice.cocNumber"] || null,
-                    invoiceVatNumber: result.data["invoice.vatNumber"] || null,
                     invoiceAddress: result.data["invoice.address"],
                     invoicePostalcode: result.data["invoice.postalcode"],
                     invoiceCity: result.data["invoice.city"],
@@ -305,134 +297,130 @@ export async function processCheckout(
             verzendkosten = 0;
         }
 
-        let contactId: number | null = null;
-
-        try {
-            const res = await Axios.get(
-                `https://moneybird.com/api/v2/${process.env.MONEYBIRD_ADMINISTRATION_ID}/contacts/customer_id/${customerId}.json`,
-                {
-                    headers: {
-                        Authorization: `Bearer ${process.env.MONEYBIRD_KEY}`,
-                        "Content-Type": "application/json",
-                    },
-                }
-            );
-
-            contactId = res.data.id;
-        } catch (error) {
-            const res = await Axios.post(
-                `https://moneybird.com/api/v2/${process.env.MONEYBIRD_ADMINISTRATION_ID}/contacts.json`,
-                {
-                    contact: {
-                        company_name: result.data["invoice.company"] || null,
-                        firstname: result.data["invoice.firstname"],
-                        lastname: result.data["invoice.lastname"],
-                        address1: result.data["invoice.address"],
-                        zipcode: result.data["invoice.postalcode"],
-                        city: result.data["invoice.city"],
-                        country: result.data["invoice.country"],
-                        email: result.data.email,
-                        customer_id: customerId.toString(),
-                        chamber_of_commerce:
-                            result.data["invoice.cocNumber"] || null,
-                        tax_number: result.data["invoice.vatNumber"] || null,
-                    },
-                },
-                {
-                    headers: {
-                        Authorization: `Bearer ${process.env.MONEYBIRD_KEY}`,
-                        "Content-Type": "application/json",
-                    },
-                }
-            );
-            contactId = res.data.id;
-        }
-
-        const salesInvoice = await Axios.post(
-            `https://moneybird.com/api/v2/${process.env.MONEYBIRD_ADMINISTRATION_ID}/sales_invoices.json`,
+        const response = await Axios.post(
+            "https://api.mollie.com/v2/sales-invoices",
             {
-                sales_invoice: {
-                    contact_id: contactId,
-                    reference: `${new Date().getUTCFullYear()}-${customerId}-${Date.now()}`,
-                    invoice_date: new Date().toISOString().split("T")[0],
-                    status: "open",
-                    currency: "EUR",
-                    details_attributes: [
-                        ...products.flatMap((item) => {
-                            const configuredItems =
-                                item.product.configuredItems || [];
-                            const configuredTotal = configuredItems.reduce(
-                                (sum, sub) =>
-                                    sum + sub.product.price * sub.quantity,
-                                0
-                            );
+                testmode: process.env.TEST_MODE === "true",
+                profileId: process.env.MOLLIE_PROFILE_ID,
+                status: "issued",
+                recipientIdentifier: result.data.email,
+                recipient: {
+                    type: result.data["invoice.company"]
+                        ? "business"
+                        : "consumer",
+                    givenName: result.data["invoice.firstname"],
+                    familyName: result.data["invoice.lastname"],
+                    organizationName: result.data["invoice.company"] || null,
+                    email: result.data.email,
+                    phone: result.data["invoice.phonenumber"] || null,
+                    streetAndNumber: result.data["invoice.address"],
+                    postalCode: result.data["invoice.postalcode"],
+                    city: result.data["invoice.city"],
+                    country:
+                        result.data["invoice.country"] === "netherlands"
+                            ? "NL"
+                            : "BE",
+                    locale: "nl-NL",
+                    organizationNumber:
+                        result.data["invoice.cocNumber"] || null,
+                },
+                lines: products
+                    .flatMap((item) => {
+                        const configuredItems =
+                            item.product.configuredItems || [];
+                        const configuredTotal = configuredItems.reduce(
+                            (sum, sub) =>
+                                sum + sub.product.price * sub.quantity,
+                            0
+                        );
+                        const unitPriceValue =
+                            item.product.price + configuredTotal;
 
-                            const unitPriceValue =
-                                item.product.price + configuredTotal;
+                        const baseDescription = configuredItems.length
+                            ? `${item.product.name} (incl. ${configuredItems
+                                  .map(
+                                      (sub) =>
+                                          `${sub.product.name} x ${sub.quantity}`
+                                  )
+                                  .join(", ")})`
+                            : item.product.name;
 
-                            const baseDescription = configuredItems.length
-                                ? `${item.product.name} (incl. ${configuredItems
-                                      .map(
-                                          (sub) =>
-                                              `${sub.product.name} x ${sub.quantity}`
-                                      )
-                                      .join(", ")})`
-                                : item.product.name;
+                        const parts = splitDescription(baseDescription, 100);
 
-                            const parts = splitDescription(
-                                baseDescription,
-                                100
-                            );
-
-                            return parts.map((part, idx) => ({
-                                description: part,
-                                amount:
-                                    idx === 0 ? item.quantity.toString() : "1",
-                                price: (idx === 0 ? unitPriceValue : 0).toFixed(
+                        return parts.map((part, idx) => ({
+                            description: part,
+                            quantity: idx === 0 ? item.quantity : 1,
+                            unitPrice: {
+                                currency: "EUR",
+                                value: (idx === 0 ? unitPriceValue : 0).toFixed(
                                     2
                                 ),
-                            }));
-                        }),
+                            },
+                            vatRate: "21",
+                        }));
+                    })
+                    .concat([
                         {
                             description: "Verzendkosten",
-                            amount: "1",
-                            price: verzendkosten.toFixed(2),
+                            quantity: 1,
+                            unitPrice: {
+                                currency: "EUR",
+                                value: verzendkosten.toFixed(2),
+                            },
+                            vatRate: "21",
                         },
-                    ],
-                },
+                    ]),
             },
             {
                 headers: {
-                    Authorization: `Bearer ${process.env.MONEYBIRD_KEY}`,
+                    Authorization: `Bearer ${process.env.MOLLIE_API_KEY}`,
                     "Content-Type": "application/json",
                 },
             }
         );
-
-        await Axios.patch(
-            `https://moneybird.com/api/v2/${process.env.MONEYBIRD_ADMINISTRATION_ID}/sales_invoices/${salesInvoice.data.id}/send_invoice.json`,
+        const response2 = await Axios.post(
+            "https://api.mollie.com/v2/payments",
             {
-                sales_invoice_sending: {
-                    delivery_method: "Email",
-                    deliver_ubl: true,
-                    email_address: result.data.email,
-                    email_message:
-                        "Bedankt voor je bestelling! In de bijlage vind je de factuur. Neem gerust contact met ons op als je vragen hebt.",
+                description: `Factuur #${response.data.invoiceNumber} - ServerPunt`,
+                amount: {
+                    value: response.data.amountDue.value,
+                    currency: "EUR",
+                },
+                redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/checkout/success`,
+                cancelUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
+                webhookUrl: `${process.env.NEXT_PUBLIC_WEBHOOK_URL}/api/mollie/webhook`,
+                billingAddress: {
+                    givenName: result.data["invoice.firstname"],
+                    familyName: result.data["invoice.lastname"],
+                    organizationName: result.data["invoice.company"] || null,
+                    email: result.data.email,
+                    phone: result.data["invoice.phonenumber"] || null,
+                    streetAndNumber: result.data["invoice.address"],
+                    postalCode: result.data["invoice.postalcode"],
+                    city: result.data["invoice.city"],
+                    country:
+                        result.data["invoice.country"] === "netherlands"
+                            ? "NL"
+                            : "BE",
+                },
+                locale: "nl_NL",
+                metadata: {
+                    salesInvoiceId: response.data.id,
+                    invoiceNumber: response.data.invoiceNumber,
                 },
             },
             {
                 headers: {
-                    Authorization: `Bearer ${process.env.MONEYBIRD_KEY}`,
+                    Authorization: `Bearer ${process.env.MOLLIE_API_KEY}`,
                     "Content-Type": "application/json",
                 },
             }
         );
-
         const order = await db
             .insert(ordersTable)
             .values({
                 customerId: customerId,
-                invoiceId: salesInvoice.data.id,
+                invoiceId: response.data.id,
                 status: "pending",
                 deliveryMethod: result.data.delivery_method,
                 deliveryCountry: result.data["delivery.country"] || null,
@@ -491,12 +479,9 @@ export async function processCheckout(
                 );
             }
         }
-
-        return [salesInvoice.data.payment_url, order[0].id] as [string, number];
+        return response2.data._links.checkout.href;
     } catch (error: any) {
-        console.error(
-            (error as any)?.response?.data.details.delivery_method || error
-        );
+        console.error((error as any)?.response?.data || error);
         throw new Error(
             (error as any)?.response?.data?.detail ||
                 error.message ||

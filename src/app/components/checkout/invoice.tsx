@@ -73,6 +73,17 @@ export default function InvoiceAddress() {
                 />
             </div>
             <div>
+                <label htmlFor="invoice.vatNumber">
+                    BTW nummer (Alleen als bedrijf is ingevuld)
+                </label>
+                <input
+                    type="text"
+                    id="invoice.vatNumber"
+                    className="block w-full border border-gray-300 rounded-md p-2 mt-1"
+                    name="invoice.vatNumber"
+                />
+            </div>
+            <div>
                 <label htmlFor="invoice.address">Adres</label>
                 <input
                     type="text"

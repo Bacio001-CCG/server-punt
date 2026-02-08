@@ -105,6 +105,7 @@ export const customersTable = pgTable("customers", {
     invoiceLastname: text("invoice_lastname"),
     invoiceCompany: text("invoice_company"),
     invoiceCOCNumber: text("invoice_coc_number"),
+    invoiceVatNumber: text("invoice_vat_number"),
     invoiceAddress: text("invoice_address"),
     invoicePostalcode: text("invoice_postalcode"),
     invoiceCity: text("invoice_city"),

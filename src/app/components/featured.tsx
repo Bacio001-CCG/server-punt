@@ -1,56 +1,65 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { getFeatured } from "@/lib/products";
 import Card from "./card";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import { SelectProduct } from "@/database/schema";
-
-function NextArrow(props: any) {
-    const { className, onClick } = props;
-    return (
-        <div
-            className={`${className} text-accent-foreground slick-arrow slick-next`}
-            onClick={onClick}
-            style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "40px",
-                height: "40px",
-                right: "-40px",
-                zIndex: 10,
-                cursor: "pointer",
-                color: "black",
-            }}
-        ></div>
-    );
-}
-
-function PrevArrow(props: any) {
-    const { className, onClick } = props;
-    return (
-        <div
-            className={`${className} slick-arrow slick-prev`}
-            onClick={onClick}
-            style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "40px",
-                height: "40px",
-                left: "-40px",
-                zIndex: 10,
-                cursor: "pointer",
-                color: "black",
-            }}
-        ></div>
-    );
-}
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Featured() {
     const [products, setProducts] = useState<SelectProduct[]>([]);
+    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+
+    const [emblaRef, emblaApi] = useEmblaCarousel(
+        {
+            loop: true,
+            align: "start",
+            slidesToScroll: 1,
+            breakpoints: {
+                "(min-width: 640px)": { slidesToScroll: 1 },
+                "(min-width: 1024px)": { slidesToScroll: 1 },
+                "(min-width: 1280px)": { slidesToScroll: 1 },
+                "(min-width: 1536px)": { slidesToScroll: 1 },
+            },
+        },
+        [Autoplay({ delay: 3000, stopOnInteraction: false })]
+    );
+
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev();
+    }, [emblaApi]);
+
+    const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext();
+    }, [emblaApi]);
+
+    const scrollTo = useCallback(
+        (index: number) => {
+            if (emblaApi) emblaApi.scrollTo(index);
+        },
+        [emblaApi]
+    );
+
+    const onSelect = useCallback(() => {
+        if (!emblaApi) return;
+        setSelectedIndex(emblaApi.selectedScrollSnap());
+    }, [emblaApi]);
+
+    useEffect(() => {
+        if (!emblaApi) return;
+
+        onSelect();
+        setScrollSnaps(emblaApi.scrollSnapList());
+        emblaApi.on("select", onSelect);
+        emblaApi.on("reInit", onSelect);
+
+        return () => {
+            emblaApi.off("select", onSelect);
+            emblaApi.off("reInit", onSelect);
+        };
+    }, [emblaApi, onSelect]);
 
     useEffect(() => {
         async function fetchProducts() {
@@ -60,50 +69,10 @@ export default function Featured() {
         fetchProducts();
     }, []);
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-        autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 1536,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    arrows: false,
-                },
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    dots: true,
-                },
-            },
-        ],
-    };
+    useEffect(() => {
+        if (!emblaApi || products.length === 0) return;
+        emblaApi.reInit();
+    }, [emblaApi, products]);
 
     return (
         <section id="featured" className="py-12 md:py-16">
@@ -119,31 +88,60 @@ export default function Featured() {
                     </p>
                 </div>
                 <div className="relative mx-auto max-w-6xl">
-                    <Slider
-                        className="h-[350px] sm:h-[380px] md:h-[400px]"
-                        {...settings}
-                    >
-                        {products.map((product: SelectProduct) => (
-                            <div
-                                key={product.name + product.id}
-                                className="px-2"
-                            >
-                                <div className="mx-auto max-w-[280px]">
-                                    <Card
-                                        name={product.name}
-                                        image={
-                                            product.imageUrl ||
-                                            "/placeholder.png"
-                                        }
-                                        href={`/product/${product.id}`}
-                                        price={product.price.toFixed(2)}
-                                        stock={product.quantityInStock}
-                                    />
+                    <div className="overflow-hidden" ref={emblaRef}>
+                        <div className="flex gap-4">
+                            {products.map((product: SelectProduct) => (
+                                <div
+                                    key={product.name + product.id}
+                                    className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] xl:flex-[0_0_25%] 2xl:flex-[0_0_20%]"
+                                >
+                                    <div className="mx-auto max-w-[280px] px-2">
+                                        <Card
+                                            name={product.name}
+                                            image={
+                                                product.imageUrl ||
+                                                "/placeholder.png"
+                                            }
+                                            href={`/product/${product.id}`}
+                                            price={product.price.toFixed(2)}
+                                            stock={product.quantityInStock}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Slider>
+                            ))}
+                        </div>
+                    </div>
+                    <button
+                        className="absolute left-0 top-1/2 -translate-x-12 -translate-y-1/2 rounded-full bg-white p-2 shadow-lg hover:bg-gray-100 hidden lg:block"
+                        onClick={scrollPrev}
+                        aria-label="Previous"
+                    >
+                        <ChevronLeft className="h-6 w-6" />
+                    </button>
+                    <button
+                        className="absolute right-0 top-1/2 translate-x-12 -translate-y-1/2 rounded-full bg-white p-2 shadow-lg hover:bg-gray-100 hidden lg:block"
+                        onClick={scrollNext}
+                        aria-label="Next"
+                    >
+                        <ChevronRight className="h-6 w-6" />
+                    </button>
                 </div>
+                {scrollSnaps.length > 1 && (
+                    <div className="mt-6 flex justify-center gap-2">
+                        {scrollSnaps.map((_, index) => (
+                            <button
+                                key={index}
+                                className={`h-2 w-2 rounded-full transition-all ${
+                                    index === selectedIndex
+                                        ? "bg-primary w-8"
+                                        : "bg-gray-300 hover:bg-gray-400"
+                                }`}
+                                onClick={() => scrollTo(index)}
+                                aria-label={`Go to slide ${index + 1}`}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
         </section>
     );

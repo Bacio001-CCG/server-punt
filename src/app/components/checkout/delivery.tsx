@@ -115,6 +115,17 @@ function DeliveryDelivery() {
                 />
             </div>
             <div>
+                <label htmlFor="invoice.cocNumber">
+                    BTW nummer (Alleen als bedrijf is ingevuld)
+                </label>
+                <input
+                    type="text"
+                    id="invoice.vatNumber"
+                    className="block w-full border border-gray-300 rounded-md p-2 mt-1"
+                    name="invoice.vatNumber"
+                />
+            </div>
+            <div>
                 <label htmlFor="delivery.address">Adres</label>
                 <input
                     type="text"

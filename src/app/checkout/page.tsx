@@ -151,11 +151,9 @@ export default function Checkout() {
         }
 
         try {
-            const redirectURL = await processCheckout(
-                formObject,
-                getGroupedProducts()
-            );
-            router.push(redirectURL);
+            const res = await processCheckout(formObject, getGroupedProducts());
+            router.push("/checkout/verify?order=" + res[1]);
+            window.open(res[0], "_blank");
         } catch (error: any) {
             console.error(error);
             setErrors({
