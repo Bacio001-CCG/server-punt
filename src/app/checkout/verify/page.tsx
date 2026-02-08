@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { getOrderStatus } from "@/lib/orders";
 
-export default function Verify() {
+function VerifyContent() {
     const [status, setStatus] = useState<
         "loading" | "success" | "error" | "cancelled"
     >("loading");
@@ -59,7 +59,7 @@ export default function Verify() {
                     <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin absolute top-0 left-0"></div>
                 </div>
                 <h1 className="text-2xl font-bold text-center">{message}</h1>
-                <p className="text-lg text-gray-500 text-center max-w-1/3">
+                <p className="text-lg text-gray-500 text-center max-w-md px-4">
                     Ga verder in het geopende betalingsvenster om uw betaling te
                     voltooien, of bekijk uw email voor uw factuur.
                 </p>
@@ -69,7 +69,7 @@ export default function Verify() {
 
     if (status === "cancelled") {
         return (
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 p-4">
                 <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
                         <svg
@@ -84,9 +84,11 @@ export default function Verify() {
                             <path d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </div>
-                    <h1 className="text-4xl font-bold">Betaling geannuleerd</h1>
+                    <h1 className="text-2xl sm:text-4xl font-bold">
+                        Betaling geannuleerd
+                    </h1>
                 </div>
-                <p className="text-lg text-gray-500">{message}</p>
+                <p className="text-base sm:text-lg text-gray-500">{message}</p>
                 <button
                     onClick={() => router.push("/")}
                     className="mt-4 px-6 py-3 bg-accent text-white rounded-lg hover:bg-blue-600 transition-colors w-fit"
@@ -99,7 +101,7 @@ export default function Verify() {
 
     if (status === "error") {
         return (
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 p-4">
                 <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
                         <svg
@@ -114,9 +116,11 @@ export default function Verify() {
                             <path d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </div>
-                    <h1 className="text-4xl font-bold">Fout opgetreden</h1>
+                    <h1 className="text-2xl sm:text-4xl font-bold">
+                        Fout opgetreden
+                    </h1>
                 </div>
-                <p className="text-lg text-gray-500">{message}</p>
+                <p className="text-base sm:text-lg text-gray-500">{message}</p>
                 <button
                     onClick={() => router.push("/")}
                     className="mt-4 px-6 py-3 bg-accent text-white rounded-lg hover:bg-blue-600 transition-colors w-fit"
@@ -128,7 +132,7 @@ export default function Verify() {
     }
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 p-4">
             <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                     <svg
@@ -143,9 +147,11 @@ export default function Verify() {
                         <path d="M5 13l4 4L19 7"></path>
                     </svg>
                 </div>
-                <h1 className="text-4xl font-bold">Bestelling ontvangen!</h1>
+                <h1 className="text-2xl sm:text-4xl font-bold">
+                    Bestelling ontvangen!
+                </h1>
             </div>
-            <p className="text-lg text-gray-500">
+            <p className="text-base sm:text-lg text-gray-500">
                 Bedankt voor uw bestelling! We hebben uw bestelling succesvol
                 ontvangen en zullen deze zo snel mogelijk verwerken.
             </p>
@@ -156,5 +162,25 @@ export default function Verify() {
                 Terug naar home
             </button>
         </div>
+    );
+}
+
+export default function Verify() {
+    return (
+        <Suspense
+            fallback={
+                <div className="flex flex-col items-center justify-center gap-3 min-h-[600px]">
+                    <div className="relative">
+                        <div className="w-16 h-16 border-4 border-gray-200 rounded-full"></div>
+                        <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin absolute top-0 left-0"></div>
+                    </div>
+                    <h1 className="text-2xl font-bold text-center">
+                        Betaling wordt geverifieerd...
+                    </h1>
+                </div>
+            }
+        >
+            <VerifyContent />
+        </Suspense>
     );
 }
