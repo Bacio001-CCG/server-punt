@@ -13,6 +13,9 @@ export default function Checkout() {
     const [errors, setErrors] = useState<{ [key: string]: string }>({});
     const { getGroupedProducts } = useCart();
     const router = useRouter();
+    const [deliveryMethod, setDeliveryMethod] = useState<"delivery" | "pickup">(
+        "delivery"
+    );
 
     async function onSubmit(event: FormEvent<HTMLFormElement>) {
         setErrors({});
@@ -179,9 +182,12 @@ export default function Checkout() {
         flex gap-10 flex-col
         "
             >
-                <Cart />
+                <Cart deliveryMethod={deliveryMethod} />
                 <Account />
-                <Delivery />
+                <Delivery
+                    sendingMethod={deliveryMethod}
+                    setSendingMethod={setDeliveryMethod}
+                />
                 <InvoiceAddress />
 
                 {Object.keys(errors).length > 0 && (

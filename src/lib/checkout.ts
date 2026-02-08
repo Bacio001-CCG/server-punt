@@ -280,29 +280,33 @@ export async function processCheckout(
         }
 
         let verzendkosten = 0;
-        const serversCount = products.filter(
-            (item) => item.product.categoryId === 7
-        ).length;
-        const smallProductsCount = products.reduce(
-            (acc, item) =>
-                item.product.categoryId !== 7 ? acc + item.quantity : acc,
-            0
-        );
 
-        if (smallProductsCount > 0 && smallProductsCount <= 5) {
-            verzendkosten = 10;
-        }
+        // Only calculate shipping costs if delivery method is "delivery"
+        if (result.data.delivery_method === "delivery") {
+            const serversCount = products.filter(
+                (item) => item.product.categoryId === 1
+            ).length;
+            const smallProductsCount = products.reduce(
+                (acc, item) =>
+                    item.product.categoryId !== 1 ? acc + item.quantity : acc,
+                0
+            );
 
-        if (smallProductsCount > 5) {
-            verzendkosten = 15;
-        }
+            if (smallProductsCount > 0 && smallProductsCount <= 5) {
+                verzendkosten = 10;
+            }
 
-        if (serversCount === 1 || serversCount === 2) {
-            verzendkosten = 40;
-        }
+            if (smallProductsCount > 5) {
+                verzendkosten = 15;
+            }
 
-        if (serversCount > 2) {
-            verzendkosten = 0;
+            if (serversCount === 1 || serversCount === 2) {
+                verzendkosten = 40;
+            }
+
+            if (serversCount > 2) {
+                verzendkosten = 0;
+            }
         }
 
         let contactId: number | null = null;

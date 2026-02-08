@@ -17,7 +17,7 @@ type CartState = {
         configuredItems?: ConfiguredItem[]
     ) => void;
     getTotalPrice: () => number;
-    getVatPrice: () => number;
+    getVatPrice: (delivery?: boolean) => number;
     getShippingCost: () => number;
     clearProducts: () => void;
     getGroupedProducts: () => {
@@ -88,25 +88,32 @@ export default create<CartState>()(
                         return total + product.price + configuredTotal;
                     }, 0);
                 },
-                getVatPrice: () => {
+                getVatPrice: (delivery?: boolean) => {
                     const currentProducts = get().products;
                     const VAT_RATE = 0.21;
 
-                    return currentProducts.reduce((total, product) => {
-                        const configuredTotal = (
-                            product.configuredItems || []
-                        ).reduce(
-                            (subTotal, item) =>
-                                subTotal + item.product.price * item.quantity,
-                            0
-                        );
-                        const lineTotal = product.price + configuredTotal;
-                        return (
-                            total +
-                            lineTotal * VAT_RATE +
-                            get().getShippingCost() * VAT_RATE
-                        );
-                    }, 0);
+                    const productVat = currentProducts.reduce(
+                        (total, product) => {
+                            const configuredTotal = (
+                                product.configuredItems || []
+                            ).reduce(
+                                (subTotal, item) =>
+                                    subTotal +
+                                    item.product.price * item.quantity,
+                                0
+                            );
+                            const lineTotal = product.price + configuredTotal;
+                            return total + lineTotal * VAT_RATE;
+                        },
+                        0
+                    );
+
+                    // Only add shipping VAT once if delivery is true
+                    const shippingVat = delivery
+                        ? get().getShippingCost() * VAT_RATE
+                        : 0;
+
+                    return productVat + shippingVat;
                 },
                 getShippingCost: () => {
                     const currentProducts = get().products;

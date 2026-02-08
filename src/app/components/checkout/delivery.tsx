@@ -2,8 +2,13 @@
 import { useState } from "react";
 import { MdLocationOn } from "react-icons/md";
 
-export default function Delivery() {
-    const [sendingMethod, setSendingMethod] = useState("delivery");
+export default function Delivery({
+    setSendingMethod,
+    sendingMethod,
+}: {
+    setSendingMethod: (method: "delivery" | "pickup") => void;
+    sendingMethod: "delivery" | "pickup";
+}) {
     return (
         <div className="flex flex-col gap-5">
             <h2 className="text-3xl font-bold mb-2">Bezorging</h2>
@@ -68,7 +73,7 @@ function DeliveryDelivery() {
                     defaultValue={"netherlands"}
                 >
                     <option value={"netherlands"}>Nederland</option>
-                    <option value={"belgium"}>België</option>
+                    {/* <option value={"belgium"}>België</option> */}
                 </select>
             </div>
             <div className="grid grid-cols-2 gap-5 w-full">

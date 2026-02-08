@@ -24,7 +24,7 @@ export default function InvoiceAddress() {
                     defaultValue={"netherlands"}
                 >
                     <option value={"netherlands"}>Nederland</option>
-                    <option value={"belgium"}>België</option>
+                    {/* <option value={"belgium"}>België</option> */}
                 </select>
             </div>
             <div className="grid grid-cols-2 gap-5 w-full">

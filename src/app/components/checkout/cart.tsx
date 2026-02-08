@@ -5,7 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState, useEffect } from "react";
 
-export default function Cart() {
+export default function Cart({
+    deliveryMethod,
+}: {
+    deliveryMethod?: "delivery" | "pickup";
+}) {
     const {
         products,
         removeProduct,
@@ -24,6 +28,20 @@ export default function Cart() {
         () => getGroupedProducts(),
         [products, getGroupedProducts]
     );
+
+    const shippingCost = deliveryMethod === "pickup" ? 0 : getShippingCost();
+
+    // Don't render until mounted to avoid hydration mismatch
+    if (!mounted) {
+        return (
+            <div className="flex flex-col gap-5">
+                <h2 className="text-3xl font-bold mb-2">Producten</h2>
+                <ul className="space-y-4 bg-white p-5 rounded-lg border border-border">
+                    <p className="text-center text-gray-500">Laden...</p>
+                </ul>
+            </div>
+        );
+    }
 
     return (
         <div className="flex flex-col gap-5">
@@ -97,19 +115,13 @@ export default function Cart() {
                                                 Prijs:
                                             </dt>
                                             <dd className="inline">
-                                                {mounted ? (
-                                                    <>
-                                                        €
-                                                        {String(
-                                                            (
-                                                                unitTotal *
-                                                                item.quantity
-                                                            ).toFixed(2)
-                                                        ).replace(".", ",")}
-                                                    </>
-                                                ) : (
-                                                    "€0,00"
-                                                )}{" "}
+                                                €
+                                                {String(
+                                                    (
+                                                        unitTotal *
+                                                        item.quantity
+                                                    ).toFixed(2)
+                                                ).replace(".", ",")}{" "}
                                                 Excl. BTW
                                             </dd>
                                         </div>
@@ -131,64 +143,42 @@ export default function Cart() {
                 })}
                 <li className=" text-right w-fit float-end">
                     <span className="text-muted-foreground text-sm">
-                        Prijs Excl. BTW:{" "}
-                        {mounted ? (
-                            <>
-                                €{" "}
-                                {String(getTotalPrice().toFixed(2)).replace(
-                                    ".",
-                                    ","
-                                )}
-                            </>
-                        ) : (
-                            "€ 0,00"
-                        )}
+                        Prijs Excl. BTW: €{" "}
+                        {String(getTotalPrice().toFixed(2)).replace(".", ",")}
                     </span>
                     <br />
                     <span className="text-muted-foreground text-sm">
-                        {mounted ? (
-                            <>
-                                BTW: €{" "}
-                                {String(getVatPrice().toFixed(2)).replace(
-                                    ".",
-                                    ","
-                                )}
-                            </>
-                        ) : (
-                            "€ 0,00"
-                        )}
+                        BTW: €{" "}
+                        {String(
+                            getVatPrice(deliveryMethod === "delivery").toFixed(
+                                2
+                            )
+                        ).replace(".", ",")}
                     </span>
                     <br />
-                    <span className="text-muted-foreground text-sm">
-                        {mounted ? (
-                            <>
-                                Shipping: €{" "}
-                                {String(getShippingCost().toFixed(2)).replace(
+                    {deliveryMethod !== "pickup" && (
+                        <>
+                            <span className="text-muted-foreground text-sm">
+                                Verzendkosten: €{" "}
+                                {String(shippingCost.toFixed(2)).replace(
                                     ".",
                                     ","
                                 )}
-                            </>
-                        ) : (
-                            "€ 0,00"
-                        )}
-                    </span>
+                            </span>
+                            <br />
+                        </>
+                    )}
                     <hr className="border border-border my-1" />
 
                     <span className="font-bold text-sm">
-                        {mounted ? (
-                            <>
-                                Totaal: €{" "}
-                                {String(
-                                    (
-                                        getTotalPrice() +
-                                        getVatPrice() +
-                                        getShippingCost()
-                                    ).toFixed(2)
-                                ).replace(".", ",")}
-                            </>
-                        ) : (
-                            "€ 0,00"
-                        )}
+                        Totaal: €{" "}
+                        {String(
+                            (
+                                getTotalPrice() +
+                                getVatPrice(deliveryMethod === "delivery") +
+                                shippingCost
+                            ).toFixed(2)
+                        ).replace(".", ",")}
                     </span>
                 </li>
             </ul>
