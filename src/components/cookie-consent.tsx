@@ -55,27 +55,28 @@ export function CookieConsent({ variant = "default", mode = false }) {
                 <div className="grid gap-2">
                     <div className="border-b border-border h-12 sm:h-14 flex items-center justify-between p-3 sm:p-4">
                         <h1 className="text-base sm:text-lg font-medium">
-                            We use cookies
+                            Wij gebruiken cookies
                         </h1>
                         <CookieIcon className="h-4 w-4 sm:h-[1.2rem] sm:w-[1.2rem]" />
                     </div>
                     <div className="p-3 sm:p-4">
                         <p className="text-xs sm:text-sm font-normal text-start text-muted-foreground">
-                            We use cookies to ensure you get the best experience
-                            on our website. For more information on how we use
-                            cookies, please see our cookie policy.
+                            We gebruiken cookies om ervoor te zorgen dat je de
+                            beste ervaring op onze website krijgt. Voor meer
+                            informatie over hoe we cookies gebruiken, bekijk dan
+                            ons cookiebeleid.
                             <br />
                             <br />
                             <span className="text-xs">
-                                By clicking{" "}
+                                Door te klikken{" "}
                                 <span className="font-medium text-black dark:text-white">
-                                    Accept
+                                    Accepteren
                                 </span>
-                                , you agree to our use of cookies.
+                                , accepteer je ons cookiebeleid.
                             </span>
                             <br />
-                            <a href="#" className="text-xs underline">
-                                Learn more.
+                            <a href="/cookie" className="text-xs underline">
+                                Lees meer.
                             </a>
                         </p>
                     </div>
@@ -85,14 +86,14 @@ export function CookieConsent({ variant = "default", mode = false }) {
                             variant="default"
                             className="w-full"
                         >
-                            Accept
+                            Accepteren
                         </Button>
                         <Button
                             onClick={decline}
                             variant="outline"
                             className="w-full"
                         >
-                            Decline
+                            Weigeren
                         </Button>
                     </div>
                 </div>
@@ -111,27 +112,28 @@ export function CookieConsent({ variant = "default", mode = false }) {
             <div className="m-0 sm:m-3 dark:bg-card bg-background border border-border rounded-lg shadow-lg">
                 <div className="flex items-center justify-between p-3">
                     <h1 className="text-base sm:text-lg font-medium">
-                        We use cookies
+                        Wij gebruiken cookies
                     </h1>
                     <CookieIcon className="h-4 w-4 sm:h-[1.2rem] sm:w-[1.2rem]" />
                 </div>
                 <div className="p-3 -mt-2">
                     <p className="text-xs sm:text-sm text-left text-muted-foreground">
-                        We use cookies to ensure you get the best experience on
-                        our website. For more information on how we use cookies,
-                        please see our cookie policy.
+                        We gebruiken cookies om ervoor te zorgen dat je de beste
+                        ervaring op onze website krijgt. Voor meer informatie
+                        over hoe we cookies gebruiken, bekijk dan ons
+                        cookiebeleid.
                     </p>
                 </div>
                 <div className="grid grid-cols-2 items-center gap-2 p-3 mt-2 border-t">
                     <Button onClick={accept} className="w-full">
-                        Accept
+                        Accepteren
                     </Button>
                     <Button
                         onClick={decline}
                         className="w-full"
                         variant="outline"
                     >
-                        Decline
+                        Weigeren
                     </Button>
                 </div>
             </div>
