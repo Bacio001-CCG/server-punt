@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 import { ToastContainer } from "react-toastify";
+import { CookieConsent } from "@/components/cookie-consent";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -117,6 +118,7 @@ export default function RootLayout({
                 {children}
                 <Footer />
                 <ToastContainer theme="light" />
+                <CookieConsent />
             </body>
         </html>
     );
