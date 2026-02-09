@@ -2,13 +2,20 @@
 import useCart from "@/hooks/useCart";
 import { useEffect, useState } from "react";
 
-export default function InvoiceAddress() {
+export default function InvoiceAddress({
+    deliveryMethod,
+}: {
+    deliveryMethod?: "delivery" | "pickup";
+}) {
     const { getTotalPrice, getVatPrice, getShippingCost } = useCart();
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    const shippingCost = deliveryMethod === "pickup" ? 0 : getShippingCost();
+    const vatPrice = getVatPrice(deliveryMethod === "delivery");
 
     return (
         <div className="flex flex-col gap-5">
@@ -27,14 +34,14 @@ export default function InvoiceAddress() {
                     {/* <option value={"belgium"}>België</option> */}
                 </select>
             </div>
-            <div className="grid grid-cols-2 gap-5 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
                 <div>
                     <label htmlFor="invoice.firstname">Voornaam</label>
                     <input
                         type="text"
                         id="invoice.firstname"
                         className="block w-full border border-gray-300 rounded-md p-2 mt-1"
-                        placeholder="John"
+                        placeholder="Jan"
                         name="invoice.firstname"
                         required
                     />
@@ -45,7 +52,7 @@ export default function InvoiceAddress() {
                         type="text"
                         id="invoice.lastname"
                         className="block w-full border border-gray-300 rounded-md p-2 mt-1"
-                        placeholder="Doe"
+                        placeholder="Jansen"
                         name="invoice.lastname"
                         required
                     />
@@ -69,17 +76,19 @@ export default function InvoiceAddress() {
                     type="text"
                     id="invoice.cocNumber"
                     className="block w-full border border-gray-300 rounded-md p-2 mt-1"
+                    placeholder="12345678"
                     name="invoice.cocNumber"
                 />
             </div>
             <div>
                 <label htmlFor="invoice.vatNumber">
-                    BTW nummer (Alleen als bedrijf is ingevuld)
+                    BTW nummer (Optioneel)
                 </label>
                 <input
                     type="text"
                     id="invoice.vatNumber"
                     className="block w-full border border-gray-300 rounded-md p-2 mt-1"
+                    placeholder="NL123456789B01"
                     name="invoice.vatNumber"
                 />
             </div>
@@ -91,9 +100,10 @@ export default function InvoiceAddress() {
                     className="block w-full border border-gray-300 rounded-md p-2 mt-1"
                     placeholder="Kraaivenstraat 36-07"
                     name="invoice.address"
+                    required
                 />
             </div>
-            <div className="grid grid-cols-2 gap-5 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
                 <div>
                     <label htmlFor="invoice.postalcode">Postcode</label>
                     <input
@@ -119,13 +129,13 @@ export default function InvoiceAddress() {
             </div>
             <div>
                 <label htmlFor="invoice.phonenumber">
-                    Telefoon (optioneel)
+                    Telefoonnummer (Optioneel)
                 </label>
                 <input
                     type="tel"
                     id="invoice.phonenumber"
                     className="block w-full border border-gray-300 rounded-md p-2 mt-1"
-                    placeholder="0612345678"
+                    placeholder="06 12345678"
                     name="invoice.phonenumber"
                 />
             </div>
@@ -140,11 +150,9 @@ export default function InvoiceAddress() {
                     <>
                         €
                         {String(
-                            (
-                                getTotalPrice() +
-                                getVatPrice() +
-                                getShippingCost()
-                            ).toFixed(2)
+                            (getTotalPrice() + vatPrice + shippingCost).toFixed(
+                                2
+                            )
                         ).replace(".", ",")}
                     </>
                 ) : (

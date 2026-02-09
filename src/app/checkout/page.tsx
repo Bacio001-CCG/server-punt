@@ -188,7 +188,7 @@ export default function Checkout() {
                     sendingMethod={deliveryMethod}
                     setSendingMethod={setDeliveryMethod}
                 />
-                <InvoiceAddress />
+                <InvoiceAddress deliveryMethod={deliveryMethod} />
 
                 {Object.keys(errors).length > 0 && (
                     <div className="bg-red-200 text-red-700 p-3 rounded-lg border border-red-400">
