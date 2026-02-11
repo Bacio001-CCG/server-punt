@@ -164,6 +164,28 @@ export const orderItemsTable = pgTable("order_items", {
     createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
+export const productAnalyticsTable = pgTable("productAnalytics", {
+    id: serial("id").primaryKey(),
+    productId: integer("product_id")
+        .notNull()
+        .references(() => productsTable.id),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at")
+        .defaultNow()
+        .$onUpdate(() => /* @__PURE__ */ new Date())
+        .notNull(),
+});
+
+export const productAnalyticsRelations = relations(
+    productAnalyticsTable,
+    ({ one }) => ({
+        product: one(productsTable, {
+            fields: [productAnalyticsTable.productId],
+            references: [productsTable.id],
+        }),
+    })
+);
+
 export const orderItemsConfigurationTable = pgTable(
     "order_items_configuration",
     {
@@ -357,3 +379,6 @@ export type SelectAuditLog = typeof auditLogsTable.$inferSelect;
 
 export type InsertBrand = typeof brandsTable.$inferInsert;
 export type SelectBrand = typeof brandsTable.$inferSelect;
+
+export type InsertProductAnalytics = typeof productAnalyticsTable.$inferInsert;
+export type SelectProductAnalytics = typeof productAnalyticsTable.$inferSelect;

@@ -17,6 +17,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { MdDangerous, MdOutlineDangerous, MdWarning } from "react-icons/md";
 import Link from "next/link";
+import { productAnalyticsRegistration } from "@/lib/analytics";
 
 export default function Body({
     product,
@@ -34,7 +35,23 @@ export default function Body({
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+
+        const sessionKey = `product-view-${product.id}`;
+        const hasViewed = sessionStorage.getItem(sessionKey);
+
+        if (!hasViewed) {
+            trackProductView(product.id);
+            sessionStorage.setItem(sessionKey, "true");
+        }
+    }, [product.id]);
+
+    const trackProductView = async (productId: number) => {
+        try {
+            await productAnalyticsRegistration(productId);
+        } catch (error) {
+            console.error("Failed to track product view:", error);
+        }
+    };
 
     const toggleProductSelection = (productId: number, categoryId: number) => {
         setSelectedProducts((prev) => {
