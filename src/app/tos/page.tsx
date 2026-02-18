@@ -572,7 +572,7 @@ export default function TOS() {
                     </section>
 
                     {/* Artikel 18 */}
-                    <section>
+                    <section id="warranty">
                         <h2 className="text-2xl font-bold mb-4">
                             Artikel 18. Garantie & conformiteit
                         </h2>
@@ -908,6 +908,7 @@ export default function TOS() {
                         <p>Kraaivenstraat 36-07</p>
                         <p>5048 AB Tilburg</p>
                         <p className="mt-2">KvK: 97831441</p>
+                        <p>BTW: NL868250983B01</p>
                         <p>
                             E-mail:{" "}
                             <a

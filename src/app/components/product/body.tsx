@@ -222,7 +222,7 @@ flex flex-col items-center
                                 </h2>
                             </div>
 
-                            {linkedProducts.length != 0 && (
+                            {linkedProducts.length != 0 ? (
                                 <div className="flex flex-col gap-4 sm:gap-5 mb-4 sm:mb-6">
                                     <div className="flex flex-col gap-2">
                                         <h2 className="font-display flex gap-2 text-xl sm:text-2xl leading-tight font-bold tracking-tight">
@@ -256,10 +256,10 @@ flex flex-col items-center
                                                                 (l) =>
                                                                     l.product
                                                                         ?.categoryId ===
-                                                                        c.id &&
+                                                                    c.id &&
                                                                     l.product
                                                                         .quantityInStock >
-                                                                        0
+                                                                    0
                                                             )
                                                             .sort((a, b) => {
                                                                 const nameA =
@@ -321,16 +321,15 @@ flex flex-col items-center
                                                                             checked={selectedProducts.includes(
                                                                                 l.id
                                                                             )}
-                                                                            onChange={() => {}}
+                                                                            onChange={() => { }}
                                                                         />
                                                                         <button
-                                                                            className={`text-xs sm:text-sm text-left break-words ${
-                                                                                selectedProducts.includes(
-                                                                                    l.id
-                                                                                )
-                                                                                    ? "text-primary font-bold"
-                                                                                    : "text-muted-foreground"
-                                                                            }`}
+                                                                            className={`text-xs sm:text-sm text-left break-words ${selectedProducts.includes(
+                                                                                l.id
+                                                                            )
+                                                                                ? "text-primary font-bold"
+                                                                                : "text-muted-foreground"
+                                                                                }`}
                                                                         >
                                                                             {
                                                                                 l
@@ -344,7 +343,7 @@ flex flex-col items-center
                                                                                         .product
                                                                                         ?.price
                                                                                 ) ??
-                                                                                    "0"
+                                                                                "0"
                                                                             )
                                                                                 .toFixed(
                                                                                     2
@@ -368,91 +367,91 @@ flex flex-col items-center
                                                                     {selectedProducts.includes(
                                                                         l.id
                                                                     ) && (
-                                                                        <div className="flex gap-2 items-center ml-8">
-                                                                            <button
-                                                                                onClick={() =>
-                                                                                    updateQuantity(
-                                                                                        l.id,
-                                                                                        (quantities[
-                                                                                            l
-                                                                                                .id
-                                                                                        ] ||
-                                                                                            1) -
+                                                                            <div className="flex gap-2 items-center ml-8">
+                                                                                <button
+                                                                                    onClick={() =>
+                                                                                        updateQuantity(
+                                                                                            l.id,
+                                                                                            (quantities[
+                                                                                                l
+                                                                                                    .id
+                                                                                            ] ||
+                                                                                                1) -
                                                                                             1
-                                                                                    )
-                                                                                }
-                                                                                className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded text-sm"
-                                                                            >
-                                                                                -
-                                                                            </button>
-                                                                            <input
-                                                                                type="number"
-                                                                                min="1"
-                                                                                max={
-                                                                                    l
-                                                                                        .product
-                                                                                        ?.quantityInStock ||
-                                                                                    1
-                                                                                }
-                                                                                value={
-                                                                                    quantities[
+                                                                                        )
+                                                                                    }
+                                                                                    className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded text-sm"
+                                                                                >
+                                                                                    -
+                                                                                </button>
+                                                                                <input
+                                                                                    type="number"
+                                                                                    min="1"
+                                                                                    max={
+                                                                                        l
+                                                                                            .product
+                                                                                            ?.quantityInStock ||
+                                                                                        1
+                                                                                    }
+                                                                                    value={
+                                                                                        quantities[
                                                                                         l
                                                                                             .id
-                                                                                    ] ||
-                                                                                    1
-                                                                                }
-                                                                                onChange={(
-                                                                                    e
-                                                                                ) =>
-                                                                                    updateQuantity(
-                                                                                        l.id,
+                                                                                        ] ||
+                                                                                        1
+                                                                                    }
+                                                                                    onChange={(
+                                                                                        e
+                                                                                    ) =>
+                                                                                        updateQuantity(
+                                                                                            l.id,
+                                                                                            parseInt(
+                                                                                                e
+                                                                                                    .target
+                                                                                                    .value
+                                                                                            ) ||
+                                                                                            1
+                                                                                        )
+                                                                                    }
+                                                                                    className="w-12 sm:w-16 px-2 py-1 border border-gray-300 rounded text-center text-sm"
+                                                                                    onClick={(
+                                                                                        e
+                                                                                    ) =>
+                                                                                        e.stopPropagation()
+                                                                                    }
+                                                                                />
+                                                                                <button
+                                                                                    disabled={
+                                                                                        quantities[
+                                                                                        l
+                                                                                            .id
+                                                                                        ] ===
                                                                                         parseInt(
-                                                                                            e
-                                                                                                .target
-                                                                                                .value
-                                                                                        ) ||
-                                                                                            1
-                                                                                    )
-                                                                                }
-                                                                                className="w-12 sm:w-16 px-2 py-1 border border-gray-300 rounded text-center text-sm"
-                                                                                onClick={(
-                                                                                    e
-                                                                                ) =>
-                                                                                    e.stopPropagation()
-                                                                                }
-                                                                            />
-                                                                            <button
-                                                                                disabled={
-                                                                                    quantities[
-                                                                                        l
-                                                                                            .id
-                                                                                    ] ===
-                                                                                    parseInt(
-                                                                                        String(
-                                                                                            l
-                                                                                                .product
-                                                                                                ?.quantityInStock
-                                                                                        ) ||
+                                                                                            String(
+                                                                                                l
+                                                                                                    .product
+                                                                                                    ?.quantityInStock
+                                                                                            ) ||
                                                                                             "1"
-                                                                                    )
-                                                                                }
-                                                                                onClick={() =>
-                                                                                    updateQuantity(
-                                                                                        l.id,
-                                                                                        (quantities[
-                                                                                            l
-                                                                                                .id
-                                                                                        ] ||
-                                                                                            1) +
+                                                                                        )
+                                                                                    }
+                                                                                    onClick={() =>
+                                                                                        updateQuantity(
+                                                                                            l.id,
+                                                                                            (quantities[
+                                                                                                l
+                                                                                                    .id
+                                                                                            ] ||
+                                                                                                1) +
                                                                                             1
-                                                                                    )
-                                                                                }
-                                                                                className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded text-sm disabled:opacity-50 disabled:cursor-not-allowed"
-                                                                            >
-                                                                                +
-                                                                            </button>
-                                                                        </div>
-                                                                    )}
+                                                                                        )
+                                                                                    }
+                                                                                    className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                                                                                >
+                                                                                    +
+                                                                                </button>
+                                                                            </div>
+                                                                        )}
                                                                 </li>
                                                             ))}
                                                     </ul>
@@ -461,6 +460,19 @@ flex flex-col items-center
                                         }
                                     })}
                                 </div>
+                            ) : (
+                                <div className="flex flex-col gap-4 sm:gap-5 mb-4 sm:mb-6">
+                                    <div className="flex flex-col gap-2">
+                                        <h2 className="font-display flex gap-2 text-xl sm:text-2xl leading-tight font-bold tracking-tight">
+                                            Product Aantal
+                                        </h2>
+                                        <p className="text-sm sm:text-base">
+                                            Kies hieronder het aantal van het
+                                            basisproduct dat u wilt bestellen.
+                                        </p>
+                                    </div>
+                                </div>
+
                             )}
                             <div className="flex flex-col gap-2 p-3 sm:p-4 bg-gray-50 rounded-lg">
                                 <div className="flex justify-between items-center">
@@ -487,7 +499,7 @@ flex flex-col items-center
                                             onChange={(e) =>
                                                 updateMainProductQuantity(
                                                     parseInt(e.target.value) ||
-                                                        1
+                                                    1
                                                 )
                                             }
                                             className="w-12 sm:w-16 px-2 py-1 border border-gray-300 rounded text-center text-sm"
@@ -534,7 +546,7 @@ flex flex-col items-center
                                                 €
                                                 {calculateTotalWithVAT(
                                                     product.price *
-                                                        mainProductQuantity
+                                                    mainProductQuantity
                                                 )
                                                     .toFixed(2)
                                                     .replace(".", ",")}{" "}

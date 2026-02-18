@@ -150,11 +150,10 @@ export default function Nav() {
                                 <ul className="flex items-center gap-6">
                                     <li>
                                         <Link
-                                            className={`text-sm font-medium transition-colors ${
-                                                pathname === "/"
-                                                    ? "font-bold text-primary"
-                                                    : "text-muted-foreground hover:text-primary"
-                                            }`}
+                                            className={`text-sm font-medium transition-colors ${pathname === "/"
+                                                ? "font-bold text-primary"
+                                                : "text-muted-foreground hover:text-primary"
+                                                }`}
                                             href="/"
                                         >
                                             Home
@@ -162,11 +161,10 @@ export default function Nav() {
                                     </li>
                                     <li>
                                         <Link
-                                            className={`text-sm font-medium transition-colors ${
-                                                pathname === "/products"
-                                                    ? "font-bold text-primary"
-                                                    : "text-muted-foreground hover:text-primary"
-                                            }`}
+                                            className={`text-sm font-medium transition-colors ${pathname === "/products"
+                                                ? "font-bold text-primary"
+                                                : "text-muted-foreground hover:text-primary"
+                                                }`}
                                             href="/products"
                                         >
                                             Producten
@@ -177,7 +175,7 @@ export default function Nav() {
                                             Categorieën
                                         </span>
                                         <ul
-                                            className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[75vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
+                                            className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[50vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
                                             style={{ top: "100%" }}
                                         >
                                             {categories
@@ -203,7 +201,7 @@ export default function Nav() {
                                             Merken
                                         </span>
                                         <ul
-                                            className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[75vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
+                                            className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[50vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
                                             style={{ top: "100%" }}
                                         >
                                             {brands.map((brand) => (
@@ -222,11 +220,10 @@ export default function Nav() {
                                     </li>
                                     <li>
                                         <Link
-                                            className={`text-sm font-medium transition-colors ${
-                                                pathname === "/about-us"
-                                                    ? "font-bold text-primary"
-                                                    : "text-muted-foreground hover:text-primary"
-                                            }`}
+                                            className={`text-sm font-medium transition-colors ${pathname === "/about-us"
+                                                ? "font-bold text-primary"
+                                                : "text-muted-foreground hover:text-primary"
+                                                }`}
                                             href="/about-us"
                                         >
                                             Over ons
@@ -392,9 +389,8 @@ export default function Nav() {
 
             {/* Mobile Menu Sidebar */}
             <div
-                className={`fixed top-[65px] left-0 bottom-0 w-[280px] bg-white z-30 md:hidden transform transition-transform duration-300 ease-in-out overflow-y-auto ${
-                    isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-                }`}
+                className={`fixed top-[65px] left-0 bottom-0 w-[280px] bg-white z-30 md:hidden transform transition-transform duration-300 ease-in-out overflow-y-auto ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+                    }`}
             >
                 <div className="flex flex-col p-4 space-y-4">
                     {/* Mobile Search */}
@@ -421,22 +417,20 @@ export default function Nav() {
                     <nav className="flex flex-col space-y-1">
                         <Link
                             href="/"
-                            className={`px-4 py-3 rounded-lg transition-colors ${
-                                pathname === "/"
-                                    ? "bg-primary text-primary-foreground font-semibold"
-                                    : "text-muted-foreground hover:bg-gray-100"
-                            }`}
+                            className={`px-4 py-3 rounded-lg transition-colors ${pathname === "/"
+                                ? "bg-primary text-primary-foreground font-semibold"
+                                : "text-muted-foreground hover:bg-gray-100"
+                                }`}
                         >
                             Home
                         </Link>
 
                         <Link
                             href="/products"
-                            className={`px-4 py-3 rounded-lg transition-colors ${
-                                pathname === "/products"
-                                    ? "bg-primary text-primary-foreground font-semibold"
-                                    : "text-muted-foreground hover:bg-gray-100"
-                            }`}
+                            className={`px-4 py-3 rounded-lg transition-colors ${pathname === "/products"
+                                ? "bg-primary text-primary-foreground font-semibold"
+                                : "text-muted-foreground hover:bg-gray-100"
+                                }`}
                         >
                             Producten
                         </Link>
@@ -454,9 +448,8 @@ export default function Nav() {
                                 <span>Categorieën</span>
                                 <ChevronDown
                                     size={20}
-                                    className={`transform transition-transform ${
-                                        mobileCategoriesOpen ? "rotate-180" : ""
-                                    }`}
+                                    className={`transform transition-transform ${mobileCategoriesOpen ? "rotate-180" : ""
+                                        }`}
                                 />
                             </button>
                             {mobileCategoriesOpen && (
@@ -489,9 +482,8 @@ export default function Nav() {
                                 <span>Merken</span>
                                 <ChevronDown
                                     size={20}
-                                    className={`transform transition-transform ${
-                                        mobileBrandsOpen ? "rotate-180" : ""
-                                    }`}
+                                    className={`transform transition-transform ${mobileBrandsOpen ? "rotate-180" : ""
+                                        }`}
                                 />
                             </button>
                             {mobileBrandsOpen && (
@@ -513,11 +505,10 @@ export default function Nav() {
 
                         <Link
                             href="/about-us"
-                            className={`px-4 py-3 rounded-lg transition-colors ${
-                                pathname === "/about-us"
-                                    ? "bg-primary text-primary-foreground font-semibold"
-                                    : "text-muted-foreground hover:bg-gray-100"
-                            }`}
+                            className={`px-4 py-3 rounded-lg transition-colors ${pathname === "/about-us"
+                                ? "bg-primary text-primary-foreground font-semibold"
+                                : "text-muted-foreground hover:bg-gray-100"
+                                }`}
                         >
                             Over ons
                         </Link>
