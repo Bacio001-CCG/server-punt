@@ -169,15 +169,18 @@ flex flex-col items-center
                                 <p className="text-gray-700 mb-6 whitespace-pre-wrap text-sm sm:text-base">
                                     {product.description}
                                 </p>
-                                <Alert className=" mb-6 border-green-600 bg-green-100">
-                                    <CheckCircle2Icon className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
-                                    <AlertTitle className="font-semibold text-sm sm:text-base text-green-900">
-                                        Gloednieuw Product
-                                    </AlertTitle>
-                                    <AlertDescription className="text-xs text-green-800 sm:text-sm">
-                                        Dit product is gloednieuw en niet refurbished. Het is direct afkomstig van de fabrikant of een geautoriseerde distributeur, en heeft nog nooit eerder een eigenaar gehad. U kunt erop vertrouwen dat u een product van de hoogste kwaliteit ontvangt, zonder enige tekenen van gebruik of slijtage.
-                                    </AlertDescription>
-                                </Alert>
+                                {
+                                    !product.refurbished && <Alert className=" mb-6 border-green-600 bg-green-100">
+                                        <CheckCircle2Icon className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
+                                        <AlertTitle className="font-semibold text-sm sm:text-base text-green-900">
+                                            Gloednieuw Product
+                                        </AlertTitle>
+                                        <AlertDescription className="text-xs text-green-800 sm:text-sm">
+                                            Dit product is gloednieuw en niet refurbished. Het is direct afkomstig van de fabrikant of een geautoriseerde distributeur, en heeft nog nooit eerder een eigenaar gehad. U kunt erop vertrouwen dat u een product van de hoogste kwaliteit ontvangt, zonder enige tekenen van gebruik of slijtage.
+                                        </AlertDescription>
+                                    </Alert>
+                                }
+
                                 <div className="flex flex-col gap-4">
                                     <div
                                         className="border-b-2 w-full border-border pb-2 flex justify-between cursor-pointer"
