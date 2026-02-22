@@ -64,6 +64,8 @@ export default async function Featured() {
                                     href={`/product/${product.id}`}
                                     price={product.price.toFixed(2)}
                                     stock={product.quantityInStock}
+                                    createdAt={product.createdAt}
+                                    refurbished={product.refurbished}
                                 />
                             ))}
                 </div>

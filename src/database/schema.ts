@@ -60,6 +60,7 @@ export const productsTable = pgTable("products", {
     price: integer("price").notNull(),
     quantityInStock: integer("quantity_in_stock").notNull().default(0),
     hidden: boolean("hidden").notNull().default(false),
+    refurbished: boolean("refurbished").notNull().default(false),
     createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 

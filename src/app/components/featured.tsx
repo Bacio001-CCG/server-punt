@@ -105,6 +105,8 @@ export default function Featured() {
                                             href={`/product/${product.id}`}
                                             price={product.price.toFixed(2)}
                                             stock={product.quantityInStock}
+                                            createdAt={product.createdAt}
+                                            refurbished={product.refurbished}
                                         />
                                     </div>
                                 </div>
@@ -131,11 +133,10 @@ export default function Featured() {
                         {scrollSnaps.map((_, index) => (
                             <button
                                 key={index}
-                                className={`h-2 w-2 rounded-full transition-all ${
-                                    index === selectedIndex
-                                        ? "bg-primary w-8"
-                                        : "bg-gray-300 hover:bg-gray-400"
-                                }`}
+                                className={`h-2 w-2 rounded-full transition-all ${index === selectedIndex
+                                    ? "bg-primary w-8"
+                                    : "bg-gray-300 hover:bg-gray-400"
+                                    }`}
                                 onClick={() => scrollTo(index)}
                                 aria-label={`Go to slide ${index + 1}`}
                             />

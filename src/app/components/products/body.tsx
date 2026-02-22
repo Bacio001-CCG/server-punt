@@ -22,6 +22,8 @@ export default function Body({
         brandId: number;
         description: string | null;
         configuration: string | null;
+        createdAt: Date;
+        refurbished: boolean;
     }>;
     categories: SelectCategory[];
     brands: SelectBrand[];
@@ -323,13 +325,12 @@ export default function Body({
                                             )}
                                         />{" "}
                                         <button
-                                            className={`text-sm ${
-                                                selectedCategories.includes(
-                                                    category.id
-                                                )
-                                                    ? "text-primary font-bold"
-                                                    : "text-muted-foreground"
-                                            }`}
+                                            className={`text-sm ${selectedCategories.includes(
+                                                category.id
+                                            )
+                                                ? "text-primary font-bold"
+                                                : "text-muted-foreground"
+                                                }`}
                                         >
                                             {category.name}
                                         </button>
@@ -356,11 +357,10 @@ export default function Body({
                                         )}
                                     />
                                     <button
-                                        className={`text-sm ${
-                                            selectedBrands.includes(brand.id)
-                                                ? "text-primary font-bold"
-                                                : "text-muted-foreground"
-                                        }`}
+                                        className={`text-sm ${selectedBrands.includes(brand.id)
+                                            ? "text-primary font-bold"
+                                            : "text-muted-foreground"
+                                            }`}
                                     >
                                         {brand.name}
                                     </button>
@@ -412,6 +412,8 @@ export default function Body({
                                     href={`/product/${product.id}`}
                                     price={String(product.price)}
                                     stock={product.quantityInStock}
+                                    createdAt={product.createdAt}
+                                    refurbished={product.refurbished}
                                 />
                             ))}
                         </div>
