@@ -115,7 +115,7 @@ export default function Card({
                             €{priceExclVAT.replace(".", ",")} Excl. BTW
                         </p>
                         <p>€{priceInclVAT.replace(".", ",")} Incl. BTW</p>
-                        <p className="text-green-700">{stock}x in vooraad</p>
+                        <p className="text-green-700">{stock}x in voorraad</p>
                     </div>
                 )}
             </div>

@@ -27,19 +27,11 @@ export default function Footer() {
                     <div className="grid w-full max-w-4xl gap-8 text-sm text-gray-600 md:grid-cols-3">
                         <div>
                             <h3 className="mb-3 text-base font-semibold text-gray-900">
-                                Contact
+                                Gegevens
                             </h3>
                             <ul className="space-y-2">
-                                <p>
-                                    <a
-                                        href="mailto:info@serverpunt.com"
-                                        className="text-gray-900 hover:underline"
-                                    >
-                                        info@serverpunt.com
-                                    </a>
-                                </p>
-                                <p>Kraaivenstraat 36-07</p>
-                                <p>5048 AB Tilburg</p>
+                                <li>KvK nummer: 97831441</li>
+                                <li>BTW nummer: NL868250983B01</li>
                             </ul>
                         </div>
 
@@ -53,7 +45,7 @@ export default function Footer() {
                                         href="/about-us"
                                         className="hover:underline"
                                     >
-                                        About us
+                                        Over ons
                                     </Link>
                                 </li>
                                 <li>
@@ -76,16 +68,24 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-
                         <div>
                             <h3 className="mb-3 text-base font-semibold text-gray-900">
-                                Gegevens
+                                Contact
                             </h3>
                             <ul className="space-y-2">
-                                <li>KvK nummer: 97831441</li>
-                                <li>BTW nummer: NL868250983B01</li>
+                                <p>
+                                    <a
+                                        href="mailto:info@serverpunt.com"
+                                        className="hover:underline"
+                                    >
+                                        info@serverpunt.com
+                                    </a>
+                                </p>
+                                <p>Kraaivenstraat 36-07</p>
+                                <p>5048 AB Tilburg</p>
                             </ul>
                         </div>
+
                     </div>
                     <div className="w-2/3 relative items-center justify-center">
                         <span className="mt-8 block text-xs text-gray-500">

@@ -477,7 +477,7 @@ flex flex-col items-center
                                 <div className="flex flex-col gap-4 sm:gap-5 mb-4 sm:mb-6">
                                     <div className="flex flex-col gap-2">
                                         <h2 className="font-display flex gap-2 text-xl sm:text-2xl leading-tight font-bold tracking-tight">
-                                            Product Aantal
+                                            {product.name}
                                         </h2>
                                         <p className="text-sm sm:text-base">
                                             Kies hieronder het aantal van het
