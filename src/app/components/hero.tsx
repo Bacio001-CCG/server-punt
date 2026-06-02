@@ -4,8 +4,10 @@ import { MdArrowDownward } from "react-icons/md";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden py-12">
-            <div className="bg-grid-black/[0.02] absolute inset-0 bg-[length:20px_20px]"></div>
+        <section className="relative -mt-[65px] overflow-hidden pt-[calc(3rem+65px)] pb-12">
+            <div className="hero-mesh absolute inset-0" />
+            <div className="hero-grid absolute inset-0" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-background" />
             <div
                 className="
               relative z-10 container mx-auto max-w-7xl px-4
@@ -31,12 +33,7 @@ export default function Hero() {
                     "
                             >
                                 Uw one-stop shop voor{" "}
-                                <span
-                                    className="
-                        bg-gradient-to-r from-primary to-primary/70 bg-clip-text
-                        text-transparent
-                      "
-                                >
+                                <span className="text-logo-gradient">
                                     servers
                                 </span>
                             </h1>
@@ -60,7 +57,7 @@ export default function Hero() {
                         >
                             <Link href="#products">
                                 <button
-                                    className="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 rounded-md has-[&gt;svg]:px-4 bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 hover:shadow-md focus-visible:ring-2 focus-visible:ring-primary/60 h-12 gap-1.5 px-8 transition-colors duration-200"
+                                    className="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 rounded-md has-[&gt;svg]:px-4 bg-brand-orange text-white shadow-xs hover:bg-brand-orange/90 hover:shadow-md focus-visible:ring-2 focus-visible:ring-brand-orange/40 h-12 gap-1.5 px-8 transition-colors duration-200"
                                     data-slot="button"
                                 >
                                     Bekijk ons aanbod <MdArrowDownward />

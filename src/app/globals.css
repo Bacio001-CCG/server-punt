@@ -37,6 +37,8 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-orange: var(--brand-orange);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -45,24 +47,27 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: oklch(0.988 0.004 264);
+  --foreground: oklch(0.2 0.02 264);
+  --card: oklch(1 0.002 264);
+  --card-foreground: oklch(0.2 0.02 264);
+  --popover: oklch(1 0.002 264);
+  --popover-foreground: oklch(0.2 0.02 264);
+  --primary: oklch(0.38 0.1 250);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.96 0.012 264);
+  --secondary-foreground: oklch(0.28 0.04 250);
+  --muted: oklch(0.96 0.008 264);
+  --muted-foreground: oklch(0.5 0.02 264);
+  --accent: oklch(0.94 0.02 250);
+  --accent-foreground: oklch(0.28 0.06 250);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: oklch(0.91 0.012 264);
+  --input: oklch(0.91 0.012 264);
+  --ring: oklch(0.55 0.08 250);
+  --brand-orange: oklch(0.66 0.2 42);
+  --brand-gold: oklch(0.78 0.16 78);
+  --brand-blue: oklch(0.64 0.11 205);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -118,6 +123,45 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .hero-mesh {
+    background-image:
+      radial-gradient(at 15% 35%, color-mix(in oklch, var(--brand-orange) 14%, transparent) 0px, transparent 70%),
+      radial-gradient(at 55% 15%, color-mix(in oklch, var(--brand-gold) 12%, transparent) 0px, transparent 65%),
+      radial-gradient(at 85% 40%, color-mix(in oklch, var(--brand-blue) 12%, transparent) 0px, transparent 70%);
+    mask-image: radial-gradient(ellipse 120% 100% at 50% 30%, black 20%, transparent 85%);
+  }
+
+  .hero-grid {
+    background-image:
+      linear-gradient(to right, color-mix(in oklch, var(--brand-gold) 6%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklch, var(--brand-gold) 6%, transparent) 1px, transparent 1px);
+    background-size: 32px 32px;
+    mask-image: radial-gradient(ellipse 130% 110% at 50% 35%, black 15%, transparent 90%);
+  }
+
+  .text-logo-gradient {
+    background-image: linear-gradient(
+      to right,
+      var(--brand-orange),
+      var(--brand-gold),
+      var(--brand-blue)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-logo-gradient {
+    background-image: linear-gradient(
+      to right,
+      var(--brand-orange),
+      var(--brand-gold),
+      var(--brand-blue)
+    );
   }
 }
 

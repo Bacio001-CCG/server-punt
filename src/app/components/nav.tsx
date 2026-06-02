@@ -10,9 +10,11 @@ import { getBrands } from "@/lib/brands";
 import { searchProducts } from "@/lib/products";
 import Image from "next/image";
 import { Search, Menu, X, ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
     const [mobileBrandsOpen, setMobileBrandsOpen] = useState(false);
@@ -60,6 +62,16 @@ export default function Nav() {
             document.body.style.overflow = "unset";
         };
     }, [isMobileMenuOpen]);
+
+    useEffect(() => {
+        function handleScroll() {
+            setIsScrolled(window.scrollY > 12);
+        }
+
+        handleScroll();
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     // Handle click outside to close dropdown
     useEffect(() => {
@@ -113,7 +125,14 @@ export default function Nav() {
 
     return (
         <>
-            <nav className="sticky top-0 z-40 w-full border-b h-[65px] bg-white">
+            <nav
+                className={cn(
+                    "fixed top-0 left-0 right-0 z-40 h-[65px] w-full transition-all duration-300",
+                    isScrolled || isMobileMenuOpen
+                        ? "border-b border-border/60 bg-background/90 shadow-sm backdrop-blur-xl"
+                        : "border-b border-transparent bg-transparent"
+                )}
+            >
                 <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full">
                     <div className="flex h-16 items-center justify-between gap-4">
                         <div className="flex items-center gap-4 md:gap-6">
@@ -140,7 +159,7 @@ export default function Nav() {
                                     alt="Logo"
                                     className="w-10 h-10 sm:w-[60px] sm:h-[60px]"
                                 />
-                                <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text tracking-tight text-transparent">
+                                <span className="text-base sm:text-xl font-bold tracking-tight text-black">
                                     ServerPunt
                                 </span>
                             </Link>

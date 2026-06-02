@@ -1,6 +1,7 @@
 "use server";
 import { db } from "@/database/connect";
 import {
+    categoriesTable,
     linkedProductsTable,
     productsTable,
     SelectLinkedProduct,
@@ -280,6 +281,10 @@ export async function searchProducts(query: string): Promise<SelectProduct[]> {
         const products = await db
             .select()
             .from(productsTable)
+            .innerJoin(
+                categoriesTable,
+                eq(productsTable.categoryId, categoriesTable.id)
+            )
             .where(
                 and(
                     or(
@@ -288,11 +293,12 @@ export async function searchProducts(query: string): Promise<SelectProduct[]> {
                         ilike(productsTable.configuration, `%${query}%`)
                     ),
                     eq(productsTable.hidden, false),
-                    ne(productsTable.quantityInStock, 0)
+                    ne(productsTable.quantityInStock, 0),
+                    eq(categoriesTable.hidden, false)
                 )
             );
 
-        return products;
+        return products.map((row) => row.products);
     } catch (error) {
         console.error("Failed to search products:", error);
         return [];

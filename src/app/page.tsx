@@ -10,7 +10,7 @@ export default function Home() {
         <main className="flex flex-col gap-y-8">
             <div>
                 <Hero />
-                <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+                <div className="h-px w-full bg-gradient-to-r from-transparent via-border/60 to-transparent" />
             </div>
             {/* <Categories /> */}
 

@@ -5,6 +5,7 @@ import Nav from "./components/nav";
 import Footer from "./components/footer";
 import { ToastContainer } from "react-toastify";
 import { CookieConsent } from "@/components/cookie-consent";
+import { WhatsAppSupportButton } from "@/components/whatsapp-support-button";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -112,13 +113,16 @@ export default function RootLayout({
                 />
             </head>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
                 <Nav />
-                {children}
-                <Footer />
+                <div className="pt-[65px]">
+                    {children}
+                    <Footer />
+                </div>
                 <ToastContainer theme="light" />
                 <CookieConsent />
+                <WhatsAppSupportButton />
             </body>
         </html>
     );
