@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Script from "next/script";
 import { useTranslations } from "next-intl";
+import { ObfuscatedEmail } from "@/components/obfuscated-email";
 
 export default function Footer() {
     const t = useTranslations("footer");
@@ -22,7 +23,7 @@ export default function Footer() {
                                 height={48}
                                 src="/logo.png"
                                 className="mr-1"
-                                alt=""
+                                alt="ServerPunt"
                             />
                             ServerPunt
                         </Link>
@@ -78,12 +79,7 @@ export default function Footer() {
                             </h3>
                             <ul className="space-y-2">
                                 <p>
-                                    <a
-                                        href="mailto:info@serverpunt.com"
-                                        className="hover:underline"
-                                    >
-                                        info@serverpunt.com
-                                    </a>
+                                    <ObfuscatedEmail className="hover:underline" />
                                 </p>
                                 <p>Kraaivenstraat 36-07</p>
                                 <p>5048 AB Tilburg</p>
@@ -171,7 +167,7 @@ export default function Footer() {
             </div>
             <Script
                 src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
-                strategy="afterInteractive"
+                strategy="lazyOnload"
             />
         </footer>
     );

@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Refurbished servers & onderdelen | ServerPunt",
-    "description": "ServerPunt is uw one-stop shop voor refurbished servers, RAM, CPU's en opslag. Enterprise hardware van Dell en HP, snelle levering door de EU.",
-    "keywords": "refurbished servers, server onderdelen, dell servers, hp servers, ram, cpu, opslag, enterprise hardware, serverpunt",
-    "ogTitle": "Refurbished servers & onderdelen | ServerPunt",
-    "ogDescription": "Uw one-stop shop voor refurbished servers en servercomponenten. Scherpe prijzen, geteste kwaliteit en levering door heel Europa."
+    "title": "Refurbished servers & Intel Xeon | ServerPunt",
+    "description": "ServerPunt is uw one-stop shop voor refurbished servers, Intel Xeon CPU's, RAM en opslag op voorraad. Enterprise hardware van Dell en HP — prijzen excl. en incl. BTW, snelle EU-levering.",
+    "keywords": "refurbished servers, intel xeon, server onderdelen, dell servers, hp servers, ram, cpu, opslag, voorraad, enterprise hardware, serverpunt",
+    "ogTitle": "Refurbished servers & Intel Xeon | ServerPunt",
+    "ogDescription": "Refurbished servers en Intel Xeon componenten op voorraad. Scherpe prijzen excl. BTW, geteste kwaliteit en levering door heel Europa."
   },
   "common": {
     "exclVat": "Excl. BTW",
@@ -74,9 +74,9 @@
     "lt": "Lietuvių"
   },
   "hero": {
-    "title": "Uw one-stop shop voor",
-    "titleHighlight": "servers",
-    "subtitle": "Uw one-stop shop voor refurbished servers en enterprise hardware — betrouwbaar, scherp geprijsd en snel geleverd in de EU.",
+    "title": "Refurbished servers — uw one-stop shop voor",
+    "titleHighlight": "enterprise hardware",
+    "subtitle": "Intel Xeon servers, RAM en opslag op voorraad — betrouwbaar, scherp geprijsd excl. BTW en snel geleverd in de EU.",
     "configuratorCta": "Server configurator",
     "viewProducts": "Bekijk ons aanbod",
     "contactUs": "Contacteer ons",
@@ -232,13 +232,13 @@
     "max": "Max"
   },
   "homeProducts": {
-    "title": "Servers & onderdelen",
-    "subtitle": "Blader door refurbished servers, geheugen, processors en opslag — alles voor uw serveromgeving.",
+    "title": "Refurbished servers & Intel Xeon onderdelen",
+    "subtitle": "Blader door servers, geheugen en opslag op voorraad — prijzen excl. en incl. BTW voor uw serveromgeving.",
     "viewAll": "Alle producten"
   },
   "featured": {
-    "title": "Meest verkochte servers",
-    "subtitle": "Populaire refurbished servers en componenten uit ons aanbod, gekozen door klanten om kwaliteit en betrouwbaarheid.",
+    "title": "Meest verkochte refurbished servers",
+    "subtitle": "Populaire Intel Xeon servers en componenten op voorraad — gekozen door klanten om kwaliteit en betrouwbaarheid.",
     "previous": "Vorige",
     "next": "Volgende",
     "goToSlide": "Ga naar slide {index}"

@@ -164,7 +164,7 @@ export default function Nav() {
                                     src="/logo.png"
                                     width={60}
                                     height={60}
-                                    alt=""
+                                    alt="ServerPunt"
                                     className="w-10 h-10 sm:w-[60px] sm:h-[60px]"
                                 />
                                 <span className="text-base sm:text-xl font-bold tracking-tight text-black">

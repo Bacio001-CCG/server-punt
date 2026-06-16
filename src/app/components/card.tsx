@@ -47,7 +47,7 @@ export default function Card({
             aria-label={t("viewProductAria", { name })}
             title={name}
         >
-            <div className="relative aspect-[4/3] overflow-hidden ">
+            <div className="relative aspect-[4/3] overflow-hidden bg-muted/30">
                 <div className="absolute left-2 top-2 z-10 flex flex-col gap-2">
                     {isNew && (
                         <span className="relative inline-flex group/badge">
@@ -90,7 +90,7 @@ export default function Card({
                     src={image ?? "/placeholder.png"}
                     loading="lazy"
                     decoding="async"
-                    className="object-cover transition duration-300 group-hover:scale-105"
+                    className="object-contain p-2 transition duration-300 group-hover:scale-105"
                     style={{
                         position: "absolute",
                         height: "100%",

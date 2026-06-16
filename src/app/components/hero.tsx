@@ -85,10 +85,11 @@ export default async function Hero() {
                         <div className="absolute inset-0 z-10 bg"></div>
                         <Image
                             alt={t("imageAlt")}
-                            decoding="async"
-                            className="object-cover"
-                            width={400}
-                            height={400}
+                            priority
+                            fetchPriority="high"
+                            className="object-contain"
+                            width={448}
+                            height={448}
                             style={{
                                 position: "absolute",
                                 height: "100%",
@@ -99,7 +100,7 @@ export default async function Hero() {
                                 bottom: 0,
                                 color: "transparent",
                             }}
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            sizes="(max-width: 1024px) 0px, 448px"
                             src="/logo.png"
                         />
                     </div>

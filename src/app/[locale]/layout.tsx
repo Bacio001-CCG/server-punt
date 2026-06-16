@@ -11,16 +11,19 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { getSiteUrl } from "@/lib/seo";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
     subsets: ["latin"],
+    display: "swap",
 });
 
 const geistMono = Geist_Mono({
     variable: "--font-geist-mono",
     subsets: ["latin"],
+    display: "swap",
 });
 
 export const viewport: Viewport = {
@@ -107,12 +110,6 @@ export default async function LocaleLayout({
     return (
         <html lang={locale} className="scroll-smooth">
             <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link
-                    rel="preconnect"
-                    href="https://fonts.gstatic.com"
-                    crossOrigin="anonymous"
-                />
                 <meta name="geo.region" content="EU" />
                 <script
                     type="application/ld+json"
@@ -154,6 +151,7 @@ export default async function LocaleLayout({
                     {isWhatsAppWidgetConfigured() ? (
                         <WhatsAppSupportButton />
                     ) : null}
+                    <GoogleAnalytics />
                 </NextIntlClientProvider>
             </body>
         </html>

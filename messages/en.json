@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Refurbished servers & parts | ServerPunt",
-    "description": "ServerPunt is your one-stop shop for refurbished servers, RAM, CPUs and storage. Enterprise hardware from Dell and HP with fast EU delivery.",
-    "keywords": "refurbished servers, server parts, dell servers, hp servers, ram, cpu, storage, enterprise hardware, serverpunt",
-    "ogTitle": "Refurbished servers & parts | ServerPunt",
-    "ogDescription": "Your one-stop shop for refurbished servers and components. Competitive prices, tested quality and delivery across Europe."
+    "title": "Refurbished servers & Intel Xeon | ServerPunt",
+    "description": "ServerPunt is your one-stop shop for refurbished servers, Intel Xeon CPUs, RAM and storage in stock. Dell and HP enterprise hardware — prices excl. and incl. VAT with fast EU delivery.",
+    "keywords": "refurbished servers, intel xeon, server parts, dell servers, hp servers, ram, cpu, storage, in stock, enterprise hardware, serverpunt",
+    "ogTitle": "Refurbished servers & Intel Xeon | ServerPunt",
+    "ogDescription": "Refurbished servers and Intel Xeon components in stock. Competitive excl. VAT pricing, tested quality and delivery across Europe."
   },
   "common": {
     "exclVat": "Excl. VAT",
@@ -75,9 +75,9 @@
     "lt": "Lietuvių"
   },
   "hero": {
-    "title": "Your one-stop shop for",
-    "titleHighlight": "servers",
-    "subtitle": "Your one-stop shop for refurbished servers and enterprise hardware — reliable, competitively priced and delivered across the EU.",
+    "title": "Refurbished servers — your one-stop shop for",
+    "titleHighlight": "enterprise hardware",
+    "subtitle": "Intel Xeon servers, RAM and storage in stock — reliable, competitively priced excl. VAT and delivered across the EU.",
     "configuratorCta": "Server configurator",
     "viewProducts": "View our products",
     "contactUs": "Contact us",
@@ -233,13 +233,13 @@
     "max": "Max"
   },
   "homeProducts": {
-    "title": "Servers & parts",
-    "subtitle": "Browse refurbished servers, memory, processors and storage for your infrastructure.",
+    "title": "Refurbished servers & Intel Xeon parts",
+    "subtitle": "Browse servers, memory and storage in stock — prices excl. and incl. VAT for your infrastructure.",
     "viewAll": "All products"
   },
   "featured": {
-    "title": "Top-selling servers",
-    "subtitle": "Popular refurbished servers and components from our catalog, chosen for quality and reliability.",
+    "title": "Top-selling refurbished servers",
+    "subtitle": "Popular Intel Xeon servers and components in stock — chosen for quality and reliability.",
     "previous": "Previous",
     "next": "Next",
     "goToSlide": "Go to slide {index}"
