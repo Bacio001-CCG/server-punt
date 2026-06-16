@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import { ToastContainer } from "react-toastify";
 import { CookieConsent } from "@/components/cookie-consent";
 import { WhatsAppSupportButton } from "@/components/whatsapp-support-button";
+import { isWhatsAppWidgetConfigured } from "@/lib/whatsapp-config";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -141,7 +142,9 @@ export default async function LocaleLayout({
                     </div>
                     <ToastContainer theme="light" />
                     <CookieConsent />
-                    <WhatsAppSupportButton />
+                    {isWhatsAppWidgetConfigured() ? (
+                        <WhatsAppSupportButton />
+                    ) : null}
                 </NextIntlClientProvider>
             </body>
         </html>

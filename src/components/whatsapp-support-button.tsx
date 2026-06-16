@@ -95,21 +95,12 @@ export function WhatsAppSupportButton() {
         }
     }, [messages, isOpen, statusMessage]);
 
-    if (!supportNumber && process.env.NODE_ENV !== "production") {
-        return (
-            <div className="fixed bottom-6 right-6 z-[9999] rounded-full bg-amber-100 px-3 py-2 text-xs font-medium text-amber-900 shadow">
-                Set NEXT_PUBLIC_WHATSAPP_SUPPORT_NUMBER
-            </div>
-        );
+    if (!supportNumber?.trim()) {
+        return null;
     }
 
     async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
-
-        if (!supportNumber) {
-            setStatusMessage(t("missingNumber"));
-            return;
-        }
 
         const trimmedDraft = draft.trim();
 
