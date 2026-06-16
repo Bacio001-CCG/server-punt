@@ -1,9 +1,15 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function Account() {
+    const t = useTranslations("checkout");
+
     return (
         <div className="flex flex-col gap-5">
-            <h2 className="text-3xl font-bold mb-2">Account</h2>
+            <h2 className="text-3xl font-bold mb-2">{t("account")}</h2>
             <div>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t("email")}</label>
                 <input
                     type="email"
                     name="email"

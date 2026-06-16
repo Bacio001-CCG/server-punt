@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Terms and Conditions",
+    "lastModified": "Last modified: 22 December 2025",
+    "sections": [
+      {
+        "title": "Article 1. Definitions",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "In these general terms and conditions, the following terms shall have the meanings set out below:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "the partnership NetwerkPunt, trading under the name ServerPunt, located at Kraaivenstraat 36-07, 5048 AB Tilburg, registered with the Dutch Chamber of Commerce under number 97831441."
+              },
+              {
+                "term": "Customer",
+                "text": "any natural person or legal entity that enters into or wishes to enter into an Agreement with ServerPunt."
+              },
+              {
+                "term": "Consumer",
+                "text": "the Customer who is a natural person acting for purposes outside their trade, business, craft, or profession."
+              },
+              {
+                "term": "Business customer",
+                "text": "the Customer acting in the exercise of a profession or business."
+              },
+              {
+                "term": "Agreement",
+                "text": "any agreement entered into between ServerPunt and the Customer, including distance sales via the Website, and all obligations arising therefrom."
+              },
+              {
+                "term": "Website",
+                "text": "the website of ServerPunt through which products are offered and orders can be placed, namely https://serverpunt.com/."
+              },
+              {
+                "term": "Product(s)",
+                "text": "all goods offered by ServerPunt, including refurbished IT hardware, servers, server components, and accessories."
+              },
+              {
+                "term": "Refurbished",
+                "text": "used hardware that has been inspected, tested, and where necessary cleaned and/or repaired by ServerPunt, and is subsequently offered again. Refurbished products may show signs of use and may differ from new condition."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 2. Applicability",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "These general terms and conditions apply to every offer made by ServerPunt and to every Agreement concluded between ServerPunt and the Customer.",
+              "Deviations from these general terms and conditions are valid only if expressly confirmed in writing (including by email) by ServerPunt.",
+              "The applicability of the Customer's (purchase) terms and conditions is expressly excluded, unless expressly accepted in writing by ServerPunt.",
+              "If any provision of these general terms and conditions is wholly or partially void or annulled, the remaining provisions shall remain fully in force. In that case, the parties shall replace the relevant provision with a provision that aligns as closely as possible with the purpose and intent of the original provision.",
+              "In the event of a conflict between the content of the Website and these general terms and conditions, these general terms and conditions shall prevail, unless expressly stated otherwise."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 3. The offer",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "All offers and product descriptions on the Website of ServerPunt are non-binding, unless expressly stated otherwise.",
+              "ServerPunt compiles the information on the Website with the greatest possible care. Nevertheless, obvious errors or mistakes may occur, such as typographical errors, pricing errors, incorrect specifications, or incorrect images. No rights can be derived from such errors.",
+              "Images of Products are for illustration purposes and may differ from the Product actually delivered, given the refurbished nature of the hardware offered.",
+              "ServerPunt is entitled to cancel or amend an order if there is an obvious error in the offer, such as a clear pricing error or an incorrectly displayed product characteristic.",
+              "The offer is valid while stocks last. If a Product is not (or no longer) available, ServerPunt will inform the Customer as soon as possible."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 4. Formation of the agreement",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "The Agreement is formed at the moment the Customer accepts ServerPunt's offer by placing an order via the Website and that order is confirmed by ServerPunt by email.",
+              {
+                "text": "ServerPunt is entitled to refuse an order or impose additional conditions, including if:",
+                "sublist": [
+                  "the Customer has provided incorrect or incomplete information;",
+                  "previous payment obligations have not been met;",
+                  "there are reasonable grounds to doubt the Customer's ability to pay."
+                ]
+              },
+              "After placing an order, the Customer receives an order confirmation by email. This confirmation does not constitute an invoice.",
+              "Obvious errors or mistakes in the order confirmation do not bind ServerPunt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 5. Changes and cancellation by ServerPunt",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "If after conclusion of the Agreement it appears that the ordered Product is not (or no longer) available or cannot be delivered, ServerPunt is entitled to dissolve the Agreement.",
+              "In the event of dissolution as referred to in this article, ServerPunt will refund any amounts already paid by the Customer as soon as possible, but no later than within 14 days."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 6. Prices",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "All prices stated on the Website are in euros and inclusive of VAT, unless expressly stated otherwise.",
+              "For business customers, prices may be displayed exclusive of VAT. In that case, this will be clearly stated with the offer.",
+              "Any shipping costs, administrative costs, or other additional costs will be clearly communicated to the Customer before the Agreement is concluded.",
+              "ServerPunt reserves the right to change prices. Price changes do not affect Agreements already concluded."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 7. Payment",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Payment must be made via the payment methods offered on the Website, unless otherwise agreed in writing.",
+              "ServerPunt is entitled to process an order only after full payment has been received, unless expressly agreed otherwise.",
+              "In the case of payment on account or payment by invoice (exclusively for business customers), the payment term stated on the invoice applies.",
+              "If the Customer fails to meet their payment obligation on time, the Customer is in default by operation of law. From that moment, ServerPunt is entitled to charge statutory (commercial) interest.",
+              "All reasonable costs incurred in obtaining payment out of court shall be borne by the Customer.",
+              "For business customers, a payment term of 14 days from the invoice date applies, unless otherwise agreed in writing."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 8. Invoicing",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Invoices are provided electronically, unless otherwise agreed.",
+              "Objections to an invoice must be reported to ServerPunt in writing within 7 days of the invoice date."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 9. Delivery",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Delivery of Products takes place at the delivery address provided by the Customer when placing the order, unless otherwise agreed in writing.",
+              "ServerPunt will process and ship orders with the greatest possible care.",
+              "If delivery to an agreed address proves impossible, ServerPunt is entitled to make the Product available to the Customer in another manner or to dissolve the Agreement."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 10. Delivery times",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Delivery times stated by ServerPunt are indicative and do not constitute fatal deadlines, unless expressly agreed otherwise in writing.",
+              "Exceeding a delivery time does not give the Customer the right to compensation or dissolution of the Agreement, unless there is intent or gross negligence on the part of ServerPunt.",
+              "If delivery is delayed or an order cannot be fulfilled in whole or in part, ServerPunt will inform the Customer as soon as possible."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 11. Transfer of risk and transport damage",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "The risk of loss or damage to Products passes to the Consumer at the moment of actual receipt of the Product.",
+              "For business customers, the risk passes at the moment the Product is shipped.",
+              "The Customer must inspect the Product immediately upon receipt for transport damage and visible defects. Any damage or defects must be reported to ServerPunt in writing within 48 hours of receipt, accompanied by photographs of the Product and packaging.",
+              "If transport damage is reported in a timely and correct manner, ServerPunt will, at its discretion, arrange for repair, replacement, or refund."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 12. Collection",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "If collection has been agreed, the Customer must collect the Product at the agreed time and address.",
+              "Upon collection, the risk passes to the Customer at the moment of transfer of the Product."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 13. Right of withdrawal",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "The Consumer has the right to dissolve the Agreement relating to the purchase of a Product within 14 days of receipt without giving reasons.",
+              "The withdrawal period expires 14 days after the day on which the Consumer, or a third party designated by them, received the Product.",
+              "To exercise the right of withdrawal, the Consumer must inform ServerPunt within the withdrawal period by email or another unambiguous statement of the decision to dissolve the Agreement."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 14. Consequences of withdrawal",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "If the Consumer withdraws from the Agreement, they will receive all payments made up to that point, including any standard shipping costs, no later than 14 days after the day on which ServerPunt was informed of the withdrawal.",
+              "ServerPunt may withhold refund until the Product has been received, or until the Consumer has demonstrated that the Product has been returned, whichever occurs first.",
+              "Refunds will be made via the same payment method used for the original transaction, unless otherwise agreed."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 15. Return conditions",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "During the withdrawal period, the Consumer must handle the Product and packaging with care. The Product may only be unpacked and used to the extent necessary to determine its nature, characteristics, and functioning.",
+              "If the Product has been used more than permitted, the Consumer is liable for any reduction in value of the Product.",
+              "The Consumer is responsible for correct and proper return shipment of the Product."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 16. Return costs",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "The costs of return shipment are borne by the Consumer, unless otherwise agreed.",
+              "If ServerPunt has collected the Product from the Consumer, the costs thereof will be charged to the Consumer.",
+              "Returns must be sent to ServerPunt's business address at Kraaivenstraat 36-07, 5048 AB Tilburg, unless otherwise agreed in writing."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 17. Exclusion of the right of withdrawal",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The right of withdrawal is excluded for:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "business customers;",
+              "Products that by their nature cannot be returned;",
+              "Products that are clearly personalised or custom-assembled;",
+              "Products whose seal has been broken for reasons of hygiene or safety, where applicable."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "Article 18. Warranty & conformity",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt warrants that the delivered Products conform to the Agreement, the specifications stated in the offer, and the reasonable requirements of reliability and usability, taking into account the refurbished nature of the Products.",
+              "Refurbished Products are used goods and may show signs of use. Deviations from new condition, such as minor cosmetic damage, do not constitute a defect and do not entitle the Customer to replacement, repair, or dissolution.",
+              "For Consumers, the statutory warranty applies. This means that a Product must do what the Consumer may reasonably expect from it. ServerPunt cannot exclude or limit this statutory warranty.",
+              "Any additional warranty provided by ServerPunt will be expressly stated in writing with the Product and does not affect the statutory warranty.",
+              "For business customers, only the warranty expressly provided by ServerPunt applies. In the absence thereof, no additional warranty applies.",
+              "If no additional warranty period is stated for a Product, only the statutory warranty applies for Consumers and no additional warranty applies for business customers."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 19. Reporting defects",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "The Customer is obliged to inspect the Product for defects as soon as possible after receipt.",
+              "Defects that were not visible upon receipt must be reported by the Consumer within a reasonable time after discovery.",
+              "Business customers must report defects in writing within 7 days of receipt. Failure to do so forfeits the right to repair, replacement, or any other compensation."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 20. Repair and replacement",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "If a Product proves not to conform to the Agreement, ServerPunt will, at its discretion, repair or replace the Product, unless this is impossible or entails disproportionate costs.",
+              "If repair or replacement is not possible, ServerPunt may proceed with (partial) refund or dissolution of the Agreement."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 21. Liability",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt's liability is limited to the amount paid by the Customer for the relevant Product, with an absolute maximum of the invoice amount.",
+              {
+                "text": "ServerPunt is never liable for indirect damage, including but not limited to:",
+                "sublist": [
+                  "consequential damage;",
+                  "lost profits;",
+                  "missed savings;",
+                  "data loss;",
+                  "business damage;",
+                  "damage due to business interruption."
+                ]
+              },
+              {
+                "text": "ServerPunt is not liable for damage caused by:",
+                "sublist": [
+                  "improper or incorrect use of the Product;",
+                  "use outside the specifications provided by ServerPunt;",
+                  "repairs or modifications carried out by the Customer;",
+                  "use in combination with defective or unsuitable peripheral equipment."
+                ]
+              },
+              "The liability limitations set out in this article do not apply if the damage results from intent or gross negligence on the part of ServerPunt, or to the extent liability cannot be excluded under mandatory law."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 22. Indemnification",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "The Customer indemnifies ServerPunt against all third-party claims relating to the use of the delivered Products.",
+              "The Customer is responsible for making adequate backups of data. ServerPunt is not liable for loss or damage to data, regardless of the cause."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 23. Force majeure",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt is not obliged to fulfil any obligation towards the Customer if prevented from doing so as a result of force majeure.",
+              {
+                "text": "Force majeure includes, in any event, any circumstance beyond ServerPunt's control that temporarily or permanently prevents fulfilment of obligations, including but not limited to:",
+                "sublist": [
+                  "disruptions at carriers or suppliers;",
+                  "delays or failures in transport;",
+                  "procurement problems or stock shortages;",
+                  "power outages;",
+                  "internet or network failures;",
+                  "fire, water damage, or other calamities;",
+                  "government measures;",
+                  "epidemics, pandemics, and related restrictions."
+                ]
+              },
+              "If the force majeure situation continues for more than 30 days, both ServerPunt and the Customer are entitled to dissolve the Agreement in writing, without any obligation to pay compensation in that case.",
+              "If ServerPunt has already partially fulfilled its obligations upon the occurrence of force majeure, or can still fulfil them, ServerPunt is entitled to invoice or settle that part separately."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 24. Complaints",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Complaints regarding the performance of the Agreement must be submitted to ServerPunt in writing, fully and clearly described, within a reasonable time after the Customer has identified the defect.",
+              {
+                "text": "Complaints can be submitted via:",
+                "sublist": [
+                  "email: info@serverpunt.com",
+                  "or in writing by post to ServerPunt's business address."
+                ]
+              },
+              "ServerPunt will respond to submitted complaints within 14 days of receipt. If a complaint requires a foreseeably longer processing time, ServerPunt will inform the Customer within this period.",
+              "If a complaint cannot be resolved by mutual agreement, a dispute arises that may be submitted to the competent court as set out in these general terms and conditions."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 25. Applicable law",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dutch law applies exclusively to all Agreements between ServerPunt and the Customer to which these general terms and conditions apply.",
+              "Disputes arising from or relating to the Agreement shall be submitted exclusively to the competent court in the district where ServerPunt is established, unless mandatory law provides otherwise."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Article 26. Final provisions",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt is entitled to amend or supplement these general terms and conditions. Amended terms will be published in a timely manner via the Website and apply to future Agreements.",
+              "If provisions of these general terms and conditions prove to be void or are annulled, this does not affect the validity of the remaining provisions.",
+              "These general terms and conditions were last amended on 22 December 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Contact",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "vat": "VAT: NL868250983B01",
+      "emailLabel": "Email:",
+      "websiteLabel": "Website:"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastModified": "Last modified: 5 February 2026",
+    "sections": [
+      {
+        "title": "1. Data controller",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), located at Kraaivenstraat 36-07, 5048 AB Tilburg, registered with the Dutch Chamber of Commerce under number 97831441, is responsible for the processing of personal data as described in this privacy policy."
+          },
+          {
+            "type": "p",
+            "text": "Contact: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Personal data we process",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt processes personal data because you use our website and services, and/or because you provide this data to us yourself. This includes, among other things:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "first and last name",
+              "address details",
+              "email address",
+              "phone number",
+              "payment and invoice details",
+              "IP address",
+              "order history",
+              "correspondence data"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Purposes and legal bases for processing",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt processes personal data exclusively for the following purposes and on the basis of the corresponding legal grounds:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Performance of the agreement: processing orders, delivery of products, communication about the agreement",
+              "Legal obligation: invoicing, accounting, tax obligations",
+              "Legitimate interest: customer service, improvement of services, fraud prevention",
+              "Consent: newsletters and marketing communications (where applicable)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Retention periods",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt does not retain personal data longer than necessary for the purposes for which it was collected, taking into account statutory retention periods:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Order and invoice data: 7 years (statutory tax retention obligation)",
+              "Customer communications: maximum 2 years",
+              "Account and contact details: as long as the customer relationship is active"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Sharing personal data with third parties",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt provides personal data to third parties only if this is necessary for the performance of the agreement or to comply with a legal obligation."
+          },
+          {
+            "type": "p",
+            "text": "This includes, among others:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "payment providers",
+              "carriers",
+              "accounting software",
+              "hosting and IT service providers"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Where legally required, data processing agreements have been concluded with these parties."
+          }
+        ]
+      },
+      {
+        "title": "6. Cookies",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt uses functional and analytical cookies that have no or only a minor impact on visitors' privacy."
+          },
+          {
+            "type": "p",
+            "text": "These cookies are used to:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "ensure the website functions properly from a technical perspective;",
+              "gain insight into website usage and improve the website."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "No tracking cookies are placed without prior consent."
+          }
+        ]
+      },
+      {
+        "title": "7. Security of personal data",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt takes appropriate technical and organisational measures to protect personal data against loss, misuse, unauthorised access, and unwanted disclosure."
+          }
+        ]
+      },
+      {
+        "title": "8. Rights of data subjects",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "You have the right to:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "access your personal data;",
+              "have your data corrected or deleted;",
+              "object to processing;",
+              "request restriction of processing;",
+              "have your data transferred (data portability)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Requests can be submitted via info@serverpunt.com. You also have the right to lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens)."
+          }
+        ]
+      },
+      {
+        "title": "9. Changes",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt reserves the right to amend this privacy policy. The most current version is always available on the website."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Contact",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "emailLabel": "Email:",
+      "websiteLabel": "Website:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastModified": "Last modified: 9 February 2026",
+    "intro": "This cookie policy applies to the website of ServerPunt, located at Kraaivenstraat 36-07, 5048 AB Tilburg, and reachable via info@serverpunt.com.",
+    "sections": [
+      {
+        "title": "1. What are cookies?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cookies are small text files that are stored on your computer, tablet, or smartphone when you visit a website. Cookies ensure that a website functions properly and can collect information about website usage."
+          }
+        ]
+      },
+      {
+        "title": "2. Which cookies does ServerPunt use?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt uses the following types of cookies:"
+          },
+          {
+            "type": "p",
+            "text": "a. Functional cookies (necessary)"
+          },
+          {
+            "type": "p",
+            "text": "These cookies are necessary for the website to function properly. Without these cookies, certain parts of the website cannot function correctly."
+          },
+          {
+            "type": "p",
+            "text": "Examples:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Remembering cookie preferences",
+              "Loading pages correctly",
+              "Basic website functionality"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "No consent is required for these cookies."
+          },
+          {
+            "type": "p",
+            "text": "b. Analytical cookies"
+          },
+          {
+            "type": "p",
+            "text": "Analytical cookies give us insight into how our website is used. This allows us to improve the website and make it more user-friendly."
+          },
+          {
+            "type": "p",
+            "text": "Examples:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Number of visitors",
+              "Popular pages",
+              "How visitors navigate through the website"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Where possible, this data is anonymised and cannot be traced back to individual persons."
+          },
+          {
+            "type": "p",
+            "text": "c. Marketing and tracking cookies (optional)"
+          },
+          {
+            "type": "p",
+            "text": "Where applicable, marketing cookies may be used to display relevant content or advertisements and to measure the effectiveness of campaigns."
+          },
+          {
+            "type": "p",
+            "text": "These cookies are only placed after explicit consent."
+          }
+        ]
+      },
+      {
+        "title": "3. Third-party cookies",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Third parties (such as analytics or marketing services) may place cookies via our website. ServerPunt has no direct control over the use of cookies by these parties. We recommend also consulting the cookie and privacy policies of these third parties."
+          }
+        ]
+      },
+      {
+        "title": "4. Managing or deleting cookies",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "You can manage or delete cookies at any time via your browser settings. Please note that disabling cookies may affect the functioning of the website."
+          },
+          {
+            "type": "p",
+            "text": "More information per browser:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Changes to this cookie policy",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt reserves the right to amend this cookie policy. We recommend checking this page regularly to stay informed of any changes."
+          }
+        ]
+      },
+      {
+        "title": "6. Contact",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Do you have questions about our cookie policy or how we handle data? Please feel free to contact us:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "About ServerPunt",
+    "intro1": "ServerPunt specialises in the purchase and sale of refurbished hardware for individuals and businesses. We believe that professional hardware does not have to be new to perform reliably, powerfully, and sustainably.",
+    "intro2": "From monitors and laptops to complete servers and server components: all products we offer are carefully tested, inspected, and refurbished where necessary. This gives high-quality hardware a second life, at a competitive price and with minimal environmental impact.",
+    "servers": {
+      "title": "Specialised in server solutions",
+      "p1": "Our strength lies in custom solutions. We don't just supply individual servers and components — we actively help determine the right configurations for specific workloads, scalability, and growth. Thanks to our technical knowledge and practical experience, we can respond quickly and provide targeted advice.",
+      "p2": "At ServerPunt, transparency and quality always come first. For us, refurbished hardware means:",
+      "bullet1Title": "Affordable quality",
+      "bullet1Text": "without compromising on performance",
+      "bullet2Title": "A sustainable choice",
+      "bullet2Text": "through reuse",
+      "bullet3Title": "Fast delivery",
+      "bullet3Text": "with personal contact",
+      "p3": "Thanks to our technical knowledge of servers and components, we can think along, advise, and respond quickly when needed."
+    },
+    "audience": {
+      "title": "Who we work for",
+      "p1": "We work for individuals looking for professional hardware at a competitive price, as well as businesses that want to expand or renew their systems. Whether it's a single purchase or a larger expansion, we look together at what fits best.",
+      "p2": "ServerPunt is more than just a supplier. We are a technical partner that thinks along, advises, and delivers — aligned with today's requirements and tomorrow's growth."
+    },
+    "values": {
+      "title": "Why ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Technical expertise",
+          "description": "Solid knowledge of servers and infrastructure"
+        },
+        {
+          "icon": "✅",
+          "title": "Quality control",
+          "description": "Every product is thoroughly tested and inspected"
+        },
+        {
+          "icon": "🌱",
+          "title": "Sustainable",
+          "description": "Reuse of hardware with minimal impact"
+        },
+        {
+          "icon": "💰",
+          "title": "Competitively priced",
+          "description": "Professional quality at affordable prices"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Questions or need advice?",
+      "description": "Feel free to contact us. We're happy to help you find the best solution for your situation.",
+      "emailLabel": "Email:",
+      "addressLabel": "Address:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

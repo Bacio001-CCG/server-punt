@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Obchodné podmienky",
+    "lastModified": "Naposledy upravené: 22. decembra 2025",
+    "sections": [
+      {
+        "title": "Článok 1. Definície",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "V týchto všeobecných obchodných podmienkach budú mať nasledujúce pojmy významy uvedené nižšie:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "partnerstvo NetwerkPunt, obchodujúce pod názvom ServerPunt, so sídlom na Kraaivenstraat 36-07, 5048 AB Tilburg, registrované v Holandskej obchodnej komore pod číslom 97831441."
+              },
+              {
+                "term": "Zákazník",
+                "text": "akákoľvek fyzická osoba alebo právnická osoba, ktorá uzatvára alebo si želá uzatvoriť Dohodu so ServerPunt."
+              },
+              {
+                "term": "Spotrebiteľ",
+                "text": "Zákazník, ktorý je fyzickou osobou konajúcou na účely mimo svojej obchodnej, podnikateľskej, remeselnej alebo profesionálnej činnosti."
+              },
+              {
+                "term": "Firemný zákazník",
+                "text": "zákazník konajúci pri vykonávaní povolania alebo podnikania."
+              },
+              {
+                "term": "Dohoda",
+                "text": "akákoľvek dohoda uzatvorená medzi ServerPunt a Zákazníkom, vrátane diaľkového predaja prostredníctvom webovej stránky, a všetky z toho vyplývajúce povinnosti."
+              },
+              {
+                "term": "Webová stránka",
+                "text": "webová stránka ServerPunt, prostredníctvom ktorej sú ponúkané produkty a je možné zadávať objednávky, konkrétne https://serverpunt.com/."
+              },
+              {
+                "term": "Produkt(y)",
+                "text": "všetok tovar ponúkaný spoločnosťou ServerPunt, vrátane repasovaného IT hardvéru, serverov, serverových komponentov a príslušenstva."
+              },
+              {
+                "term": "Obnovené",
+                "text": "použitý hardvér, ktorý bol skontrolovaný, otestovaný a v prípade potreby vyčistený a/alebo opravený spoločnosťou ServerPunt a následne opätovne ponúkaný. Renovované produkty môžu vykazovať známky používania a môžu sa líšiť od nového stavu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 2. Uplatniteľnosť",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Tieto všeobecné obchodné podmienky sa vzťahujú na každú ponuku predloženú spoločnosťou ServerPunt a na každú Zmluvu uzatvorenú medzi spoločnosťou ServerPunt a Zákazníkom.",
+              "Odchýlky od týchto všeobecných obchodných podmienok sú platné iba v prípade, že sú výslovne potvrdené písomne (vrátane e-mailu) spoločnosťou ServerPunt.",
+              "Použitie obchodných podmienok zákazníka (kupujúcich) je výslovne vylúčené, pokiaľ nie sú výslovne písomne akceptované spoločnosťou ServerPunt.",
+              "Akékoľvek ustanovenie týchto všeobecných obchodných podmienok je úplne alebo čiastočne neplatné alebo zrušené, ostatné ustanovenia zostávajú plne v platnosti. V takom prípade si strany nahradia príslušné ustanovenie ustanovením, ktoré sa čo najviac približuje účelu a zámeru pôvodného ustanovenia.",
+              "V prípade nezrovnalosti medzi obsahom webovej stránky a týmito všeobecnými obchodnými podmienkami majú prednosť tieto všeobecné obchodné podmienky, pokiaľ nie je výslovne uvedené inak."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 3. Ponuka",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Všetky ponuky a popisy produktov na webovej stránke ServerPunt sú nezáväzné, pokiaľ nie je výslovne uvedené inak.",
+              "ServerPunt zostavuje informácie na webovej stránke s najväčšou možnou starostlivosťou. Napriek tomu sa môžu vyskytnúť zjavné chyby alebo omyly, ako napríklad tlačové chyby, chyby v cenách, nesprávne špecifikácie alebo nesprávne obrázky. Z takýchto chýb nemožno odvodiť žiadne práva.",
+              "Obrázky produktov slúžia len na ilustráciu a môžu sa líšiť od skutočne dodaného produktu vzhľadom na obnovovaný charakter ponúkaného hardvéru.",
+              "ServerPunt má právo zrušiť alebo zmeniť objednávku, ak je v ponuke zrejmá chyba, ako napríklad jasná chyba v cene alebo nesprávne zobrazená vlastnosť produktu.",
+              "Ponuka je platná, kým sú zásoby dostupné. Ak Produkt nie je (alebo už nie je) k dispozícii, ServerPunt bude o tom informovať Zákazníka čo najskôr."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 4. Vznik dohody",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Zmluva sa uzatvára v okamihu, keď Zákazník akceptuje ponuku spoločnosti ServerPunt zadaním objednávky prostredníctvom webovej stránky a táto objednávka je spoločnosťou ServerPunt potvrdená e-mailom.",
+              {
+                "text": "ServerPunt má právo odmietnuť objednávku alebo uložiť ďalšie podmienky, vrátane prípadov, keď:",
+                "sublist": [
+                  "zákazník poskytol nesprávne alebo neúplné informácie;",
+                  "predchádzajúce platobné povinnosti neboli splnené;",
+                  "Existujú opodstatnené dôvody pochybovať o schopnosti zákazníka platiť."
+                ]
+              },
+              "Po zadaní objednávky zákazník obdrží potvrdenie objednávky e-mailom. Toto potvrdenie nie je faktúrou.",
+              "Zjavné chyby alebo omyly v potvrdení objednávky nezaväzujú ServerPunt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 5. Zmeny a zrušenie zo strany ServerPunt",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ak sa po uzavretí Zmluvy ukáže, že objednaný Produkt nie je (alebo už nie je) dostupný alebo ho nie je možné dodať, ServerPunt je oprávnený Zmluvu zrušiť.",
+              "V prípade rozpustenia, ako je uvedené v tomto článku, spoločnosť ServerPunt vráti všetky sumy už zaplatené Zákazníkom čo najskôr, najneskôr však do 14 dní."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 6. Ceny",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Všetky ceny uvedené na webovej stránke sú v eurách a vrátane DPH, pokiaľ nie je výslovne uvedené inak.",
+              "Pre obchodných zákazníkov môžu byť ceny zobrazované bez DPH. V takom prípade bude toto jasne uvedené v ponuke.",
+              "Akékoľvek náklady na dopravu, administratívne náklady alebo iné dodatočné náklady budú Zákazníkovi jasne oznámené pred uzavretím Zmluvy.",
+              "ServerPunt si vyhradzuje právo meniť ceny. Zmeny cien nemajú vplyv na už uzavreté zmluvy."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 7. Platba",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Platba musí byť vykonaná prostredníctvom platobných metód ponúkaných na webovej stránke, pokiaľ nie je písomne dohodnuté inak.",
+              "ServerPunt je oprávnený spracovať objednávku až po prijatí plnej platby, pokiaľ nie je výslovne dohodnuté inak.",
+              "V prípade platby na účet alebo platby faktúrou (výlučne pre obchodných zákazníkov) platí lehotu splatnosti uvedenú na faktúre.",
+              "Ak Zákazník nesplní svoju platobnú povinnosť včas, Zákazník je z dôvodu zákona v omeškaní. Od toho momentu je ServerPunt oprávnený účtovať zákonné (obchodné) úroky.",
+              "Všetky primerané náklady vzniknuté pri zabezpečení platby mimo súd znáša zákazník.",
+              "Pre obchodných zákazníkov platí platobná lehota 14 dní od dátumu faktúry, pokiaľ nie je písomne dohodnuté inak."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 8. Fakturácia",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Faktúry sú poskytované elektronicky, pokiaľ nie je dohodnuté inak.",
+              "Nájazky na faktúru musia byť nahlásené spoločnosti ServerPunt písomne do 7 dní od dátumu faktúry."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 9. Doručenie",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Doručenie produktov prebieha na dodaciu adresu poskytnutú zákazníkom pri zadávaní objednávky, pokiaľ sa písomne nedohodne inak.",
+              "ServerPunt bude spracovávať a odosielať objednávky s najväčšou možnou starostlivosťou.",
+              "Ak sa doručenie na dohodnutú adresu ukáže ako nemožné, spoločnosť ServerPunt má právo sprístupniť Produkt Zákazníkovi iným spôsobom alebo zrušiť Zmluvu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 10. Dodacie lehoty",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dodacie lehoty uvedené spoločnosťou ServerPunt sú orientačné a nepovažujú sa za konečné termíny, pokiaľ nie je výslovne písomne dohodnuté inak.",
+              "Prekročenie dodacej lehoty nedáva Zákazníkovi právo na náhradu škody alebo zrušenie Zmluvy, pokiaľ nejde o úmysel alebo hrubú nedbanlivosť zo strany ServerPunt.",
+              "Ak dôjde k oneskoreniu dodania alebo objednávka nemôže byť splnená úplne alebo čiastočne, ServerPunt o tom zákazníka čo najskôr informuje."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 11. Prechod rizika a prepravné škody",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Riziko straty alebo poškodenia Produktov prechádza na Spotrebiteľa v okamihu skutočného prevzatia Produktu.",
+              "Pre obchodných zákazníkov prechádza riziko v okamihu, keď je produkt odoslaný.",
+              "Zákazník musí okamžite po prijatí skontrolovať produkt z hľadiska prepravných poškodení a viditeľných vád. Akékoľvek poškodenia alebo vady musia byť písomne nahlásené spoločnosti ServerPunt do 48 hodín od prijatia, spolu s fotografiami produktu a balenia.",
+              "Ak bude poškodenie počas prepravy nahlásené včas a správne, ServerPunt podľa svojho uváženia zabezpečí opravu, výmenu alebo vrátenie peňazí."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 12. Zber",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ak bola dohodnutá osobná prevzatie, zákazník musí produkt vyzdvihnúť v dohodnutom čase a na dohodnutej adrese.",
+              "Pri prevzatí prechádza riziko na Zákazníka okamihom odovzdania Produktu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 13. Právo na odstúpenie",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Spotrebiteľ má právo zrušiť Zmluvu týkajúcu sa kúpy Produktu do 14 dní od jeho prevzatia bez udania dôvodov.",
+              "Lehota na odstúpenie od zmluvy uplynie 14 dní po dni, keď Spotrebiteľ alebo tretia strana nimi určená obdržala Produkt.",
+              "Na uplatnenie práva na odstúpenie od zmluvy musí spotrebiteľ informovať ServerPunt o svojom rozhodnutí zrušiť zmluvu e-mailom alebo iným jednoznačným oznámením v lehote na odstúpenie od zmluvy."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 14. Dôsledky odstúpenia",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ak sa Spotrebiteľ vzdá Zmluvy, dostane všetky platby uhradené do toho momentu, vrátane akýchkoľvek bežných nákladov na dopravu, najneskôr do 14 dní odo dňa, keď bol ServerPunt informovaný o odstúpení.",
+              "ServerPunt môže zadržať vrátenie peňazí, až kým nebude Produkt prijatý, alebo kým Spotrebiteľ nepreukáže, že Produkt bol vrátený, podľa toho, ktorá z týchto udalostí nastane skôr.",
+              "Vrátenie peňazí sa uskutoční rovnakou platobnou metódou, ktorá bola použitá pri pôvodnej transakcii, pokiaľ nie je dohodnuté inak."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 15. Podmienky vrátenia",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Počas obdobia na odstúpenie musí Spotrebiteľ s Produktom a jeho obalom zaobchádzať opatrne. Produkt možno rozbaliť a používať len do takej miery, ktorá je potrebná na určenie jeho povahy, vlastností a fungovania.",
+              "Ak bol Produkt použitý viac než je povolené, Spotrebiteľ je zodpovedný za akékoľvek zníženie hodnoty Produktu.",
+              "Spotrebiteľ je zodpovedný za správne a riadne vrátenie produktu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 16. Náklady na vrátenie",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Náklady na spätné zaslanie nesie Spotrebiteľ, pokiaľ nie je dohodnuté inak.",
+              "Ak ServerPunt vyzdvihol Produkt od Spotrebiteľa, náklady s tým spojené budú účtované Spotrebiteľovi.",
+              "Vrátenie tovaru musí byť zaslané na obchodnú adresu spoločnosti ServerPunt na adrese Kraaivenstraat 36-07, 5048 AB Tilburg, pokiaľ nie je písomne dohodnuté inak."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 17. Vylúčenie práva na odstúpenie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Právo na odstúpenie je vylúčené pre:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "firemní zákazníci;",
+              "Produkty, ktoré svojou povahou nemôžu byť vrátené;",
+              "Produkty, ktoré sú jasne personalizované alebo na mieru zložené;",
+              "Produkty, ktorých pečať bola porušená z dôvodov hygieny alebo bezpečnosti, ak je to vhodné."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "Článok 18. Záruka a súlad",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt zaručuje, že dodané produkty sú v súlade so zmluvou, špecifikáciami uvedenými v ponuke a primeranými požiadavkami na spoľahlivosť a použiteľnosť, pričom sa zohľadňuje renovovaná povaha produktov.",
+              "Refurbished produkty sú použité tovary a môžu vykazovať známky používania. Odchýlky od nového stavu, ako napríklad drobné kozmetické poškodenia, sa nepovažujú za vadu a nedávajú Zákazníkovi nárok na výmenu, opravu alebo zrušenie.",
+              "Pre spotrebiteľov platí zákonná záruka. To znamená, že produkt musí spĺňať to, čo môže spotrebiteľ od neho primerane očakávať. ServerPunt nemôže túto zákonnú záruku vylúčiť ani obmedziť.",
+              "Akákoľvek ďalšia záruka poskytnutá spoločnosťou ServerPunt bude výslovne uvedená písomne s produktom a neovplyvňuje zákonnú záruku.",
+              "Pre obchodných zákazníkov platí len záruka výslovne poskytovaná spoločnosťou ServerPunt. V prípade jej neexistencie neplatí žiadna ďalšia záruka.",
+              "Ak pre Produkt nie je uvedené žiadne dodatočné záručné obdobie, pre Spotrebiteľov platí iba zákonná záruka a pre podnikateľských zákazníkov neplatí žiadna dodatočná záruka."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 19. Hlásenie vád",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Zákazník je povinný čo najskôr po prevzatí skontrolovať Produkt, či nemá vady.",
+              "Vady, ktoré neboli viditeľné pri prevzatí, musí Spotrebiteľ nahlásiť v primeranej lehote po ich zistení.",
+              "Obchodní zákazníci musia nahlásiť vady písomne do 7 dní od ich prevzatia. Nedodržanie tejto lehoty znamená stratu práva na opravu, výmenu alebo akúkoľvek inú kompenzáciu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 20. Oprava a výmena",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ak sa Produkt ukáže ako nezhodujúci sa s Dohodou, ServerPunt podľa svojho uváženia opraví alebo vymení Produkt, pokiaľ to nie je nemožné alebo by to nezahŕňalo neprimerané náklady.",
+              "Ak oprava alebo výmena nie je možná, ServerPunt môže pristúpiť k (čiastočnému) vráteniu peňazí alebo k zrušeniu Zmluvy."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 21. Zodpovednosť",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Zodpovednosť ServerPunt je obmedzená na sumu zaplatenú Zákazníkom za príslušný Produkt, s absolútnym maximom vo výške fakturovanej sumy.",
+              {
+                "text": "ServerPunt nikdy nezodpovedá za nepriame škody, vrátane, ale nie výlučne: ",
+                "sublist": [
+                  "následná škoda",
+                  "stratený zisk;",
+                  "premeškané úspory;",
+                  "strata dát;",
+                  "škoda na podnikaní;",
+                  "škoda spôsobená prerušením podnikania."
+                ]
+              },
+              {
+                "text": "ServerPunt nenesie zodpovednosť za škody spôsobené:",
+                "sublist": [
+                  "nevhodné alebo nesprávne používanie Produktu;",
+                  "používať mimo špecifikácií poskytnutých ServerPunt;",
+                  "opravy alebo úpravy vykonané zákazníkom;",
+                  "používať v kombinácii s chybným alebo nevhodným periférnym zariadením."
+                ]
+              },
+              "Obmedzenia zodpovednosti uvedené v tomto článku sa neuplatňujú, ak škoda vznikne úmyselným konaním alebo hrubou nedbanlivosťou zo strany ServerPunt, alebo v rozsahu, v akom nemožno zodpovednosť vylúčiť podľa povinného práva."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 22. Náhrada škody",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Zákazník odškodňuje ServerPunt voči všetkým nárokom tretích strán súvisiacim s používaním dodaných produktov.",
+              "Zákazník je zodpovedný za vytváranie primeraných záloh údajov. ServerPunt nie je zodpovedný za stratu alebo poškodenie údajov, bez ohľadu na príčinu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 23. Vyššia moc",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt nie je povinný plniť žiadnu povinnosť voči Zákazníkovi, ak mu v tom bráni vyššia moc.",
+              {
+                "text": "Vyššia moc zahŕňa v každom prípade akúkoľvek okolnosť mimo kontrolu ServerPuntu, ktorá dočasne alebo trvale bráni plneniu povinností, vrátane, ale nielen:",
+                "sublist": [
+                  "prerušenia u dopravcov alebo dodávateľov;",
+                  "meškania alebo zlyhania v doprave;",
+                  "problémy s obstarávaním alebo nedostatok zásob;",
+                  "výpadky elektriny;",
+                  "zlyhania internetu alebo siete;",
+                  "požiar, poškodenie vodou alebo iné pohromy;",
+                  "vládne opatrenia;",
+                  "epidémie, pandémie a súvisiace obmedzenia."
+                ]
+              },
+              "Ak situácia vyššej moci trvá viac ako 30 dní, majú ServerPunt aj Zákazník právo vypovedať Zmluvu písomne, bez akejkoľvek povinnosti uhradiť v tomto prípade odškodnenie.",
+              "Ak ServerPunt už čiastočne splnil svoje povinnosti pri výskyte vyššej moci alebo ich ešte môže splniť, ServerPunt má právo fakturovať alebo vyrovnať túto časť samostatne."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 24. Sťažnosti",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Sťažnosti týkajúce sa plnenia Zmluvy musia byť predložené spoločnosti ServerPunt písomne, úplne a jasne popísané, v primeranom čase po tom, ako Zákazník zistil vadu.",
+              {
+                "text": "Sťažnosti je možné podať cez:",
+                "sublist": [
+                  "email: info@serverpunt.com",
+                  "alebo písomne poštou na obchodnú adresu ServerPunt."
+                ]
+              },
+              "ServerPunt bude reagovať na podané sťažnosti do 14 dní od ich prijatia. Ak sťažnosť vyžaduje predvídateľne dlhší čas spracovania, ServerPunt o tom informuje Zákazníka v tomto období.",
+              "Ak sa sťažnosť nedá vyriešiť vzájomnou dohodou, vzniká spor, ktorý môže byť predložený príslušnému súdu podľa ustanovení týchto všeobecných obchodných podmienok."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 25. Platné právo",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Holandské právo sa výlučne vzťahuje na všetky zmluvy medzi ServerPunt a zákazníkom, na ktoré sa vzťahujú tieto všeobecné obchodné podmienky.",
+              "Spory vyplývajúce z tejto zmluvy alebo s ňou súvisiace sa budú riešiť výlučne pred príslušným súdom v okrese, kde je spoločnosť ServerPunt zriadená, pokiaľ povinné právo neustanovuje inak."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Článok 26. Záverečné ustanovenia",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt je oprávnený meniť alebo dopĺňať tieto všeobecné obchodné podmienky. Zmenené podmienky budú včas zverejnené prostredníctvom webovej stránky a platia na budúce zmluvy.",
+              "Ak sa ustanovenia týchto všeobecných obchodných podmienok ukážu ako neplatné alebo budú zrušené, nebude to mať vplyv na platnosť zostávajúcich ustanovení.",
+              "Tieto všeobecné obchodné podmienky boli naposledy zmenené 22. decembra 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "vat": "VAT: NL868250983B01",
+      "emailLabel": "E-mail:",
+      "websiteLabel": "Webová stránka:"
+    }
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobných údajov",
+    "lastModified": "Naposledy upravené: 5. februára 2026",
+    "sections": [
+      {
+        "title": "1. Správca údajov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), so sídlom na adrese Kraaivenstraat 36-07, 5048 AB Tilburg, registrovaná pri Holandskej obchodnej komore pod číslom 97831441, je zodpovedná za spracovanie osobných údajov, ako je opísané v tejto politike ochrany osobných údajov."
+          },
+          {
+            "type": "p",
+            "text": "Kontakt: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Osobné údaje, ktoré spracúvame",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt spracúva osobné údaje, pretože používate našu webovú stránku a služby, a/alebo preto, že nám tieto údaje poskytujete sami. To zahŕňa okrem iného:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "meno a priezvisko",
+              "adresné údaje",
+              "emailová adresa",
+              "telefónne číslo",
+              "údaje o platbe a faktúre",
+              "IP adresa",
+              "história objednávok",
+              "údaje o korešpondencii"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Účely a právne základy spracúvania",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt spracúva osobné údaje výlučne na nasledujúce účely a na základe príslušných právnych dôvodov:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Plnenie zmluvy: spracovanie objednávok, dodanie produktov, komunikácia o zmluve",
+              "Právna povinnosť: fakturácia, účtovníctvo, daňové povinnosti",
+              "Oprávnený záujem: zákaznícky servis, zlepšovanie služieb, predchádzanie podvodom",
+              "Súhlas: newslettery a marketingová komunikácia (ak je to relevantné)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Lehota uchovávania",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt neuchováva osobné údaje dlhšie, než je potrebné na účely, na ktoré boli zhromaždené, s prihliadnutím na zákonné lehoty uchovávania:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Údaje o objednávke a faktúre: 7 rokov (zákonná povinnosť uchovávania daňových dokladov)",
+              "Komunikácia so zákazníkmi: maximálne 2 roky",
+              "Údaje o účte a kontakte: pokiaľ je vzťah so zákazníkom aktívny"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Zdieľanie osobných údajov s tretími stranami",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt poskytuje osobné údaje tretím stranám iba v prípade, že je to nevyhnutné na plnenie zmluvy alebo na splnenie zákonnej povinnosti."
+          },
+          {
+            "type": "p",
+            "text": "To zahŕňa okrem iného:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "poskytovatelia platobných služieb",
+              "prepravcovia",
+              "účtovný softvér",
+              "poskytovatelia hostingu a IT služieb"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Kde je to zákonne vyžadované, boli s týmito stranami uzatvorené zmluvy o spracovaní údajov."
+          }
+        ]
+      },
+      {
+        "title": "6. Súbory cookie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt používa funkčné a analytické súbory cookie, ktoré nemajú alebo majú len malý vplyv na súkromie návštevníkov."
+          },
+          {
+            "type": "p",
+            "text": "Tieto cookies sa používajú na:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "zabezpečiť, aby webová stránka fungovala správne z technického hľadiska;",
+              "získať prehľad o používaní webovej stránky a zlepšiť webovú stránku."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Bez predchádzajúceho súhlasu sa neumiestňujú žiadne sledovacie súbory cookie."
+          }
+        ]
+      },
+      {
+        "title": "7. Bezpečnosť osobných údajov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt prijíma primerané technické a organizačné opatrenia na ochranu osobných údajov pred stratou, zneužitím, neoprávneným prístupom a neželaným zverejnením."
+          }
+        ]
+      },
+      {
+        "title": "8. Práva dotknutých osôb",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Máte právo na:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "prístup k vašim osobným údajom;",
+              "nechajte svoje údaje opravené alebo vymazané;",
+              "odvolať sa proti spracovaniu;",
+              "požiadať o obmedzenie spracúvania;",
+              "nechajte si preniesť svoje údaje (prenositeľnosť údajov)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Žiadosti je možné zasielať na info@serverpunt.com. Máte tiež právo podať sťažnosť Holandskému úradu na ochranu osobných údajov (Autoriteit Persoonsgegevens)."
+          }
+        ]
+      },
+      {
+        "title": "9. Zmeny",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt si vyhradzuje právo zmeniť túto zásady ochrany osobných údajov. Najnovšia verzia je vždy dostupná na webovej stránke."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "emailLabel": "E-mail:",
+      "websiteLabel": "Webová stránka:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Zásady používania súborov cookie",
+    "lastModified": "Naposledy upravené: 9. februára 2026",
+    "intro": "Táto politika používania súborov cookie sa vzťahuje na webovú stránku ServerPunt, nachádzajúcu sa na adrese Kraaivenstraat 36-07, 5048 AB Tilburg, a dostupnú na info@serverpunt.com.",
+    "sections": [
+      {
+        "title": "1. Čo sú cookies?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cookies sú malé textové súbory, ktoré sa ukladajú na váš počítač, tablet alebo smartphone pri návšteve webovej stránky. Cookies zabezpečujú správne fungovanie webovej stránky a môžu zhromažďovať informácie o používaní webovej stránky."
+          }
+        ]
+      },
+      {
+        "title": "2. Aké cookies používa ServerPunt?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt používa nasledujúce typy súborov cookie:"
+          },
+          {
+            "type": "p",
+            "text": "a. Funkčné súbory cookie (nevyhnutné)"
+          },
+          {
+            "type": "p",
+            "text": "Tieto súbory cookie sú nevyhnutné pre správne fungovanie webovej stránky. Bez týchto súborov cookie niektoré časti webovej stránky nemôžu fungovať správne."
+          },
+          {
+            "type": "p",
+            "text": "Príklady:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Zapamätanie si preferencií súborov cookie",
+              "Načítavanie stránok správne",
+              "Základná funkčnosť webovej stránky"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Na tieto súbory cookie nie je potrebný súhlas."
+          },
+          {
+            "type": "p",
+            "text": "b. Analytické súbory cookie"
+          },
+          {
+            "type": "p",
+            "text": "Analytické súbory cookie nám poskytujú informácie o tom, ako sa naša webová stránka používa. To nám umožňuje stránku vylepšiť a urobiť ju užívateľsky prívetivejšou."
+          },
+          {
+            "type": "p",
+            "text": "Príklady:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Počet návštevníkov",
+              "Populárne stránky",
+              "Ako návštevníci prechádzajú webovou stránkou"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Ak je to možné, tieto údaje sú anonymizované a nemožno ich priradiť k jednotlivým osobám."
+          },
+          {
+            "type": "p",
+            "text": "c. Marketingové a sledovacie súbory cookie (voliteľné)"
+          },
+          {
+            "type": "p",
+            "text": "Ak je to vhodné, marketingové súbory cookie môžu byť použité na zobrazovanie relevantného obsahu alebo reklám a na meranie účinnosti kampaní."
+          },
+          {
+            "type": "p",
+            "text": "Tieto súbory cookie sa ukladajú iba po výslovnom súhlase."
+          }
+        ]
+      },
+      {
+        "title": "3. Cookies tretích strán",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tretie strany (ako analytické alebo marketingové služby) môžu umiestňovať cookies prostredníctvom našej webovej stránky. ServerPunt nemá priamu kontrolu nad používaním cookies týmito stranami. Odporúčame tiež konzultovať politiky cookies a ochrany osobných údajov týchto tretích strán."
+          }
+        ]
+      },
+      {
+        "title": "4. Správa alebo odstraňovanie súborov cookie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cookies môžete kedykoľvek spravovať alebo mazať prostredníctvom nastavení vášho prehliadača. Upozorňujeme, že vypnutie cookies môže ovplyvniť fungovanie webovej stránky."
+          },
+          {
+            "type": "p",
+            "text": "Viac informácií podľa prehliadača:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Zmeny v tejto politike súborov cookie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt si vyhradzuje právo meniť túto politiku súborov cookie. Odporúčame pravidelne kontrolovať túto stránku, aby ste boli informovaní o akýchkoľvek zmenách."
+          }
+        ]
+      },
+      {
+        "title": "6. Kontakt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Máte otázky ohľadom našej politiky súborov cookie alebo ako spracúvame údaje? Neváhajte nás kontaktovať:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "O ServerPunt",
+    "intro1": "ServerPunt sa špecializuje na nákup a predaj repasovaného hardvéru pre jednotlivcov a firmy. Veríme, že profesionálny hardvér nemusí byť nový, aby fungoval spoľahlivo, výkonne a udržateľne.",
+    "intro2": "Od monitorov a notebookov až po kompletné servery a serverové komponenty: všetky produkty, ktoré ponúkame, sú dôkladne testované, kontrolované a v prípade potreby obnovené. To poskytuje vysokokvalitnému hardvéru druhý život, za konkurencieschopnú cenu a s minimálnym dopadom na životné prostredie.",
+    "servers": {
+      "title": "Špecializovaný na serverové riešenia",
+      "p1": "Naša sila spočíva v zákazkových riešeniach. Neposkytujeme len jednotlivé servery a komponenty — aktívne pomáhame určiť správne konfigurácie pre konkrétne pracovné zaťaženie, škálovateľnosť a rast. Vďaka našim technickým znalostiam a praktickým skúsenostiam vieme rýchlo reagovať a poskytnúť cielené poradenstvo.",
+      "p2": "V ServerPunt sú pre nás vždy na prvom mieste transparentnosť a kvalita. Pre nás znamená repasovaný hardvér:",
+      "bullet1Title": "Dostupná kvalita",
+      "bullet1Text": "bez kompromisov v oblasti výkonu",
+      "bullet2Title": "Udržateľná voľba",
+      "bullet2Text": "cez opätovné použitie",
+      "bullet3Title": "Rýchle doručenie",
+      "bullet3Text": "s osobným kontaktom",
+      "p3": "Vďaka našim technickým znalostiam serverov a komponentov vieme premýšľať spoločne, radiť a rýchlo reagovať, keď je to potrebné."
+    },
+    "audience": {
+      "title": "Pre koho pracujeme",
+      "p1": "Pracujeme pre jednotlivcov, ktorí hľadajú profesionálny hardvér za konkurenčnú cenu, ako aj pre firmy, ktoré chcú rozšíriť alebo obnoviť svoje systémy. Či ide o jednorazový nákup alebo väčšie rozšírenie, spoločne sa pozrieme na to, čo najlepšie vyhovuje.",
+      "p2": "ServerPunt je viac než len dodávateľ. Sme technický partner, ktorý spolupracuje, radí a dodáva — v súlade s dnešnými požiadavkami a zajtrajším rastom."
+    },
+    "values": {
+      "title": "Prečo ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Technická odbornosť",
+          "description": "Solídne znalosti serverov a infraštruktúry"
+        },
+        {
+          "icon": "✅",
+          "title": "Kontrola kvality",
+          "description": "Každý produkt je dôkladne testovaný a kontrolovaný"
+        },
+        {
+          "icon": "🌱",
+          "title": "Udržateľný",
+          "description": "Opätovné použitie hardvéru s minimálnym dopadom"
+        },
+        {
+          "icon": "💰",
+          "title": "Konkurenčne cenovo dostupné",
+          "description": "Profesionálna kvalita za dostupné ceny"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Otázky alebo potrebujete radu?",
+      "description": "Neváhajte nás kontaktovať. Radi vám pomôžeme nájsť najlepšie riešenie pre vašu situáciu.",
+      "emailLabel": "E-mail:",
+      "addressLabel": "Adresa:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

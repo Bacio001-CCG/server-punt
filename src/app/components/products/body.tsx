@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Input } from "@/components/ui/input";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { SelectBrand, SelectCategory } from "@/database/schema";
 
 export default function Body({
@@ -28,6 +29,9 @@ export default function Body({
     categories: SelectCategory[];
     brands: SelectBrand[];
 }) {
+    const t = useTranslations("products");
+    const tNav = useTranslations("nav");
+    const tCommon = useTranslations("common");
     const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
@@ -189,13 +193,15 @@ export default function Body({
                     {searchQuery && (
                         <div className="flex flex-col gap-2 p-3 bg-primary/10 rounded-lg">
                             <h4 className="text-sm font-semibold">
-                                Zoekresultaten voor:
+                                {t("searchResultsFor")}
                             </h4>
                             <p className="text-sm text-primary font-medium">
                                 "{searchQuery}"
                             </p>
                             <p className="text-xs text-muted-foreground">
-                                {displayedProducts.length} product(en) gevonden
+                                {t("productsFound", {
+                                    count: displayedProducts.length,
+                                })}
                             </p>
                         </div>
                     )}
@@ -203,7 +209,7 @@ export default function Body({
                     {/* Price Slider */}
                     <div className="flex flex-col gap-2">
                         <h4 className="text-md font-semibold mb-2 relative w-fit">
-                            Prijs
+                            {t("price")}
                             <hr className="w-2/3 border border-black" />
                         </h4>
                         <div className="flex flex-col gap-2">
@@ -220,7 +226,7 @@ export default function Body({
                                     min={0}
                                     max={5000}
                                     className="w-20 text-sm"
-                                    placeholder="Min"
+                                    placeholder={t("min")}
                                 />
                                 <span className="text-sm">-</span>
                                 <Input
@@ -235,7 +241,7 @@ export default function Body({
                                     min={0}
                                     max={5000}
                                     className="w-20 text-sm"
-                                    placeholder="Max"
+                                    placeholder={t("max")}
                                 />
                             </div>
                             <Slider
@@ -254,7 +260,7 @@ export default function Body({
                     {/* Stock Slider */}
                     <div className="flex flex-col gap-2">
                         <h4 className="text-md font-semibold mb-2 relative w-fit">
-                            Voorraad
+                            {t("stock")}
                             <hr className="w-2/3 border border-black" />
                         </h4>
                         <div className="flex flex-col gap-2">
@@ -271,7 +277,7 @@ export default function Body({
                                     min={0}
                                     max={100}
                                     className="w-20 text-sm"
-                                    placeholder="Min"
+                                    placeholder={t("min")}
                                 />
                                 <span className="text-sm">-</span>
                                 <Input
@@ -286,7 +292,7 @@ export default function Body({
                                     min={0}
                                     max={100}
                                     className="w-20 text-sm"
-                                    placeholder="Max"
+                                    placeholder={t("max")}
                                 />
                             </div>
                             <Slider
@@ -305,7 +311,7 @@ export default function Body({
                     {/* Categories */}
                     <div className="flex flex-col gap-2">
                         <h4 className="text-md font-semibold mb-2 relative w-fit">
-                            Categorieën
+                            {tNav("categories")}
                             <hr className="w-2/3 border border-black" />
                         </h4>
                         <ul className="space-y-2">
@@ -342,7 +348,8 @@ export default function Body({
                     {/* Brands */}
                     <div className="flex flex-col gap-2">
                         <h4 className="text-md font-semibold mb-2 relative w-fit">
-                            Merken <hr className="w-2/3 border border-black" />
+                            {tNav("brands")}{" "}
+                            <hr className="w-2/3 border border-black" />
                         </h4>
                         <ul className="space-y-2">
                             {brands.map((brand) => (
@@ -374,24 +381,32 @@ export default function Body({
                 <div className="w-3/4">
                     <div className="mb-8 flex-col items-center text-center hidden md:flex">
                         <h2 className="font-display text-3xl leading-tight font-bold tracking-tight md:text-4xl">
-                            {searchQuery ? `Zoekresultaten` : "Onze Producten"}
+                            {searchQuery
+                                ? t("searchResultsTitle")
+                                : t("ourProducts")}
                         </h2>
                         <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
                         <p className="mt-4 max-w-2xl text-center text-muted-foreground">
                             {searchQuery
-                                ? `${displayedProducts.length} product(en) gevonden voor "${searchQuery}"`
-                                : "Vind het perfecte apparaat voor uw behoeften uit onze zorgvuldig samengestelde collecties"}
+                                ? t("searchResultsSubtitle", {
+                                      count: displayedProducts.length,
+                                      query: searchQuery,
+                                  })
+                                : t("productsSubtitle")}
                         </p>
                     </div>
                     {displayedProducts.length === 0 ? (
                         <div className="text-center py-12">
                             <p className="text-lg text-muted-foreground">
-                                Geen producten gevonden.
+                                {searchQuery
+                                    ? tCommon("noProductsFound", {
+                                          query: searchQuery,
+                                      })
+                                    : t("noResults")}
                             </p>
                             {searchQuery && (
                                 <p className="text-sm text-muted-foreground mt-2">
-                                    Probeer een andere zoekterm of pas de
-                                    filters aan.
+                                    {t("tryDifferentSearch")}
                                 </p>
                             )}
                         </div>

@@ -1,9 +1,12 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Script from "next/script";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+    const t = useTranslations("footer");
+
     return (
         <footer className="py-16 pt-24 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,17 +30,17 @@ export default function Footer() {
                     <div className="grid w-full max-w-4xl gap-8 text-sm text-gray-600 md:grid-cols-3">
                         <div>
                             <h3 className="mb-3 text-base font-semibold text-gray-900">
-                                Gegevens
+                                {t("details")}
                             </h3>
                             <ul className="space-y-2">
-                                <li>KvK nummer: 97831441</li>
-                                <li>BTW nummer: NL868250983B01</li>
+                                <li>{t("cocNumber")}</li>
+                                <li>{t("vatNumber")}</li>
                             </ul>
                         </div>
 
                         <div>
                             <h3 className="mb-3 text-base font-semibold text-gray-900">
-                                Bedrijf
+                                {t("company")}
                             </h3>
                             <ul className="space-y-2">
                                 <li>
@@ -45,17 +48,17 @@ export default function Footer() {
                                         href="/about-us"
                                         className="hover:underline"
                                     >
-                                        Over ons
+                                        {t("aboutUs")}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/tos" className="hover:underline">
-                                        Algemene voorwaarden
+                                        {t("terms")}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/privacy" className="hover:underline">
-                                        Privacy beleid
+                                        {t("privacy")}
                                     </Link>
                                 </li>
                                 <li>
@@ -63,14 +66,14 @@ export default function Footer() {
                                         href="/tos#warranty"
                                         className="hover:underline"
                                     >
-                                        Garantie beleid
+                                        {t("warranty")}
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <h3 className="mb-3 text-base font-semibold text-gray-900">
-                                Contact
+                                {t("contact")}
                             </h3>
                             <ul className="space-y-2">
                                 <p>
@@ -85,16 +88,42 @@ export default function Footer() {
                                 <p>5048 AB Tilburg</p>
                             </ul>
                         </div>
-
                     </div>
+
+                    <p className="mt-8 max-w-2xl text-xs leading-relaxed text-muted-foreground">
+                        {t.rich("refurbishedNotice", {
+                            warrantyLink: (chunks) => (
+                                <Link
+                                    href="/tos#warranty"
+                                    className="text-foreground underline-offset-2 hover:underline"
+                                >
+                                    {chunks}
+                                </Link>
+                            ),
+                        })}
+                    </p>
+
                     <div className="w-2/3 relative items-center justify-center">
                         <span className="mt-8 block text-xs text-gray-500">
-                            © {new Date().getFullYear()} ServerPunt VOF. All Rights
-                            Reserved.
+                            {t("copyright", { year: new Date().getFullYear() })}
                         </span>
                         <div className="md:absolute mt-2 md:mt-0 right-0 bottom-0 md:top-1/2 md:justify-center md:transform">
-                            <div className="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="6942f7a473b68c1c75a316b9" data-style-height="52px" data-style-width="100%" data-token="98e50d98-e71c-4729-a790-9d86ed0e7e63">
-                                <a href="https://www.trustpilot.com/review/serverpunt.com" target="_blank" rel="noopener">Trustpilot</a>
+                            <div
+                                className="trustpilot-widget"
+                                data-locale="en-US"
+                                data-template-id="56278e9abfbbba0bdcd568bc"
+                                data-businessunit-id="6942f7a473b68c1c75a316b9"
+                                data-style-height="52px"
+                                data-style-width="100%"
+                                data-token="98e50d98-e71c-4729-a790-9d86ed0e7e63"
+                            >
+                                <a
+                                    href="https://www.trustpilot.com/review/serverpunt.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    Trustpilot
+                                </a>
                             </div>
                         </div>
                     </div>

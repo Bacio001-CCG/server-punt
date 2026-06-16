@@ -1,9 +1,11 @@
 import { getCategories } from "@/lib/categories";
+import { getTranslations } from "next-intl/server";
 import Card from "./card";
 
 const categories = (await getCategories()) || [];
 
-export default function Categories() {
+export default async function Categories() {
+    const t = await getTranslations("categoriesSection");
     return (
         <section
             id="categories"
@@ -26,11 +28,11 @@ export default function Categories() {
                   md:text-4xl
                 "
                     >
-                        Categorieën
+                        {t("title")}
                     </h2>
                     <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
                     <p className="mt-4 max-w-2xl text-center text-muted-foreground">
-                        Bekijk de product categorieën die wij aanbieden.
+                        {t("subtitle")}
                     </p>
                 </div>
                 <div

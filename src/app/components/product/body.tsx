@@ -1,5 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
+import { parseAddonsQueryParam } from "@/lib/configurator-cart";
 import ProductImages from "../productImages";
 import { SelectProduct, SelectCategory } from "@/database/schema";
 import AddProduct from "../addProduct";
@@ -17,6 +19,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { MdDangerous, MdOutlineDangerous, MdWarning } from "react-icons/md";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { productAnalyticsRegistration } from "@/lib/analytics";
 
 export default function Body({
@@ -32,6 +35,45 @@ export default function Body({
     const [quantities, setQuantities] = useState<{ [key: number]: number }>({});
     const [isSpecsOpen, setIsSpecsOpen] = useState(false);
     const [mainProductQuantity, setMainProductQuantity] = useState(1);
+    const searchParams = useSearchParams();
+    const presetAppliedRef = useRef(false);
+    const t = useTranslations("product");
+    const tCommon = useTranslations("common");
+
+    useEffect(() => {
+        if (presetAppliedRef.current || linkedProducts.length === 0) return;
+
+        const addonsParam = searchParams.get("addons");
+        if (!addonsParam) return;
+
+        const preset = parseAddonsQueryParam(addonsParam);
+        if (preset.length === 0) return;
+
+        const selected: number[] = [];
+        const qtyMap: Record<number, number> = {};
+        const usedCategoryIds = new Set<number>();
+
+        for (const { productId, quantity } of preset) {
+            const link = linkedProducts.find(
+                (lp) => lp.product?.id === productId
+            );
+            if (!link?.product) continue;
+
+            const categoryId = link.product.categoryId;
+            if (usedCategoryIds.has(categoryId)) continue;
+
+            usedCategoryIds.add(categoryId);
+            selected.push(link.id);
+            qtyMap[link.id] = quantity;
+        }
+
+        if (selected.length > 0) {
+            setSelectedProducts(selected);
+            setQuantities(qtyMap);
+        }
+
+        presetAppliedRef.current = true;
+    }, [linkedProducts, searchParams]);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -173,10 +215,10 @@ flex flex-col items-center
                                     !product.refurbished && <Alert className=" mb-6 border-green-600 bg-green-100">
                                         <CheckCircle2Icon className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
                                         <AlertTitle className="font-semibold text-sm sm:text-base text-green-900">
-                                            Gloednieuw Product
+                                            {t("brandNewTitle")}
                                         </AlertTitle>
                                         <AlertDescription className="text-xs text-green-800 sm:text-sm">
-                                            Dit product is gloednieuw en niet refurbished. Het is direct afkomstig van de fabrikant of een geautoriseerde distributeur, en heeft nog nooit eerder een eigenaar gehad. U kunt erop vertrouwen dat u een product van de hoogste kwaliteit ontvangt, zonder enige tekenen van gebruik of slijtage.
+                                            {t("brandNewDescription")}
                                         </AlertDescription>
                                     </Alert>
                                 }
@@ -193,7 +235,7 @@ flex flex-col items-center
                                                 size={20}
                                                 className="my-auto"
                                             />
-                                            Product Specificaties
+                                            {t("specifications")}
                                         </h2>
                                         <motion.div
                                             animate={{
@@ -242,9 +284,7 @@ flex flex-col items-center
                                             {product.name}
                                         </h2>
                                         <p className="text-sm sm:text-base">
-                                            Kies hieronder de extra onderdelen
-                                            die u aan het basisproduct wilt
-                                            toevoegen.
+                                            {t("chooseAddons")}
                                         </p>
                                     </div>
                                     {categories.map((c) => {
@@ -373,8 +413,9 @@ flex flex-col items-center
                                                                                     .product
                                                                                     ?.quantityInStock
                                                                             }{" "}
-                                                                            in
-                                                                            voorraad
+                                                                            {t(
+                                                                                "inStock"
+                                                                            )}
                                                                         </button>
                                                                     </div>
                                                                     {selectedProducts.includes(
@@ -480,8 +521,7 @@ flex flex-col items-center
                                             {product.name}
                                         </h2>
                                         <p className="text-sm sm:text-base">
-                                            Kies hieronder het aantal van het
-                                            basisproduct dat u wilt bestellen.
+                                            {t("chooseQuantity")}
                                         </p>
                                     </div>
                                 </div>
@@ -490,7 +530,7 @@ flex flex-col items-center
                             <div className="flex flex-col gap-2 p-3 sm:p-4 bg-gray-50 rounded-lg">
                                 <div className="flex justify-between items-center">
                                     <span className="font-semibold text-xs sm:text-sm">
-                                        Aantal basisproduct:
+                                        {t("baseQuantity")}
                                     </span>
                                     <div className="flex gap-2 items-center">
                                         <button
@@ -534,7 +574,9 @@ flex flex-col items-center
                                     </div>
                                 </div>
                                 <span className="text-xs text-gray-600">
-                                    {product.quantityInStock} stuks beschikbaar
+                                    {t("unitsAvailable", {
+                                        count: product.quantityInStock,
+                                    })}
                                 </span>
                             </div>
                             <div className="mb-4 sm:mb-6">
@@ -553,7 +595,7 @@ flex flex-col items-center
                                                 )
                                                     .toFixed(2)
                                                     .replace(".", ",")}{" "}
-                                                Excl. BTW
+                                                {tCommon("exclVat")}
                                             </div>
                                             <div className="text-xs text-gray-600">
                                                 €
@@ -563,7 +605,7 @@ flex flex-col items-center
                                                 )
                                                     .toFixed(2)
                                                     .replace(".", ",")}{" "}
-                                                Incl. BTW
+                                                {tCommon("inclVat")}
                                             </div>
                                         </div>
                                     </li>
@@ -589,7 +631,7 @@ flex flex-col items-center
                                                                     ".",
                                                                     ","
                                                                 )}{" "}
-                                                            Excl. BTW
+                                                            {tCommon("exclVat")}
                                                         </div>
                                                         <div className="text-xs text-gray-600">
                                                             €
@@ -601,7 +643,7 @@ flex flex-col items-center
                                                                     ".",
                                                                     ","
                                                                 )}{" "}
-                                                            Incl. BTW
+                                                            {tCommon("inclVat")}
                                                         </div>
                                                     </div>
                                                 </li>
@@ -611,7 +653,7 @@ flex flex-col items-center
                                 </ul>
                                 <div className="pt-4 border-t border-gray-300 flex justify-between gap-2">
                                     <span className="text-base sm:text-lg font-bold">
-                                        Totaal:
+                                        {t("total")}
                                     </span>
                                     <div className="text-right flex-shrink-0">
                                         <div className="text-base sm:text-lg font-bold text-primary">
@@ -619,7 +661,7 @@ flex flex-col items-center
                                             {calculateTotal()
                                                 .toFixed(2)
                                                 .replace(".", ",")}{" "}
-                                            Excl. BTW
+                                            {tCommon("exclVat")}
                                         </div>
                                         <div className="text-xs sm:text-sm text-gray-600">
                                             €
@@ -628,7 +670,7 @@ flex flex-col items-center
                                             )
                                                 .toFixed(2)
                                                 .replace(".", ",")}{" "}
-                                            Incl. BTW
+                                            {tCommon("inclVat")}
                                         </div>
                                     </div>
                                 </div>
@@ -644,12 +686,10 @@ flex flex-col items-center
                                 <Alert className="">
                                     <Info className="h-4 w-4 sm:h-5 sm:w-5" />
                                     <AlertTitle className="font-semibold text-sm sm:text-base">
-                                        Voorwaarden van toepassing
+                                        {t("termsTitle")}
                                     </AlertTitle>
                                     <AlertDescription className="text-xs sm:text-sm">
-                                        Let op: Zodra u iets vanaf onze website
-                                        bestelt, zijn onze Algemene Voorwaarden
-                                        van toepassing.
+                                        {t("termsDescription")}
                                     </AlertDescription>
                                 </Alert>
                             </Link>

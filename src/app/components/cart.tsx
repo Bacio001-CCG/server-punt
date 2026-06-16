@@ -1,9 +1,13 @@
+"use client";
+
 import useCart from "@/hooks/useCart";
+import { formatPricePlain } from "@/lib/format";
 import { Trash } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useEffect, useRef, useMemo } from "react";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Cart({
     isOpen,
@@ -14,6 +18,9 @@ export default function Cart({
 }) {
     const { products, removeProduct, getTotalPrice, getGroupedProducts } =
         useCart();
+    const t = useTranslations("cart");
+    const tCommon = useTranslations("common");
+    const locale = useLocale();
 
     const cartRef = useRef<HTMLDivElement>(null);
 
@@ -41,176 +48,169 @@ export default function Cart({
         };
     }, [isOpen, setIsOpen]);
 
+    const totalPrice = formatPricePlain(getTotalPrice(), locale);
+
     return (
         <AnimatePresence>
             {isOpen && (
-                <>
-                    {/* Cart content */}
-                    <motion.div
-                        ref={cartRef}
-                        className="top-10 right-0 w-screen max-w-sm absolute border border-gray-300 rounded-lg bg-white px-4 py-8 sm:px-6 lg:px-8 z-50"
-                        aria-modal="true"
-                        role="dialog"
-                        tabIndex={-1}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        onClick={(e) => e.stopPropagation()}
+                <motion.div
+                    ref={cartRef}
+                    className="top-10 right-0 w-screen max-w-sm absolute border border-gray-300 rounded-lg bg-white px-4 py-8 sm:px-6 lg:px-8 z-50"
+                    aria-modal="true"
+                    role="dialog"
+                    tabIndex={-1}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <button
+                        className="absolute end-4 top-4 text-gray-600 transition hover:scale-110"
+                        onClick={() => setIsOpen(false)}
                     >
-                        <button
-                            className="absolute end-4 top-4 text-gray-600 transition hover:scale-110"
-                            onClick={() => setIsOpen(false)}
+                        <span className="sr-only">{tCommon("closeCart")}</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth="1.5"
+                            stroke="currentColor"
+                            className="size-5"
                         >
-                            <span className="sr-only">Close cart</span>
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </button>
 
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth="1.5"
-                                stroke="currentColor"
-                                className="size-5"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M6 18L18 6M6 6l12 12"
-                                />
-                            </svg>
-                        </button>
+                    <div className="mt-4 space-y-6 max-h-[50vh] overflow-y-auto">
+                        <ul className="space-y-4">
+                            {groupedProducts.length === 0 && (
+                                <p className="text-center text-gray-500">
+                                    {t("empty")}
+                                </p>
+                            )}
+                            {groupedProducts.map((item) => {
+                                const configuredTotal = (
+                                    item.product.configuredItems || []
+                                ).reduce(
+                                    (sub, ci) =>
+                                        sub + ci.product.price * ci.quantity,
+                                    0
+                                );
+                                const unitTotal =
+                                    item.product.price + configuredTotal;
 
-                        <div className="mt-4 space-y-6 max-h-[50vh] overflow-y-auto">
-                            <ul className="space-y-4">
-                                {groupedProducts.length === 0 && (
-                                    <p className="text-center text-gray-500">
-                                        Je winkelwagen is leeg.
-                                    </p>
-                                )}
-                                {groupedProducts.map((item) => {
-                                    const configuredTotal = (
-                                        item.product.configuredItems || []
-                                    ).reduce(
-                                        (sub, ci) =>
-                                            sub +
-                                            ci.product.price * ci.quantity,
-                                        0
-                                    );
-                                    const unitTotal =
-                                        item.product.price + configuredTotal;
-
-                                    return (
-                                        <Link
-                                            href={`/product/${item.product.id}`}
-                                            key={`${item.product.id}-${
-                                                item.product.configSignature ??
-                                                "base"
-                                            }`}
-                                            className="flex items-start gap-4"
-                                        >
-                                            <Image
-                                                width={48}
-                                                height={48}
-                                                src={
-                                                    item.product.imageUrl ||
-                                                    "/placeholder.png"
-                                                }
-                                                alt={item.product.name}
-                                                className="size-16 rounded-sm object-cover"
-                                            />
-                                            <div className="flex justify-between w-full items-start">
-                                                <div className="space-y-1">
-                                                    <h3 className="text-sm text-gray-900">
+                                return (
+                                    <Link
+                                        href={`/product/${item.product.id}`}
+                                        key={`${item.product.id}-${
+                                            item.product.configSignature ??
+                                            "base"
+                                        }`}
+                                        className="flex items-start gap-4"
+                                    >
+                                        <Image
+                                            width={48}
+                                            height={48}
+                                            src={
+                                                item.product.imageUrl ||
+                                                "/placeholder.png"
+                                            }
+                                            alt={item.product.name}
+                                            className="size-16 rounded-sm object-cover"
+                                        />
+                                        <div className="flex justify-between w-full items-start">
+                                            <div className="space-y-1">
+                                                <h3 className="text-sm text-gray-900">
+                                                    {item.product.bundleLabel ??
+                                                        item.product.name}
+                                                </h3>
+                                                {item.product.bundleLabel && (
+                                                    <p className="text-xs text-gray-500">
+                                                        {tCommon("base")}:{" "}
                                                         {item.product.name}
-                                                    </h3>
-                                                    {item.product
-                                                        .configuredItems &&
-                                                        item.product
-                                                            .configuredItems
-                                                            .length > 0 && (
-                                                            <ul className="ml-4 list-disc text-xs text-gray-600 space-y-0.5">
-                                                                {item.product.configuredItems.map(
-                                                                    (sub) => (
-                                                                        <li
-                                                                            key={`${sub.product.id}-${sub.quantity}`}
-                                                                        >
-                                                                            {
-                                                                                sub
-                                                                                    .product
-                                                                                    .name
-                                                                            }{" "}
-                                                                            x{" "}
-                                                                            {
-                                                                                sub.quantity
-                                                                            }
-                                                                        </li>
-                                                                    )
-                                                                )}
-                                                            </ul>
-                                                        )}
+                                                    </p>
+                                                )}
+                                                {item.product.configuredItems &&
+                                                    item.product.configuredItems
+                                                        .length > 0 && (
+                                                        <ul className="ml-4 list-disc text-xs text-gray-600 space-y-0.5">
+                                                            {item.product.configuredItems.map(
+                                                                (sub) => (
+                                                                    <li
+                                                                        key={`${sub.product.id}-${sub.quantity}`}
+                                                                    >
+                                                                        {
+                                                                            sub
+                                                                                .product
+                                                                                .name
+                                                                        }{" "}
+                                                                        x{" "}
+                                                                        {
+                                                                            sub.quantity
+                                                                        }
+                                                                    </li>
+                                                                )
+                                                            )}
+                                                        </ul>
+                                                    )}
 
-                                                    <dl className="mt-1 space-y-px text-[10px] text-gray-600">
-                                                        <div>
-                                                            <dt className="inline mr-1">
-                                                                Aantal:
-                                                            </dt>
-                                                            <dd className="inline">
-                                                                {item.quantity}x
-                                                            </dd>
-                                                        </div>
-                                                        <div>
-                                                            <dt className="inline mr-1">
-                                                                Prijs:
-                                                            </dt>
-                                                            <dd className="inline">
-                                                                €
-                                                                {String(
-                                                                    (
-                                                                        unitTotal *
-                                                                        item.quantity
-                                                                    ).toFixed(2)
-                                                                ).replace(
-                                                                    ".",
-                                                                    ","
-                                                                )}{" "}
-                                                                Excl. BTW
-                                                            </dd>
-                                                        </div>
-                                                    </dl>
-                                                </div>
-                                                <Trash
-                                                    onClick={(ev) => {
-                                                        ev.preventDefault();
-                                                        removeProduct(
-                                                            item.product.id,
-                                                            item.product
-                                                                .configSignature
-                                                        );
-                                                    }}
-                                                    className="text-red-500 scale-75 cursor-pointer hover:scale-90 transition-transform"
-                                                />
+                                                <dl className="mt-1 space-y-px text-[10px] text-gray-600">
+                                                    <div>
+                                                        <dt className="inline mr-1">
+                                                            {tCommon("quantity")}:
+                                                        </dt>
+                                                        <dd className="inline">
+                                                            {item.quantity}x
+                                                        </dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt className="inline mr-1">
+                                                            {tCommon("price")}:
+                                                        </dt>
+                                                        <dd className="inline">
+                                                            €
+                                                            {formatPricePlain(
+                                                                unitTotal *
+                                                                    item.quantity,
+                                                                locale
+                                                            )}{" "}
+                                                            {tCommon("exclVat")}
+                                                        </dd>
+                                                    </div>
+                                                </dl>
                                             </div>
-                                        </Link>
-                                    );
-                                })}
-                            </ul>
+                                            <Trash
+                                                onClick={(ev) => {
+                                                    ev.preventDefault();
+                                                    removeProduct(
+                                                        item.product.id,
+                                                        item.product
+                                                            .configSignature
+                                                    );
+                                                }}
+                                                className="text-red-500 scale-75 cursor-pointer hover:scale-90 transition-transform"
+                                            />
+                                        </div>
+                                    </Link>
+                                );
+                            })}
+                        </ul>
 
-                            <div className="space-y-4 text-center">
-                                <Link
-                                    href="/checkout"
-                                    className="block rounded-sm bg-black px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
-                                >
-                                    Bestellen (€
-                                    {String(getTotalPrice().toFixed(2)).replace(
-                                        ".",
-                                        ","
-                                    )}
-                                    ) Excl. BTW
-                                </Link>
-                            </div>
+                        <div className="space-y-4 text-center">
+                            <Link
+                                href="/checkout"
+                                className="block rounded-sm bg-black px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
+                            >
+                                {t("orderButton", { price: `€${totalPrice}` })}
+                            </Link>
                         </div>
-                    </motion.div>
-                </>
+                    </div>
+                </motion.div>
             )}
         </AnimatePresence>
     );

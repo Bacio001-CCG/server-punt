@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Villkor",
+    "lastModified": "Senast ändrad: 22 december 2025",
+    "sections": [
+      {
+        "title": "Artikel 1. Definitioner",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "I dessa allmänna villkor ska följande termer ha de betydelser som anges nedan:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "partnerskapet NetwerkPunt, som handlar under namnet ServerPunt, beläget på Kraaivenstraat 36-07, 5048 AB Tilburg, registrerat hos det nederländska Handelskammaren under nummer 97831441."
+              },
+              {
+                "term": "Kund",
+                "text": "varje fysisk eller juridisk person som ingår eller önskar ingå ett avtal med ServerPunt."
+              },
+              {
+                "term": "Konsument",
+                "text": "kunden som är en fysisk person som agerar för ändamål utanför sin handel, näringsverksamhet, hantverk eller yrke."
+              },
+              {
+                "term": "Företagskund",
+                "text": "kunden som agerar i utövandet av ett yrke eller en verksamhet."
+              },
+              {
+                "term": "Avtal",
+                "text": "alla avtal som ingås mellan ServerPunt och Kunden, inklusive distansförsäljning via webbplatsen, och alla skyldigheter som uppstår därav."
+              },
+              {
+                "term": "Webbplats",
+                "text": "hemsidan för ServerPunt genom vilken produkter erbjuds och beställningar kan göras, nämligen https://serverpunt.com/."
+              },
+              {
+                "term": "Produkt(er)",
+                "text": "alla varor som erbjuds av ServerPunt, inklusive renoverad IT-hårdvara, servrar, serverkomponenter och tillbehör."
+              },
+              {
+                "term": "Renoverad",
+                "text": "använt hårdvara som har inspekterats, testats och vid behov rengjorts och/eller reparerats av ServerPunt, och som därefter erbjuds igen. Refurbished produkter kan visa tecken på användning och kan skilja sig från nytt skick."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 2. Tillämpbarhet",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dessa allmänna villkor gäller för varje erbjudande som görs av ServerPunt och för varje avtal som ingås mellan ServerPunt och Kunden.",
+              "Avvikelser från dessa allmänna villkor är endast giltiga om de uttryckligen bekräftas skriftligen (inklusive via e-post) av ServerPunt.",
+              "Tillämpligheten av kundens (köp)villkor är uttryckligen utesluten, såvida den inte uttryckligen godkänts skriftligen av ServerPunt.",
+              "Om någon bestämmelse i dessa allmänna villkor är helt eller delvis ogiltig eller annullerad, ska de återstående bestämmelserna förbli fullt i kraft. I så fall ska parterna ersätta den relevanta bestämmelsen med en bestämmelse som så nära som möjligt överensstämmer med syftet och avsikten med den ursprungliga bestämmelsen.",
+              "Vid en konflikt mellan innehållet på webbplatsen och dessa allmänna villkor ska dessa allmänna villkor ha företräde, såvida det inte uttryckligen anges något annat."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 3. Erbjudandet",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Alla erbjudanden och produktbeskrivningar på ServerPunts webbplats är icke-bindande, om inget annat uttryckligen anges.",
+              "ServerPunt sammanställer informationen på webbplatsen med största möjliga noggrannhet. Trots detta kan uppenbara fel eller misstag förekomma, såsom tryckfel, prisfel, felaktiga specifikationer eller felaktiga bilder. Inga rättigheter kan härledas från sådana fel.",
+              "Bilder på produkter är endast för illustrationsändamål och kan skilja sig från den produkt som faktiskt levereras, med tanke på den renoverade naturen hos den erbjudna hårdvaran.",
+              "ServerPunt har rätt att avboka eller ändra en beställning om det finns ett uppenbart fel i erbjudandet, såsom ett tydligt prisfel eller en felaktigt visad produktkaraktäristik.",
+              "Erbjudandet gäller så länge lagret räcker. Om en produkt inte är (eller inte längre är) tillgänglig, kommer ServerPunt att informera kunden så snart som möjligt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 4. Avtalets ingående",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Avtalet ingås i det ögonblick kunden accepterar ServerPunts erbjudande genom att lägga en beställning via webbplatsen och den beställningen bekräftas av ServerPunt via e-post.",
+              {
+                "text": "ServerPunt har rätt att vägra en beställning eller införa ytterligare villkor, inklusive om:",
+                "sublist": [
+                  "kunden har lämnat felaktig eller ofullständig information;",
+                  "tidigare betalningsskyldigheter har inte uppfyllts;",
+                  "det finns rimliga skäl att tvivla på kundens betalningsförmåga."
+                ]
+              },
+              "Efter att ha lagt en beställning får Kunden en orderbekräftelse via e-post. Denna bekräftelse utgör inte en faktura.",
+              "Uppenbara fel eller misstag i orderbekräftelsen binder inte ServerPunt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 5. Ändringar och avbokning av ServerPunt",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Om det efter avtalets slutsats visar sig att den beställda produkten inte är (eller inte längre är) tillgänglig eller inte kan levereras, har ServerPunt rätt att upplösa avtalet.",
+              "Vid upplösning som avses i denna artikel kommer ServerPunt att återbetala alla belopp som redan betalats av Kunden så snart som möjligt, men senast inom 14 dagar."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 6. Priser",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Alla priser som anges på webbplatsen är i euro och inklusive moms, om inte annat uttryckligen anges.",
+              "För företagskunder kan priser visas exklusive moms. I så fall kommer detta att tydligt anges i erbjudandet.",
+              "Eventuella fraktkostnader, administrativa kostnader eller andra ytterligare kostnader kommer att tydligt kommuniceras till Kunden innan Avtalet ingås.",
+              "ServerPunt förbehåller sig rätten att ändra priser. Prisändringar påverkar inte redan ingångna avtal."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 7. Betalning",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Betalning måste ske via de betalningsmetoder som erbjuds på webbplatsen, om inget annat avtalats skriftligen.",
+              "ServerPunt har rätt att behandla en beställning först efter att full betalning har mottagits, om inte annat uttryckligen avtalats.",
+              "I fallet med betalning på konto eller betalning mot faktura (endast för företagskunder) gäller den betalningsvillkor som anges på fakturan.",
+              "Om Kunden misslyckas med att uppfylla sin betalningsskyldighet i tid är Kunden i dröjsmål enligt lag. Från och med detta ögonblick har ServerPunt rätt att ta ut lagstadgad (kommersiell) ränta.",
+              "Alla rimliga kostnader som uppkommer för att få betalning utanför domstol ska bäras av Kunden.",
+              "För företagskunder gäller en betalningsfrist på 14 dagar från fakturadatumet, om inget annat överenskommits skriftligen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 8. Fakturering",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Fakturor tillhandahålls elektroniskt, om inget annat avtalas.",
+              "Invändningar mot en faktura måste rapporteras till ServerPunt skriftligen inom 7 dagar från fakturadatumet."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 9. Leverans",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Leverans av Produkter sker till den leveransadress som Kunden angett vid beställningstillfället, om inget annat överenskommits skriftligen.",
+              "ServerPunt kommer att bearbeta och skicka beställningar med största möjliga omsorg.",
+              "Om leverans till en överenskommen adress visar sig vara omöjlig, har ServerPunt rätt att göra produkten tillgänglig för Kunden på annat sätt eller att upplösa avtalet."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 10. Leveranstider",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Leveranstider som anges av ServerPunt är indikativa och utgör inte bindande tidsfrister, om inte annat uttryckligen avtalats skriftligen.",
+              "Att överskrida en leveranstid ger inte Kunden rätt till ersättning eller upplösning av Avtalet, såvida det inte finns uppsåt eller grov vårdslöshet från ServerPunts sida.",
+              "Om leverans blir försenad eller en beställning inte kan fullgöras helt eller till viss del, kommer ServerPunt att informera Kunden så snart som möjligt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 11. Överföring av risk och transportskador",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Risken för förlust eller skada på Produkter övergår till Konsumenten vid själva mottagandet av Produkten.",
+              "För företagskunder övergår risken vid den tidpunkt då produkten skickas.",
+              "Kunden måste omedelbart vid mottagandet inspektera Produkten för transportskador och synliga defekter. Eventuella skador eller defekter måste rapporteras till ServerPunt skriftligen inom 48 timmar efter mottagandet, tillsammans med fotografier av Produkten och förpackningen.",
+              "Om transportskada rapporteras på ett rättidigt och korrekt sätt kommer ServerPunt, efter eget gottfinnande, att ordna reparation, ersättning eller återbetalning."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 12. Insamling",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Om upphämtning har avtalats måste Kunden hämta Produkten vid överenskommen tid och adress.",
+              "Vid upphämtning övergår risken till Kunden vid tidpunkten för överlämnande av Produkten."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 13. Ångerrätt",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Konsumenten har rätt att häva Avtalet avseende köp av en Produkt inom 14 dagar efter mottagandet utan att ange skäl.",
+              "Ångerfristen upphör 14 dagar efter den dag då Konsumenten, eller en tredje part som denne har utsett, mottog Produkten.",
+              "För att utöva ångerrätten måste Konsumenten informera ServerPunt inom ångerfristen via e-post eller annat entydigt uttalande om beslutet att upplösa Avtalet."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 14. Konsekvenser av återkallande",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Om konsumenten drar sig ur avtalet kommer de att få tillbaka alla betalningar som gjorts fram till dess, inklusive eventuella standardfraktkostnader, senast 14 dagar efter den dag ServerPunt informerades om att avtalet avbrutits.",
+              "ServerPunt kan hålla inne återbetalning tills produkten har mottagits, eller tills konsumenten har visat att produkten har returnerats, beroende på vad som inträffar först.",
+              "Återbetalningar kommer att göras via samma betalningsmetod som användes för den ursprungliga transaktionen, om inget annat avtalas."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 15. Returvillkor",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Under ångerfristen måste Konsumenten hantera Produkten och förpackningen med försiktighet. Produkten får endast packas upp och användas i den utsträckning som är nödvändig för att fastställa dess art, egenskaper och funktion.",
+              "Om produkten har använts mer än tillåtet, är konsumenten ansvarig för eventuell värdeminskning av produkten.",
+              "Konsumenten är ansvarig för korrekt och trygg återleverans av Produkten."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 16. Återvändandekostnader",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kostnaderna för returfrakt bärs av Konsumenten, såvida inget annat har avtalats.",
+              "Om ServerPunt har hämtat Produkten från Konsumenten kommer kostnaderna för detta att debiteras Konsumenten.",
+              "Returer måste skickas till ServerPunts affärsadress på Kraaivenstraat 36-07, 5048 AB Tilburg, om inget annat avtalats skriftligen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 17. Undantag från ångerrätten",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ångerrätten är utesluten för:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "affärskunder;",
+              "Produkter som på grund av sin natur inte kan returneras;",
+              "Produkter som tydligt är personliga eller specialmonterade;",
+              "Produkter vars försegling har brutits av hygien- eller säkerhetsskäl, där det är tillämpligt."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "Artikel 18. Garanti och överensstämmelse",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt garanterar att de levererade Produkterna överensstämmer med Avtalet, de specifikationer som anges i erbjudandet och de rimliga kraven på tillförlitlighet och användbarhet, med hänsyn till Produkternas renoverade karaktär.",
+              "Renoverade produkter är begagnade och kan visa tecken på användning. Avvikelser från nytt skick, såsom mindre kosmetiska skador, utgör inte ett fel och ger inte kunden rätt till ersättning, reparation eller upplösning.",
+              "För konsumenter gäller den lagstadgade garantin. Detta innebär att en produkt måste fungera som konsumenten med rimlighet kan förvänta sig av den. ServerPunt kan inte utesluta eller begränsa denna lagstadgade garanti.",
+              "Eventuell ytterligare garanti som tillhandahålls av ServerPunt kommer uttryckligen att anges skriftligt med produkten och påverkar inte den lagstadgade garantin.",
+              "För företagskunder gäller endast den garanti som uttryckligen tillhandahålls av ServerPunt. Vid avsaknad av denna gäller ingen ytterligare garanti.",
+              "Om ingen ytterligare garantiperiod anges för en Produkt gäller endast den lagstadgade garantin för Konsumenter och ingen ytterligare garanti gäller för företagskunder."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 19. Rapportering av defekter",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kunden är skyldig att kontrollera produkten för defekter så snart som möjligt efter mottagandet.",
+              "Defekter som inte var synliga vid mottagandet måste rapporteras av Konsumenten inom rimlig tid efter upptäckten.",
+              "Företagskunder måste rapportera fel skriftligt inom 7 dagar efter mottagandet. Underlåtenhet att göra detta medför förlust av rätten till reparation, ersättning eller någon annan kompensation."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 20. Reparation och ersättning",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Om en Produkt visar sig inte överensstämma med Avtalet, kommer ServerPunt, efter eget gottfinnande, att reparera eller ersätta Produkten, såvida detta inte är omöjligt eller medför oproportionerliga kostnader.",
+              "Om reparation eller utbyte inte är möjligt, kan ServerPunt gå vidare med (delvis) återbetalning eller upplösning av avtalet."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 21. Ansvar",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunts ansvar är begränsat till det belopp som Kunden har betalat för den aktuella Produkten, med ett absolut maximum på fakturabeloppet.",
+              {
+                "text": "ServerPunt är aldrig ansvarigt för indirekt skada, inklusive men inte begränsat till:",
+                "sublist": [
+                  "följdskada;",
+                  "förlorad vinst;",
+                  "missade besparingar;",
+                  "dataförlust;",
+                  "affärsskada;",
+                  "skada på grund av affärsavbrott."
+                ]
+              },
+              {
+                "text": "ServerPunt ansvarar inte för skador orsakade av:",
+                "sublist": [
+                  "oaktsam eller felaktig användning av produkten;",
+                  "använd utanför de specifikationer som tillhandahålls av ServerPunt;",
+                  "reparationer eller modifieringar utförda av kunden;",
+                  "använd tillsammans med defekt eller olämplig kringutrustning."
+                ]
+              },
+              "Ansvarsbegränsningarna som anges i denna artikel gäller inte om skadan beror på uppsåt eller grov vårdslöshet från ServerPunts sida, eller i den omfattning ansvar inte kan uteslutas enligt tvingande lag."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 22. Ersättning",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kunden håller ServerPunt skadeslös från alla krav från tredje part som rör användningen av de levererade Produkterna.",
+              "Kunden är ansvarig för att göra adekvata säkerhetskopior av data. ServerPunt ansvarar inte för förlust eller skada på data, oavsett orsak."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 23. Force majeure",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt är inte skyldig att uppfylla någon förpliktelse gentemot Kunden om det hindras från att göra det på grund av force majeure.",
+              {
+                "text": "Force majeure inkluderar, i vilket fall som helst, alla omständigheter bortom ServerPunts kontroll som tillfälligt eller permanent hindrar uppfyllandet av förpliktelser, inklusive men inte begränsat till:",
+                "sublist": [
+                  "störningar hos transportörer eller leverantörer;",
+                  "förseningar eller misslyckanden i transporten;",
+                  "upphandlingsproblem eller lagerbrist;",
+                  "strömavbrott;",
+                  "internet- eller nätverksfel;",
+                  "brand, vattenskada eller andra olyckor;",
+                  "regeringsåtgärder;",
+                  "epidemier, pandemier och relaterade restriktioner."
+                ]
+              },
+              "Om force majeure-situationen fortsätter i mer än 30 dagar har både ServerPunt och Kunden rätt att skriftligen upplösa Avtalet, utan någon skyldighet att betala ersättning i det fallet.",
+              "Om ServerPunt redan delvis har fullgjort sina åtaganden vid förekomsten av force majeure, eller fortfarande kan fullgöra dem, har ServerPunt rätt att fakturera eller reglera den delen separat."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 24. Klagomål",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Klager gällande avtalets prestanda måste lämnas in till ServerPunt skriftligen, fullt och tydligt beskrivna, inom rimlig tid efter att Kunden har identifierat felet.",
+              {
+                "text": "Klagomål kan lämnas in via:",
+                "sublist": [
+                  "e-post: info@serverpunt.com",
+                  "eller skriftligen via post till ServerPunts affärsadress."
+                ]
+              },
+              "ServerPunt kommer att svara på inkomna klagomål inom 14 dagar efter mottagandet. Om ett klagomål kräver en förutsebar längre handläggningstid, kommer ServerPunt att informera Kunden inom denna period.",
+              "Om ett klagomål inte kan lösas genom ömsesidig överenskommelse uppstår en tvist som kan lämnas in till behörig domstol enligt vad som anges i dessa allmänna villkor."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 25. Tillämplig lag",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Nederländsk lag gäller uteslutande för alla avtal mellan ServerPunt och kunden som dessa allmänna villkor gäller för.",
+              "Tvister som uppstår från eller som har samband med avtalet ska exklusivt hänskjutas till behörig domstol i det distrikt där ServerPunt är etablerat, om inte tvingande lag föreskriver annat."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 26. Slutbestämmelser",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt har rätt att ändra eller komplettera dessa allmänna villkor. Ändrade villkor kommer att publiceras i god tid via webbplatsen och gäller för framtida avtal.",
+              "Om bestämmelser i dessa allmänna villkor visar sig vara ogiltiga eller upphävs, påverkar detta inte giltigheten av de återstående bestämmelserna.",
+              "Dessa allmänna villkor ändrades senast den 22 december 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "vat": "VAT: NL868250983B01",
+      "emailLabel": "E-post:",
+      "websiteLabel": "Webbplats:"
+    }
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "lastModified": "Senast ändrad: 5 februari 2026",
+    "sections": [
+      {
+        "title": "1. Personuppgiftsansvarig",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), belägen på Kraaivenstraat 36-07, 5048 AB Tilburg, registrerad hos det nederländska Handelskammaren under nummer 97831441, är ansvarig för behandlingen av personuppgifter som beskrivs i denna integritetspolicy."
+          },
+          {
+            "type": "p",
+            "text": "Kontakt: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Personuppgifter vi behandlar",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt behandlar personuppgifter eftersom du använder vår webbplats och våra tjänster och/eller eftersom du själv tillhandahåller dessa uppgifter till oss. Detta inkluderar bland annat:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "för- och efternamn",
+              "adressuppgifter",
+              "e-postadress",
+              "telefonnummer",
+              "betalnings- och fakturainformation",
+              "IP-adress",
+              "orderhistorik",
+              "korrespondensdata"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Syften och rättsliga grunder för behandling",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt behandlar personuppgifter uteslutande för följande ändamål och på grundval av motsvarande rättsliga grunder:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Genomförande av avtalet: hantering av beställningar, leverans av produkter, kommunikation om avtalet",
+              "Rättslig skyldighet: fakturering, bokföring, skatteplikt",
+              "Legitimt intresse: kundservice, förbättring av tjänster, bedrägeribekämpning",
+              "Samtycke: nyhetsbrev och marknadsföringskommunikationer (där det är tillämpligt)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Lagringstider",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt behåller inte personuppgifter längre än vad som är nödvändigt för de ändamål för vilka de samlades in, med hänsyn till lagstadgade lagringsperioder:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Order- och fakturadata: 7 år (lagstadgat skattebevarandeåtagande)",
+              "Kundkommunikation: högst 2 år",
+              "Kontouppgifter och kontaktuppgifter: så länge kundrelationen är aktiv"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Dela personuppgifter med tredje part",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt lämnar endast ut personuppgifter till tredje part om detta är nödvändigt för att fullgöra avtalet eller för att uppfylla en rättslig skyldighet."
+          },
+          {
+            "type": "p",
+            "text": "Detta inkluderar, bland annat:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "betalningsleverantörer",
+              "bärare",
+              "bokföringsprogram",
+              "värd- och IT-tjänsteleverantörer"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Där det är lagligt krävt har databehandlingsavtal ingåtts med dessa parter."
+          }
+        ]
+      },
+      {
+        "title": "6. Kakor",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt använder funktionella och analytiska kakor som har ingen eller endast en liten påverkan på besökarnas integritet."
+          },
+          {
+            "type": "p",
+            "text": "Dessa cookies används för att:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "säkerställa att webbplatsen fungerar korrekt ur ett tekniskt perspektiv;",
+              "få insikt i webbplatsens användning och förbättra webbplatsen."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Inga spårningscookies placeras utan föregående samtycke."
+          }
+        ]
+      },
+      {
+        "title": "7. Säkerhet för personuppgifter",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt vidtar lämpliga tekniska och organisatoriska åtgärder för att skydda personuppgifter mot förlust, missbruk, obehörig åtkomst och oönskad offentliggöring."
+          }
+        ]
+      },
+      {
+        "title": "8. Registrerades rättigheter",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Du har rätt att:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "åtkomst till dina personuppgifter;",
+              "få dina uppgifter rättade eller raderade;",
+              "invända mot behandling;",
+              "begär begränsning av behandling;",
+              "få dina uppgifter överförda (dataportabilitet)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Förfrågningar kan skickas via info@serverpunt.com. Du har också rätt att lämna in ett klagomål till den nederländska dataskyddsmyndigheten (Autoriteit Persoonsgegevens)."
+          }
+        ]
+      },
+      {
+        "title": "9. Ändringar",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt förbehåller sig rätten att ändra denna sekretesspolicy. Den senaste versionen finns alltid tillgänglig på webbplatsen."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "emailLabel": "E-post:",
+      "websiteLabel": "Webbplats:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookiepolicy",
+    "lastModified": "Senast ändrad: 9 februari 2026",
+    "intro": "Denna cookiepolicy gäller för webbplatsen för ServerPunt, belägen på Kraaivenstraat 36-07, 5048 AB Tilburg, och nås via info@serverpunt.com.",
+    "sections": [
+      {
+        "title": "1. Vad är cookies?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kakor är små textfiler som lagras på din dator, surfplatta eller smartphone när du besöker en webbplats. Kakor säkerställer att en webbplats fungerar korrekt och kan samla information om webbplatsanvändning."
+          }
+        ]
+      },
+      {
+        "title": "2. Vilka kakor använder ServerPunt?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt använder följande typer av cookies:"
+          },
+          {
+            "type": "p",
+            "text": "a. Funktionella cookies (nödvändiga)"
+          },
+          {
+            "type": "p",
+            "text": "Dessa cookies är nödvändiga för att webbplatsen ska fungera korrekt. Utan dessa cookies kan vissa delar av webbplatsen inte fungera korrekt."
+          },
+          {
+            "type": "p",
+            "text": "Exempel:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Kom ihåg kakinställningar",
+              "Laddar sidor korrekt",
+              "Grundläggande webbplatsfunktionalitet"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Inget samtycke krävs för dessa cookies."
+          },
+          {
+            "type": "p",
+            "text": "b. Analytiska kakor"
+          },
+          {
+            "type": "p",
+            "text": "Analytiska kakor ger oss insikt i hur vår webbplats används. Detta gör det möjligt för oss att förbättra webbplatsen och göra den mer användarvänlig."
+          },
+          {
+            "type": "p",
+            "text": "Exempel:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Antal besökare",
+              "Populära sidor",
+              "Hur besökare navigerar på webbplatsen"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Där det är möjligt anonymiseras dessa uppgifter och kan inte spåras tillbaka till enskilda personer."
+          },
+          {
+            "type": "p",
+            "text": "c. Marknadsförings- och spårningscookies (valfritt)"
+          },
+          {
+            "type": "p",
+            "text": "När det är tillämpligt kan marknadsföringscookies användas för att visa relevant innehåll eller annonser och för att mäta effektiviteten av kampanjer."
+          },
+          {
+            "type": "p",
+            "text": "Dessa cookies placeras endast efter uttryckligt samtycke."
+          }
+        ]
+      },
+      {
+        "title": "3. Tredjepartscookies",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tredje parter (såsom analys- eller marknadsföringstjänster) kan placera cookies via vår webbplats. ServerPunt har ingen direkt kontroll över användningen av cookies av dessa parter. Vi rekommenderar även att konsultera dessa tredje parters cookie- och integritetspolicyer."
+          }
+        ]
+      },
+      {
+        "title": "4. Hantera eller ta bort cookies",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Du kan hantera eller ta bort cookies när som helst via dina webbläsarinställningar. Observera att inaktivering av cookies kan påverka webbplatsens funktion."
+          },
+          {
+            "type": "p",
+            "text": "Mer information per webbläsare:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Ändringar av denna cookiepolicy",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt förbehåller sig rätten att ändra denna cookiepolicy. Vi rekommenderar att du regelbundet kontrollerar denna sida för att hålla dig informerad om eventuella ändringar."
+          }
+        ]
+      },
+      {
+        "title": "6. Kontakt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Har du frågor om vår cookiepolicy eller hur vi hanterar data? Tveka inte att kontakta oss:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "Om ServerPunt",
+    "intro1": "ServerPunt specialiserar sig på köp och försäljning av renoverad hårdvara för privatpersoner och företag. Vi tror att professionell hårdvara inte behöver vara ny för att fungera pålitligt, kraftfullt och hållbart.",
+    "intro2": "Från skärmar och bärbara datorer till kompletta servrar och serverkomponenter: alla produkter vi erbjuder testas noggrant, inspekteras och renoveras vid behov. Detta ger högkvalitativ hårdvara ett andra liv, till ett konkurrenskraftigt pris och med minimal miljöpåverkan.",
+    "servers": {
+      "title": "Specialiserad på serverlösningar",
+      "p1": "Vår styrka ligger i skräddarsydda lösningar. Vi levererar inte bara enskilda servrar och komponenter — vi hjälper aktivt till att bestämma rätt konfigurationer för specifika arbetsbelastningar, skalbarhet och tillväxt. Tack vare vår tekniska kunskap och praktiska erfarenhet kan vi reagera snabbt och ge riktad rådgivning.",
+      "p2": "På ServerPunt kommer transparens och kvalitet alltid först. För oss betyder renoverad hårdvara:",
+      "bullet1Title": "Prisvärd kvalitet",
+      "bullet1Text": "utan att kompromissa med prestanda",
+      "bullet2Title": "Ett hållbart val",
+      "bullet2Text": "genom återanvändning",
+      "bullet3Title": "Snabb leverans",
+      "bullet3Text": "med personlig kontakt",
+      "p3": "Tack vare vår tekniska kunskap om servrar och komponenter kan vi tänka med, ge råd och svara snabbt när det behövs."
+    },
+    "audience": {
+      "title": "Vilka vi arbetar för",
+      "p1": "Vi arbetar för individer som söker professionell hårdvara till ett konkurrenskraftigt pris, samt företag som vill utöka eller förnya sina system. Oavsett om det handlar om ett enstaka köp eller en större utbyggnad, ser vi tillsammans på vad som passar bäst.",
+      "p2": "ServerPunt är mer än bara en leverantör. Vi är en teknisk partner som tänker med, ger råd och levererar – i linje med dagens krav och morgondagens tillväxt."
+    },
+    "values": {
+      "title": "Varför ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Teknisk expertis",
+          "description": "Solid kunskap om servrar och infrastruktur"
+        },
+        {
+          "icon": "✅",
+          "title": "Kvalitetskontroll",
+          "description": "Varje produkt testas och inspekteras noggrant"
+        },
+        {
+          "icon": "🌱",
+          "title": "Hållbar",
+          "description": "Återanvändning av hårdvara med minimal påverkan"
+        },
+        {
+          "icon": "💰",
+          "title": "Konkurrenskraftigt prissatt",
+          "description": "Professionell kvalitet till överkomliga priser"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Frågor eller behöver råd?",
+      "description": "Tveka inte att kontakta oss. Vi hjälper dig gärna att hitta den bästa lösningen för din situation.",
+      "emailLabel": "E-post:",
+      "addressLabel": "Adress:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

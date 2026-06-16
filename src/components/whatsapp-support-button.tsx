@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 type ChatMessage = {
     id: string;
@@ -18,37 +19,40 @@ type FormState = {
     email: string;
 };
 
-const suggestedReplies = [
-    "Ik heb een vraag over mijn bestelling",
-    "Ik wil iets retourneren",
-    "Ik heb een technische vraag",
-];
-
-const introMessages: ChatMessage[] = [
-    {
-        id: "intro-1",
-        role: "support",
-        text: "Hoi! Ik ben de ServerPunt support chat.",
-        timestamp: "Nu",
-    },
-    {
-        id: "intro-2",
-        role: "support",
-        text: "Stel je vraag hieronder en we sturen het direct door via WhatsApp.",
-        timestamp: "Nu",
-    },
-];
-
 const initialFormState: FormState = {
     name: "",
     email: "",
 };
 
 export function WhatsAppSupportButton() {
+    const t = useTranslations("whatsapp");
     const supportNumber = process.env.NEXT_PUBLIC_WHATSAPP_SUPPORT_NUMBER;
     const suggestedMessage =
         process.env.NEXT_PUBLIC_WHATSAPP_SUPPORT_MESSAGE ??
-        "Hoi! Ik heb hulp nodig met mijn bestelling.";
+        t("defaultMessage");
+
+    const introMessages = useMemo<ChatMessage[]>(
+        () => [
+            {
+                id: "intro-1",
+                role: "support",
+                text: t("intro1"),
+                timestamp: t("now"),
+            },
+            {
+                id: "intro-2",
+                role: "support",
+                text: t("intro2"),
+                timestamp: t("now"),
+            },
+        ],
+        [t]
+    );
+
+    const suggestedReplies = useMemo(
+        () => [t("replyOrder"), t("replyReturn"), t("replyTechnical")],
+        [t]
+    );
 
     const [isOpen, setIsOpen] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -61,11 +65,15 @@ export function WhatsAppSupportButton() {
 
     const supportLabel = useMemo(() => {
         if (!supportNumber) {
-            return "WhatsApp support";
+            return t("supportLabel");
         }
 
-        return `WhatsApp support${supportNumber ? ` · ${supportNumber}` : ""}`;
-    }, [supportNumber]);
+        return `${t("supportLabel")} · ${supportNumber}`;
+    }, [supportNumber, t]);
+
+    useEffect(() => {
+        setMessages(introMessages);
+    }, [introMessages]);
 
     useEffect(() => {
         function handleEscape(event: KeyboardEvent) {
@@ -99,14 +107,14 @@ export function WhatsAppSupportButton() {
         event.preventDefault();
 
         if (!supportNumber) {
-            setStatusMessage("Missing support number configuration.");
+            setStatusMessage(t("missingNumber"));
             return;
         }
 
         const trimmedDraft = draft.trim();
 
         if (!trimmedDraft) {
-            setStatusMessage("Typ eerst een bericht.");
+            setStatusMessage(t("typeMessage"));
             return;
         }
 
@@ -114,7 +122,7 @@ export function WhatsAppSupportButton() {
             id: crypto.randomUUID(),
             role: "user",
             text: trimmedDraft,
-            timestamp: "Nu",
+            timestamp: t("now"),
         };
 
         setMessages((current) => [...current, userMessage]);
@@ -150,11 +158,11 @@ export function WhatsAppSupportButton() {
                 {
                     id: crypto.randomUUID(),
                     role: "support",
-                    text: "Bedankt. We hebben je bericht ontvangen en sturen het door naar ons team via WhatsApp.",
-                    timestamp: "Nu",
+                    text: t("successReply"),
+                    timestamp: t("now"),
                 },
             ]);
-            setStatusMessage("Bericht verzonden.");
+            setStatusMessage(t("sent"));
             setFormState(initialFormState);
         } catch (error) {
             setMessages((current) => [
@@ -165,8 +173,8 @@ export function WhatsAppSupportButton() {
                     text:
                         error instanceof Error
                             ? error.message
-                            : "Er ging iets mis tijdens het verzenden.",
-                    timestamp: "Nu",
+                            : t("sendError"),
+                    timestamp: t("now"),
                 },
             ]);
         } finally {
@@ -196,9 +204,11 @@ export function WhatsAppSupportButton() {
                                 <FaWhatsapp className="h-6 w-6" />
                             </div>
                             <div>
-                                <p className="text-sm font-semibold">ServerPunt Support</p>
+                                <p className="text-sm font-semibold">
+                                    {t("title")}
+                                </p>
                                 <p className="text-xs text-white/80">
-                                    Online via WhatsApp
+                                    {t("subtitle")}
                                 </p>
                             </div>
                         </div>
@@ -207,14 +217,17 @@ export function WhatsAppSupportButton() {
                             type="button"
                             onClick={() => setIsOpen(false)}
                             className="rounded-full px-2 py-1 text-lg leading-none text-white/80 transition hover:bg-white/10 hover:text-white"
-                            aria-label="Sluit support widget"
+                            aria-label={t("closeLabel")}
                         >
                             ×
                         </button>
                     </div>
                 </div>
 
-                <div ref={scrollRef} className="max-h-[26rem] space-y-3 overflow-y-auto px-4 py-4">
+                <div
+                    ref={scrollRef}
+                    className="max-h-[26rem] space-y-3 overflow-y-auto px-4 py-4"
+                >
                     {messages.map((message) => (
                         <div
                             key={message.id}
@@ -274,13 +287,15 @@ export function WhatsAppSupportButton() {
                             <div className="mb-2 flex items-center justify-between gap-2">
                                 <button
                                     type="button"
-                                    onClick={() => setShowDetails((current) => !current)}
+                                    onClick={() =>
+                                        setShowDetails((current) => !current)
+                                    }
                                     className="text-left text-xs font-medium text-muted-foreground transition hover:text-foreground"
                                 >
-                                    Optioneel: naam en e-mail toevoegen
+                                    {t("optionalDetails")}
                                 </button>
                                 <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                                    Details
+                                    {t("details")}
                                 </span>
                             </div>
 
@@ -294,7 +309,7 @@ export function WhatsAppSupportButton() {
                                                 name: event.target.value,
                                             }))
                                         }
-                                        placeholder="Je naam"
+                                        placeholder={t("namePlaceholder")}
                                         autoComplete="name"
                                     />
                                     <Input
@@ -306,7 +321,7 @@ export function WhatsAppSupportButton() {
                                                 email: event.target.value,
                                             }))
                                         }
-                                        placeholder="je@email.nl"
+                                        placeholder={t("emailPlaceholder")}
                                         autoComplete="email"
                                     />
                                 </div>
@@ -316,9 +331,14 @@ export function WhatsAppSupportButton() {
                         <div className="flex items-end gap-2 rounded-full border border-border bg-background px-3 py-2 shadow-sm">
                             <textarea
                                 value={draft}
-                                onChange={(event) => setDraft(event.target.value)}
+                                onChange={(event) =>
+                                    setDraft(event.target.value)
+                                }
                                 onKeyDown={(event) => {
-                                    if (event.key === "Enter" && !event.shiftKey) {
+                                    if (
+                                        event.key === "Enter" &&
+                                        !event.shiftKey
+                                    ) {
                                         event.preventDefault();
                                         event.currentTarget.form?.requestSubmit();
                                     }
@@ -338,7 +358,7 @@ export function WhatsAppSupportButton() {
                         </div>
 
                         <p className="text-[11px] text-muted-foreground">
-                            Druk op Enter om te verzenden, Shift+Enter voor een nieuwe regel.
+                            {t("sendHint")}
                         </p>
                     </form>
                 </div>

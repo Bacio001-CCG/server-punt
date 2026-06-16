@@ -1,3 +1,6 @@
+"use client";
+import { getVatRate } from "@/lib/company-fields";
+import { calculateShippingCost } from "@/lib/regions";
 import { SelectProduct } from "@/database/schema";
 import { create, StateCreator } from "zustand";
 import { persist } from "zustand/middleware";
@@ -6,6 +9,7 @@ type ConfiguredItem = { product: SelectProduct; quantity: number };
 type CartProduct = SelectProduct & {
     configuredItems?: ConfiguredItem[];
     configSignature?: string;
+    bundleLabel?: string;
 };
 
 type CartState = {
@@ -14,11 +18,17 @@ type CartState = {
     addProduct: (
         product: SelectProduct,
         quantity?: number,
-        configuredItems?: ConfiguredItem[]
+        configuredItems?: ConfiguredItem[],
+        options?: { bundleLabel?: string }
     ) => void;
     getTotalPrice: () => number;
-    getVatPrice: (delivery?: boolean) => number;
-    getShippingCost: () => number;
+    getVatPrice: (
+        delivery?: boolean,
+        countryCode?: string,
+        vatNumber?: string,
+        hasCompany?: boolean
+    ) => number;
+    getShippingCost: (countryCode?: string) => number;
     clearProducts: () => void;
     getGroupedProducts: () => {
         product: CartProduct;
@@ -26,7 +36,6 @@ type CartState = {
     }[];
 };
 
-// Check if cookies are accepted
 const hasCookieConsent = () => {
     if (typeof document === "undefined") return false;
     return document.cookie.includes("cookieConsent=true");
@@ -69,7 +78,8 @@ const storeConfig: StateCreator<
         addProduct: (
             element: SelectProduct,
             quantity = 1,
-            configuredItems?: ConfiguredItem[]
+            configuredItems?: ConfiguredItem[],
+            options?: { bundleLabel?: string }
         ) =>
             set(() => {
                 const currentProducts = get().products;
@@ -81,6 +91,7 @@ const storeConfig: StateCreator<
                         ...element,
                         configuredItems,
                         configSignature,
+                        bundleLabel: options?.bundleLabel,
                     });
                 }
                 return { products: newProducts };
@@ -101,9 +112,14 @@ const storeConfig: StateCreator<
                 0
             );
         },
-        getVatPrice: (delivery?: boolean) => {
+        getVatPrice: (
+            delivery?: boolean,
+            countryCode = "nl",
+            vatNumber?: string,
+            hasCompany = false
+        ) => {
             const currentProducts = get().products;
-            const VAT_RATE = 0.21;
+            const vatRate = getVatRate(countryCode, { vatNumber, hasCompany });
 
             const productVat = currentProducts.reduce(
                 (total: number, product: CartProduct) => {
@@ -115,49 +131,28 @@ const storeConfig: StateCreator<
                         0
                     );
                     const lineTotal = product.price + configuredTotal;
-                    return total + lineTotal * VAT_RATE;
+                    return total + lineTotal * vatRate;
                 },
                 0
             );
 
-            // Only add shipping VAT once if delivery is true
             const shippingVat = delivery
-                ? get().getShippingCost() * VAT_RATE
+                ? get().getShippingCost(countryCode) * vatRate
                 : 0;
 
             return productVat + shippingVat;
         },
-        getShippingCost: () => {
+        getShippingCost: (countryCode = "nl") => {
             const currentProducts = get().products;
+            const grouped = get().getGroupedProducts();
 
-            const serversCount = currentProducts.filter(
-                (item: CartProduct) => item.categoryId === 1
-            ).length;
-            const smallProductsCount = currentProducts.reduce(
-                (acc: number, item: CartProduct) =>
-                    item.categoryId !== 1 ? acc + 1 : acc,
-                0
+            return calculateShippingCost(
+                grouped.map((item) => ({
+                    categoryId: item.product.categoryId,
+                    quantity: item.quantity,
+                })),
+                countryCode
             );
-
-            let shipping = 0;
-
-            if (smallProductsCount > 0 && smallProductsCount <= 5) {
-                shipping = 10;
-            }
-
-            if (smallProductsCount > 5) {
-                shipping = 15;
-            }
-
-            if (serversCount === 1 || serversCount === 2) {
-                shipping = 40;
-            }
-
-            if (serversCount > 2) {
-                shipping = 0;
-            }
-
-            return shipping;
         },
         getGroupedProducts: () => {
             const currentProducts = get().products;

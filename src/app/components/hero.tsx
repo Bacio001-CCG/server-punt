@@ -1,82 +1,43 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { MdArrowDownward } from "react-icons/md";
+import { getTranslations } from "next-intl/server";
 
-export default function Hero() {
+export default async function Hero() {
+    const t = await getTranslations("hero");
+
     return (
         <section className="relative -mt-[65px] overflow-hidden pt-[calc(3rem+65px)] pb-12">
             <div className="hero-mesh absolute inset-0" />
             <div className="hero-grid absolute inset-0" />
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-background" />
-            <div
-                className="
-              relative z-10 container mx-auto max-w-7xl px-4
-              sm:px-6
-              lg:px-8
-            "
-            >
-                <div
-                    className="
-                grid items-center gap-10
-                lg:grid-cols-2 lg:gap-12
-              "
-                >
+            <div className="relative z-10 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
                     <div className="flex flex-col justify-center space-y-6">
                         <div className="space-y-4">
-                            <h1
-                                className="
-                      font-display text-4xl leading-tight font-bold
-                      tracking-tight text-foreground
-                      sm:text-5xl
-                      md:text-6xl
-                      lg:leading-[1.1]
-                    "
-                            >
-                                Uw one-stop shop voor{" "}
+                            <h1 className="font-display text-4xl leading-tight font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:leading-[1.1]">
+                                {t("title")}{" "}
                                 <span className="text-logo-gradient">
-                                    servers
+                                    {t("titleHighlight")}
                                 </span>
                             </h1>
-                            <p
-                                className="
-                      max-w-[700px] text-lg text-muted-foreground
-                      md:text-xl
-                    "
-                            >
-                                Ontdek onze uitgebreide selectie van
-                                hoogwaardige servers, perfect afgestemd op uw
-                                zakelijke behoeften. Betrouwbaarheid, prestaties
-                                en uitstekende klantenservice
+                            <p className="max-w-[700px] text-lg text-muted-foreground md:text-xl">
+                                {t("subtitle")}
                             </p>
                         </div>
-                        <div
-                            className="
-                    flex flex-col gap-3
-                    sm:flex-row
-                  "
-                        >
-                            <Link href="#products">
-                                <button
-                                    className="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 rounded-md has-[&gt;svg]:px-4 bg-brand-orange text-white shadow-xs hover:bg-brand-orange/90 hover:shadow-md focus-visible:ring-2 focus-visible:ring-brand-orange/40 h-12 gap-1.5 px-8 transition-colors duration-200"
-                                    data-slot="button"
-                                >
-                                    Bekijk ons aanbod <MdArrowDownward />
+                        <div className="flex flex-col gap-3 sm:flex-row">
+                            <Link href="/configurator">
+                                <button className="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 rounded-md bg-brand-orange text-white shadow-xs hover:bg-brand-orange/90 hover:shadow-md focus-visible:ring-2 focus-visible:ring-brand-orange/40 h-12 gap-1.5 px-8 transition-colors duration-200">
+                                    {t("configuratorCta")}
                                 </button>
                             </Link>
                             <Link href="/about-us#contact">
-                                <button
-                                    className="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 rounded-md has-[&gt;svg]:px-4 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground hover:shadow-md focus-visible:ring-2 focus-visible:ring-accent/40 dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-12 px-8 transition-colors duration-200"
-                                    data-slot="button"
-                                >
-                                    Contacteer ons
+                                <button className="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 rounded-md border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground hover:shadow-md focus-visible:ring-2 focus-visible:ring-accent/40 h-12 px-8 transition-colors duration-200">
+                                    {t("contactUs")}
                                 </button>
                             </Link>
                         </div>
-                        <div
-                            className="
-                    flex flex-wrap gap-5 text-sm text-muted-foreground
-                  "
-                        >
+                        <div className="flex flex-wrap gap-5 text-sm text-muted-foreground">
                             <div className="flex items-center gap-1.5">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -97,10 +58,7 @@ export default function Hero() {
                                     <circle cx="17" cy="18" r="2"></circle>
                                     <circle cx="7" cy="18" r="2"></circle>
                                 </svg>
-                                <span>
-                                    Verzending binnen Nederland (Binnenkort de
-                                    Benelux)
-                                </span>
+                                <span>{t("shippingEu")}</span>
                             </div>
                             <div className="flex items-center gap-1.5">
                                 <svg
@@ -119,26 +77,15 @@ export default function Hero() {
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <polyline points="12 6 12 12 16 14"></polyline>
                                 </svg>
-                                <span>z.s.m. verzonden</span>
+                                <span>{t("shipsAsap")}</span>
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="
-                  relative mx-auto hidden aspect-square w-full max-w-md
-                  overflow-hidden
-                  lg:block
-                "
-                    >
-                        <div
-                            className="
-                    absolute inset-0 z-10 bg 
-                  "
-                        ></div>
+                    <div className="relative mx-auto hidden aspect-square w-full max-w-md overflow-hidden lg:block">
+                        <div className="absolute inset-0 z-10 bg"></div>
                         <Image
                             alt="Shopping experience"
                             decoding="async"
-                            data-nimg="fill"
                             className="object-cover"
                             width={400}
                             height={400}

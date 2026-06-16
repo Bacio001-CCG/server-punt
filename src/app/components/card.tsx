@@ -1,7 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
 
+import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import { ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useTranslations } from "next-intl";
+import { getVatRate } from "@/lib/company-fields";
 
 export default function Card({
     name,
@@ -11,6 +15,7 @@ export default function Card({
     stock,
     createdAt,
     refurbished,
+    countryCode = "nl",
 }: {
     name: string;
     image: string;
@@ -19,43 +24,38 @@ export default function Card({
     stock?: number;
     createdAt?: Date;
     refurbished?: boolean;
+    countryCode?: string;
 }) {
-    const priceExclVAT = parseFloat(price ?? "0").toFixed(2); // Use 1 decimal place
-    const priceInclVAT = (parseFloat(price ?? "0") * 1.21).toFixed(2); // Use 1 decimal place
+    const t = useTranslations("common");
+    const vatRate = getVatRate(countryCode);
+    const priceExclVAT = parseFloat(price ?? "0").toFixed(2);
+    const priceInclVAT = (parseFloat(price ?? "0") * (1 + vatRate)).toFixed(2);
     const createdDate = createdAt ? new Date(createdAt) : null;
     const isNew =
         !!createdDate &&
         !Number.isNaN(createdDate.getTime()) &&
         Date.now() - createdDate.getTime() < 10 * 24 * 60 * 60 * 1000;
 
-    if (isNew) {
-        console.log(`Product ${name} is new! Created at: ${createdDate}`);
-    }
-
     return (
         <Link
-            className="
-                    group relative flex flex-col space-y-4 overflow-hidden
-                    rounded-2xl transition-all
-                    duration-300
-                  "
+            className="group relative flex flex-col space-y-4 overflow-hidden rounded-2xl transition-all duration-300"
             href={href}
         >
             <div className="relative aspect-[4/3] overflow-hidden ">
-                <div className="absolute left-2 top-2 flex flex-col gap-2">
+                <div className="absolute left-2 top-2 z-10 flex flex-col gap-2">
                     {isNew && (
                         <span className="relative inline-flex group/badge">
                             <Badge
                                 variant={"outline"}
                                 className=" bg-green-200 w-fit border-green-600 text-green-600 font-semibold z-30 text-[10px] uppercase tracking-wide"
                             >
-                                Net binnen
+                                {t("newArrival")}
                             </Badge>
                             <span
                                 role="tooltip"
                                 className="pointer-events-none absolute left-1/2 top-full z-40 mt-1 -translate-x-1/2 whitespace-nowrap rounded-md bg-black/80 px-2 py-1 text-[10px] text-white opacity-0 shadow-sm transition-opacity duration-200 group-hover/badge:opacity-100"
                             >
-                                Nieuw op de site
+                                {t("newArrivalTooltip")}
                             </span>
                         </span>
                     )}
@@ -65,13 +65,13 @@ export default function Card({
                                 variant={"outline"}
                                 className=" bg-blue-200 border-blue-600 text-blue-600 font-semibold z-30 text-[10px] uppercase tracking-wide"
                             >
-                                Gloednieuw
+                                {t("brandNew")}
                             </Badge>
                             <span
                                 role="tooltip"
                                 className="pointer-events-none absolute left-1/2 top-full z-40 mt-1 -translate-x-1/2 whitespace-nowrap rounded-md bg-black/80 px-2 py-1 text-[10px] text-white opacity-0 shadow-sm transition-opacity duration-200 group-hover/badge:opacity-100"
                             >
-                                Niet refurbished
+                                {t("brandNewTooltip")}
                             </span>
                         </span>
                     )}
@@ -84,11 +84,7 @@ export default function Card({
                     src={image ?? "/placeholder.png"}
                     loading="lazy"
                     decoding="async"
-                    data-nimg="fill"
-                    className="
-                        object-cover transition duration-300
-                        group-hover:scale-105
-                      "
+                    className="object-cover transition duration-300 group-hover:scale-105"
                     style={{
                         position: "absolute",
                         height: "100%",
@@ -101,21 +97,34 @@ export default function Card({
                     }}
                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
                 />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+                <span className="absolute bottom-2.5 right-2.5 z-10 flex size-8 items-center justify-center rounded-lg bg-white/95 text-foreground opacity-0 shadow-sm backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
+                    <ArrowUpRight className="size-4" />
+                </span>
             </div>
             <div className="relative z-20 -mt-6 p-4">
                 <div
-                    className={`${!price && "text-center"
-                        } mb-1 text-lg font-medium`}
+                    className={`${
+                        !price && "text-center"
+                    } mb-1 text-lg font-medium`}
                 >
                     {name}
                 </div>
                 {price && (
                     <div className="text-sm text-muted-foreground">
                         <p className="text-base text-black">
-                            €{priceExclVAT.replace(".", ",")} Excl. BTW
+                            €{priceExclVAT.replace(".", ",")} {t("exclVat")}
                         </p>
-                        <p>€{priceInclVAT.replace(".", ",")} Incl. BTW</p>
-                        <p className="text-green-700">{stock}x in voorraad</p>
+                        <p>
+                            €{priceInclVAT.replace(".", ",")} {t("inclVat")}
+                        </p>
+                        {stock !== undefined && (
+                            <p className="text-green-700">
+                                {t("inStock", { count: stock })}
+                            </p>
+                        )}
                     </div>
                 )}
             </div>

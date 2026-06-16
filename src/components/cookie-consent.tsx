@@ -4,8 +4,11 @@ import { CookieIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export function CookieConsent({ variant = "default", mode = false }) {
+    const t = useTranslations("cookie");
     const [isOpen, setIsOpen] = useState(false);
     const [hide, setHide] = useState(false);
 
@@ -39,7 +42,7 @@ export function CookieConsent({ variant = "default", mode = false }) {
         } catch (error) {
             console.error("Error checking cookie consent:", error);
         }
-    }, []);
+    }, [mode]);
 
     return variant === "default" ? (
         <div
@@ -55,29 +58,28 @@ export function CookieConsent({ variant = "default", mode = false }) {
                 <div className="grid gap-2">
                     <div className="border-b border-border h-12 sm:h-14 flex items-center justify-between p-3 sm:p-4">
                         <h1 className="text-base sm:text-lg font-medium">
-                            Wij gebruiken cookies
+                            {t("title")}
                         </h1>
                         <CookieIcon className="h-4 w-4 sm:h-[1.2rem] sm:w-[1.2rem]" />
                     </div>
                     <div className="p-3 sm:p-4">
                         <p className="text-xs sm:text-sm font-normal text-start text-muted-foreground">
-                            We gebruiken cookies om ervoor te zorgen dat je de
-                            beste ervaring op onze website krijgt. Voor meer
-                            informatie over hoe we cookies gebruiken, bekijk dan
-                            ons cookiebeleid.
+                            {t("description")}
                             <br />
                             <br />
                             <span className="text-xs">
-                                Door te klikken{" "}
-                                <span className="font-medium text-black dark:text-white">
-                                    Accepteren
-                                </span>
-                                , accepteer je ons cookiebeleid.
+                                {t.rich("acceptHint", {
+                                    accept: () => (
+                                        <span className="font-medium text-black dark:text-white">
+                                            {t("accept")}
+                                        </span>
+                                    ),
+                                })}
                             </span>
                             <br />
-                            <a href="/cookie" className="text-xs underline">
-                                Lees meer.
-                            </a>
+                            <Link href="/cookie" className="text-xs underline">
+                                {t("readMore")}
+                            </Link>
                         </p>
                     </div>
                     <div className="grid grid-cols-2 items-center gap-2 p-3 sm:p-4 sm:py-5 border-t border-border dark:bg-background/20">
@@ -86,14 +88,14 @@ export function CookieConsent({ variant = "default", mode = false }) {
                             variant="default"
                             className="w-full"
                         >
-                            Accepteren
+                            {t("accept")}
                         </Button>
                         <Button
                             onClick={decline}
                             variant="outline"
                             className="w-full"
                         >
-                            Weigeren
+                            {t("decline")}
                         </Button>
                     </div>
                 </div>
@@ -102,7 +104,7 @@ export function CookieConsent({ variant = "default", mode = false }) {
     ) : variant === "small" ? (
         <div
             className={cn(
-                "fixed z-200 bottom-0 left-0 right-0 p-4   sm:p-0 sm:left-4 sm:bottom-4 w-full sm:max-w-md duration-700",
+                "fixed z-200 bottom-0 left-0 right-0 p-4 sm:p-0 sm:left-4 sm:bottom-4 w-full sm:max-w-md duration-700",
                 !isOpen
                     ? "transition-[opacity,transform] translate-y-8 opacity-0"
                     : "transition-[opacity,transform] translate-y-0 opacity-100",
@@ -112,28 +114,25 @@ export function CookieConsent({ variant = "default", mode = false }) {
             <div className="m-0 sm:m-3 dark:bg-card bg-background border border-border rounded-lg shadow-lg">
                 <div className="flex items-center justify-between p-3">
                     <h1 className="text-base sm:text-lg font-medium">
-                        Wij gebruiken cookies
+                        {t("title")}
                     </h1>
                     <CookieIcon className="h-4 w-4 sm:h-[1.2rem] sm:w-[1.2rem]" />
                 </div>
                 <div className="p-3 -mt-2">
                     <p className="text-xs sm:text-sm text-left text-muted-foreground">
-                        We gebruiken cookies om ervoor te zorgen dat je de beste
-                        ervaring op onze website krijgt. Voor meer informatie
-                        over hoe we cookies gebruiken, bekijk dan ons
-                        cookiebeleid.
+                        {t("description")}
                     </p>
                 </div>
                 <div className="grid grid-cols-2 items-center gap-2 p-3 mt-2 border-t">
                     <Button onClick={accept} className="w-full">
-                        Accepteren
+                        {t("accept")}
                     </Button>
                     <Button
                         onClick={decline}
                         className="w-full"
                         variant="outline"
                     >
-                        Weigeren
+                        {t("decline")}
                     </Button>
                 </div>
             </div>
@@ -154,13 +153,13 @@ export function CookieConsent({ variant = "default", mode = false }) {
                         <div className="flex items-center gap-2">
                             <CookieIcon className="h-3 w-3 sm:h-4 sm:w-4" />
                             <span className="text-xs sm:text-sm font-medium">
-                                Cookie Notice
+                                {t("title")}
                             </span>
                         </div>
                     </div>
                     <div className="p-3">
                         <p className="text-[11px] sm:text-xs text-muted-foreground">
-                            We use cookies to enhance your browsing experience.
+                            {t("description")}
                         </p>
                         <div className="grid grid-cols-2 items-center gap-2 mt-3">
                             <Button
@@ -168,14 +167,14 @@ export function CookieConsent({ variant = "default", mode = false }) {
                                 variant="default"
                                 className="w-full"
                             >
-                                Accept
+                                {t("accept")}
                             </Button>
                             <Button
                                 onClick={decline}
                                 variant="ghost"
                                 className="w-full"
                             >
-                                Decline
+                                {t("decline")}
                             </Button>
                         </div>
                     </div>

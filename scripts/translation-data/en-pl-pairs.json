@@ -1,0 +1,1314 @@
+[
+  {
+    "en": "Terms and Conditions",
+    "pl": "Regulamin"
+  },
+  {
+    "en": "Last modified: 22 December 2025",
+    "pl": "Ostatnia modyfikacja: 22 grudnia 2025"
+  },
+  {
+    "en": "Article 1. Definitions",
+    "pl": "Artykuł 1. Definicje"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "In these general terms and conditions, the following terms shall have the meanings set out below:",
+    "pl": "W niniejszym regulaminie poniższe terminy mają następujące znaczenie:"
+  },
+  {
+    "en": "definitions",
+    "pl": "definitions"
+  },
+  {
+    "en": "the partnership NetwerkPunt, trading under the name ServerPunt, located at Kraaivenstraat 36-07, 5048 AB Tilburg, registered with the Dutch Chamber of Commerce under number 97831441.",
+    "pl": "spółka NetwerkPunt, działająca pod nazwą ServerPunt, z siedzibą przy Kraaivenstraat 36-07, 5048 AB Tilburg, zarejestrowana w holenderskiej Izbie Handlowej pod numerem 97831441."
+  },
+  {
+    "en": "Customer",
+    "pl": "Klient"
+  },
+  {
+    "en": "any natural person or legal entity that enters into or wishes to enter into an Agreement with ServerPunt.",
+    "pl": "każda osoba fizyczna lub prawna, która zawiera lub zamierza zawrzeć Umowę z ServerPunt."
+  },
+  {
+    "en": "Consumer",
+    "pl": "Konsument"
+  },
+  {
+    "en": "the Customer who is a natural person acting for purposes outside their trade, business, craft, or profession.",
+    "pl": "Klient będący osobą fizyczną, działającą w celach innych niż związane z prowadzoną działalnością gospodarczą, zawodową lub rzemieślniczą."
+  },
+  {
+    "en": "Business customer",
+    "pl": "Klient biznesowy"
+  },
+  {
+    "en": "the Customer acting in the exercise of a profession or business.",
+    "pl": "Klient działający w ramach prowadzonej działalności gospodarczej lub zawodowej."
+  },
+  {
+    "en": "Agreement",
+    "pl": "Umowa"
+  },
+  {
+    "en": "any agreement entered into between ServerPunt and the Customer, including distance sales via the Website, and all obligations arising therefrom.",
+    "pl": "każda umowa zawarta między ServerPunt a Klientem, w tym sprzedaż na odległość za pośrednictwem Witryny, oraz wszystkie wynikające z niej zobowiązania."
+  },
+  {
+    "en": "Website",
+    "pl": "Witryna"
+  },
+  {
+    "en": "the website of ServerPunt through which products are offered and orders can be placed, namely https://serverpunt.com/.",
+    "pl": "witryna internetowa ServerPunt, za pośrednictwem której oferowane są produkty i można składać zamówienia, tj. https://serverpunt.com/."
+  },
+  {
+    "en": "Product(s)",
+    "pl": "Produkt(y)"
+  },
+  {
+    "en": "all goods offered by ServerPunt, including refurbished IT hardware, servers, server components, and accessories.",
+    "pl": "wszystkie towary oferowane przez ServerPunt, w tym odnowiony sprzęt IT, serwery, komponenty serwerowe i akcesoria."
+  },
+  {
+    "en": "Refurbished",
+    "pl": "Odnowiony"
+  },
+  {
+    "en": "used hardware that has been inspected, tested, and where necessary cleaned and/or repaired by ServerPunt, and is subsequently offered again. Refurbished products may show signs of use and may differ from new condition.",
+    "pl": "używany sprzęt, który został sprawdzony, przetestowany, a w razie potrzeby wyczyszczony i/lub naprawiony przez ServerPunt, a następnie ponownie wprowadzony do oferty. Produkty odnowione mogą nosić ślady użytkowania i mogą różnić się od stanu nowego."
+  },
+  {
+    "en": "Article 2. Applicability",
+    "pl": "Artykuł 2. Zastosowanie"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "These general terms and conditions apply to every offer made by ServerPunt and to every Agreement concluded between ServerPunt and the Customer.",
+    "pl": "Niniejszy regulamin ma zastosowanie do każdej oferty składanej przez ServerPunt oraz do każdej Umowy zawartej między ServerPunt a Klientem."
+  },
+  {
+    "en": "Deviations from these general terms and conditions are valid only if expressly confirmed in writing (including by email) by ServerPunt.",
+    "pl": "Odchylenia od niniejszego regulaminu są ważne wyłącznie wtedy, gdy zostaną wyraźnie potwierdzone na piśmie (w tym drogą mailową) przez ServerPunt."
+  },
+  {
+    "en": "The applicability of the Customer's (purchase) terms and conditions is expressly excluded, unless expressly accepted in writing by ServerPunt.",
+    "pl": "Zastosowanie (zakupowych) warunków handlowych Klienta jest wyraźnie wyłączone, chyba że zostaną one wyraźnie zaakceptowane na piśmie przez ServerPunt."
+  },
+  {
+    "en": "If any provision of these general terms and conditions is wholly or partially void or annulled, the remaining provisions shall remain fully in force. In that case, the parties shall replace the relevant provision with a provision that aligns as closely as possible with the purpose and intent of the original provision.",
+    "pl": "Jeżeli którekolwiek postanowienie niniejszego regulaminu jest w całości lub w części nieważne lub zostanie unieważnione, pozostałe postanowienia pozostają w pełni w mocy. W takim przypadku strony zastąpią dane postanowienie postanowieniem, które w możliwie największym stopniu odpowiada celowi i intencji pierwotnego postanowienia."
+  },
+  {
+    "en": "In the event of a conflict between the content of the Website and these general terms and conditions, these general terms and conditions shall prevail, unless expressly stated otherwise.",
+    "pl": "W przypadku sprzeczności między treścią Witryny a niniejszym regulaminem, regulamin ma pierwszeństwo, chyba że wyraźnie określono inaczej."
+  },
+  {
+    "en": "Article 3. The offer",
+    "pl": "Artykuł 3. Oferta"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "All offers and product descriptions on the Website of ServerPunt are non-binding, unless expressly stated otherwise.",
+    "pl": "Wszystkie oferty i opisy produktów na Witrynie ServerPunt mają charakter niewiążący, chyba że wyraźnie określono inaczej."
+  },
+  {
+    "en": "Images of Products are for illustration purposes and may differ from the Product actually delivered, given the refurbished nature of the hardware offered.",
+    "pl": "Zdjęcia Produktów służą celom ilustracyjnym i mogą różnić się od faktycznie dostarczonego Produktu, biorąc pod uwagę odnowiony charakter oferowanego sprzętu."
+  },
+  {
+    "en": "The offer is valid while stocks last. If a Product is not (or no longer) available, ServerPunt will inform the Customer as soon as possible.",
+    "pl": "Oferta obowiązuje do wyczerpania zapasów. Jeżeli Produkt nie jest (lub nie jest już) dostępny, ServerPunt poinformuje Klienta tak szybko, jak to możliwe."
+  },
+  {
+    "en": "Article 4. Formation of the agreement",
+    "pl": "Artykuł 4. Zawarcie umowy"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "The Agreement is formed at the moment the Customer accepts ServerPunt's offer by placing an order via the Website and that order is confirmed by ServerPunt by email.",
+    "pl": "Umowa zostaje zawarta w momencie, gdy Klient zaakceptuje ofertę ServerPunt, składając zamówienie za pośrednictwem Witryny, a zamówienie to zostanie potwierdzone przez ServerPunt drogą mailową."
+  },
+  {
+    "en": "the Customer has provided incorrect or incomplete information;",
+    "pl": "Klient podał nieprawidłowe lub niekompletne informacje;"
+  },
+  {
+    "en": "previous payment obligations have not been met;",
+    "pl": "wcześniejsze zobowiązania płatnicze nie zostały spełnione;"
+  },
+  {
+    "en": "there are reasonable grounds to doubt the Customer's ability to pay.",
+    "pl": "istnieją uzasadnione podstawy, by wątpić w zdolność płatniczą Klienta."
+  },
+  {
+    "en": "After placing an order, the Customer receives an order confirmation by email. This confirmation does not constitute an invoice.",
+    "pl": "Po złożeniu zamówienia Klient otrzymuje potwierdzenie zamówienia drogą mailową. Potwierdzenie to nie stanowi faktury."
+  },
+  {
+    "en": "Obvious errors or mistakes in the order confirmation do not bind ServerPunt.",
+    "pl": "Oczywiste błędy lub pomyłki w potwierdzeniu zamówienia nie wiążą ServerPunt."
+  },
+  {
+    "en": "Article 5. Changes and cancellation by ServerPunt",
+    "pl": "Artykuł 5. Zmiany i anulowanie przez ServerPunt"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "If after conclusion of the Agreement it appears that the ordered Product is not (or no longer) available or cannot be delivered, ServerPunt is entitled to dissolve the Agreement.",
+    "pl": "Jeżeli po zawarciu Umowy okaże się, że zamówiony Produkt nie jest (lub nie jest już) dostępny lub nie może zostać dostarczony, ServerPunt jest uprawniony do rozwiązania Umowy."
+  },
+  {
+    "en": "In the event of dissolution as referred to in this article, ServerPunt will refund any amounts already paid by the Customer as soon as possible, but no later than within 14 days.",
+    "pl": "W przypadku rozwiązania Umowy, o którym mowa w niniejszym artykule, ServerPunt zwróci wszelkie kwoty już uiszczone przez Klienta tak szybko, jak to możliwe, jednak nie później niż w ciągu 14 dni."
+  },
+  {
+    "en": "Article 6. Prices",
+    "pl": "Artykuł 6. Ceny"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "All prices stated on the Website are in euros and inclusive of VAT, unless expressly stated otherwise.",
+    "pl": "Wszystkie ceny podane na Witrynie są wyrażone w euro i zawierają VAT, chyba że wyraźnie określono inaczej."
+  },
+  {
+    "en": "For business customers, prices may be displayed exclusive of VAT. In that case, this will be clearly stated with the offer.",
+    "pl": "Dla klientów biznesowych ceny mogą być wyświetlane bez VAT. W takim przypadku będzie to wyraźnie wskazane przy ofercie."
+  },
+  {
+    "en": "Any shipping costs, administrative costs, or other additional costs will be clearly communicated to the Customer before the Agreement is concluded.",
+    "pl": "Wszelkie koszty wysyłki, koszty administracyjne lub inne dodatkowe opłaty zostaną jasno przekazane Klientowi przed zawarciem Umowy."
+  },
+  {
+    "en": "Article 7. Payment",
+    "pl": "Artykuł 7. Płatność"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "Payment must be made via the payment methods offered on the Website, unless otherwise agreed in writing.",
+    "pl": "Płatność musi być dokonana za pośrednictwem metod płatności oferowanych na Witrynie, chyba że uzgodniono inaczej na piśmie."
+  },
+  {
+    "en": "In the case of payment on account or payment by invoice (exclusively for business customers), the payment term stated on the invoice applies.",
+    "pl": "W przypadku płatności na konto lub płatności na podstawie faktury (wyłącznie dla klientów biznesowych) obowiązuje termin płatności wskazany na fakturze."
+  },
+  {
+    "en": "If the Customer fails to meet their payment obligation on time, the Customer is in default by operation of law. From that moment, ServerPunt is entitled to charge statutory (commercial) interest.",
+    "pl": "Jeżeli Klient nie wywiąże się z obowiązku płatniczego w terminie, zostaje w zwłoce z mocy prawa. Od tego momentu ServerPunt jest uprawniony do naliczania ustawowych (handlowych) odsetek."
+  },
+  {
+    "en": "All reasonable costs incurred in obtaining payment out of court shall be borne by the Customer.",
+    "pl": "Wszelkie uzasadnione koszty poniesione w celu uzyskania zapłaty poza postępowaniem sądowym ponosi Klient."
+  },
+  {
+    "en": "For business customers, a payment term of 14 days from the invoice date applies, unless otherwise agreed in writing.",
+    "pl": "Dla klientów biznesowych obowiązuje termin płatności 14 dni od daty wystawienia faktury, chyba że uzgodniono inaczej na piśmie."
+  },
+  {
+    "en": "Article 8. Invoicing",
+    "pl": "Artykuł 8. Fakturowanie"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "Invoices are provided electronically, unless otherwise agreed.",
+    "pl": "Faktury są dostarczane w formie elektronicznej, chyba że uzgodniono inaczej."
+  },
+  {
+    "en": "Objections to an invoice must be reported to ServerPunt in writing within 7 days of the invoice date.",
+    "pl": "Zastrzeżenia do faktury należy zgłosić ServerPunt na piśmie w ciągu 7 dni od daty wystawienia faktury."
+  },
+  {
+    "en": "Article 9. Delivery",
+    "pl": "Artykuł 9. Dostawa"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "Delivery of Products takes place at the delivery address provided by the Customer when placing the order, unless otherwise agreed in writing.",
+    "pl": "Dostawa Produktów odbywa się na adres dostawy podany przez Klienta przy składaniu zamówienia, chyba że uzgodniono inaczej na piśmie."
+  },
+  {
+    "en": "If delivery to an agreed address proves impossible, ServerPunt is entitled to make the Product available to the Customer in another manner or to dissolve the Agreement.",
+    "pl": "Jeżeli dostawa na uzgodniony adres okaże się niemożliwa, ServerPunt jest uprawniony do udostępnienia Produktu Klientowi w inny sposób lub do rozwiązania Umowy."
+  },
+  {
+    "en": "Article 10. Delivery times",
+    "pl": "Artykuł 10. Terminy dostawy"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "Delivery times stated by ServerPunt are indicative and do not constitute fatal deadlines, unless expressly agreed otherwise in writing.",
+    "pl": "Terminy dostawy podane przez ServerPunt mają charakter orientacyjny i nie stanowią terminów ostatecznych, chyba że wyraźnie uzgodniono inaczej na piśmie."
+  },
+  {
+    "en": "Exceeding a delivery time does not give the Customer the right to compensation or dissolution of the Agreement, unless there is intent or gross negligence on the part of ServerPunt.",
+    "pl": "Przekroczenie terminu dostawy nie uprawnia Klienta do odszkodowania ani do rozwiązania Umowy, chyba że wystąpi umyślne działanie lub rażące zaniedbanie ze strony ServerPunt."
+  },
+  {
+    "en": "If delivery is delayed or an order cannot be fulfilled in whole or in part, ServerPunt will inform the Customer as soon as possible.",
+    "pl": "Jeżeli dostawa zostanie opóźniona lub zamówienie nie może zostać zrealizowane w całości lub w części, ServerPunt poinformuje Klienta tak szybko, jak to możliwe."
+  },
+  {
+    "en": "Article 11. Transfer of risk and transport damage",
+    "pl": "Artykuł 11. Przejście ryzyka i uszkodzenia w transporcie"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "The risk of loss or damage to Products passes to the Consumer at the moment of actual receipt of the Product.",
+    "pl": "Ryzyko utraty lub uszkodzenia Produktów przechodzi na Konsumenta w momencie faktycznego odbioru Produktu."
+  },
+  {
+    "en": "For business customers, the risk passes at the moment the Product is shipped.",
+    "pl": "W przypadku klientów biznesowych ryzyko przechodzi w momencie wysłania Produktu."
+  },
+  {
+    "en": "The Customer must inspect the Product immediately upon receipt for transport damage and visible defects. Any damage or defects must be reported to ServerPunt in writing within 48 hours of receipt, accompanied by photographs of the Product and packaging.",
+    "pl": "Klient musi niezwłocznie po odbiorze sprawdzić Produkt pod kątem uszkodzeń transportowych i widocznych wad. Wszelkie uszkodzenia lub wady należy zgłosić ServerPunt na piśmie w ciągu 48 godzin od odbioru, dołączając zdjęcia Produktu i opakowania."
+  },
+  {
+    "en": "If transport damage is reported in a timely and correct manner, ServerPunt will, at its discretion, arrange for repair, replacement, or refund.",
+    "pl": "Jeżeli uszkodzenia transportowe zostaną zgłoszone terminowo i prawidłowo, ServerPunt według własnego uznania zorganizuje naprawę, wymianę lub zwrot środków."
+  },
+  {
+    "en": "Article 12. Collection",
+    "pl": "Artykuł 12. Odbiór osobisty"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "If collection has been agreed, the Customer must collect the Product at the agreed time and address.",
+    "pl": "Jeżeli uzgodniono odbiór osobisty, Klient musi odebrać Produkt o uzgodnionej godzinie i pod uzgodnionym adresem."
+  },
+  {
+    "en": "Upon collection, the risk passes to the Customer at the moment of transfer of the Product.",
+    "pl": "Przy odbiorze osobistym ryzyko przechodzi na Klienta w momencie przekazania Produktu."
+  },
+  {
+    "en": "Article 13. Right of withdrawal",
+    "pl": "Artykuł 13. Prawo odstąpienia od umowy"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "The Consumer has the right to dissolve the Agreement relating to the purchase of a Product within 14 days of receipt without giving reasons.",
+    "pl": "Konsument ma prawo rozwiązać Umowę dotyczącą zakupu Produktu w ciągu 14 dni od odbioru bez podawania przyczyny."
+  },
+  {
+    "en": "The withdrawal period expires 14 days after the day on which the Consumer, or a third party designated by them, received the Product.",
+    "pl": "Termin na odstąpienie od umowy wygasa po upływie 14 dni od dnia, w którym Konsument lub wyznaczona przez niego osoba trzecia otrzymała Produkt."
+  },
+  {
+    "en": "To exercise the right of withdrawal, the Consumer must inform ServerPunt within the withdrawal period by email or another unambiguous statement of the decision to dissolve the Agreement.",
+    "pl": "Aby skorzystać z prawa odstąpienia od umowy, Konsument musi poinformować ServerPunt w terminie na odstąpienie drogą mailową lub w inny jednoznaczny sposób o decyzji o rozwiązaniu Umowy."
+  },
+  {
+    "en": "Article 14. Consequences of withdrawal",
+    "pl": "Artykuł 14. Skutki odstąpienia od umowy"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "If the Consumer withdraws from the Agreement, they will receive all payments made up to that point, including any standard shipping costs, no later than 14 days after the day on which ServerPunt was informed of the withdrawal.",
+    "pl": "Jeżeli Konsument odstąpi od Umowy, otrzyma wszystkie dokonane do tego momentu płatności, w tym standardowe koszty wysyłki, nie później niż 14 dni po dniu, w którym ServerPunt został poinformowany o odstąpieniu."
+  },
+  {
+    "en": "Refunds will be made via the same payment method used for the original transaction, unless otherwise agreed.",
+    "pl": "Zwroty środków będą dokonywane tą samą metodą płatności, która została użyta przy pierwotnej transakcji, chyba że uzgodniono inaczej."
+  },
+  {
+    "en": "Article 15. Return conditions",
+    "pl": "Artykuł 15. Warunki zwrotu"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "During the withdrawal period, the Consumer must handle the Product and packaging with care. The Product may only be unpacked and used to the extent necessary to determine its nature, characteristics, and functioning.",
+    "pl": "W okresie na odstąpienie od umowy Konsument musi obchodzić się z Produktem i opakowaniem z należytą starannością. Produkt można rozpakować i używać wyłącznie w zakresie niezbędnym do ustalenia jego charakteru, cech i sposobu działania."
+  },
+  {
+    "en": "If the Product has been used more than permitted, the Consumer is liable for any reduction in value of the Product.",
+    "pl": "Jeżeli Produkt został użyty w zakresie przekraczającym dozwolony, Konsument ponosi odpowiedzialność za ewentualną utratę wartości Produktu."
+  },
+  {
+    "en": "The Consumer is responsible for correct and proper return shipment of the Product.",
+    "pl": "Konsument ponosi odpowiedzialność za prawidłowe i należyte odesłanie Produktu."
+  },
+  {
+    "en": "Article 16. Return costs",
+    "pl": "Artykuł 16. Koszty zwrotu"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "The costs of return shipment are borne by the Consumer, unless otherwise agreed.",
+    "pl": "Koszty odesłania Produktu ponosi Konsument, chyba że uzgodniono inaczej."
+  },
+  {
+    "en": "If ServerPunt has collected the Product from the Consumer, the costs thereof will be charged to the Consumer.",
+    "pl": "Jeżeli ServerPunt odebrał Produkt od Konsumenta, koszty te zostaną obciążone Konsumenta."
+  },
+  {
+    "en": "Returns must be sent to ServerPunt's business address at Kraaivenstraat 36-07, 5048 AB Tilburg, unless otherwise agreed in writing.",
+    "pl": "Zwroty należy wysyłać na adres siedziby ServerPunt: Kraaivenstraat 36-07, 5048 AB Tilburg, chyba że uzgodniono inaczej na piśmie."
+  },
+  {
+    "en": "Article 17. Exclusion of the right of withdrawal",
+    "pl": "Artykuł 17. Wyłączenie prawa odstąpienia od umowy"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "The right of withdrawal is excluded for:",
+    "pl": "Prawo odstąpienia od umowy nie przysługuje w przypadku:"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "business customers;",
+    "pl": "klientów biznesowych;"
+  },
+  {
+    "en": "Products that by their nature cannot be returned;",
+    "pl": "Produktów, które ze względu na swój charakter nie mogą zostać zwrócone;"
+  },
+  {
+    "en": "Products that are clearly personalised or custom-assembled;",
+    "pl": "Produktów wyraźnie spersonalizowanych lub skonfigurowanych na zamówienie;"
+  },
+  {
+    "en": "Products whose seal has been broken for reasons of hygiene or safety, where applicable.",
+    "pl": "Produktów, których plomba została naruszona ze względów higienicznych lub bezpieczeństwa, w stosownych przypadkach."
+  },
+  {
+    "en": "warranty",
+    "pl": "warranty"
+  },
+  {
+    "en": "Article 18. Warranty & conformity",
+    "pl": "Artykuł 18. Gwarancja i zgodność z umową"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "Refurbished Products are used goods and may show signs of use. Deviations from new condition, such as minor cosmetic damage, do not constitute a defect and do not entitle the Customer to replacement, repair, or dissolution.",
+    "pl": "Produkty odnowione są towarami używanymi i mogą nosić ślady użytkowania. Odchylenia od stanu nowego, takie jak drobne uszkodzenia kosmetyczne, nie stanowią wady i nie uprawniają Klienta do wymiany, naprawy ani rozwiązania Umowy."
+  },
+  {
+    "en": "For Consumers, the statutory warranty applies. This means that a Product must do what the Consumer may reasonably expect from it. ServerPunt cannot exclude or limit this statutory warranty.",
+    "pl": "W przypadku Konsumentów obowiązuje ustawowa gwarancja zgodności z umową. Oznacza to, że Produkt musi spełniać uzasadnione oczekiwania Konsumenta. ServerPunt nie może wyłączyć ani ograniczyć tej ustawowej gwarancji."
+  },
+  {
+    "en": "Any additional warranty provided by ServerPunt will be expressly stated in writing with the Product and does not affect the statutory warranty.",
+    "pl": "Wszelka dodatkowa gwarancja udzielana przez ServerPunt zostanie wyraźnie określona na piśmie przy Produkcie i nie wpływa na ustawową gwarancję."
+  },
+  {
+    "en": "For business customers, only the warranty expressly provided by ServerPunt applies. In the absence thereof, no additional warranty applies.",
+    "pl": "W przypadku klientów biznesowych obowiązuje wyłącznie gwarancja wyraźnie udzielona przez ServerPunt. W jej braku nie obowiązuje żadna dodatkowa gwarancja."
+  },
+  {
+    "en": "If no additional warranty period is stated for a Product, only the statutory warranty applies for Consumers and no additional warranty applies for business customers.",
+    "pl": "Jeżeli dla Produktu nie określono dodatkowego okresu gwarancyjnego, w przypadku Konsumentów obowiązuje wyłącznie ustawowa gwarancja, a w przypadku klientów biznesowych nie obowiązuje żadna dodatkowa gwarancja."
+  },
+  {
+    "en": "Article 19. Reporting defects",
+    "pl": "Artykuł 19. Zgłaszanie wad"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "The Customer is obliged to inspect the Product for defects as soon as possible after receipt.",
+    "pl": "Klient jest zobowiązany do sprawdzenia Produktu pod kątem wad tak szybko, jak to możliwe po odbiorze."
+  },
+  {
+    "en": "Defects that were not visible upon receipt must be reported by the Consumer within a reasonable time after discovery.",
+    "pl": "Wady, które nie były widoczne przy odbiorze, Konsument musi zgłosić w rozsądnym terminie po ich stwierdzeniu."
+  },
+  {
+    "en": "Business customers must report defects in writing within 7 days of receipt. Failure to do so forfeits the right to repair, replacement, or any other compensation.",
+    "pl": "Klienci biznesowi muszą zgłosić wady na piśmie w ciągu 7 dni od odbioru. Niedopełnienie tego obowiązku powoduje utratę prawa do naprawy, wymiany lub jakiegokolwiek innego świadczenia."
+  },
+  {
+    "en": "Article 20. Repair and replacement",
+    "pl": "Artykuł 20. Naprawa i wymiana"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "If a Product proves not to conform to the Agreement, ServerPunt will, at its discretion, repair or replace the Product, unless this is impossible or entails disproportionate costs.",
+    "pl": "Jeżeli Produkt okaże się niezgodny z Umową, ServerPunt według własnego uznania dokona naprawy lub wymiany Produktu, chyba że jest to niemożliwe lub wiąże się z nieproporcjonalnymi kosztami."
+  },
+  {
+    "en": "If repair or replacement is not possible, ServerPunt may proceed with (partial) refund or dissolution of the Agreement.",
+    "pl": "Jeżeli naprawa lub wymiana nie jest możliwa, ServerPunt może dokonać (częściowego) zwrotu środków lub rozwiązać Umowę."
+  },
+  {
+    "en": "Article 21. Liability",
+    "pl": "Artykuł 21. Odpowiedzialność"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "consequential damage;",
+    "pl": "szkody następcze;"
+  },
+  {
+    "en": "lost profits;",
+    "pl": "utracone korzyści;"
+  },
+  {
+    "en": "missed savings;",
+    "pl": "utracone oszczędności;"
+  },
+  {
+    "en": "data loss;",
+    "pl": "utratę danych;"
+  },
+  {
+    "en": "business damage;",
+    "pl": "szkody w działalności gospodarczej;"
+  },
+  {
+    "en": "damage due to business interruption.",
+    "pl": "szkody wynikające z przerwy w działalności."
+  },
+  {
+    "en": "improper or incorrect use of the Product;",
+    "pl": "niewłaściwe lub nieprawidłowe użytkowanie Produktu;"
+  },
+  {
+    "en": "use outside the specifications provided by ServerPunt;",
+    "pl": "użytkowanie niezgodne ze specyfikacjami podanymi przez ServerPunt;"
+  },
+  {
+    "en": "repairs or modifications carried out by the Customer;",
+    "pl": "naprawy lub modyfikacje dokonane przez Klienta;"
+  },
+  {
+    "en": "use in combination with defective or unsuitable peripheral equipment.",
+    "pl": "użytkowanie w połączeniu z wadliwym lub nieodpowiednim sprzętem peryferyjnym."
+  },
+  {
+    "en": "The liability limitations set out in this article do not apply if the damage results from intent or gross negligence on the part of ServerPunt, or to the extent liability cannot be excluded under mandatory law.",
+    "pl": "Ograniczenia odpowiedzialności określone w niniejszym artykule nie mają zastosowania, jeżeli szkoda wynika z umyślnego działania lub rażącego zaniedbania ze strony ServerPunt lub w zakresie, w jakim odpowiedzialności nie można wyłączyć na mocy bezwzględnie obowiązujących przepisów prawa."
+  },
+  {
+    "en": "Article 22. Indemnification",
+    "pl": "Artykuł 22. Zwolnienie z odpowiedzialności"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "The Customer indemnifies ServerPunt against all third-party claims relating to the use of the delivered Products.",
+    "pl": "Klient zwalnia ServerPunt z odpowiedzialności za wszelkie roszczenia osób trzecich związane z użytkowaniem dostarczonych Produktów."
+  },
+  {
+    "en": "The Customer is responsible for making adequate backups of data. ServerPunt is not liable for loss or damage to data, regardless of the cause.",
+    "pl": "Klient ponosi odpowiedzialność za tworzenie odpowiednich kopii zapasowych danych. ServerPunt nie ponosi odpowiedzialności za utratę lub uszkodzenie danych, niezależnie od przyczyny."
+  },
+  {
+    "en": "Article 23. Force majeure",
+    "pl": "Artykuł 23. Siła wyższa"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "Force majeure includes, in any event, any circumstance beyond ServerPunt's control that temporarily or permanently prevents fulfilment of obligations, including but not limited to:",
+    "pl": "Siła wyższa obejmuje w każdym przypadku każdą okoliczność pozostającą poza kontrolą ServerPunt, która tymczasowo lub trwale uniemożliwia wykonanie zobowiązań, w tym między innymi:"
+  },
+  {
+    "en": "disruptions at carriers or suppliers;",
+    "pl": "zakłócenia u przewoźników lub dostawców;"
+  },
+  {
+    "en": "delays or failures in transport;",
+    "pl": "opóźnienia lub awarie w transporcie;"
+  },
+  {
+    "en": "procurement problems or stock shortages;",
+    "pl": "problemy z zaopatrzeniem lub braki magazynowe;"
+  },
+  {
+    "en": "power outages;",
+    "pl": "przerwy w dostawie energii;"
+  },
+  {
+    "en": "internet or network failures;",
+    "pl": "awarie internetu lub sieci;"
+  },
+  {
+    "en": "fire, water damage, or other calamities;",
+    "pl": "pożar, szkody wodne lub inne klęski żywiołowe;"
+  },
+  {
+    "en": "government measures;",
+    "pl": "działania organów państwowych;"
+  },
+  {
+    "en": "epidemics, pandemics, and related restrictions.",
+    "pl": "epidemie, pandemie i związane z nimi ograniczenia."
+  },
+  {
+    "en": "If the force majeure situation continues for more than 30 days, both ServerPunt and the Customer are entitled to dissolve the Agreement in writing, without any obligation to pay compensation in that case.",
+    "pl": "Jeżeli sytuacja siły wyższej trwa dłużej niż 30 dni, zarówno ServerPunt, jak i Klient są uprawnieni do rozwiązania Umowy na piśmie, bez obowiązku wypłaty odszkodowania w takim przypadku."
+  },
+  {
+    "en": "If ServerPunt has already partially fulfilled its obligations upon the occurrence of force majeure, or can still fulfil them, ServerPunt is entitled to invoice or settle that part separately.",
+    "pl": "Jeżeli ServerPunt częściowo wykonał swoje zobowiązania w chwili wystąpienia siły wyższej lub nadal może je wykonać, ServerPunt jest uprawniony do wystawienia faktury lub rozliczenia tej części odrębnie."
+  },
+  {
+    "en": "Article 24. Complaints",
+    "pl": "Artykuł 24. Reklamacje"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "Complaints regarding the performance of the Agreement must be submitted to ServerPunt in writing, fully and clearly described, within a reasonable time after the Customer has identified the defect.",
+    "pl": "Reklamacje dotyczące wykonania Umowy należy zgłosić ServerPunt na piśmie, w pełni i jasno opisane, w rozsądnym terminie po stwierdzeniu wady przez Klienta."
+  },
+  {
+    "en": "Complaints can be submitted via:",
+    "pl": "Reklamacje można składać za pośrednictwem:"
+  },
+  {
+    "en": "email: info@serverpunt.com",
+    "pl": "e-mail: info@serverpunt.com"
+  },
+  {
+    "en": "or in writing by post to ServerPunt's business address.",
+    "pl": "lub na piśmie pocztą na adres siedziby ServerPunt."
+  },
+  {
+    "en": "If a complaint cannot be resolved by mutual agreement, a dispute arises that may be submitted to the competent court as set out in these general terms and conditions.",
+    "pl": "Jeżeli reklamacja nie może zostać rozwiązana w drodze porozumienia, powstaje spór, który można przedstawić właściwemu sądowi, zgodnie z postanowieniami niniejszego regulaminu."
+  },
+  {
+    "en": "Article 25. Applicable law",
+    "pl": "Artykuł 25. Prawo właściwe"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "Dutch law applies exclusively to all Agreements between ServerPunt and the Customer to which these general terms and conditions apply.",
+    "pl": "Do wszystkich Umów między ServerPunt a Klientem, do których ma zastosowanie niniejszy regulamin, wyłącznie stosuje się prawo holenderskie."
+  },
+  {
+    "en": "Disputes arising from or relating to the Agreement shall be submitted exclusively to the competent court in the district where ServerPunt is established, unless mandatory law provides otherwise.",
+    "pl": "Spory wynikające z Umowy lub z nią związane będą rozstrzygane wyłącznie przez właściwy sąd w okręgu, w którym ma siedzibę ServerPunt, chyba że bezwzględnie obowiązujące przepisy prawa stanowią inaczej."
+  },
+  {
+    "en": "Article 26. Final provisions",
+    "pl": "Artykuł 26. Postanowienia końcowe"
+  },
+  {
+    "en": "ol",
+    "pl": "ol"
+  },
+  {
+    "en": "If provisions of these general terms and conditions prove to be void or are annulled, this does not affect the validity of the remaining provisions.",
+    "pl": "Jeżeli postanowienia niniejszego regulaminu okażą się nieważne lub zostaną unieważnione, nie wpływa to na ważność pozostałych postanowień."
+  },
+  {
+    "en": "These general terms and conditions were last amended on 22 December 2025.",
+    "pl": "Niniejszy regulamin został ostatnio zmieniony 22 grudnia 2025 r."
+  },
+  {
+    "en": "Contact",
+    "pl": "Kontakt"
+  },
+  {
+    "en": "Chamber of Commerce: 97831441",
+    "pl": "Izba Handlowa: 97831441"
+  },
+  {
+    "en": "VAT: NL868250983B01",
+    "pl": "VAT: NL868250983B01"
+  },
+  {
+    "en": "Email:",
+    "pl": "E-mail:"
+  },
+  {
+    "en": "Website:",
+    "pl": "Witryna:"
+  },
+  {
+    "en": "Privacy Policy",
+    "pl": "Polityka prywatności"
+  },
+  {
+    "en": "Last modified: 5 February 2026",
+    "pl": "Ostatnia modyfikacja: 5 lutego 2026"
+  },
+  {
+    "en": "1. Data controller",
+    "pl": "1. Administrator danych"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Contact: info@serverpunt.com",
+    "pl": "Kontakt: info@serverpunt.com"
+  },
+  {
+    "en": "2. Personal data we process",
+    "pl": "2. Dane osobowe, które przetwarzamy"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "first and last name",
+    "pl": "imię i nazwisko"
+  },
+  {
+    "en": "address details",
+    "pl": "dane adresowe"
+  },
+  {
+    "en": "email address",
+    "pl": "adres e-mail"
+  },
+  {
+    "en": "phone number",
+    "pl": "numer telefonu"
+  },
+  {
+    "en": "payment and invoice details",
+    "pl": "dane płatności i fakturowania"
+  },
+  {
+    "en": "IP address",
+    "pl": "adres IP"
+  },
+  {
+    "en": "order history",
+    "pl": "historia zamówień"
+  },
+  {
+    "en": "correspondence data",
+    "pl": "dane korespondencji"
+  },
+  {
+    "en": "3. Purposes and legal bases for processing",
+    "pl": "3. Cele i podstawy prawne przetwarzania"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "Performance of the agreement: processing orders, delivery of products, communication about the agreement",
+    "pl": "Wykonanie umowy: przetwarzanie zamówień, dostawa produktów, komunikacja dotycząca umowy"
+  },
+  {
+    "en": "Legal obligation: invoicing, accounting, tax obligations",
+    "pl": "Obowiązek prawny: fakturowanie, księgowość, obowiązki podatkowe"
+  },
+  {
+    "en": "Legitimate interest: customer service, improvement of services, fraud prevention",
+    "pl": "Prawnie uzasadniony interes: obsługa klienta, ulepszanie usług, zapobieganie oszustwom"
+  },
+  {
+    "en": "Consent: newsletters and marketing communications (where applicable)",
+    "pl": "Zgoda: newslettery i komunikacja marketingowa (w stosownych przypadkach)"
+  },
+  {
+    "en": "4. Retention periods",
+    "pl": "4. Okresy przechowywania"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "Order and invoice data: 7 years (statutory tax retention obligation)",
+    "pl": "Dane zamówień i faktur: 7 lat (ustawowy obowiązek przechowywania danych podatkowych)"
+  },
+  {
+    "en": "Customer communications: maximum 2 years",
+    "pl": "Komunikacja z klientami: maksymalnie 2 lata"
+  },
+  {
+    "en": "Account and contact details: as long as the customer relationship is active",
+    "pl": "Dane konta i dane kontaktowe: tak długo, jak trwa relacja z klientem"
+  },
+  {
+    "en": "5. Sharing personal data with third parties",
+    "pl": "5. Udostępnianie danych osobowych osobom trzecim"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "This includes, among others:",
+    "pl": "Obejmuje to między innymi:"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "payment providers",
+    "pl": "dostawców usług płatniczych"
+  },
+  {
+    "en": "carriers",
+    "pl": "przewoźników"
+  },
+  {
+    "en": "accounting software",
+    "pl": "oprogramowanie księgowe"
+  },
+  {
+    "en": "hosting and IT service providers",
+    "pl": "dostawców usług hostingowych i IT"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Where legally required, data processing agreements have been concluded with these parties.",
+    "pl": "Tam, gdzie wymaga tego prawo, z tymi podmiotami zawarto umowy powierzenia przetwarzania danych."
+  },
+  {
+    "en": "6. Cookies",
+    "pl": "6. Pliki cookie"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "These cookies are used to:",
+    "pl": "Pliki cookie te są wykorzystywane w celu:"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "ensure the website functions properly from a technical perspective;",
+    "pl": "zapewnienia prawidłowego działania witryny z perspektywy technicznej;"
+  },
+  {
+    "en": "gain insight into website usage and improve the website.",
+    "pl": "uzyskania wglądu w sposób korzystania z witryny i jej ulepszania."
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "No tracking cookies are placed without prior consent.",
+    "pl": "Żadne pliki cookie śledzące nie są umieszczane bez uprzedniej zgody."
+  },
+  {
+    "en": "7. Security of personal data",
+    "pl": "7. Bezpieczeństwo danych osobowych"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "8. Rights of data subjects",
+    "pl": "8. Prawa osób, których dane dotyczą"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "You have the right to:",
+    "pl": "Masz prawo do:"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "access your personal data;",
+    "pl": "dostępu do swoich danych osobowych;"
+  },
+  {
+    "en": "have your data corrected or deleted;",
+    "pl": "sprostowania lub usunięcia swoich danych;"
+  },
+  {
+    "en": "object to processing;",
+    "pl": "wniesienia sprzeciwu wobec przetwarzania;"
+  },
+  {
+    "en": "request restriction of processing;",
+    "pl": "żądania ograniczenia przetwarzania;"
+  },
+  {
+    "en": "have your data transferred (data portability).",
+    "pl": "przeniesienia swoich danych (przenośność danych)."
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Requests can be submitted via info@serverpunt.com. You also have the right to lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).",
+    "pl": "Wnioski można składać za pośrednictwem info@serverpunt.com. Masz również prawo złożyć skargę do holenderskiego Urzędu Ochrony Danych Osobowych (Autoriteit Persoonsgegevens)."
+  },
+  {
+    "en": "9. Changes",
+    "pl": "9. Zmiany"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Contact",
+    "pl": "Kontakt"
+  },
+  {
+    "en": "Chamber of Commerce: 97831441",
+    "pl": "Izba Handlowa: 97831441"
+  },
+  {
+    "en": "Email:",
+    "pl": "E-mail:"
+  },
+  {
+    "en": "Website:",
+    "pl": "Witryna:"
+  },
+  {
+    "en": "Cookie Policy",
+    "pl": "Polityka plików cookie"
+  },
+  {
+    "en": "Last modified: 9 February 2026",
+    "pl": "Ostatnia modyfikacja: 9 lutego 2026"
+  },
+  {
+    "en": "This cookie policy applies to the website of ServerPunt, located at Kraaivenstraat 36-07, 5048 AB Tilburg, and reachable via info@serverpunt.com.",
+    "pl": "Niniejsza polityka plików cookie ma zastosowanie do witryny ServerPunt, z siedzibą przy Kraaivenstraat 36-07, 5048 AB Tilburg, dostępnej pod adresem info@serverpunt.com."
+  },
+  {
+    "en": "1. What are cookies?",
+    "pl": "1. Czym są pliki cookie?"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Cookies are small text files that are stored on your computer, tablet, or smartphone when you visit a website. Cookies ensure that a website functions properly and can collect information about website usage.",
+    "pl": "Pliki cookie to małe pliki tekstowe przechowywane na Twoim komputerze, tablecie lub smartfonie podczas odwiedzania witryny. Pliki cookie zapewniają prawidłowe działanie witryny i mogą zbierać informacje o sposobie korzystania z witryny."
+  },
+  {
+    "en": "2. Which cookies does ServerPunt use?",
+    "pl": "2. Jakich plików cookie używa ServerPunt?"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "a. Functional cookies (necessary)",
+    "pl": "a. Pliki cookie funkcjonalne (niezbędne)"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "These cookies are necessary for the website to function properly. Without these cookies, certain parts of the website cannot function correctly.",
+    "pl": "Te pliki cookie są niezbędne do prawidłowego działania witryny. Bez nich niektóre części witryny nie mogą działać poprawnie."
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Examples:",
+    "pl": "Przykłady:"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "Remembering cookie preferences",
+    "pl": "Zapamiętywanie preferencji dotyczących plików cookie"
+  },
+  {
+    "en": "Loading pages correctly",
+    "pl": "Prawidłowe ładowanie stron"
+  },
+  {
+    "en": "Basic website functionality",
+    "pl": "Podstawowa funkcjonalność witryny"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "No consent is required for these cookies.",
+    "pl": "Do tych plików cookie nie jest wymagana zgoda."
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "b. Analytical cookies",
+    "pl": "b. Pliki cookie analityczne"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Analytical cookies give us insight into how our website is used. This allows us to improve the website and make it more user-friendly.",
+    "pl": "Pliki cookie analityczne dają nam wgląd w sposób korzystania z naszej witryny. Dzięki temu możemy ulepszać witrynę i czynić ją bardziej przyjazną dla użytkownika."
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Examples:",
+    "pl": "Przykłady:"
+  },
+  {
+    "en": "ul",
+    "pl": "ul"
+  },
+  {
+    "en": "Number of visitors",
+    "pl": "Liczba odwiedzających"
+  },
+  {
+    "en": "Popular pages",
+    "pl": "Popularne strony"
+  },
+  {
+    "en": "How visitors navigate through the website",
+    "pl": "Sposób poruszania się odwiedzających po witrynie"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Where possible, this data is anonymised and cannot be traced back to individual persons.",
+    "pl": "Tam, gdzie to możliwe, dane te są anonimizowane i nie można ich powiązać z konkretnymi osobami."
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "c. Marketing and tracking cookies (optional)",
+    "pl": "c. Pliki cookie marketingowe i śledzące (opcjonalne)"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Where applicable, marketing cookies may be used to display relevant content or advertisements and to measure the effectiveness of campaigns.",
+    "pl": "W stosownych przypadkach pliki cookie marketingowe mogą być wykorzystywane do wyświetlania odpowiednich treści lub reklam oraz do mierzenia skuteczności kampanii."
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "These cookies are only placed after explicit consent.",
+    "pl": "Te pliki cookie są umieszczane wyłącznie po wyraźnej zgodzie."
+  },
+  {
+    "en": "3. Third-party cookies",
+    "pl": "3. Pliki cookie osób trzecich"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Third parties (such as analytics or marketing services) may place cookies via our website. ServerPunt has no direct control over the use of cookies by these parties. We recommend also consulting the cookie and privacy policies of these third parties.",
+    "pl": "Osoby trzecie (takie jak usługi analityczne lub marketingowe) mogą umieszczać pliki cookie za pośrednictwem naszej witryny. ServerPunt nie ma bezpośredniej kontroli nad wykorzystaniem plików cookie przez te podmioty. Zalecamy również zapoznanie się z politykami plików cookie i prywatności tych osób trzecich."
+  },
+  {
+    "en": "4. Managing or deleting cookies",
+    "pl": "4. Zarządzanie plikami cookie lub ich usuwanie"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "You can manage or delete cookies at any time via your browser settings. Please note that disabling cookies may affect the functioning of the website.",
+    "pl": "W każdej chwili możesz zarządzać plikami cookie lub je usuwać za pośrednictwem ustawień przeglądarki. Pamiętaj, że wyłączenie plików cookie może wpłynąć na działanie witryny."
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "More information per browser:",
+    "pl": "Więcej informacji według przeglądarki:"
+  },
+  {
+    "en": "links",
+    "pl": "links"
+  },
+  {
+    "en": "5. Changes to this cookie policy",
+    "pl": "5. Zmiany niniejszej polityki plików cookie"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "6. Contact",
+    "pl": "6. Kontakt"
+  },
+  {
+    "en": "p",
+    "pl": "p"
+  },
+  {
+    "en": "Do you have questions about our cookie policy or how we handle data? Please feel free to contact us:",
+    "pl": "Masz pytania dotyczące naszej polityki plików cookie lub sposobu, w jaki postępujemy z danymi? Zapraszamy do kontaktu:"
+  },
+  {
+    "en": "",
+    "pl": ""
+  },
+  {
+    "en": "",
+    "pl": ""
+  },
+  {
+    "en": "About ServerPunt",
+    "pl": "O ServerPunt"
+  },
+  {
+    "en": "From monitors and laptops to complete servers and server components: all products we offer are carefully tested, inspected, and refurbished where necessary. This gives high-quality hardware a second life, at a competitive price and with minimal environmental impact.",
+    "pl": "Od monitorów i laptopów po kompletne serwery i komponenty serwerowe — wszystkie oferowane przez nas produkty są starannie testowane, sprawdzane i w razie potrzeby odnowione. Dzięki temu wysokiej jakości sprzęt zyskuje drugie życie, w konkurencyjnej cenie i z minimalnym wpływem na środowisko."
+  },
+  {
+    "en": "Specialised in server solutions",
+    "pl": "Specjalizacja w rozwiązaniach serwerowych"
+  },
+  {
+    "en": "Our strength lies in custom solutions. We don't just supply individual servers and components — we actively help determine the right configurations for specific workloads, scalability, and growth. Thanks to our technical knowledge and practical experience, we can respond quickly and provide targeted advice.",
+    "pl": "Naszą siłą są rozwiązania szyte na miarę. Nie dostarczamy wyłącznie pojedynczych serwerów i komponentów — aktywnie pomagamy dobrać odpowiednie konfiguracje pod konkretne obciążenia, skalowalność i rozwój. Dzięki naszej wiedzy technicznej i praktycznemu doświadczeniu możemy szybko reagować i udzielać trafnych porad."
+  },
+  {
+    "en": "At ServerPunt, transparency and quality always come first. For us, refurbished hardware means:",
+    "pl": "W ServerPunt transparentność i jakość zawsze stoją na pierwszym miejscu. Dla nas odnowiony sprzęt oznacza:"
+  },
+  {
+    "en": "Affordable quality",
+    "pl": "Przystępna jakość"
+  },
+  {
+    "en": "without compromising on performance",
+    "pl": "bez kompromisów w zakresie wydajności"
+  },
+  {
+    "en": "A sustainable choice",
+    "pl": "Zrównoważony wybór"
+  },
+  {
+    "en": "through reuse",
+    "pl": "dzięki ponownemu wykorzystaniu"
+  },
+  {
+    "en": "Fast delivery",
+    "pl": "Szybka dostawa"
+  },
+  {
+    "en": "with personal contact",
+    "pl": "z osobistym kontaktem"
+  },
+  {
+    "en": "Thanks to our technical knowledge of servers and components, we can think along, advise, and respond quickly when needed.",
+    "pl": "Dzięki naszej wiedzy technicznej o serwerach i komponentach możemy doradzać, współpracować i szybko reagować, gdy jest to potrzebne."
+  },
+  {
+    "en": "Who we work for",
+    "pl": "Dla kogo pracujemy"
+  },
+  {
+    "en": "We work for individuals looking for professional hardware at a competitive price, as well as businesses that want to expand or renew their systems. Whether it's a single purchase or a larger expansion, we look together at what fits best.",
+    "pl": "Pracujemy dla osób prywatnych poszukujących profesjonalnego sprzętu w konkurencyjnej cenie, a także dla firm, które chcą rozbudować lub odnowić swoje systemy. Niezależnie od tego, czy chodzi o pojedynczy zakup, czy większą rozbudowę, wspólnie szukamy najlepszego rozwiązania."
+  },
+  {
+    "en": "Why ServerPunt?",
+    "pl": "Dlaczego ServerPunt?"
+  },
+  {
+    "en": "🔧",
+    "pl": "🔧"
+  },
+  {
+    "en": "Technical expertise",
+    "pl": "Wiedza techniczna"
+  },
+  {
+    "en": "Solid knowledge of servers and infrastructure",
+    "pl": "Solidna znajomość serwerów i infrastruktury"
+  },
+  {
+    "en": "✅",
+    "pl": "✅"
+  },
+  {
+    "en": "Quality control",
+    "pl": "Kontrola jakości"
+  },
+  {
+    "en": "Every product is thoroughly tested and inspected",
+    "pl": "Każdy produkt jest dokładnie testowany i sprawdzany"
+  },
+  {
+    "en": "🌱",
+    "pl": "🌱"
+  },
+  {
+    "en": "Sustainable",
+    "pl": "Zrównoważenie"
+  },
+  {
+    "en": "Reuse of hardware with minimal impact",
+    "pl": "Ponowne wykorzystanie sprzętu z minimalnym wpływem na środowisko"
+  },
+  {
+    "en": "💰",
+    "pl": "💰"
+  },
+  {
+    "en": "Competitively priced",
+    "pl": "Konkurencyjne ceny"
+  },
+  {
+    "en": "Professional quality at affordable prices",
+    "pl": "Profesjonalna jakość w przystępnych cenach"
+  },
+  {
+    "en": "Questions or need advice?",
+    "pl": "Pytania lub potrzebujesz porady?"
+  },
+  {
+    "en": "Feel free to contact us. We're happy to help you find the best solution for your situation.",
+    "pl": "Zapraszamy do kontaktu. Chętnie pomożemy znaleźć najlepsze rozwiązanie dla Twojej sytuacji."
+  },
+  {
+    "en": "Email:",
+    "pl": "E-mail:"
+  },
+  {
+    "en": "Address:",
+    "pl": "Adres:"
+  }
+]

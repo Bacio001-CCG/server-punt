@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Regulamin",
+    "lastModified": "Ostatnia aktualizacja: 22 grudnia 2025",
+    "sections": [
+      {
+        "title": "Artykuł 1. Definicje",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "W niniejszym regulaminie poniższe pojęcia mają znaczenie wskazane poniżej:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "spółka NetwerkPunt, prowadząca działalność pod nazwa ServerPunt, z siedzibą przy Kraaivenstraat 36-07, 5048 AB Tilburg, zarejestrowana w Holenderskiej Izbie Handlowej pod numerem 97831441."
+              },
+              {
+                "term": "Klient",
+                "text": "każda osoba fizyczna lub prawna, która zawiera lub zamierza zawrzeć Umowę z ServerPunt."
+              },
+              {
+                "term": "Konsument",
+                "text": "Klient będący osoba fizyczna, działająca w celach niezwiązanych z jej działalnością handlowa, gospodarcza, rzemieślnicza lub zawodowa."
+              },
+              {
+                "term": "Klient biznesowy",
+                "text": "Klient działający w ramach wykonywania zawodu lub prowadzenia działalności gospodarczej."
+              },
+              {
+                "term": "Umowa",
+                "text": "każda umowa zawarta pomiędzy ServerPunt a Klientem, w tym umowy zawierane na odleglosc za pośrednictwem Strony internetowej, oraz wszelkie wynikające z niej zobowiązania."
+              },
+              {
+                "term": "Strona internetowa",
+                "text": "strona internetowa ServerPunt, za pośrednictwem której oferowane są produkty i można składać zamówienia, tj. https://serverpunt.com/."
+              },
+              {
+                "term": "Produkt(y)",
+                "text": "wszystkie towary oferowane przez ServerPunt, w tym odnowiony sprzęt IT, serwery, komponenty serwerówe i akcesoria."
+              },
+              {
+                "term": "Refurbished",
+                "text": "używany sprzęt, ktory został sprawdzony, przetestowany oraz w razie potrzeby wyczyszczony i/lub naprawiony przez ServerPunt, a nastepnie ponownie oferowany. Produkty refurbished moga nosić ślady użytkowania i różnić sie od stanu fabrycznie nowego."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 2. Zakres stosowania",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Niniejszy regulamin ma zastosowanie do każdej oferty składanej przez ServerPunt oraz do każdej Umowy zawartej pomiędzy ServerPunt a Klientem.",
+              "Odstępstwa od niniejszego regulaminu są ważne wyłącznie wtedy, gdy zostały wyraźnie potwierdzone na pismie (w tym e-mailem) przez ServerPunt.",
+              "Stosowanie warunkow (zakupu) Klienta jest wyraźnie wyłączone, chyba że ServerPunt wyraźnie zaakceptuje je na pismie.",
+              "Jeżeli jakiekolwiek postanowienie niniejszego regulaminu jest w calosci lub części nieważne albo zostanie unieważnione, pozostałe postanowienia pozostaja w pełni skuteczne. W takim przypadku strony zastąpią dane postanowienie postanowieniem możliwie najbliżej odpowiadajacym celowi i intencji pierwotnego postanowienia.",
+              "W przypadku rozbieżności pomiędzy treścią Strony internetowej a niniejszym regulaminem, pierwszeństwo ma niniejszy regulamin, o ile wyraźnie nie wskazano inaczej."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 3. Oferta",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Wszystkie oferty i opisy produktów na Stronie internetowej ServerPunt są niewiążące, chyba że wyraźnie wskazano inaczej.",
+              "ServerPunt opracowuje informacje na Stronie internetowej z najwyższą starannością. Mimo to moga wystapic oczywiste błędy lub omylki, takie jak błędy typograficzne, błędy cenowe, nieprawidlowe specyfikacje lub nieprawidlowe zdjęcia. Takie błędy nie moga stanowic podstawy do roszczeń.",
+              "Zdjecia Produktow mają charakter poglądowy i moga różnić sie od faktycznie dostarczonego Produktu, ze względu na odnowiony charakter oferowanego sprzętu.",
+              "ServerPunt ma prawo anulowac lub zmienic zamówienie, jezeli w ofercie wystepuje oczywisty błąd, np. wyraźny błąd cenowy lub nieprawidlowo wyświetlona cecha produktu.",
+              "Oferta jest ważna do wyczerpania zapasow. Jeżeli Produkt nie jest (lub nie jest już) dostępny, ServerPunt poinformuje Klienta tak szybko, jak to możliwe."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 4. Zawarcie umowy",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Umowa zostaje zawarta w momencie, gdy Klient zaakceptuje ofertę ServerPunt, skladajac zamówienie za pośrednictwem Strony internetowej, a zamówienie to zostanie potwierdzone przez ServerPunt e-mailem.",
+              {
+                "text": "ServerPunt ma prawo odmówić realizacji zamówienia lub nałożyć dodatkowe warunki, w szczególności gdy:",
+                "sublist": [
+                  "Klient podał nieprawidlowe lub niekompletne informacje;",
+                  "wcześniejsze zobowiązania płatnicze nie zostały spełnione;",
+                  "istnieją uzasadnione podstawy, aby wątpić w zdolnosc płatniczą Klienta."
+                ]
+              },
+              "Po złożeniu zamówienia Klient otrzymuje potwierdzenie zamówienia e-mailem. Potwierdzenie to nie stanowi faktury.",
+              "Oczywiste błędy lub omylki w potwierdzeniu zamówienia nie wiążą ServerPunt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 5. Zmiany i anulowanie przez ServerPunt",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Jeżeli po zawarciu Umowy okaże sie, ze zamówiony Produkt nie jest (lub nie jest już) dostępny albo nie moze zostac dostarczony, ServerPunt ma prawo rozwiązać Umowę.",
+              "W przypadku rozwiążąnia Umowy, o którym mowa w niniejszym artykule, ServerPunt zwróci Klientowi wszelkie już zaplacone kwoty tak szybko, jak to możliwe, jednak nie później niz w ciągu 14 dni."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 6. Ceny",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Wszystkie ceny podane na Stronie internetowej są wyrażone w euro i obejmuja VAT, chyba że wyraźnie wskazano inaczej.",
+              "Dla klientow biznesowych ceny moga byc prezentowane bez VAT. W takim przypadku zostanie to wyraźnie wskazane w ofercie.",
+              "Wszelkie koszty wysyłki, koszty administracyjne lub inne koszty dodatkowe zostana wyraźnie zakomunikowane Klientowi przed zawarciem Umowy.",
+              "ServerPunt zastrzega sobie prawo do zmiany cen. Zmiany cen nie wpływają na już zawarte Umowy."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 7. Płatność",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Płatność musi zostac dokonana za pomocą metod płatności oferowanych na Stronie internetowej, chyba że na pismie uzgodniono inaczej.",
+              "ServerPunt ma prawo realizować zamówienie dopiero po otrzymaniu pełnej płatności, chyba że wyraźnie uzgodniono inaczej.",
+              "W przypadku płatności na rachunek lub płatności faktura (wyłącznie dla klientow biznesowych) obowiązuje termin płatności wskazany na fakturze.",
+              "Jeżeli Klient nie spełnia swojego zobowiązania płatniczego w terminie, popada w opóźnienie z mocy prawa. Od tego momentu ServerPunt ma prawo naliczac ustawowe odsetki (handlowe).",
+              "Wszelkie uzasadnione koszty poniesione w celu pozasadowego dochodzenia płatności ponosi Klient.",
+              "Dla klientow biznesowych obowiązuje termin płatności 14 dni od daty faktury, chyba że na pismie uzgodniono inaczej."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 8. Fakturowanie",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Faktury są dostarczane elektronicznie, chyba że uzgodniono inaczej.",
+              "Zastrzeżenia do faktury nalezy zgłosić do ServerPunt na pismie w ciągu 7 dni od daty faktury."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 9. Dostawa",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dostawa Produktow odbywa sie na adres dostawy podany przez Klienta przy składaniu zamówienia, chyba że na pismie uzgodniono inaczej.",
+              "ServerPunt będzie realizować i wysyłać zamówienia z najwyższą starannością.",
+              "Jeżeli dostawa na uzgodniony adres okaże sie niemożliwa, ServerPunt ma prawo udostępnić Produkt Klientowi w inny sposob lub rozwiązać Umowę."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 10. Terminy dostawy",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Terminy dostawy podawane przez ServerPunt mają charakter orientacyjny i nie stanowią terminow ostatecznych, chyba że wyraźnie uzgodniono inaczej na pismie.",
+              "Przekroczenie terminu dostawy nie daje Klientowi prawa do odszkodowania ani rozwiążąnia Umowy, chyba że po stronie ServerPunt wystapil umyśl lub rażące niedbalstwo.",
+              "Jeżeli dostawa jest opóźniona lub zamówienie nie moze zostac zrealizowane w calosci lub w części, ServerPunt poinformuje Klienta tak szybko, jak to możliwe."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 11. Przejscie ryzyka i szkody transportowe",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ryzyko utraty lub uszkodzenia Produktow przechodzi na Konsumenta w momencie faktycznego otrzymania Produktu.",
+              "W przypadku klientow biznesowych ryzyko przechodzi w momencie wyslania Produktu.",
+              "Klient musi niezwłocznie po odbiorze sprawdzic Produkt pod katem uszkodzen transportowych i widocznych wad. Wszelkie uszkodzenia lub wady musza zostac zgłoszone do ServerPunt na pismie w ciągu 48 godzin od odbioru wraz ze zdjęciami Produktu i opakowania.",
+              "Jeżeli szkoda transportowa zostanie zgłoszona terminowo i prawidlowo, ServerPunt wedlug swojego uznania zapewni naprawe, wymiane lub zwrot środków."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 12. Odbior osobisty",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Jeżeli uzgodniono odbior osobisty, Klient musi odebrac Produkt w uzgodnionym czasie i miejscu.",
+              "Przy odbiorze osobistym ryzyko przechodzi na Klienta w momencie wydania Produktu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 13. Prawo odstąpienia",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Konsument ma prawo odstapic od Umowy dotyczącej zakupu Produktu w ciągu 14 dni od jego otrzymania bez podawania przyczyny.",
+              "Termin odstąpienia upływa po 14 dniach od dnia, w którym Konsument lub wskazana przez niego osoba trzecia otrzymała Produkt.",
+              "Aby skorzystac z prawa odstąpienia, Konsument musi poinformowac ServerPunt w terminie odstąpienia e-mailem lub poprzez inne jednoznaczne oświadczenie o decyzji o odstąpieniu od Umowy."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 14. Skutki odstąpienia",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Jeżeli Konsument odstapi od Umowy, otrzyma wszystkie dokonane do tego momentu płatności, w tym standardowe koszty dostawy, nie później niz 14 dni od dnia, w którym ServerPunt został poinformowany o odstąpieniu.",
+              "ServerPunt moze wstrzymac zwrot do czasu otrzymania Produktu albo do czasu przedstawienia przez Konsumenta dowodu jego odesłania - w zależności od tego, co nastapi wczesniej.",
+              "Zwroty będą dokonywane ta sama metoda płatności, która została użyta przy pierwotnej transakcji, chyba że uzgodniono inaczej."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 15. Warunki zwrotu",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "W okresie odstąpienia Konsument musi obchodzić sie z Produktem i opakowaniem z należytą starannością. Produkt moze zostac rozpakowany i użyty jedynie w zakresie niezbędnym do stwierdzenia jego charakteru, cech i funkcjonowania.",
+              "Jeżeli Produkt był używany w zakresie szerszym niz dozwolony, Konsument odpowiada za kazde zmniejszenie wartości Produktu.",
+              "Konsument odpowiada za prawidlowe i nalezyte odesłanie Produktu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 16. Koszty zwrotu",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Koszty odesłania ponosi Konsument, chyba że uzgodniono inaczej.",
+              "Jeżeli ServerPunt odebral Produkt od Konsumenta, koszty tego odbioru zostana obciążone Konsumentowi.",
+              "Zwroty nalezy wysyłać na adres siedziby ServerPunt: Kraaivenstraat 36-07, 5048 AB Tilburg, chyba że na pismie uzgodniono inaczej."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 17. Wylaczenie prawa odstąpienia",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Prawo odstąpienia jest wyłączone w przypadku:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "klientow biznesowych;",
+              "Produktow, których ze względu na ich charakter nie można zwrócic;",
+              "Produktow wyraźnie spersonalizowanych lub montowanych na zamówienie;",
+              "Produktow, których zabezpieczenie zostało naruszone ze względów higienicznych lub bezpieczeństwa, o ile ma to zastosowanie."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "Artykuł 18. Gwarancja i zgodność",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt gwarantuje, ze dostarczone Produkty są zgodne z Umowa, specyfikacjami podanymi w ofercie oraz uzasadnionymi wymaganiami niezawodności i użyteczności, z uwzględnieniem odnowionego charakteru Produktow.",
+              "Produkty refurbished są towarami używanymi i moga nosić ślady użytkowania. Odstępstwa od stanu nowego, takie jak drobne uszkodzenia kosmetyczne, nie stanowią wady i nie uprawniaja Klienta do wymiany, naprawy ani rozwiążąnia Umowy.",
+              "W przypadku Konsumentow obowiązuje ustawowa odpowiedzialnosc za zgodność towaru z umowa. Oznacza to, ze Produkt musi dzialac tak, jak Konsument moze rozsądnie oczekiwac. ServerPunt nie moze wyłączyć ani ograniczyc tej ustawowej ochrony.",
+              "Każda dodatkowa gwarancja udzielana przez ServerPunt będzie wyraźnie wskazana na pismie przy Produkcie i nie narusza ustawowej ochrony.",
+              "W przypadku klientow biznesowych obowiązuje wyłącznie gwarancja wyraźnie udzielona przez ServerPunt. W jej braku nie przysługuje żadna dodatkowa gwarancja.",
+              "Jeżeli dla Produktu nie wskazano dodatkowego okresu gwarancji, Konsumentom przysługuje wyłącznie ustawowa ochrona, a klientom biznesowym nie przysługuje dodatkowa gwarancja."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 19. Zgłaszanie wad",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Klient jest zobowiązany sprawdzic Produkt pod katem wad jak najszybciej po jego otrzymaniu.",
+              "Wady, które nie byly widoczne przy odbiorze, Konsument musi zgłosić w rozsadnym terminie od ich wykrycia.",
+              "Klienci biznesowi musza zgłosić wady na pismie w ciągu 7 dni od odbioru. Brak takiego zgloszenia powoduje utratę prawa do naprawy, wymiany lub jakiejkolwiek innej rekompensaty."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 20. Naprawa i wymiana",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Jeżeli okaże sie, ze Produkt nie jest zgodny z Umowa, ServerPunt wedlug swojego uznania naprawi lub wymieni Produkt, chyba że jest to niemożliwe lub wiaze sie z niewspółmiernymi kosztami.",
+              "Jeżeli naprawa lub wymiana nie są możliwe, ServerPunt moze dokonac (częściowego) zwrotu środków lub rozwiązać Umowę."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 21. Odpowiedzialnosc",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Odpowiedzialnosc ServerPunt jest ograniczona do kwoty zaplaconej przez Klienta za dany Produkt, z bezwzględnym limitem do wysokości kwoty faktury.",
+              {
+                "text": "ServerPunt nigdy nie ponosi odpowiedzialnosci za szkody pośrednie, w tym w szczególności:",
+                "sublist": [
+                  "szkody następcze;",
+                  "utracone zyski;",
+                  "utracone oszczędności;",
+                  "utratę danych;",
+                  "szkody w działalności gospodarczej;",
+                  "szkody wynikające z przerwy w działalności."
+                ]
+              },
+              {
+                "text": "ServerPunt nie ponosi odpowiedzialnosci za szkody spowodowane przez:",
+                "sublist": [
+                  "niewłaściwe lub nieprawidlowe użycie Produktu;",
+                  "użycie poza specyfikacjami podanymi przez ServerPunt;",
+                  "naprawy lub modyfikacje dokonane przez Klienta;",
+                  "użycie w połączeniu z wadliwym lub nieodpowiednim sprzętem peryferyjnym."
+                ]
+              },
+              "Ograniczenia odpowiedzialnosci wskazane w niniejszym artykule nie mają zastosowania, jezeli szkoda wynika z umyślnego dzialania lub rażącego niedbalstwa po stronie ServerPunt, albo w zakresie, w jakim odpowiedzialnosci nie można wyłączyć na mocy bezwzględnie obowiązującego prawa."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 22. Zwolnienie z odpowiedzialnosci",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Klient zwalnia ServerPunt z odpowiedzialnosci wobec wszelkich roszczeń osob trzecich zwiążąnych z uzywaniem dostarczonych Produktow.",
+              "Klient odpowiada za wykonywanie odpowiednich kopii zapasowych danych. ServerPunt nie ponosi odpowiedzialnosci za utratę lub uszkodzenie danych, niezależnie od przyczyny."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 23. Sila wyzsza",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt nie jest zobowiązany do wykonania jakiegokolwiek zobowiązania wobec Klienta, jezeli jego wykonanie jest niemożliwe na skutek sily wyzszej.",
+              {
+                "text": "Sila wyzsza obejmuje w kazdym przypadku wszelkie okolicznosci pozostajace poza kontrola ServerPunt, które tymczasowo lub trwale uniemożliwiają wykonanie zobowiążąn, w tym w szczególności:",
+                "sublist": [
+                  "zakłócenia u przewoźników lub dostawcow;",
+                  "opóźnienia lub awarie w transporcie;",
+                  "problemy z zaopatrzeniem lub braki magazynowe;",
+                  "przerwy w dostawie energii;",
+                  "awarie internetu lub sieci;",
+                  "pozar, zalanie lub inne zdarzenia losowe;",
+                  "dzialania organow państwowych;",
+                  "epidemie, pandemie i związane z nimi ograniczenia."
+                ]
+              },
+              "Jeżeli sytuacja sily wyzszej trwa dłużej niz 30 dni, zarowno ServerPunt, jak i Klient są uprawnieni do rozwiążąnia Umowy na pismie, bez obowiazku zaplaty odszkodowania w takim przypadku.",
+              "Jeżeli ServerPunt w chwili wystapienia sily wyzszej wykonal już czesc swoich zobowiążąn lub nadal moze je wykonac, ma prawo zafakturować lub rozliczyc te czesc oddzielnie."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 24. Reklamacje",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Reklamacje dotyczace wykonania Umowy nalezy złożyć do ServerPunt na pismie, w pełni i jasno opisane, w rozsadnym terminie od chwili stwierdzenia wady przez Klienta.",
+              {
+                "text": "Reklamacje można składać poprzez:",
+                "sublist": [
+                  "e-mail: info@serverpunt.com",
+                  "lub pisemnie poczta na adres siedziby ServerPunt."
+                ]
+              },
+              "ServerPunt udzieli odpowiedzi na złożona reklamacje w ciągu 14 dni od jej otrzymania. Jeżeli rozpatrzenie reklamacji przewidywalnie wymaga dłuższego czasu, ServerPunt poinformuje o tym Klienta w tym terminie.",
+              "Jeżeli reklamacja nie moze zostac rozwiążąna polubownie, powstaje spor, ktory moze zostac skierowany do właściwego sądu zgodnie z niniejszym regulaminem."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 25. Prawo właściwe",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Do wszystkich Umow pomiędzy ServerPunt a Klientem, do których ma zastosowanie niniejszy regulamin, stosuje sie wyłącznie prawo holenderskie.",
+              "Spory wynikające z Umowy lub z nia związane będą rozstrzygane wyłącznie przez właściwy sad w okręgu, w którym ServerPunt ma siedzibę, chyba że bezwzględnie obowiązujące przepisy stanowią inaczej."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artykuł 26. Postanowienia końcowe",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt ma prawo zmieniac lub uzupełniac niniejszy regulamin. Zmienione warunki będą publikowane w odpowiednim czasie na Stronie internetowej i będą mialy zastosowanie do przyszłych Umow.",
+              "Jeżeli postanowienia niniejszego regulaminu okaza sie nieważne lub zostana unieważnione, nie wplywa to na ważność pozostałych postanowien.",
+              "Niniejszy regulamin został ostatnio zmieniony 22 grudnia 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Izba Handlowa: 97831441",
+      "vat": "VAT: NL868250983B01",
+      "emailLabel": "E-mail:",
+      "websiteLabel": "Strona internetowa:"
+    }
+  },
+  "privacy": {
+    "title": "Polityka prywatności",
+    "lastModified": "Ostatnia aktualizacja: 5 lutego 2026",
+    "sections": [
+      {
+        "title": "1. Administrator danych",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), z siedzibą przy Kraaivenstraat 36-07, 5048 AB Tilburg, zarejestrowany w Holenderskiej Izbie Handlowej pod numerem 97831441, jest odpowiedzialny za przetwarzanie danych osobowych opisane w niniejszej polityce prywatności."
+          },
+          {
+            "type": "p",
+            "text": "Kontakt: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Dane osobowe, które przetwarzamy",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt przetwarza dane osobowe, ponieważ korzystasz z naszej strony internetowej i uslug oraz/lub samodzielnie przekazujesz nam te dane. Obejmuje to miedzy innymi:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "imię i nazwisko",
+              "dane adresowe",
+              "adres e-mail",
+              "numer telefonu",
+              "dane płatnicze i fakturowe",
+              "adres IP",
+              "historia zamówień",
+              "dane z korespondencji"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Cele i podstawy prawne przetwarzania",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt przetwarza dane osobowe wyłącznie w następujących celach i na podstawie odpowiadajacych im podstaw prawnych:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Wykonanie umowy: obsługa zamówień, dostawa produktów, komunikacja dotyczaca umowy",
+              "Obowiązek prawny: fakturowanie, księgowość, obowiązki podatkowe",
+              "Uzasadniony interes: obsługa klienta, ulepszanie uslug, zapobieganie nadużyciom",
+              "Zgoda: newslettery i komunikacja marketingowa (w odpowiednich przypadkach)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Okresy przechowywania",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt nie przechowuje danych osobowych dłużej niz jest to niezbędne do celow, dla których zostały zebrane, z uwzględnieniem ustawowych okresow przechowywania:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Dane zamówień i faktur: 7 lat (ustawowy obowiązek przechowywania podatkowego)",
+              "Komunikacja z klientem: maksymalnie 2 lata",
+              "Dane konta i kontaktowe: tak dlugo, jak aktywna jest relacja z klientem"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Udostępnianie danych osobowych podmiotom trzecim",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt przekazuje dane osobowe podmiotom trzecim wyłącznie wtedy, gdy jest to niezbędne do wykonania umowy lub spełnienia obowiazku prawnego."
+          },
+          {
+            "type": "p",
+            "text": "Obejmuje to miedzy innymi:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "dostawcow płatności",
+              "przewoźników",
+              "oprogramowanie księgowe",
+              "dostawcow hostingu i uslug IT"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Tam, gdzie wymagaja tego przepisy, z tymi podmiotami zawarto umowy powierzenia przetwarzania danych."
+          }
+        ]
+      },
+      {
+        "title": "6. Pliki cookie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt wykorzystuje funkcjonalne i analityczne pliki cookie, które nie mają lub mają jedynie niewielki wplyw na prywatnosc odwiedzajacych."
+          },
+          {
+            "type": "p",
+            "text": "Te pliki cookie są wykorzystywane do:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "zapewnienia prawidlowego dzialania strony internetowej od strony technicznej;",
+              "uzyskania wiedzy o sposobie korzystania ze strony i jej ulepszania."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Bez uprzedniej zgody nie są instalowane pliki cookie śledzące."
+          }
+        ]
+      },
+      {
+        "title": "7. Bezpieczeństwo danych osobowych",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt stosuje odpowiednie środki techniczne i organizacyjne, aby chronic dane osobowe przed utrata, niewłaściwym użyciem, nieuprawnionym dostępem i niepożądanym ujawnieniem."
+          }
+        ]
+      },
+      {
+        "title": "8. Prawa osob, których dane dotycza",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Masz prawo do:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "dostępu do swoich danych osobowych;",
+              "sprostowania lub usuniecia swoich danych;",
+              "wniesienia sprzeciwu wobec przetwarzania;",
+              "zadania ograniczenia przetwarzania;",
+              "przeniesienia swoich danych (przenoszalnosc danych)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Wnioski można składać na adres info@serverpunt.com. Masz również prawo wniesc skarge do Holenderskiego Organu Ochrony Danych (Autoriteit Persoonsgegevens)."
+          }
+        ]
+      },
+      {
+        "title": "9. Zmiany",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt zastrzega sobie prawo do zmiany niniejszej polityki prywatności. Najaktualniejsza wersja jest zawsze dostępna na stronie internetowej."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Izba Handlowa: 97831441",
+      "emailLabel": "E-mail:",
+      "websiteLabel": "Strona internetowa:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Polityka cookie",
+    "lastModified": "Ostatnia aktualizacja: 9 lutego 2026",
+    "intro": "Niniejsza polityka cookie dotyczy strony internetowej ServerPunt, z siedzibą przy Kraaivenstraat 36-07, 5048 AB Tilburg, dostępnego pod adresem info@serverpunt.com.",
+    "sections": [
+      {
+        "title": "1. Czym są pliki cookie?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Pliki cookie to male pliki tekstowe zapisywane na komputerze, tablecie lub smartfonie podczas odwiedzania strony internetowej. Zapewniaja one prawidlowe dzialanie strony i moga gromadzic informacje o korzystaniu z niej."
+          }
+        ]
+      },
+      {
+        "title": "2. Jakie pliki cookie wykorzystuje ServerPunt?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt wykorzystuje nastepujace rodzaje plikow cookie:"
+          },
+          {
+            "type": "p",
+            "text": "a. Funkcjonalne pliki cookie (niezbędne)"
+          },
+          {
+            "type": "p",
+            "text": "Te pliki cookie są niezbędne do prawidlowego funkcjonowania strony internetowej. Bez nich niektóre części strony nie będą dzialac poprawnie."
+          },
+          {
+            "type": "p",
+            "text": "Przykłady:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Zapamiętywanie preferencji cookie",
+              "Poprawne ładowanie stron",
+              "Podstawowa funkcjonalnosc strony"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Dla tych plikow cookie zgoda nie jest wymagana."
+          },
+          {
+            "type": "p",
+            "text": "b. Analityczne pliki cookie"
+          },
+          {
+            "type": "p",
+            "text": "Analityczne pliki cookie dostarczaja nam informacji o tym, jak wykorzystywana jest nasza strona internetowa. Pozwala to ulepszac strone i czynic ja bardziej przyjazna dla użytkowników."
+          },
+          {
+            "type": "p",
+            "text": "Przykłady:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Liczba odwiedzajacych",
+              "Popularne strony",
+              "Sposob poruszania sie odwiedzajacych po stronie"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Tam, gdzie to możliwe, dane te są anonimizowane i nie można ich przypisac do konkretnych osob."
+          },
+          {
+            "type": "p",
+            "text": "c. Marketingowe i śledzące pliki cookie (opcjonalne)"
+          },
+          {
+            "type": "p",
+            "text": "W odpowiednich przypadkach marketingowe pliki cookie moga byc wykorzystywane do wyświetlania trafnych treści lub reklam oraz do mierzenia skuteczności kampanii."
+          },
+          {
+            "type": "p",
+            "text": "Te pliki cookie są instalowane wyłącznie po uzyskaniu wyraźnej zgody."
+          }
+        ]
+      },
+      {
+        "title": "3. Pliki cookie podmiotow trzecich",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Podmioty trzecie (takie jak usługi analityczne lub marketingowe) moga instalowac pliki cookie za pośrednictwem naszej strony internetowej. ServerPunt nie ma bezpośredniej kontroli nad wykorzystywaniem plikow cookie przez te podmioty. Zalecamy również zapoznanie sie z politykami cookie i prywatności tych podmiotow."
+          }
+        ]
+      },
+      {
+        "title": "4. Zarządzanie lub usuwanie plikow cookie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Mozesz zarzadzac plikami cookie lub usuwac je w dowolnym momencie w ustawieniach przeglądarki. Pamiętaj, ze wyłączenie plikow cookie moze wpłynąć na funkcjonowanie strony internetowej."
+          },
+          {
+            "type": "p",
+            "text": "Więcej informacji dla poszczególnych przeglądarek:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Zmiany niniejszej polityki cookie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt zastrzega sobie prawo do zmiany niniejszej polityki cookie. Zalecamy regularne sprawdzanie tej strony, aby byc na bieżąco ze zmianami."
+          }
+        ]
+      },
+      {
+        "title": "6. Kontakt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Masz pytania dotyczace naszej polityki cookie lub sposobu, w jaki przetwarzamy dane? Skontaktuj sie z nami:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "O ServerPunt",
+    "intro1": "ServerPunt specjalizuje sie w zakupie i sprzedaży odnowionego sprzętu dla osob prywatnych i firm. Wierzymy, ze profesjonalny sprzęt nie musi byc nowy, aby dzialac niezawodnie, wydajnie i w sposob zrównoważony.",
+    "intro2": "Od monitorow i laptopow po kompletne serwery oraz komponenty serwerówe: wszystkie oferowane przez nas produkty są starannie testowane, sprawdzane i w razie potrzeby odnawiane. Dzieki temu wysokiej jakości sprzęt otrzymuje drugie zycie, w konkurencyjnej cenie i przy minimalnym wpływie na srodowisko.",
+    "servers": {
+      "title": "Specjalizacja w rozwiązaniach serwerówych",
+      "p1": "Nasza sila tkwi w rozwiązaniach dopasowanych do potrzeb. Nie tylko dostarczamy pojedyncze serwery i komponenty - aktywnie pomagamy dobrac odpowiednie konfiguracje pod konkretne obciążenia, skalowalnosc i rozwoj. Dzieki wiedzy technicznej i praktycznemu doświadczeniu mozemy szybko reagowac i udzielac trafnych rekomendacji.",
+      "p2": "W ServerPunt przejrzystość i jakość są zawsze na pierwszym miejscu. Dla nas sprzęt refurbished oznacza:",
+      "bullet1Title": "Przystępna jakość",
+      "bullet1Text": "bez kompromisow wydajnosciowych",
+      "bullet2Title": "Zrównoważony wybor",
+      "bullet2Text": "dzieki ponownemu wykorzystaniu",
+      "bullet3Title": "Szybka dostawa",
+      "bullet3Text": "z indywidualnym kontaktem",
+      "p3": "Dzieki naszej wiedzy technicznej o serwerach i komponentach potrafimy współpracować, doradzac i szybko reagowac, gdy jest to potrzebne."
+    },
+    "audience": {
+      "title": "Dla kogo pracujemy",
+      "p1": "Współpracujemy z osobami prywatnymi szukajacymi profesjonalnego sprzętu w konkurencyjnej cenie, a takze z firmami, które chca rozbudowac lub odnowic swoje systemy. Niezaleznie od tego, czy chodzi o pojedynczy zakup, czy o wieksza rozbudowę, wspólnie dobieramy najlepsze rozwiążąnie.",
+      "p2": "ServerPunt to cos wiecej niz dostawca. Jesteśmy partnerem technicznym, ktory wspolpracuje, doradza i dostarcza rozwiążąnia - zgodnie z dzisiejszymi wymaganiami i jutrzejszym rozwojem."
+    },
+    "values": {
+      "title": "Dlaczego ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Wiedza techniczna",
+          "description": "Rzetelna znajomość serwerów i infrastruktury"
+        },
+        {
+          "icon": "✅",
+          "title": "Kontrola jakości",
+          "description": "Każdy produkt jest dokładnie testowany i sprawdzany"
+        },
+        {
+          "icon": "🌱",
+          "title": "Zrównoważony",
+          "description": "Ponowne wykorzystanie sprzętu przy minimalnym wpływie"
+        },
+        {
+          "icon": "💰",
+          "title": "Konkurencyjne ceny",
+          "description": "Profesjonalna jakość w przystepnych cenach"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Masz pytania lub potrzebujesz porady?",
+      "description": "Skontaktuj sie z nami. Chętnie pomożemy Ci znalezc najlepsze rozwiążąnie dla Twojej sytuacji.",
+      "emailLabel": "E-mail:",
+      "addressLabel": "Adres:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

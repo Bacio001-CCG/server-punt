@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Pogoji poslovanja",
+    "lastModified": "Zadnja sprememba: 22. december 2025",
+    "sections": [
+      {
+        "title": "Člen 1. Opredelitve",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "V teh splošnih pogojev imajo naslednji izrazi pomen, določen spodaj:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "partnersko podjetje NetwerkPunt, ki posluje pod imenom ServerPunt, s sedežem na naslovu Kraaivenstraat 36-07, 5048 AB Tilburg, registrirano pri Nizozemski gospodarski zbornici pod številko 97831441."
+              },
+              {
+                "term": "Stranka",
+                "text": "vsaka fizična oseba ali pravna oseba, ki sklene ali želi skleniti pogodbo s ServerPunt."
+              },
+              {
+                "term": "Potrošnik",
+                "text": "Stranka, ki je fizična oseba in deluje za namene, ki niso povezani z njenim trgovskim, poslovnim, obrtniškim ali poklicnim delovanjem."
+              },
+              {
+                "term": "Poslovni kupec",
+                "text": "Stranka, ki deluje pri opravljanju poklica ali dejavnosti."
+              },
+              {
+                "term": "Sporazum",
+                "text": "vsako pogodbo, sklenjeno med ServerPuntom in Stranko, vključno s prodajo na daljavo prek Spletne strani, ter vse obveznosti, ki iz nje izhajajo."
+              },
+              {
+                "term": "Spletna stran",
+                "text": "spletna stran ServerPunt, preko katere so na voljo izdelki in kjer je mogoče oddati naročila, in sicer https://serverpunt.com/."
+              },
+              {
+                "term": "Izdelek(i)",
+                "text": "vsa blaga, ki jih ponuja ServerPunt, vključno z obnovljeno IT strojno opremo, strežniki, strežniškimi komponentami in dodatki."
+              },
+              {
+                "term": "Obnovljeno",
+                "text": "rabljena strojna oprema, ki jo je pregledal, preizkusil in po potrebi očistil in/ali popravil ServerPunt, ter je nato ponovno na voljo. Obnovljeni izdelki lahko kažejo znake uporabe in se lahko razlikujejo od novega stanja."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 2. Uporabnost",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ti splošni pogoji veljajo za vsako ponudbo, ki jo poda ServerPunt, in za vsako pogodbo, sklenjeno med ServerPunt in Stranko.",
+              "Odstopanja od teh splošnih pogojev so veljavna le, če jih ServerPunt izrecno potrdi v pisni obliki (vključno z e-pošto).",
+              "Uporaba kupčevih (nakupnih) pogojev je izrecno izključena, razen če jih ServerPunt izrecno pisno sprejme.",
+              "Če je katera koli določba teh splošnih pogojev v celoti ali delno neveljavna ali razveljavljena, preostale določbe ostanejo v celoti v veljavi. V tem primeru bosta stranki zamenjali ustrezno določbo z določbo, ki kar se da natančno ustreza namenu in cilju izvirne določbe.",
+              "V primeru nezaupanja med vsebino spletne strani in temi splošnimi pogoji, imajo prednost ti splošni pogoji, razen če je izrecno navedeno drugače."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 3. Ponudba",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Vse ponudbe in opisi izdelkov na spletni strani ServerPunt so nezavezujoči, razen če ni izrecno navedeno drugače.",
+              "ServerPunt zbira informacije na spletni strani z največjo možno skrbnostjo. Kljub temu lahko pride do očitnih napak ali zmot, kot so tipkarske napake, napake pri cenah, nepravilne specifikacije ali napačne slike. Iz takšnih napak ni mogoče izpeljati nobenih pravic.",
+              "Slike izdelkov so namenjene zgolj za ilustracijo in se lahko razlikujejo od dejansko dostavljenega izdelka, glede na obnovljeno naravo ponujenih strojnih naprav.",
+              "ServerPunt ima pravico preklicati ali spremeniti naročilo, če obstaja očitna napaka v ponudbi, na primer očitna cenovna napaka ali nepravilno prikazana značilnost izdelka.",
+              "Ponudba velja do razprodaje zalog. Če izdelek ni na voljo (ali ni več na voljo), bo ServerPunt o tem čim prej obvestil stranko."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 4. Sklenitev pogodbe",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Pogodba se sklene v trenutku, ko Stranka sprejme ponudbo podjetja ServerPunt z oddajo naročila preko spletne strani in ko podjetje ServerPunt to naročilo potrdi po elektronski pošti.",
+              {
+                "text": "ServerPunt ima pravico zavrniti naročilo ali določiti dodatne pogoje, vključno, če:",
+                "sublist": [
+                  "stranka je posredovala napačne ali nepotne informacije;",
+                  "prejšnje plačilne obveznosti niso bile izpolnjene;",
+                  "Obstajajo upravičeni razlogi za dvom o sposobnosti stranke za plačilo."
+                ]
+              },
+              "Po oddaji naročila kupcu po e-pošti prispe potrditveno sporočilo o naročilu. Ta potrditev ne predstavlja računa.",
+              "Očitne napake ali zmote v potrditvi naročila ServerPunta ne zavezujejo."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 5. Spremembe in preklic s strani ServerPunt",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Če se po sklenitvi pogodbe izkaže, da naročeni izdelek ni (ali ni več) na voljo ali ga ni mogoče dostaviti, je ServerPunt upravičen, da razdre pogodbo.",
+              "V primeru razpustitve, kot je navedeno v tem členu, bo ServerPunt čim prej povrnil morebitna že plačana sredstva s strani Stranke, vendar najkasneje v 14 dneh."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 6. Cene",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Vse cene, navedene na spletni strani, so v evrih in vključujejo DDV, razen če je izrecno določeno drugače.",
+              "Za poslovne stranke so lahko cene prikazane brez DDV. V tem primeru bo to jasno navedeno v ponudbi.",
+              "Morebitni stroški pošiljanja, administrativni stroški ali drugi dodatni stroški bodo stranki jasno sporočeni pred sklenitvijo pogodbe.",
+              "ServerPunt si pridržuje pravico do spremembe cen. Spremembe cen ne vplivajo na že sklenjene pogodbe."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 7. Plačilo",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Plačilo mora biti izvršeno preko plačilnih metod, ki so na voljo na spletni strani, razen če ni drugače pisno dogovorjeno.",
+              "ServerPunt ima pravico obdelati naročilo šele po prejemu celotnega plačila, razen če ni izrecno dogovorjeno drugače.",
+              "V primeru plačila na račun ali plačila po fakturi (izključno za poslovne stranke) velja na računu navedeni plačilni rok.",
+              "Če kupec ne izpolni svoje plačilne obveznosti pravočasno, je kupec po zakonu v zamudi. Od tega trenutka ima ServerPunt pravico obračunati zakonske (poslovne) obresti.",
+              "Vse upravičene stroške, nastale pri pridobivanju plačila izven sodišča, bo kril Stranka.",
+              "Za poslovne stranke velja plačilni rok 14 dni od datuma računa, razen če ni pisno dogovorjeno drugače."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 8. Izstavitev računov",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Računi se zagotavljajo elektronsko, razen če ni dogovorjeno drugače.",
+              "Pripombe na račun je treba ServerPuntu sporočiti v pisni obliki v 7 dneh od datuma računa."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 9. Dostava",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dostava izdelkov poteka na dostavni naslov, ki ga je stranka navedla ob oddaji naročila, razen če ni drugače dogovorjeno v pisni obliki.",
+              "ServerPunt bo obdelal in odposlal naročila z največjo možno skrbjo.",
+              "Če se dostava na dogovorjeni naslov izkaže za nemogočo, je ServerPunt upravičen, da izdelek omogoči kupcu na drug način ali da razdre pogodbo."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 10. Dobavni roki",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Roki dobave, navedeni s strani ServerPunt, so informativni in ne predstavljajo usodnih rokov, razen če ni izrecno dogovorjeno drugače v pisni obliki.",
+              "Prekoračitev dobavnega roka stranki ne daje pravice do odškodnine ali razveze pogodbe, razen če gre za malice ali hudo malomarnost s strani ServerPunt.",
+              "Če je dostava zamujena ali naročila ni mogoče izpolniti v celoti ali delno, bo ServerPunt stranko o tem obvestil čim prej."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 11. Prenos tveganja in prevozne škode",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Tveganje izgube ali poškodbe izdelkov preide na potrošnika v trenutku dejanskega prejema izdelka.",
+              "Za poslovne stranke tveganje preide v trenutku, ko je izdelek odposlan.",
+              "Stranka mora izdelek nemudoma ob prejemu pregledati zaradi transportne škode in vidnih napak. Vsaka škoda ali napaka mora biti pisno prijavljena podjetju ServerPunt v roku 48 ur od prejema, skupaj s fotografijami izdelka in embalaže.",
+              "Če se poškodbe med prevozom pravočasno in pravilno prijavijo, bo ServerPunt po lastni presoji poskrbel za popravilo, zamenjavo ali vračilo denarja."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 12. Zbiranje",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Če je bila dogovorjena prevzem, mora kupec prevzeti izdelek ob dogovorjenem času in na dogovorjeni naslov.",
+              "Ob prevzemu preide tveganje na stranko v trenutku prenosa izdelka."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 13. Pravica do odstopa",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Potrošnik ima pravico razdreti pogodbo o nakupu izdelka v roku 14 dni po prejemu, brez navedbe razlogov.",
+              "Rok za odstop od pogodbe poteče 14 dni po dnevu, ko je potrošnik ali tretja oseba, ki jo je določil, prejel izdelek.",
+              "Da bi uveljavil pravico do odpovedi, mora potrošnik obvestiti ServerPunt v roku za odpoved po e-pošti ali z drugo nedvoumno izjavo o odločitvi za razveljavitev Pogodbe."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 14. Posledice umika",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Če se Potrošnik umakne iz Pogodbe, bo prejel vsa plačila, opravljena do tistega trenutka, vključno z morebitnimi običajnimi stroški pošiljanja, najpozneje v 14 dneh od dne, ko je ServerPunt obveščen o umiku.",
+              "ServerPunt lahko zadrži vračilo denarja, dokler izdelek ni bil prejet, ali dokler potrošnik ni dokazal, da je bil izdelek vrnjen, kar koli se zgodi prej.",
+              "Vračila bodo izvedena z uporabo istega načina plačila, ki je bil uporabljen pri prvotnem nakupu, razen če ni drugače dogovorjeno."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 15. Pogoji vračila",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Med odstopno dobo mora potrošnik z izdelkom in embalažo ravnati previdno. Izdelek je mogoče razpakirati in uporabiti le v obsegu, ki je potreben za določitev njegove narave, lastnosti in delovanja.",
+              "Če je bil izdelek uporabljen več, kot je dovoljeno, je potrošnik odgovoren za vsakršno zmanjšanje vrednosti izdelka.",
+              "Potrošnik je odgovoren za pravilno in ustrezno vračilo izdelka."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 16. Stroški vračila",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Stroške vračila pošiljke nosi potrošnik, razen če ni dogovorjeno drugače.",
+              "Če je ServerPunt prevzel izdelek od potrošnika, bodo stroški tega zaračunani potrošniku.",
+              "Vračila morajo biti poslana na poslovni naslov podjetja ServerPunt na naslov Kraaivenstraat 36-07, 5048 AB Tilburg, razen če ni pisno dogovorjeno drugače."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 17. Izključitev pravice do odstopa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Pravica do odstopa je izključena za:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "poslovni kupci;",
+              "Izdelki, ki jih po naravi ni mogoče vrniti;",
+              "Izdelki, ki so jasno personalizirani ali prilagojeno sestavljeni;",
+              "Izdelki, katerih pečat je bil prebit iz razlogov higiene ali varnosti, kjer je to primerno."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "Člen 18. Garancija in skladnost",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt jamči, da dostavljeni izdelki ustrezajo Sporazumu, specifikacijam, navedenim v ponudbi, ter razumnim zahtevam po zanesljivosti in uporabnosti, ob upoštevanju obnovljene narave izdelkov.",
+              "Obnovljeni izdelki so rabljeni in lahko kažejo znake uporabe. Odstopanja od novega stanja, kot so manjše kozmetične poškodbe, ne predstavljajo napake in ne dajejo Kupcu pravice do zamenjave, popravila ali razveze.",
+              "Za potrošnike velja zakonska garancija. To pomeni, da izdelek mora opravljati tisto, kar lahko potrošnik upravičeno pričakuje od njega. ServerPunt tega zakonskega jamstva ne more izključiti ali omejiti.",
+              "Vsaka dodatna garancija, ki jo zagotovi ServerPunt, bo izrecno navedena v pisni obliki s Produktom in ne vpliva na zakonsko garancijo.",
+              "Za poslovne stranke velja le garancija, ki jo izrecno nudi ServerPunt. V njeni odsotnosti ne velja nobena dodatna garancija.",
+              "Če za izdelek ni navedeno dodatno obdobje garancije, za potrošnike velja samo zakonska garancija, za poslovne stranke pa ne velja nobena dodatna garancija."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 19. Poročanje o napakah",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kupec je dolžan pregledati izdelek glede napak čim prej po prejemu.",
+              "Napake, ki ob prejemu niso bile vidne, mora potrošnik prijaviti v razumnem času po odkritju.",
+              "Poslovni kupci morajo napake prijaviti v pisni obliki v roku 7 dni od prejema. Če tega ne storijo, izgubijo pravico do popravila, zamenjave ali kakršnegakoli drugega odškodninskega zahtevka."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 20. Popravilo in zamenjava",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Če se izkaže, da izdelek ni v skladu z dogovorom, bo ServerPunt po svoji presoji izdelek popravil ali zamenjal, razen če to ni mogoče ali vključuje nesorazmerne stroške.",
+              "Če popravilo ali zamenjava nista mogoča, lahko ServerPunt nadaljuje z (delnim) vračilom ali razvezo pogodbe."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 21. Odgovornost",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Odgovornost podjetja ServerPunt je omejena na znesek, ki ga je stranka plačala za ustrezen izdelek, z absolutnim največjim zneskom računa.",
+              {
+                "text": "ServerPunt ni nikoli odgovoren za posredno škodo, vključno, vendar ne omejeno na:",
+                "sublist": [
+                  "posledične škode;",
+                  "izgubljeni dobiček;",
+                  "zgrešeni prihranki;",
+                  "izguba podatkov;",
+                  "škoda za poslovanje",
+                  "škoda zaradi prekinitev poslovanja."
+                ]
+              },
+              {
+                "text": "ServerPunt ni odgovoren za škodo, povzročeno zaradi:",
+                "sublist": [
+                  "nepravilna ali napačna uporaba izdelka;",
+                  "uporabljajte zunaj specifikacij, ki jih je določil ServerPunt;",
+                  "popravila ali spremembe, ki jih opravi Stranka;",
+                  "uporabljajte v kombinaciji z okvaro ali neprimerno periferno opremo."
+                ]
+              },
+              "Omejitve odgovornosti, določene v tem členu, ne veljajo, če škoda nastane zaradi naklepa ali hude malomarnosti s strani ServerPunt, ali v obsegu, v katerem odgovornosti ni mogoče izključiti po obvezni zakonodaji."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 22. Odškodnina",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Stranka razbremenjuje ServerPunt vseh zahtevkov tretjih oseb v zvezi z uporabo dobavljenih izdelkov.",
+              "Stranka je odgovorna za ustrezno varnostno kopiranje podatkov. ServerPunt ni odgovoren za izgubo ali poškodbo podatkov, ne glede na vzrok."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 23. Viša sila",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt ni dolžan izpolniti katere koli obveznosti do Stranke, če mu to preprečuje višja sila.",
+              {
+                "text": "Viša sila vključuje, v vsakem primeru, vsako okoliščino, ki je zunaj nadzora ServerPunta in začasno ali trajno preprečuje izpolnitev obveznosti, vključno, vendar ne omejeno na:",
+                "sublist": [
+                  "motnje pri prevoznikih ali dobaviteljih;",
+                  "zamude ali odpovedi v transportu;",
+                  "težave z nabavo ali pomanjkanje zalog;",
+                  "izpadi električne energije;",
+                  "izpadi interneta ali omrežja;",
+                  "ogenj, poškodbe zaradi vode ali druge nesreče;",
+                  "ukrepi vlade;",
+                  "epidemije, pandemije in povezane omejitve."
+                ]
+              },
+              "Če razmere višje sile trajajo več kot 30 dni, imata tako ServerPunt kot Stranka pravico, da Sporazum razdreta pisno, brez kakršne koli obveznosti plačila odškodnine v tem primeru.",
+              "Če je ServerPunt že deloma izpolnil svoje obveznosti ob nastopu višje sile ali jih še lahko izpolni, ima ServerPunt pravico, da ta del posebej izstavi račun ali poravna."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 24. Pritožbe",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Pritožbe glede izvajanja Sporazuma je treba predložiti podjetju ServerPunt v pisni obliki, v celoti in jasno opisane, v razumljivem času po tem, ko je Stranka zaznala napako.",
+              {
+                "text": "Pritožbe je mogoče vložiti preko:",
+                "sublist": [
+                  "e-pošta: info@serverpunt.com",
+                  "ali v pisni obliki po pošti na poslovni naslov ServerPunta."
+                ]
+              },
+              "ServerPunt bo na predložene pritožbe odgovoril v roku 14 dni od prejema. Če pritožba zahteva predvideno daljši čas obdelave, bo ServerPunt o tem obvestil Stranko v tem obdobju.",
+              "Če se pritožba ne more rešiti z medsebojnim dogovorom, nastane spor, ki ga je mogoče predložiti pristojnemu sodišču, kot je določeno v teh splošnih pogojih."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 25. Uporabno pravo",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Nizozemska zakonodaja se izključno uporablja za vse pogodbe med ServerPunt in stranko, na katere se nanašajo ti splošni pogoji.",
+              "Spore, ki izhajajo iz ali so povezani s Pogodbo, bodo izključno predloženi pristojnemu sodišču v okrožju, kjer je ustanovljen ServerPunt, razen če obvezni zakon določa drugače."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Člen 26. Končne določbe",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt ima pravico spremeniti ali dopolniti te splošne pogoje. Spremenjeni pogoji bodo pravočasno objavljeni na spletni strani in bodo veljali za prihodnje pogodbe.",
+              "Če se določbe teh splošnih pogojev izkažejo za nične ali so razveljavljene, to ne vpliva na veljavnost preostalih določb.",
+              "Ti splošni pogoji so bili nazadnje spremenjeni 22. decembra 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "vat": "VAT: NL868250983B01",
+      "emailLabel": "E-pošta:",
+      "websiteLabel": "Spletna stran:"
+    }
+  },
+  "privacy": {
+    "title": "Politika zasebnosti",
+    "lastModified": "Zadnja sprememba: 5. februar 2026",
+    "sections": [
+      {
+        "title": "1. Upravljavec podatkov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), s sedežem na Kraaivenstraat 36-07, 5048 AB Tilburg, vpisan v Nizozemsko gospodarsko zbornico s številko 97831441, je odgovoren za obdelavo osebnih podatkov, kot je opisano v tej politiki zasebnosti."
+          },
+          {
+            "type": "p",
+            "text": "Kontakt: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Osebni podatki, ki jih obdelujemo",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt obdeluje osebne podatke, ker uporabljate naše spletno mesto in storitve, in/ali ker nam te podatke posredujete sami. To vključuje med drugim:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "ime in priimek",
+              "podatki o naslovu",
+              "e-poštni naslov",
+              "telefonska številka",
+              "podrobnosti o plačilu in računu",
+              "IP naslov",
+              "zgodovina naročil",
+              "podatki pisemskega stika"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Namen in pravna podlaga obdelave",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt obdeluje osebne podatke izključno za naslednje namene in na podlagi ustreznih pravnih podlag:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Izpolnjevanje pogodbe: obdelava naročil, dostava izdelkov, komunikacija o pogodbi",
+              "Pravna obveznost: izstavitev računov, računovodstvo, davčne obveznosti",
+              "Utemeljen interes: storitve za stranke, izboljšanje storitev, preprečevanje goljufij",
+              "Privolitev: glasila in trženjske komunikacije (kjer je primerno)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Obdobja hrambe",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt ne hrani osebnih podatkov dlje, kot je potrebno za namene, za katere so bili zbrani, ob upoštevanju zakonskih obdobij hrambe:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Podatki o naročilu in računu: 7 let (zakonska obveznost hrambe za davčne namene)",
+              "Komunikacija s strankami: največ 2 leti",
+              "Podatki o računu in stikih: dokler je odnos s stranko aktiven"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Deljenje osebnih podatkov s tretjimi osebami",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt osebne podatke posreduje tretjim osebam le, če je to potrebno za izvajanje pogodbe ali za izpolnitev zakonske obveznosti."
+          },
+          {
+            "type": "p",
+            "text": "To vključuje med drugim:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "ponudniki plačil",
+              "prevozniki",
+              "računovodska programska oprema",
+              "ponudniki gostovanja in IT storitev"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Kjer je to zakonsko zahtevano, so bili s temi strankami sklenjeni dogovori o obdelavi podatkov."
+          }
+        ]
+      },
+      {
+        "title": "6. Piškotki",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt uporablja funkcionalne in analitične piškotke, ki nimajo ali imajo le majhen vpliv na zasebnost obiskovalcev."
+          },
+          {
+            "type": "p",
+            "text": "Te piškotke se uporablja za:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "zagotoviti, da spletna stran deluje pravilno z tehničnega vidika;",
+              "pridobiti vpogled v uporabo spletne strani in izboljšati spletno stran."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Brez predhodnega soglasja se ne nameščajo sledilni piškotki."
+          }
+        ]
+      },
+      {
+        "title": "7. Varnost osebnih podatkov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt sprejema ustrezne tehnične in organizacijske ukrepe za zaščito osebnih podatkov pred izgubo, zlorabo, nepooblaščenim dostopom in nezaželenim razkritjem."
+          }
+        ]
+      },
+      {
+        "title": "8. Pravice posameznikov, katerih podatki se obdelujejo",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Imate pravico do:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "dostop do svojih osebnih podatkov;",
+              "naj bodo vaši podatki popravljeni ali izbrisani;",
+              "ugovarjati obdelavi;",
+              "zahteva omejitev obdelave;",
+              "naj vaši podatki bodo preneseni (prenosljivost podatkov)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Zahteve je mogoče oddati preko info@serverpunt.com. Prav tako imate pravico vložiti pritožbo pri Nizozemski agenciji za varstvo podatkov (Autoriteit Persoonsgegevens)."
+          }
+        ]
+      },
+      {
+        "title": "9. Spremembe",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt si pridržuje pravico do spremembe te politike zasebnosti. Najnovejša različica je vedno na voljo na spletni strani."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "emailLabel": "E-pošta:",
+      "websiteLabel": "Spletna stran:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Politika piškotkov",
+    "lastModified": "Zadnja sprememba: 9. februar 2026",
+    "intro": "Ta pravilnik o piškotkih velja za spletno stran podjetja ServerPunt, ki se nahaja na naslovu Kraaivenstraat 36-07, 5048 AB Tilburg, in je dosegljiva preko info@serverpunt.com.",
+    "sections": [
+      {
+        "title": "1. Kaj so piškotki?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Piškotki so majhne besedilne datoteke, ki se shranijo na vaš računalnik, tablico ali pametni telefon, ko obiščete spletno mesto. Piškotki zagotavljajo pravilno delovanje spletnega mesta in lahko zbirajo informacije o uporabi spletnega mesta."
+          }
+        ]
+      },
+      {
+        "title": "2. Katere piškotke uporablja ServerPunt?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt uporablja naslednje vrste piškotkov:"
+          },
+          {
+            "type": "p",
+            "text": "a. Funkcionalni piškotki (nujni)"
+          },
+          {
+            "type": "p",
+            "text": "Ti piškotki so potrebni, da spletna stran deluje pravilno. Brez teh piškotkov določeni deli spletne strani ne morejo pravilno delovati."
+          },
+          {
+            "type": "p",
+            "text": "Primeri:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Zapomni si nastavitve piškotkov",
+              "Pravilno nalaganje strani",
+              "Osnovna funkcionalnost spletne strani"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Za te piškotke ni potreben noben soglasje."
+          },
+          {
+            "type": "p",
+            "text": "b. Analitični piškotki"
+          },
+          {
+            "type": "p",
+            "text": "Analitične piškotke nam omogočajo vpogled v to, kako se uporablja naša spletna stran. To nam omogoča izboljšanje spletne strani in njeno večjo prijaznost do uporabnikov."
+          },
+          {
+            "type": "p",
+            "text": "Primeri:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Število obiskovalcev",
+              "Priljubljene strani",
+              "Kako obiskovalci navigirajo po spletni strani"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Kjer je mogoče, so ti podatki anonimizirani in jih ni mogoče povezati z posamezniki."
+          },
+          {
+            "type": "p",
+            "text": "c. Piškotki za trženje in sledenje (neobvezno)"
+          },
+          {
+            "type": "p",
+            "text": "Kjer je to primerno, se lahko za prikaz ustrezne vsebine ali oglasov ter za merjenje učinkovitosti kampanj uporabljajo marketinški piškotki."
+          },
+          {
+            "type": "p",
+            "text": "Ti piškotki se namestijo šele po izrecnem soglasju."
+          }
+        ]
+      },
+      {
+        "title": "3. Piškotki tretjih oseb",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tretje osebe (kot so analitične ali marketinške storitve) lahko preko naše spletne strani nameščajo piškotke. ServerPunt nima neposrednega nadzora nad uporabo piškotkov s strani teh oseb. Priporočamo tudi, da se posvetujete s politikami piškotkov in zasebnosti teh tretjih oseb."
+          }
+        ]
+      },
+      {
+        "title": "4. Upravljanje ali brisanje piškotkov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Piškotke lahko kadarkoli upravljate ali izbrišete prek nastavitev brskalnika. Upoštevajte, da onemogočanje piškotkov lahko vpliva na delovanje spletne strani."
+          },
+          {
+            "type": "p",
+            "text": "Več informacij po brskalniku:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Spremembe te politike piškotkov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt si pridržuje pravico do spremembe te politike piškotkov. Priporočamo, da to stran redno preverjate, da boste obveščeni o morebitnih spremembah."
+          }
+        ]
+      },
+      {
+        "title": "6. Kontakt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ali imate vprašanja o naši politiki piškotkov ali kako ravnamo s podatki? Prosimo, da nas kontaktirate:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "O ServerPunt",
+    "intro1": "ServerPunt se specializira za nakup in prodajo obnovljene strojne opreme za posameznike in podjetja. Verjamemo, da profesionalna strojna oprema ne mora biti nova, da bi delovala zanesljivo, zmogljivo in trajnostno.",
+    "intro2": "Od monitorjev in prenosnikov do popolnih strežnikov in strežniških komponent: vsi izdelki, ki jih ponujamo, so skrbno preizkušeni, pregledani in po potrebi obnovljeni. To daje visokokakovostni strojni opremi drugo življenje, po konkurenčni ceni in z minimalnim vplivom na okolje.",
+    "servers": {
+      "title": "Specializiran za strežniške rešitve",
+      "p1": "Naša moč je v prilagojenih rešitvah. Ne dobavljamo le posameznih strežnikov in komponent — aktivno pomagamo določiti prave konfiguracije za specifične obremenitve, razširljivost in rast. Zahvaljujoč našemu tehničnemu znanju in praktičnim izkušnjam lahko hitro reagiramo in podajamo ciljno usmerjene nasvete.",
+      "p2": "Pri ServerPunt sta preglednost in kakovost vedno na prvem mestu. Za nas pomeni obnovljena strojna oprema:",
+      "bullet1Title": "Dostopna kakovost",
+      "bullet1Text": "brez ogrožanja zmogljivosti",
+      "bullet2Title": "Trajnostna izbira",
+      "bullet2Text": "prek ponovne uporabe",
+      "bullet3Title": "Hitra dostava",
+      "bullet3Text": "z osebnim stikom",
+      "p3": "Zaradi našega tehničnega znanja o strežnikih in komponentah lahko sodelujemo pri razmišljanju, svetujemo in se hitro odzovemo, kadar je to potrebno."
+    },
+    "audience": {
+      "title": "Za koga delamo",
+      "p1": "Delamo z osebami, ki iščejo profesionalno strojno opremo po konkurenčni ceni, ter z podjetji, ki želijo razširiti ali obnoviti svoje sisteme. Ne glede na to, ali gre za enkratno nakup ali večjo širitev, skupaj preverimo, kaj najbolj ustreza.",
+      "p2": "ServerPunt ni le dobavitelj. Smo tehnični partner, ki razmišlja skupaj z vami, svetuje in dostavlja — usklajeno s sodobnimi zahtevami in rastjo v prihodnosti."
+    },
+    "values": {
+      "title": "Zakaj ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Tehnično znanje",
+          "description": "Trdno znanje o strežnikih in infrastrukturi"
+        },
+        {
+          "icon": "✅",
+          "title": "Nadzor kakovosti",
+          "description": "Vsak izdelek je temeljito testiran in pregledan"
+        },
+        {
+          "icon": "🌱",
+          "title": "Trajnostno",
+          "description": "Ponovna uporaba strojne opreme z minimalnim vplivom"
+        },
+        {
+          "icon": "💰",
+          "title": "Konkurenčne cene",
+          "description": "Profesionalna kakovost po dostopnih cenah"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Vprašanja ali potrebujete nasvet?",
+      "description": "Kontaktirajte nas brez zadržkov. Z veseljem vam pomagamo najti najboljšo rešitev za vašo situacijo.",
+      "emailLabel": "E-pošta:",
+      "addressLabel": "Naslov:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

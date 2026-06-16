@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Általános Szerződési Feltételek",
+    "lastModified": "Utolsó módosítás: 2025. december 22.",
+    "sections": [
+      {
+        "title": "1. cikk. Meghatározások",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Jelen általános szerződési feltételekben a következő kifejezések az alábbiakban meghatározott jelentéssel bírnak:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "a NetwerkPunt partnerség, amely ServerPunt néven kereskedik, székhelye: Kraaivenstraat 36-07, 5048 AB Tilburg, és a Holland Kereskedelmi Kamaranál 97831441 számon van bejegyezve."
+              },
+              {
+                "term": "Vevő",
+                "text": "bármely természetes vagy jogi személy, aki megállapodást köt vagy kötni kíván a ServerPunt-val."
+              },
+              {
+                "term": "Fogyasztó",
+                "text": "az Ügyfél, aki kereskedelmi, üzleti, kézműves- vagy szakmáján kívüli célból eljáró természetes személy."
+              },
+              {
+                "term": "Üzleti ügyfél",
+                "text": "a szakma vagy üzleti tevékenység gyakorlása során eljáró Ügyfél."
+              },
+              {
+                "term": "Megállapodás",
+                "text": "a ServerPunt és az Ügyfél között létrejött bármely szerződés, beleértve a Weboldalon keresztül történő távértékesítést, és az abból eredő minden kötelezettség."
+              },
+              {
+                "term": "Weboldal",
+                "text": "a ServerPunt webhelye, amelyen keresztül termékeket kínálnak és megrendeléseket lehet leadni, nevezetesen a https://serverpunt.com/."
+              },
+              {
+                "term": "Termék(ek)",
+                "text": "a ServerPunt által kínált összes áru, beleértve a felújított IT-hardvert, szervereket, szerverkomponenseket és tartozékokat."
+              },
+              {
+                "term": "Felújított",
+                "text": "használt hardver, amelyet a ServerPunt megvizsgált, tesztelt, és ahol szükséges, megtisztított és/vagy megjavított, és ezt követően újra felajánlja. A felújított termékeken előfordulhatnak használati nyomok, és eltérhetnek az új állapottól."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "2. cikk. Alkalmazhatóság",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ezek az általános szerződési feltételek a ServerPunt által tett minden ajánlatra, valamint a ServerPunt és az Ügyfél között létrejött minden szerződésre vonatkoznak.",
+              "Az általános szerződési feltételektől való eltérések csak akkor érvényesek, ha a ServerPunt kifejezetten írásban (beleértve az e-mailt is) megerősíti.",
+              "Az Ügyfél (vásárlási) feltételeinek alkalmazhatósága kifejezetten kizárt, kivéve, ha a ServerPunt kifejezetten írásban elfogadja.",
+              "Ha a jelen általános szerződési feltételek bármely rendelkezése részben vagy egészben semmis vagy megsemmisül, a többi rendelkezés teljes mértékben érvényben marad. Ebben az esetben a felek kötelesek a vonatkozó rendelkezést olyan rendelkezéssel helyettesíteni, amely a lehető legjobban illeszkedik az eredeti rendelkezés céljához és szándékához.",
+              "A Weboldal tartalma és a jelen általános szerződési feltételek közötti ellentmondás esetén a jelen általános szerződési feltételek az irányadóak, kivéve, ha kifejezetten másként szerepel."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. cikk. Az ajánlat",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A ServerPunt weboldalán található összes ajánlat és termékleírás nem kötelező érvényű, kivéve, ha kifejezetten másként szerepel.",
+              "A ServerPunt a lehető legnagyobb gondossággal állítja össze a Weboldalon található információkat. Ennek ellenére előfordulhatnak nyilvánvaló hibák vagy hibák, például tipográfiai hibák, árképzési hibák, helytelen specifikációk vagy helytelen képek. Az ilyen hibákból semmilyen jog nem származtatható.",
+              "A termékek képei illusztrációs célt szolgálnak, és a kínált hardver felújított jellege miatt eltérhetnek a ténylegesen leszállított Terméktől.",
+              "A ServerPunt jogosult a megrendelés törlésére vagy módosítására, ha az ajánlatban nyilvánvaló hiba van, például egyértelmű árképzési hiba vagy hibásan megjelenített termékjellemző.",
+              "Az ajánlat a készlet erejéig érvényes. Ha egy Termék nem (vagy már nem) elérhető, a ServerPunt a lehető leghamarabb értesíti az Ügyfelet."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. cikk. A megállapodás létrejötte",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A Szerződés abban a pillanatban jön létre, amikor az Ügyfél a Weboldalon keresztül leadott megrendeléssel elfogadja a ServerPunt ajánlatát, és a megrendelést a ServerPunt e-mailben visszaigazolja.",
+              {
+                "text": "A ServerPunt jogosult visszautasítani a rendelést vagy további feltételeket szabni, beleértve, ha:",
+                "sublist": [
+                  "az Ügyfél téves vagy hiányos információt adott meg;",
+                  "korábbi fizetési kötelezettségeit nem teljesítették;",
+                  "alapos okkal lehet kétségbe vonni az Ügyfél fizetési képességét."
+                ]
+              },
+              "A rendelés leadását követően a Vásárló e-mailben kap visszaigazolást a megrendeléséről. Ez a visszaigazolás nem minősül számlának.",
+              "A rendelés visszaigazolásában szereplő nyilvánvaló hibák vagy tévedések nem kötik a ServerPunt-t."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. cikk. Változások és törlés a ServerPunt által",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ha a Szerződés megkötése után úgy tűnik, hogy a megrendelt Termék nem (vagy már) nem elérhető, vagy nem szállítható, a ServerPunt jogosult a Szerződést felbontani.",
+              "A jelen cikkben említett feloszlás esetén a ServerPunt a lehető leghamarabb, de legkésőbb 14 napon belül visszatéríti az Ügyfél által már kifizetett összegeket."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "6. cikk. Árak",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A Weboldalon feltüntetett árak euróban értendők, és tartalmazzák az ÁFÁ-t, kivéve, ha kifejezetten másként szerepel.",
+              "Üzleti ügyfelek esetében az árak ÁFA nélkül jeleníthetők meg. Ebben az esetben ezt egyértelműen fel kell tüntetni az ajánlatban.",
+              "Bármilyen szállítási költséget, adminisztrációs költséget vagy egyéb többletköltséget a Szerződés megkötése előtt egyértelműen közölnek az Ügyféllel.",
+              "A ServerPunt fenntartja az árváltoztatás jogát. Az árváltozás a már megkötött szerződéseket nem érinti."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "7. cikk. Fizetés",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A fizetés a Weboldalon található fizetési módokon történik, kivéve, ha írásban másként állapodnak meg.",
+              "A ServerPunt csak a teljes fizetés beérkezése után jogosult a megrendelés feldolgozására, kivéve, ha kifejezetten másként állapodtak meg.",
+              "Előre vagy számlás fizetés esetén (kizárólag üzleti ügyfelek esetében) a számlán feltüntetett fizetési határidő az irányadó.",
+              "Ha a Megrendelő fizetési kötelezettségének határidőben nem tesz eleget, úgy a Megrendelő a törvény erejénél fogva mulasztást szenved. Ettől a pillanattól kezdve a ServerPunt jogosult törvényes (kereskedelmi) kamatot felszámítani.",
+              "A peren kívüli fizetés megszerzésével kapcsolatban felmerülő minden ésszerű költség az Ügyfelet terheli.",
+              "Üzleti ügyfelek esetében a számla keltétől számított 14 napos fizetési határidő érvényes, kivéve, ha írásban másként állapodnak meg."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "8. cikk. Számlázás",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Eltérő megállapodás hiányában a számlák kiállítása elektronikusan történik.",
+              "A számlával szembeni kifogást a számla keltétől számított 7 napon belül írásban kell jelenteni a ServerPunt részére."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "9. cikk. Szállítás",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A Termékek kiszállítása eltérő írásbeli megállapodás hiányában a Megrendelő által a megrendelés leadásakor megadott szállítási címre történik.",
+              "A ServerPunt a lehető legnagyobb gondossággal dolgozza fel és szállítja ki a rendeléseket.",
+              "Ha a megállapodás szerinti címre történő szállítás lehetetlennek bizonyul, a ServerPunt jogosult a Terméket más módon a Vevő rendelkezésére bocsátani, vagy a Szerződést felbontani."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "10. cikk. Szállítási idők",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A ServerPunt által megadott szállítási idők tájékoztató jellegűek, és nem jelentenek végzetes határidőket, kivéve, ha kifejezetten írásban másként állapodnak meg.",
+              "A szállítási határidő túllépése nem jogosítja fel a Vevőt kártérítésre vagy a Szerződés felbontására, kivéve, ha a ServerPunt szándékos vagy súlyos gondatlanságról van szó.",
+              "Ha a szállítás késik, vagy a megrendelés részben vagy egészben nem teljesíthető, a ServerPunt a lehető legrövidebb időn belül értesíti az Ügyfelet."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "11. cikk. Kockázatátadás és szállítási kár",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A Termékek elvesztésének vagy károsodásának kockázata a Termék tényleges átvételének pillanatában száll át a Fogyasztóra.",
+              "Üzleti ügyfelek esetében a kockázat a Termék kiszállításának pillanatában átszáll.",
+              "A Vevőnek az átvételt követően haladéktalanul meg kell vizsgálnia a Terméket szállítási sérülések és látható hibák szempontjából. Bármilyen sérülést vagy hiányosságot írásban kell jelenteni a ServerPunt részére a kézhezvételtől számított 48 órán belül, a termékről és a csomagolásról készült fényképekkel együtt.",
+              "Ha a szállítási sérülést időben és helyesen jelentik be, a ServerPunt saját belátása szerint gondoskodik a javításról, a cseréről vagy a visszatérítésről."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "12. cikk. Gyűjtemény",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ha az átvétel megegyezett, a Megrendelő köteles a Terméket a megbeszélt időpontban és címen átvenni.",
+              "Az átvételkor a kockázat a Termék átadása pillanatában száll át a Vevőre."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "13. cikk. Elállási jog",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A Fogyasztó jogosult a Termék vásárlására vonatkozó Szerződést az átvételtől számított 14 napon belül indokolás nélkül felbontani.",
+              "Az elállási határidő attól a naptól számított 14 nap elteltével jár le, amelyen a Fogyasztó vagy az általa megjelölt harmadik személy a Terméket átvette.",
+              "Az elállási jog gyakorlásához a Fogyasztónak az elállási határidőn belül e-mailben vagy más egyértelmű nyilatkozatban kell tájékoztatnia a ServerPunt-t a Szerződés felbontásáról szóló döntéséről."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "14. cikk. Az elállás következményei",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ha a Fogyasztó eláll a Szerződéstől, az addig fizetett összes kifizetést megkapja, beleértve a szokásos szállítási költségeket is, legkésőbb 14 nappal azt követően, hogy a ServerPunt-t az elállásról értesítették.",
+              "A ServerPunt mindaddig visszatarthatja a visszatérítést, amíg a Terméket meg nem kapja, vagy amíg a Fogyasztó bizonyítja, hogy a Terméket visszaküldte, attól függően, hogy melyik következik be előbb.",
+              "Eltérő megállapodás hiányában a visszatérítés az eredeti tranzakciónál használt fizetési móddal történik."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "15. cikk. Visszaküldési feltételek",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Az elállási idő alatt a Fogyasztó köteles a Terméket és a csomagolást körültekintően kezelni. A Terméket csak olyan mértékben szabad kicsomagolni és felhasználni, ami a természetének, jellemzőinek és működésének megállapításához szükséges.",
+              "Ha a Terméket a megengedettnél többet használták, a Fogyasztó felelősséggel tartozik a Termék értékcsökkenéséért.",
+              "A Fogyasztó felelős a Termék helyes és szabályszerű visszaküldéséért."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "16. cikk. Visszaküldési költségek",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A visszaküldés költségei a Fogyasztót terhelik, eltérő megállapodás hiányában.",
+              "Ha a ServerPunt átvette a Terméket a Fogyasztótól, annak költségei a Fogyasztót terhelik.",
+              "A visszaküldést a ServerPunt üzleti címére kell eljuttatni a Kraaivenstraat 36-07, 5048 AB Tilburg címre, kivéve, ha írásban másként állapodnak meg."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "17. cikk. Az elállási jog kizárása",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Az elállási jog kizárva:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "üzleti ügyfelek;",
+              "Olyan termékek, amelyek természetüknél fogva nem küldhetők vissza;",
+              "egyértelműen személyre szabott vagy egyedileg összeállított termékek;",
+              "Olyan termékek, amelyek pecsétjét adott esetben higiéniai vagy biztonsági okokból feltörték."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "18. cikk. Garancia és megfelelőség",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A ServerPunt garantálja, hogy a leszállított Termékek megfelelnek a Szerződésnek, az ajánlatban szereplő specifikációknak, valamint a megbízhatóság és használhatóság ésszerű követelményeinek, figyelembe véve a Termékek felújított jellegét.",
+              "A felújított termékek használt áruk, és használati nyomokat mutathatnak. Az új állapottól való eltérés, mint például a kisebb esztétikai sérülés, nem minősül hibának, és nem jogosítja fel a Vásárlót cserére, javításra vagy felbontásra.",
+              "Fogyasztókra a törvényes garancia vonatkozik. Ez azt jelenti, hogy a Terméknek meg kell tennie azt, amit a Fogyasztó ésszerűen elvárhat tőle. A ServerPunt nem zárhatja ki vagy korlátozhatja ezt a törvényes garanciát.",
+              "A ServerPunt által nyújtott bármilyen további jótállást kifejezetten írásban közöljük a Termékkel, és ez nem érinti a törvényes garanciát.",
+              "Az üzleti ügyfelekre csak a ServerPunt által kifejezetten biztosított garancia érvényes. Ennek hiányában további garancia nem vonatkozik.",
+              "Ha egy Termékre nincs megadva további jótállási időszak, akkor a Fogyasztókra csak a törvényes garancia vonatkozik, az üzleti ügyfelekre pedig nem."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "19. cikk. Hibák bejelentése",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A Vevő köteles a Terméket az átvételt követően a lehető legrövidebb időn belül meghibásodás szempontjából megvizsgálni.",
+              "Az átvételkor nem látható hibákat a Fogyasztónak a felfedezést követő ésszerű időn belül be kell jelentenie.",
+              "Az üzleti ügyfeleknek a kézhezvételtől számított 7 napon belül írásban kell jelenteniük a hibákat. Ennek elmulasztása elveszíti a javításra, cserére vagy bármilyen más kártérítésre való jogot."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "20. cikk. Javítás és csere",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ha egy Termék bebizonyosodik, hogy nem felel meg a Szerződésnek, a ServerPunt saját belátása szerint megjavítja vagy kicseréli a terméket, kivéve, ha ez lehetetlen vagy aránytalan költségekkel jár.",
+              "Ha a javítás vagy a csere nem lehetséges, a ServerPunt folytathatja a (részleges) visszatérítést vagy a Szerződés felbontását."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "21. cikk. Felelősség",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A ServerPunt felelőssége a Vevő által az adott Termékért kifizetett összegre korlátozódik, a számlaösszeg abszolút maximumával.",
+              {
+                "text": "A ServerPunt soha nem vállal felelősséget a közvetett károkért, beleértve, de nem kizárólagosan:",
+                "sublist": [
+                  "következményes károk;",
+                  "elvesztett haszon;",
+                  "elmaradt megtakarítások;",
+                  "adatvesztés;",
+                  "üzleti károk;",
+                  "üzlet megszakítása miatti kár."
+                ]
+              },
+              {
+                "text": "A ServerPunt nem vállal felelősséget a következők által okozott károkért:",
+                "sublist": [
+                  "a termék nem megfelelő vagy helytelen használata;",
+                  "a ServerPunt által megadott specifikációkon kívüli használat;",
+                  "az Ügyfél által végzett javítások vagy módosítások;",
+                  "hibás vagy nem megfelelő perifériákkal kombinálva használja."
+                ]
+              },
+              "A jelen cikkben meghatározott felelősségi korlátozások nem érvényesek, ha a kár a ServerPunt szándékosságából vagy súlyos gondatlanságából ered, vagy amennyiben a felelősség nem zárható ki a kötelező jogszabályok alapján."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "22. cikk. Kártalanítás",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Az Ügyfél kártalanítja a ServerPunt-t a leszállított Termékek használatával kapcsolatos harmadik felek minden igénye tekintetében.",
+              "Az Ügyfél felelős az adatok megfelelő biztonsági mentéséért. A ServerPunt nem vállal felelősséget az adatok elvesztéséért vagy sérüléséért, az októl függetlenül."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "23. cikk. Vis major",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A ServerPunt nem köteles teljesíteni semmilyen kötelezettséget az Ügyféllel szemben, ha ezt vis maior akadályozza.",
+              {
+                "text": "A vis maior minden esetben magában foglal minden olyan, a ServerPunt ellenőrzési körén kívül eső körülményt, amely átmenetileg vagy véglegesen megakadályozza a kötelezettségek teljesítését, beleértve, de nem kizárólagosan:",
+                "sublist": [
+                  "zavarok a fuvarozóknál vagy beszállítóknál;",
+                  "késések vagy kudarcok a szállításban;",
+                  "beszerzési problémák vagy készlethiány;",
+                  "áramkimaradások;",
+                  "internet vagy hálózati hibák;",
+                  "tűz, vízkár vagy egyéb katasztrófa;",
+                  "kormányzati intézkedések;",
+                  "járványok, világjárványok és a kapcsolódó korlátozások."
+                ]
+              },
+              "Ha a vis maior helyzet több mint 30 napig fennáll, mind a ServerPunt, mind az Ügyfél jogosult a Szerződést írásban felmondani, ebben az esetben kártérítési kötelezettség nélkül.",
+              "Ha a ServerPunt a vis maior bekövetkezésekor vállalt kötelezettségeit részben már teljesítette, vagy még teljesíteni tudja, a ServerPunt jogosult azt a részt külön számlázni vagy kiegyenlíteni."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "24. cikk. Panaszok",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A Szerződés teljesítésével kapcsolatos reklamációkat a Vevő által a hiba felismerését követő ésszerű időn belül, teljes körűen és egyértelműen leírva, írásban kell benyújtani a ServerPunt-hoz.",
+              {
+                "text": "Panaszokat az alábbi elérhetőségeken lehet benyújtani:",
+                "sublist": [
+                  "e-mail: info@serverpunt.com",
+                  "vagy írásban postai úton a ServerPunt üzleti címére."
+                ]
+              },
+              "A ServerPunt a beérkezéstől számított 14 napon belül válaszol a benyújtott panaszokra. Ha egy panasz előreláthatóan hosszabb feldolgozási időt igényel, a ServerPunt ezen időszakon belül értesíti az Ügyfelet.",
+              "Ha a panaszt közös megegyezéssel nem lehet megoldani, vita keletkezik, amelyet a jelen általános szerződési feltételekben meghatározottak szerint az illetékes bírósághoz lehet benyújtani."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "25. cikk. Alkalmazandó jog",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A holland jog kizárólag a ServerPunt és az Ügyfél között létrejött összes szerződésre vonatkozik, amelyre ezek az általános feltételek vonatkoznak.",
+              "A Szerződésből eredő vagy azzal kapcsolatos vitákat kizárólag a ServerPunt székhelye szerinti körzet illetékes bíróságához kell benyújtani, hacsak a kötelező törvény másként nem rendelkezik."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "26. cikk. Záró rendelkezések",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "A ServerPunt jogosult ezen általános szerződési feltételek módosítására vagy kiegészítésére. A módosított feltételek időben közzétételre kerülnek a Weboldalon, és a jövőbeni Szerződésekre vonatkoznak.",
+              "Ha a jelen általános szerződési feltételek rendelkezései érvénytelennek bizonyulnak vagy megsemmisülnek, az nem érinti a többi rendelkezés érvényességét.",
+              "Jelen általános szerződési feltételek legutóbb 2025. december 22-én módosultak."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Érintkezés",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Cégjegyzékszám: 97831441",
+      "vat": "ÁFA: NL868250983B01",
+      "emailLabel": "E-mail:",
+      "websiteLabel": "Weboldal:"
+    }
+  },
+  "privacy": {
+    "title": "Adatvédelmi irányelvek",
+    "lastModified": "Utolsó módosítás: 2026. február 5.",
+    "sections": [
+      {
+        "title": "1. Adatkezelő",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt (NetwerkPunt V.O.F.), amelynek székhelye a Kraaivenstraat 36-07, 5048 AB Tilburg, a Holland Kereskedelmi Kamara 97831441 szám alatt van bejegyezve, felelős a személyes adatok feldolgozásáért a jelen adatvédelmi szabályzatban leírtak szerint."
+          },
+          {
+            "type": "p",
+            "text": "Érdeklődni: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Az általunk kezelt személyes adatok",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt azért dolgoz fel személyes adatokat, mert Ön használja weboldalunkat és szolgáltatásainkat, és/vagy mert ezeket az adatokat saját maga bocsátja rendelkezésünkre. Ide tartozik többek között:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "kereszt- és vezetéknév",
+              "cím adatait",
+              "email címre",
+              "telefonszám",
+              "fizetési és számla részletei",
+              "IP-cím",
+              "rendeléstörténet",
+              "levelezési adatok"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Az adatkezelés céljai és jogalapjai",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt a személyes adatokat kizárólag az alábbi célokra és a megfelelő jogalapok alapján kezeli:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Megállapodás teljesítése: megrendelések feldolgozása, termékek kiszállítása, a megállapodással kapcsolatos kommunikáció",
+              "Jogi kötelezettség: számlázás, könyvelés, adókötelezettségek",
+              "Jogos érdek: ügyfélszolgálat, szolgáltatások fejlesztése, csalásmegelőzés",
+              "Hozzájárulás: hírlevelek és marketingkommunikáció (adott esetben)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Adatmegőrzési időszakok",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt nem őrzi meg a személyes adatokat tovább, mint amennyire az azokhoz a célokhoz szükséges, amelyekre azokat gyűjtötték, figyelembe véve a törvényben előírt megőrzési időszakokat:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Megrendelés és számla adatok: 7 év (törvényi adóvisszatartási kötelezettség)",
+              "Ügyfélkapcsolat: maximum 2 év",
+              "Számla- és elérhetőségi adatok: amíg az ügyfélkapcsolat aktív"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Személyes adatok megosztása harmadik felekkel",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt csak akkor ad ki személyes adatokat harmadik félnek, ha ez a szerződés teljesítéséhez vagy jogszabályi kötelezettség teljesítéséhez szükséges."
+          },
+          {
+            "type": "p",
+            "text": "Ide tartozik többek között:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "fizetési szolgáltatók",
+              "szállítók",
+              "számviteli szoftver",
+              "tárhely és informatikai szolgáltatók"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Ahol jogszabály előírja, ezekkel a felekkel adatkezelési megállapodásokat kötöttek."
+          }
+        ]
+      },
+      {
+        "title": "6. Cookie-k",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt funkcionális és analitikai cookie-kat használ, amelyeknek nincs, vagy csak kismértékben van hatása a látogatók magánéletére."
+          },
+          {
+            "type": "p",
+            "text": "Ezeket a sütiket arra használjuk, hogy:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "biztosítja a weboldal műszaki szempontból megfelelő működését;",
+              "betekintést nyerhet a webhelyhasználatba és javíthatja a webhelyet."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Előzetes hozzájárulás nélkül nyomkövető sütiket nem helyezünk el."
+          }
+        ]
+      },
+      {
+        "title": "7. Személyes adatok biztonsága",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt megfelelő technikai és szervezési intézkedéseket tesz a személyes adatok elvesztése, visszaélés, jogosulatlan hozzáférés és nem kívánt nyilvánosságra hozatal elleni védelme érdekében."
+          }
+        ]
+      },
+      {
+        "title": "8. Az érintettek jogai",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Önnek joga van:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "hozzáférhet személyes adataihoz;",
+              "javíttassa vagy törölje adatait;",
+              "tiltakozik a feldolgozás ellen;",
+              "kérje a feldolgozás korlátozását;",
+              "átadja adatait (adathordozhatóság)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "A kérelmeket a info@serverpunt.com-n keresztül lehet benyújtani. Önnek joga van panaszt benyújtani a holland adatvédelmi hatósághoz (Autoriteit Persoonsgegevens)."
+          }
+        ]
+      },
+      {
+        "title": "9. Változások",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt fenntartja a jogot jelen adatvédelmi szabályzat módosítására. A legfrissebb verzió mindig elérhető a weboldalon."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Érintkezés",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Cégjegyzékszám: 97831441",
+      "emailLabel": "E-mail:",
+      "websiteLabel": "Weboldal:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie-szabályzat",
+    "lastModified": "Utolsó módosítás: 2026. február 9.",
+    "intro": "Ez a cookie-szabályzat a Kraaivenstraat 36-07, 5048 AB Tilburg címen található és a info@serverpunt.com-n keresztül elérhető ServerPunt webhelyére vonatkozik.",
+    "sections": [
+      {
+        "title": "1. Mik azok a sütik?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A cookie-k kis szöveges fájlok, amelyek az Ön számítógépén, táblagépén vagy okostelefonján tárolódnak, amikor meglátogat egy webhelyet. A cookie-k biztosítják a webhely megfelelő működését, és információkat gyűjthetnek a webhely használatáról."
+          }
+        ]
+      },
+      {
+        "title": "2. Milyen cookie-kat használ a ServerPunt?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt a következő típusú sütiket használja:"
+          },
+          {
+            "type": "p",
+            "text": "a. Funkcionális cookie-k (szükséges)"
+          },
+          {
+            "type": "p",
+            "text": "Ezek a sütik szükségesek a weboldal megfelelő működéséhez. Ezen sütik nélkül a weboldal bizonyos részei nem működhetnek megfelelően."
+          },
+          {
+            "type": "p",
+            "text": "Példák:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "A cookie-beállítások emlékezése",
+              "Az oldalak megfelelő betöltése",
+              "Weboldal alapvető funkciói"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Ezekhez a sütikhez nincs szükség hozzájárulásra."
+          },
+          {
+            "type": "p",
+            "text": "b. Analitikai sütik"
+          },
+          {
+            "type": "p",
+            "text": "Az analitikai cookie-k betekintést nyújtanak webhelyünk használatába. Ez lehetővé teszi számunkra a weboldal fejlesztését és felhasználóbarátabbá tételét."
+          },
+          {
+            "type": "p",
+            "text": "Példák:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Látogatók száma",
+              "Népszerű oldalak",
+              "Hogyan navigálnak a látogatók a webhelyen"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Ahol lehetséges, ezeket az adatokat anonimizáljuk, és nem vezethetők vissza egyes személyekre."
+          },
+          {
+            "type": "p",
+            "text": "c. Marketing és nyomkövető cookie-k (opcionális)"
+          },
+          {
+            "type": "p",
+            "text": "Adott esetben marketingsütik használhatók releváns tartalom vagy hirdetések megjelenítésére és a kampányok hatékonyságának mérésére."
+          },
+          {
+            "type": "p",
+            "text": "Ezeket a sütiket csak kifejezett hozzájárulás után helyezzük el."
+          }
+        ]
+      },
+      {
+        "title": "3. Harmadik féltől származó cookie-k",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Harmadik felek (például analitikai vagy marketingszolgáltatások) cookie-kat helyezhetnek el weboldalunkon keresztül. A ServerPunt-nak nincs közvetlen befolyása a cookie-k ezen felek általi használatára. Javasoljuk, hogy tekintse át ezen harmadik felek cookie- és adatvédelmi szabályzatát is."
+          }
+        ]
+      },
+      {
+        "title": "4. Cookie-k kezelése vagy törlése",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A cookie-kat a böngésző beállításaiban bármikor kezelheti vagy törölheti. Felhívjuk figyelmét, hogy a cookie-k letiltása hatással lehet a weboldal működésére."
+          },
+          {
+            "type": "p",
+            "text": "További információk böngészőnként:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. A cookie-kra vonatkozó szabályzat változásai",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ServerPunt fenntartja a jogot jelen cookie szabályzat módosítására. Javasoljuk, hogy rendszeresen ellenőrizze ezt az oldalt, hogy értesüljön az esetleges változásokról."
+          }
+        ]
+      },
+      {
+        "title": "6. Kapcsolat",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kérdése van a cookie-kra vonatkozó szabályzatunkkal vagy az adatok kezelésével kapcsolatban? Kérjük, forduljon hozzánk bizalommal:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "A ServerPunt-ról",
+    "intro1": "A ServerPunt felújított hardverek vásárlására és eladására specializálódott magánszemélyek és vállalkozások számára. Hiszünk abban, hogy a professzionális hardvernek nem kell újnak lennie ahhoz, hogy megbízhatóan, erőteljesen és fenntarthatóan működjön.",
+    "intro2": "A monitoroktól és laptopoktól a komplett szerverekig és szerverkomponensekig: minden általunk kínált terméket gondosan tesztelünk, megvizsgálunk és szükség esetén felújítunk. Ez a kiváló minőségű hardvernek második életet biztosít versenyképes áron és minimális környezetterheléssel.",
+    "servers": {
+      "title": "Szerver megoldásokra specializálódott",
+      "p1": "Erősségünk az egyedi megoldásokban rejlik. Nem csak egyedi szervereket és összetevőket szállítunk, hanem aktívan segítünk meghatározni a megfelelő konfigurációkat az adott munkaterheléshez, skálázhatósághoz és növekedéshez. Műszaki tudásunknak és gyakorlati tapasztalatunknak köszönhetően gyorsan tudunk reagálni és célzott tanácsokat adni.",
+      "p2": "A ServerPunt-nál mindig az átláthatóság és a minőség az első. Számunkra a felújított hardver azt jelenti:",
+      "bullet1Title": "Megfizethető minőség",
+      "bullet1Text": "teljesítmény kompromisszumok nélkül",
+      "bullet2Title": "Fenntartható választás",
+      "bullet2Text": "újrahasználat révén",
+      "bullet3Title": "Gyors szállítás",
+      "bullet3Text": "személyes kapcsolattartással",
+      "p3": "A szerverekkel és komponensekkel kapcsolatos technikai tudásunknak köszönhetően együtt tudunk gondolkodni, tanácsot adunk, és szükség esetén gyorsan reagálunk."
+    },
+    "audience": {
+      "title": "Akinek dolgozunk",
+      "p1": "Olyan magánszemélyeknek dolgozunk, akik professzionális hardvert keresnek versenyképes áron, valamint olyan vállalkozásoknak, akik szeretnék bővíteni vagy megújítani rendszereiket. Akár egyetlen vásárlásról, akár nagyobb bővítésről van szó, közösen megkeressük, mi a legmegfelelőbb.",
+      "p2": "A ServerPunt több, mint egy beszállító. Technikai partner vagyunk, aki együtt gondolkodik, tanácsot ad és teljesít – a mai követelményekhez és a holnapi növekedéshez igazodva."
+    },
+    "values": {
+      "title": "Miért a ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Műszaki szakértelem",
+          "description": "A szerverek és az infrastruktúra alapos ismerete"
+        },
+        {
+          "icon": "✅",
+          "title": "Minőségellenőrzés",
+          "description": "Minden terméket alaposan tesztelnek és ellenőriznek"
+        },
+        {
+          "icon": "🌱",
+          "title": "Fenntartható",
+          "description": "Hardver újrafelhasználása minimális hatással"
+        },
+        {
+          "icon": "💰",
+          "title": "Versenyképes árú",
+          "description": "Professzionális minőség megfizethető áron"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kérdése van vagy tanácsra van szüksége?",
+      "description": "Forduljon hozzánk bizalommal. Örömmel segítünk Önnek megtalálni a legjobb megoldást az Ön helyzetére.",
+      "emailLabel": "E-mail:",
+      "addressLabel": "Cím:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

@@ -6,8 +6,10 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { SelectProduct } from "@/database/schema";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Featured() {
+    const t = useTranslations("featured");
     const [products, setProducts] = useState<SelectProduct[]>([]);
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
@@ -79,12 +81,11 @@ export default function Featured() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-8 flex flex-col items-center text-center">
                     <h2 className="font-display text-3xl leading-tight font-bold tracking-tight md:text-4xl">
-                        Meest Verkocht
+                        {t("title")}
                     </h2>
                     <div className="mt-2 h-1 w-12 rounded-full bg-primary"></div>
                     <p className="mt-4 max-w-2xl text-center text-muted-foreground">
-                        Onze best verkochte producten, gekozen door onze klanten
-                        vanwege hun kwaliteit en betrouwbaarheid.
+                        {t("subtitle")}
                     </p>
                 </div>
                 <div className="relative mx-auto max-w-6xl">
@@ -116,29 +117,31 @@ export default function Featured() {
                     <button
                         className="absolute left-0 top-1/2 -translate-x-12 -translate-y-1/2 rounded-full bg-white p-2 shadow-lg hover:bg-gray-100 hidden lg:block"
                         onClick={scrollPrev}
-                        aria-label="Previous"
+                        aria-label={t("previous")}
                     >
                         <ChevronLeft className="h-6 w-6" />
                     </button>
                     <button
                         className="absolute right-0 top-1/2 translate-x-12 -translate-y-1/2 rounded-full bg-white p-2 shadow-lg hover:bg-gray-100 hidden lg:block"
                         onClick={scrollNext}
-                        aria-label="Next"
+                        aria-label={t("next")}
                     >
                         <ChevronRight className="h-6 w-6" />
                     </button>
                 </div>
                 {scrollSnaps.length > 1 && (
-                    <div className="mt-6 flex justify-center gap-2">
+                    <div className="mt-8 flex justify-center gap-2">
                         {scrollSnaps.map((_, index) => (
                             <button
                                 key={index}
-                                className={`h-2 w-2 rounded-full transition-all ${index === selectedIndex
-                                    ? "bg-primary w-8"
-                                    : "bg-gray-300 hover:bg-gray-400"
+                                className={`h-1 rounded-full transition-all ${index === selectedIndex
+                                    ? "w-8 bg-brand-orange"
+                                    : "w-4 bg-border hover:bg-muted-foreground/30"
                                     }`}
                                 onClick={() => scrollTo(index)}
-                                aria-label={`Go to slide ${index + 1}`}
+                                aria-label={t("goToSlide", {
+                                    index: index + 1,
+                                })}
                             />
                         ))}
                     </div>

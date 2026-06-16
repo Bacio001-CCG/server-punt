@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Termeni și Condiții",
+    "lastModified": "Ultima modificare: 22 decembrie 2025",
+    "sections": [
+      {
+        "title": "Articolul 1. Definiții",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "În prezenții termeni și condiții generale, următorii termeni au semnificația indicată mai jos:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "societatea în nume colectiv NetwerkPunt, operând sub denumirea ServerPunt, cu sediul în Kraaivenstraat 36-07, 5048 AB Tilburg, înregistrată la Camera de Comerț olandeză cu numărul 97831441."
+              },
+              {
+                "term": "Client",
+                "text": "orice persoană fizică sau juridică care încheie sau intenționează să încheie un Contract cu ServerPunt."
+              },
+              {
+                "term": "Consumator",
+                "text": "Clientul care este o persoană fizică care acționează în scopuri străine activității sale comerciale, antreprenoriale, meșteșugărești sau profesionale."
+              },
+              {
+                "term": "Client corporativ",
+                "text": "Clientul care acționează în exercitarea unei profesii sau activități de afaceri."
+              },
+              {
+                "term": "Contract",
+                "text": "orice acord încheiat între ServerPunt și Client, inclusiv vânzările la distanță prin intermediul Site-ului web, și toate obligațiile care derivă din acesta."
+              },
+              {
+                "term": "Site web",
+                "text": "site-ul web al ServerPunt prin care sunt oferite produsele și pot fi efectuate comenzi, adică https://serverpunt.com/."
+              },
+              {
+                "term": "Produs/e",
+                "text": "toate bunurile oferite de ServerPunt, inclusiv hardware IT recondiționat, servere, componente pentru servere și accesorii."
+              },
+              {
+                "term": "Recondiționat",
+                "text": "hardware uzat care a fost inspectat, testat și, dacă este necesar, curățat și/sau reparat de ServerPunt, și apoi pus din nou în vânzare. Produsele recondiționate pot prezenta urme de uzură și pot diferi de starea celor noi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 2. Aplicabilitate",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Prezenții termeni și condiții generale se aplică fiecărei oferte făcute de ServerPunt și fiecărui Contract încheiat între ServerPunt și Client.",
+              "Derogările la acești termeni și condiții generale sunt valabile numai dacă sunt confirmate expres în scris (inclusiv prin email) de ServerPunt.",
+              "Aplicabilitatea termenilor și condițiilor (de achiziție) ale Clientului este în mod expres exclusă, cu excepția acceptării scrise explicite din partea ServerPunt.",
+              "În cazul în care o dispoziție a prezentilor termeni și condiții generale este total sau parțial nulă sau anulată, celelalte dispoziții rămân pe deplin în vigoare. În acest caz, părțile vor înlocui dispoziția afectată cu o dispoziție care să se apropie cât mai mult de scopul și intenția dispoziției originale.",
+              "În cazul unui conflict între conținutul Site-ului web și prezentele termeni și condiții generale, prevalează prezentele termeni și condiții generale, cu excepția cazului în care se indică expres altfel."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 3. Oferta",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Toate ofertele și descrierile produselor de pe site-ul web al ServerPunt nu sunt obligatorii, cu excepția cazului în care se indică altfel în mod expres.",
+              "ServerPunt redactează informațiile de pe site-ul web cu cea mai mare grijă posibilă. Cu toate acestea, pot apărea erori sau omisiuni evidente, cum ar fi greșeli tipografice, erori de preț, specificații incorecte sau imagini greșite. Din aceste erori nu pot deriva drepturi.",
+              "Imaginile produselor au scopuri ilustrative și pot diferi de produsul efectiv livrat, având în vedere natura recondiționată a hardware-ului oferit.",
+              "ServerPunt are dreptul de a anula sau modifica o comandă în cazul unei erori evidente în ofertă, cum ar fi o eroare clară de preț sau o caracteristică a produsului afișată greșit.",
+              "Oferta este valabilă până la epuizarea stocurilor. Dacă un Produs nu este (mai) disponibil, ServerPunt va informa Clientul cât mai curând posibil."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 4. Încheierea contractului",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Contractul se încheia în momentul în care Clientul accepta oferta de ServerPunt efectuând o comandă prin intermediul Site-ului web și această comandă era confirmată de ServerPunt prin e-mail.",
+              {
+                "text": "ServerPunt are dreptul de a refuza o comandă sau de a impune condiții suplimentare, chiar dacă:",
+                "sublist": [
+                  "Clientul a furnizat informații incorecte sau incomplete;",
+                  "obligațiile anterioare de plată nu au fost îndeplinite;",
+                  "Există motive rezonabile să se dubiteze de capacitatea de plată a Clientului."
+                ]
+              },
+              "După efectuarea unei comenzi, Clientul primește o confirmare a comenzii prin email. Această confirmare nu constituie factură.",
+              "Erori sau scăpări evidente în confirmarea comenzii nu leagă ServerPunt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 5. Modificări și anulări de către ServerPunt",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dacă după încheierea Contractului rezultă că Produsul comandat nu este (sau nu mai este) disponibil sau nu poate fi livrat, ServerPunt are dreptul de a rezilia Contractul.",
+              "În cazul denunțării așa cum este prevăzut în prezentul articol, ServerPunt va rambursa Clientului sumele eventual deja plătite cât mai curând posibil și, în orice caz, nu mai târziu de 14 zile."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 6. Prețuri",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Toate prețurile indicate pe site-ul web sunt în euro și includ TVA, cu excepția cazului în care se indică expres altfel.",
+              "Pentru clienții corporativi, prețurile pot fi afișate fără TVA. În acest caz, acest lucru va fi indicat clar în ofertă.",
+              "Eventuale costuri de expediere, costuri administrative sau alte costuri suplimentare vor fi comunicate clar Clientului înainte de încheierea Contractului.",
+              "ServerPunt își rezervă dreptul de a modifica prețurile. Modificările de preț nu afectează Contractele deja încheiate."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 7. Plată",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Plata trebuie efectuată prin metodele de plată oferite pe site-ul web, cu excepția cazului unui acord scris diferit.",
+              "ServerPunt are dreptul de a procesa o comandă doar după ce a primit plata integrală, cu excepția cazului în care există un acord expres contrar.",
+              "În cazul plății în avans sau prin factură (exclusiv pentru clienții corporate), se aplică termenul de plată indicat în factură.",
+              "Dacă Clientul nu își îndeplinește la timp obligația de plată, Clientul este în întârziere de drept. Din acel moment, ServerPunt are dreptul de a percepe dobânzi legale (comerciale).",
+              "Toate costurile rezonabile suportate pentru recuperarea extrajudiciară a plății sunt în sarcina Clientului.",
+              "Pentru clienții corporativi, se aplică un termen de plată de 14 zile de la data facturii, cu excepția cazului în care există un acord scris diferit."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 8. Facturare",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Facturile sunt furnizate în format electronic, cu excepția cazului în care s-a convenit altfel.",
+              "Orice contestație legată de o factură trebuie comunicată către ServerPunt în scris în termen de 7 zile de la data facturii."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 9. Livrare",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Livrarea Produselor are loc la adresa de livrare furnizată de Client în momentul comenzii, cu excepția cazului unui acord scris diferit.",
+              "ServerPunt va elabora și trimite comenzile cu cea mai mare grijă posibilă.",
+              "Dacă livrarea la o adresă convenită se dovedește imposibilă, ServerPunt are dreptul de a pune Produsul la dispoziția Clientului în alt mod sau de a rezilia Contractul."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 10. Termene de livrare",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Termenele de livrare indicate de ServerPunt sunt orientative și nu constituie termeni esențiali, cu excepția cazului unui acord scris diferit exprimat.",
+              "Depășirea unui termen de livrare nu conferă Clientului dreptul la despăgubiri sau la rezilierea Contractului, cu excepția cazului de rea-credință sau culpă gravă din partea ServerPunt.",
+              "Dacă livrarea suferă întârzieri sau o comandă nu poate fi onorată în totalitate sau parțial, ServerPunt va informa Clientul cât mai curând posibil."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 11. Transferul riscului și daunele din transport",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Riscul de pierdere sau deteriorare a Produselor trece la Consumator în momentul recepționării efective a Produsului.",
+              "Pentru clienții corporativi, riscul trece în momentul în care Produsul este expediat.",
+              "Clientul trebuie să inspecteze produsul imediat la primire pentru a verifica eventualele daune de transport și defecte vizibile. Orice daune sau defecte trebuie raportate la ServerPunt în scris în termen de 48 de ore de la primire, însoțite de fotografii ale produsului și ale ambalajului.",
+              "Dacă daunele cauzate de transport sunt semnalate în mod prompt și corect, ServerPunt va proceda, la propria discreție, la reparare, înlocuire sau rambursare."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 12. Retragere",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dacă s-a convenit ridicarea, Clientul trebuie să ridice Produsul la ora și la adresa convenite.",
+              "În momentul ridicării, riscul trece la Client în momentul transferului Produsului."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 13. Dreptul de retragere",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Consumatorul are dreptul de a denunța Contractul referitor la achiziționarea unui Produs în termen de 14 zile de la primire, fără a indica motivele.",
+              "Perioada de retragere expiră la 14 zile după ziua în care Consumatorul, sau un terț desemnat de acesta, a primit Produsul.",
+              "Pentru a exercita dreptul de retragere, Consumatorul trebuie să informeze ServerPunt în perioada de retragere prin email sau printr-o altă declarație inequivocă a deciziei de a rezilia Contractul."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 14. Consecințele retragerii",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dacă Consumatorul se retrage din Contract, va primi toate plățile efectuate până în acel moment, inclusiv eventualele costuri standard de expediere, în termen de cel mult 14 zile de la data la care ServerPunt a fost informat despre retragere.",
+              "ServerPunt poate reține rambursarea până la primirea Produsului, sau până când Consumatorul a demonstrat că a returnat Produsul, în funcție de care circumstanță apare prima.",
+              "Rambursările vor fi efectuate prin aceeași metodă de plată utilizată pentru tranzacția inițială, cu excepția cazului în care s-a convenit altfel."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 15. Condiții de retur",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Pe durata perioadei de retragere, Consumatorul trebuie să manevreze Produsul și ambalajul cu grijă. Produsul poate fi despachetat și utilizat doar în măsura necesară pentru a-i determina natura, caracteristicile și funcționarea.",
+              "Dacă Produsul a fost utilizat dincolo de cât este permis, Consumatorul este responsabil pentru orice reducere a valorii Produsului.",
+              "Consumatorul este responsabil pentru expedierea returului Produsului în mod corect și adecvat."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 16. Costuri de returnare",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Costurile de expediere pentru retur sunt suportate de Consumator, cu excepția cazului în care s-a convenit altfel.",
+              "Dacă ServerPunt a returnat Produsul la Consumator, costurile aferente vor fi suportate de Consumator.",
+              "Returnările trebuie trimise la adresa comercială a ServerPunt din Kraaivenstraat 36-07, 5048 AB Tilburg, cu excepția cazului în care există un acord scris diferit."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 17. Excluderea dreptului de retragere",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dreptul de retragere este exclus pentru:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "clienți de afaceri;",
+              "Produse care prin natura lor nu pot fi returnate;",
+              "Produse clar personalizate sau asamblate la comandă;",
+              "Produse al căror sigiliu a fost rupt din motive de igienă sau siguranță, acolo unde este aplicabil."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "Articolul 18. Garanție și conformitate",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt garantează că Produsele livrate sunt conforme cu Contractul, cu specificațiile indicate în ofertă și cu cerințele rezonabile de fiabilitate și utilizabilitate, ținând cont de natura recondiționată a Produselor.",
+              "Produsele recondiționate sunt bunuri folosite și pot prezenta semne de utilizare. Diferențele față de starea de noi, cum ar fi daune estetice minore, nu constituie un defect și nu dau dreptul Clientului la înlocuire, reparare sau reziliere.",
+              "Pentru consumatori se aplică garanția legală. Aceasta înseamnă că un produs trebuie să facă ceea ce consumatorul se poate aștepta în mod rezonabil. ServerPunt nu poate exclude sau limita această garanție legală.",
+              "Orice garanție suplimentară oferită de ServerPunt va fi indicată în mod expres în scris împreună cu Produsul și nu afectează garanția legală.",
+              "Pentru clienții corporativi, se aplică doar garanția expres oferită de ServerPunt. În absența unei astfel de garanții, nu se aplică nicio garanție suplimentară.",
+              "Dacă pentru un Produs nu este indicată nicio perioadă de garanție suplimentară, pentru Consumatori se aplică doar garanția legală, iar pentru clienții comerciali nu se aplică nicio garanție suplimentară."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 19. Semnalarea defectelor",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Clientul este obligat să verifice Produsul pentru eventuale defecte cât mai curând posibil după primire.",
+              "Defectele care nu sunt vizibile în momentul primirii trebuie semnalate de către Consumator în termen rezonabil de la descoperire.",
+              "Clienții de afaceri trebuie să raporteze defectele în scris în termen de 7 zile de la primire. În caz contrar, dreptul la reparație, înlocuire sau orice altă formă de compensație încetează."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 20. Reparație și înlocuire",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Dacă un Produs se dovedește a fi neconform cu Contractul, ServerPunt va proceda, la propria discreție, la repararea sau înlocuirea Produsului, cu excepția cazului în care acest lucru este imposibil sau ar implica costuri disproporționate.",
+              "Dacă repararea sau înlocuirea nu sunt posibile, ServerPunt poate proceda cu rambursarea (parțială) sau rezilierea Contractului."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 21. Răspundere",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Răspunderea lui ServerPunt este limitată la suma plătită de Client pentru Produsul în cauză, cu un maxim absolut egal cu suma facturii.",
+              {
+                "text": "ServerPunt nu este niciodată responsabil pentru daune indirecte, inclusiv, cu titlu de exemplu dar fără a se limita la:",
+                "sublist": [
+                  "daune consecvente;",
+                  "câștig pierdut;",
+                  "mâncați economiile;",
+                  "pierdere de date;",
+                  "daune aduse activității;",
+                  "daune cauzate de întreruperea activității."
+                ]
+              },
+              {
+                "text": "ServerPunt nu este responsabil pentru daune cauzate de:",
+                "sublist": [
+                  "uzul impropriu sau necorespunzător al Produsului;",
+                  "utilizare în afara specificațiilor furnizate de ServerPunt;",
+                  "reparații sau modificări efectuate de Client;",
+                  "utilizat în combinație cu echipamente periferice defecte sau inadecvate."
+                ]
+              },
+              "Limitările de răspundere prevăzute în prezentul articol nu se aplică dacă paguba provine din intenție sau culpă gravă din partea ServerPunt, sau în măsura în care răspunderea nu poate fi exclusă conform normelor imperative."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 22. Despăgubire",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Clientul exonerează ServerPunt de toate pretențiile terților referitoare la utilizarea Produselor livrate.",
+              "Clientul este responsabil pentru efectuarea backup-urilor adecvate ale datelor. ServerPunt nu este responsabil pentru pierderea sau deteriorarea datelor, indiferent de cauză."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 23. Forță majoră",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt nu este obligată să îndeplinească nicio obligație față de Client dacă este împiedicată să o facă din cauza forței majore.",
+              {
+                "text": "Prin forță majoră se înțelege, în orice caz, orice împrejurare aflată în afara controlului ServerPunt care împiedică temporar sau permanent îndeplinirea obligațiilor, inclusiv, cu titlu exemplificativ dar nu limitativ:",
+                "sublist": [
+                  "întreruperi la curieri sau furnizori;",
+                  "întârzieri sau defecțiuni în transport;",
+                  "probleme de aprovizionare sau lipsuri de stoc;",
+                  "întreruperi de curent;",
+                  "defecțiuni internet sau de rețea;",
+                  "incendii, daune cauzate de apă sau alte calamități;",
+                  "măsuri guvernamentale;",
+                  "epidemie, pandemie și restricțiile aferente."
+                ]
+              },
+              "Dacă situația de forță majoră continuă pentru mai mult de 30 de zile, atât ServerPunt cât și Clientul au dreptul de a rezilia Contractul în scris, fără nicio obligație de despăgubire în acest caz.",
+              "În cazul producerii forței majore ServerPunt a îndeplinit deja parțial obligațiile sale, sau le poate îndeplini în continuare, ServerPunt are dreptul să factureze sau să regleze separat acea parte."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 24. Plângeri",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Reclamațiile referitoare la executarea Contractului trebuie să fie transmise către ServerPunt în scris, într-un mod complet și clar descris, într-un termen rezonabil de la momentul în care Clientul a identificat defectul.",
+              {
+                "text": "Reclamațiile pot fi prezentate prin:",
+                "sublist": [
+                  "email: info@serverpunt.com",
+                  "sau în scris prin poștă la adresa comercială a ServerPunt."
+                ]
+              },
+              "ServerPunt va răspunde la reclamațiile depuse în termen de 14 zile de la primire. Dacă o reclamație necesită un timp de procesare previzibil mai lung, ServerPunt va informa Clientul în acest termen.",
+              "Dacă o plângere nu poate fi soluționată de comun acord, apare o dispută care poate fi supusă tribunalului competent conform celor prevăzute în acești termeni și condiții generale."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 25. Legea aplicabilă",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Toate contractele dintre ServerPunt și Client cărora li se aplică acești termeni și condiții generale sunt guvernate exclusiv de dreptul olandez.",
+              "Controversele care decurg din Contract sau sunt legate de acesta sunt supuse exclusiv tribunalului competent din districtul în care ServerPunt are sediul, cu excepția prevederilor contrare ale normelor imperative."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Articolul 26. Dispoziții finale",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt are dreptul de a modifica sau de a completa acești termeni și condiții generale. Termenii modificați vor fi publicați în timp util prin intermediul Site-ului web și se vor aplica Contractelor viitoare.",
+              "Dacă dispozițiile acestor termeni și condiții generale sunt nule sau anulate, acest lucru nu prejudiciază valabilitatea celorlalte dispoziții.",
+              "Prezentii termeni și condiții generale au fost modificați ultima dată pe 22 decembrie 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Contacte",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Camera de Comerț: 97831441",
+      "vat": "TVA: NL868250983B01",
+      "emailLabel": "Email:",
+      "websiteLabel": "Site web:"
+    }
+  },
+  "privacy": {
+    "title": "Informații privind confidențialitatea",
+    "lastModified": "Ultima modificare: 5 februarie 2026",
+    "sections": [
+      {
+        "title": "1. Titularul prelucrării",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), cu sediul în Kraaivenstraat 36-07, 5048 AB Tilburg, înregistrată la Camera de Comerț olandeză cu numărul 97831441, este responsabilă de prelucrarea datelor personale așa cum este descris în prezenta informare privind confidențialitatea."
+          },
+          {
+            "type": "p",
+            "text": "Contact: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Date personale pe care le prelucrăm",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt prelucrează date cu caracter personal pentru că utilizezi site-ul nostru web și serviciile noastre și/sau pentru că ne furnizezi aceste date direct. Aceasta include, printre altele:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "nume și prenume",
+              "detalii ale adresei",
+              "adresă de email",
+              "număr de telefon",
+              "date de plată și facturare",
+              "adresă IP",
+              "istoric comenzi",
+              "date de corespondență"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Scopurile și temeiurile legale ale prelucrării",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt prelucrează datele personale exclusiv în scopurile următoare și pe baza corespunzătoarelor temeiuri juridice:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Executarea contractului: procesarea comenzilor, livrarea produselor, comunicarea referitoare la contract",
+              "Obligație legală: facturare, contabilitate, obligații fiscale",
+              "Interes legitim: servicii pentru clienți, îmbunătățirea serviciilor, prevenirea fraudelor",
+              "Consimțământ: newsletter și comunicări de marketing (acolo unde este cazul)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Perioade de conservare",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt nu păstrează datele personale mai mult timp decât este necesar pentru scopurile pentru care au fost colectate, ținând cont de perioadele de păstrare prevăzute de lege:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Date de comandă și facturare: 7 ani (obligație fiscală legală de păstrare)",
+              "Comunicări cu clienții: maximum 2 ani",
+              "Datele contului și de contact: atât timp cât relația cu clientul este activă"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Partajarea datelor personale cu terțe părți",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt furnizează date personale terților doar dacă acest lucru este necesar pentru executarea contractului sau pentru îndeplinirea unei obligații legale."
+          },
+          {
+            "type": "p",
+            "text": "Aceasta include, printre altele:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "furnizori de plăți",
+              "curieri",
+              "software de contabilitate",
+              "furnizori de hosting și servicii IT"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Atunci când este cerut de lege, cu aceste părți au fost încheiate acorduri de prelucrare a datelor."
+          }
+        ]
+      },
+      {
+        "title": "6. Cookie",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt utilizează cookie-uri funcționale și analitice care nu au niciun impact sau doar un impact minim asupra confidențialității vizitatorilor."
+          },
+          {
+            "type": "p",
+            "text": "Acești cookie-uri sunt utilizați pentru:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "a garanta funcționarea corectă din punct de vedere tehnic a site-ului web;",
+              "a obține informații despre utilizarea site-ului web și a-l îmbunătăți."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Niciun cookie de urmărire nu este instalat fără consimțământul prealabil."
+          }
+        ]
+      },
+      {
+        "title": "7. Securitatea datelor personale",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt adoptă măsuri tehnice și organizatorice adecvate pentru a proteja datele cu caracter personal împotriva pierderii, utilizării abuzive, accesului neautorizat și divulgării nedorite."
+          }
+        ]
+      },
+      {
+        "title": "8. Drepturile persoanelor vizate",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ai dreptul să:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "a accesa datele tale personale;",
+              "a face să fie corectate sau șterse datele tale;",
+              "a se opune tratamentului;",
+              "a solicita limitarea prelucrării;",
+              "obține transferul datelor tale (portabilitatea datelor)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Cererile pot fi trimise prin info@serverpunt.com. De asemenea, aveți dreptul de a depune o plângere la Autoritatea olandeză pentru protecția datelor (Autoriteit Persoonsgegevens)."
+          }
+        ]
+      },
+      {
+        "title": "9. Modificări",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt și își rezervă dreptul de a modifica prezenta informare privind confidențialitatea. Cea mai recentă versiune este întotdeauna disponibilă pe site-ul web."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Contacte",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Camera de Comerț: 97831441",
+      "emailLabel": "Email:",
+      "websiteLabel": "Site web:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Informații privind cookie-urile",
+    "lastModified": "Ultima modificare: 9 februarie 2026",
+    "intro": "Prezenta informare privind cookie-urile se aplică site-ului web al ServerPunt, cu sediul în Kraaivenstraat 36-07, 5048 AB Tilburg, și accesibil prin info@serverpunt.com.",
+    "sections": [
+      {
+        "title": "1. Ce sunt cookie-urile?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cookie-urile sunt fișiere text mici care sunt stocate pe computerul, tableta sau smartphone-ul tău atunci când vizitezi un site web. Cookie-urile asigură funcționarea corectă a site-ului web și pot colecta informații despre utilizarea site-ului."
+          }
+        ]
+      },
+      {
+        "title": "2. Ce cookie-uri utilizează ServerPunt?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt utilizează următoarele tipuri de cookie-uri:"
+          },
+          {
+            "type": "p",
+            "text": "a. Cookie funcționali (necesari)"
+          },
+          {
+            "type": "p",
+            "text": "Aceste cookie-uri sunt necesare pentru ca site-ul web să funcționeze corect. Fără aceste cookie-uri, unele părți ale site-ului nu pot funcționa corect."
+          },
+          {
+            "type": "p",
+            "text": "Exemple:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Stocarea preferințelor privind cookie-urile",
+              "Încărcarea corectă a paginilor",
+              "Funcționalități de bază ale site-ului web"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Pentru aceste cookie-uri nu este necesar niciun consimțământ."
+          },
+          {
+            "type": "p",
+            "text": "b. Cookie analitici"
+          },
+          {
+            "type": "p",
+            "text": "Cookie-urile analitice ne oferă informații despre modul în care este utilizat site-ul nostru web. Acest lucru ne permite să îmbunătățim site-ul și să-l facem mai ușor de utilizat."
+          },
+          {
+            "type": "p",
+            "text": "Exemple:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Număr de vizitatori",
+              "Pagini populare",
+              "Cum navighează vizitatorii pe site-ul web"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Ori de câte ori este posibil, aceste date sunt anonimizate și nu pot fi atribuite unor persoane fizice."
+          },
+          {
+            "type": "p",
+            "text": "c. Cookie de marketing și urmărire (opționale)"
+          },
+          {
+            "type": "p",
+            "text": "Acolo unde este aplicabil, cookie-urile de marketing pot fi utilizate pentru a afișa conținut sau reclame relevante și pentru a măsura eficiența campaniilor."
+          },
+          {
+            "type": "p",
+            "text": "Aceste cookie-uri sunt instalate doar după consimțământ explicit."
+          }
+        ]
+      },
+      {
+        "title": "3. Cookie-uri de terțe părți",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Terțe părți (cum ar fi serviciile de analiză sau marketing) pot instala cookie-uri prin intermediul site-ului nostru web. ServerPunt nu are un control direct asupra utilizării cookie-urilor de către aceste părți. Recomandăm să consultați și politicile de cookie și de confidențialitate ale acestor terțe părți."
+          }
+        ]
+      },
+      {
+        "title": "4. Gestionarea sau eliminarea cookie-urilor",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Poți gestiona sau șterge cookie-urile în orice moment prin setările browserului. Ține cont că dezactivarea cookie-urilor poate afecta funcționarea site-ului web."
+          },
+          {
+            "type": "p",
+            "text": "Mai multe informații pentru browsere:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Modificări ale prezentei informări privind cookie-urile",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt și își rezervă dreptul de a modifica prezenta informare despre cookie-uri. Îți recomandăm să verifici regulat această pagină pentru a rămâne informat despre eventualele modificări."
+          }
+        ]
+      },
+      {
+        "title": "6. Contacte",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ai întrebări despre politica noastră privind cookie-urile sau despre modul în care tratăm datele? Nu ezita să ne contactezi:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "Informații despre ServerPunt",
+    "intro1": "ServerPunt este specializată în cumpărarea și vânzarea de hardware recondiționat pentru persoane fizice și companii. Credem că hardware-ul profesional nu trebuie neapărat să fie nou pentru a oferi performanțe fiabile, puternice și durabile.",
+    "intro2": "De la monitoare și laptopuri până la servere complete și componente pentru servere: toate produsele pe care le oferim sunt atent testate, inspectate și, acolo unde este necesar, recondiționate. În acest fel, hardware-ul de înaltă calitate primește o a doua viață, la un preț competitiv și cu un impact minim asupra mediului.",
+    "servers": {
+      "title": "Specializați în soluții server",
+      "p1": "Punctul nostru forte este în soluțiile personalizate. Nu furnizăm doar servere și componente individuale: ajutăm activ la definirea configurațiilor corecte pentru sarcini de lucru specifice, scalabilitate și creștere. Datorită competențelor noastre tehnice și experienței practice, putem răspunde rapid și oferi consultanță țintită.",
+      "p2": "La ServerPunt, transparența și calitatea sunt întotdeauna pe primul loc. Pentru noi, hardware-ul recondiționat înseamnă:",
+      "bullet1Title": "Calitate accesibilă",
+      "bullet1Text": "fără a compromite performanța",
+      "bullet2Title": "O alegere sustenabilă",
+      "bullet2Text": "prin reutilizare",
+      "bullet3Title": "Livrare rapidă",
+      "bullet3Text": "cu contact personal",
+      "p3": "Datorită cunoștințelor noastre tehnice despre servere și componente, putem să te sprijinim, să-ți oferim sfaturi și să răspundem rapid atunci când este necesar."
+    },
+    "audience": {
+      "title": "Pentru cine lucrăm",
+      "p1": "Lucrăm pentru persoane fizice care caută hardware profesional la un preț competitiv, precum și pentru companii care doresc să își extindă sau să își reînnoiască sistemele. Fie că este vorba de o achiziție unică sau de o extindere mai largă, evaluăm împreună cea mai potrivită soluție.",
+      "p2": "ServerPunt este mai mult decât un simplu furnizor. Suntem un partener tehnic care colaborează, oferă sfaturi și livrează, în conformitate cu nevoile de azi și cu creșterea de mâine."
+    },
+    "values": {
+      "title": "De ce ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Competență tehnică",
+          "description": "Cunoaștere solidă a serverelor și infrastructurilor"
+        },
+        {
+          "icon": "✅",
+          "title": "Controlul calității",
+          "description": "Fiecare produs este testat și inspectat cu atenție"
+        },
+        {
+          "icon": "🌱",
+          "title": "Sustenabilitate",
+          "description": "Reutilizarea hardware-ului cu impact minim"
+        },
+        {
+          "icon": "💰",
+          "title": "Prețuri competitive",
+          "description": "Calitate profesională la prețuri accesibile"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Întrebări sau aveți nevoie de consultanță?",
+      "description": "Contactează-ne fără ezitare. Vom fi bucuroși să te ajutăm să găsești cea mai bună soluție pentru situația ta.",
+      "emailLabel": "Email:",
+      "addressLabel": "Adresă:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

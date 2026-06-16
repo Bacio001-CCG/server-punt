@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Ehdot ja määräykset",
+    "lastModified": "Viimeksi muutettu: 22. joulukuuta 2025",
+    "sections": [
+      {
+        "title": "Artikkeli 1. Määritelmät",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Näissä yleisissä ehdoissa seuraavilla käsitteillä on alla määritellyt merkitykset:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "partnerskabet NetwerkPunt, der handler under navnet ServerPunt, beliggende på Kraaivenstraat 36-07, 5048 AB Tilburg, registreret hos det hollandske Handelskammer under nummer 97831441."
+              },
+              {
+                "term": "Asiakas",
+                "text": "kaikki fyysiset tai oikeushenkilöt, jotka tekevät tai haluavat tehdä sopimuksen ServerPunt kanssa."
+              },
+              {
+                "term": "Kuluttaja",
+                "text": "asiakas, joka on luonnollinen henkilö ja joka toimittaa asioita tarkoituksiin, jotka eivät liity hänen liiketoimintaansa, yritykseensä, ammattiinsa tai käsityöhönsä."
+              },
+              {
+                "term": "Yritysasiakas",
+                "text": "asiakas, joka toimii ammatin tai liiketoiminnan harjoittamisen yhteydessä."
+              },
+              {
+                "term": "Sopimus",
+                "text": "kaikki sopimukset, jotka solmitaan ServerPunt:n ja asiakkaan välillä, mukaan lukien etämyynti verkkosivuston kautta, sekä kaikki siitä johtuvat velvollisuudet."
+              },
+              {
+                "term": "Verkkosivusto",
+                "text": "ServerPunt-verkkosivusto, jossa tuotteita tarjotaan ja tilauksia voidaan tehdä, nimittäin https://serverpunt.com/."
+              },
+              {
+                "term": "Tuote(t)",
+                "text": "Kaikki ServerPunt:n tarjoamat tavarat, mukaan lukien kunnostettu IT-laitteisto, palvelimet, palvelinkomponentit ja lisävarusteet."
+              },
+              {
+                "term": "Kunnostettu",
+                "text": "käytetty laitteisto, jota on tarkastettu, testattu ja tarvittaessa puhdistettu ja/tai korjattu ServerPunt:n toimesta, ja jonka jälkeen se tarjotaan jälleen. Kunnostetuissa tuotteissa voi olla käytön jälkiä ja ne voivat poiketa uudenveroisesta kunnosta."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 2. Soveltamisala",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Nämä yleiset ehdot ja määräykset koskevat jokaista ServerPunt:n antamaa tarjousta ja jokaista ServerPunt:n ja asiakkaan välistä sopimusta.",
+              "Päätökset, jotka poikkeavat näistä yleisistä ehdoista ja edellytyksistä, ovat voimassa vain, jos ServerPunt nimenomaisesti vahvistaa ne kirjallisesti (myös sähköpostitse).",
+              "Kundens (købs)vilkår er udtrykkeligt udelukket, medmindre de udtrykkeligt accepteres skriftligt af ServerPunt.",
+              "Jos jokin näiden yleisten ehtojen määräys on kokonaan tai osittain pätemätön tai mitätöity, muut määräykset pysyvät täysin voimassa. Tässä tapauksessa osapuolten tulee korvata kyseinen määräys määräyksellä, joka mahdollisuuksien mukaan vastaa alkuperäisen määräyksen tarkoitusta ja henkeä.",
+              "Jos verkkosivuston sisällön ja näiden yleisten ehtojen välillä on ristiriita, näillä yleisillä ehdoilla on etusija, ellei toisin ole nimenomaisesti mainittu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 3. Tarjous",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kaikki ServerPunt-verkkosivuston tarjoukset ja tuotekuvaukset ovat sitoumuksettomia, ellei toisin nimenomaisesti ilmoiteta.",
+              "ServerPunt kerää verkkosivuston tiedot mahdollisimman huolellisesti. Siitä huolimatta ilmeisiä virheitä tai puutteita voi esiintyä, kuten painovirheitä, hintavirheitä, virheellisiä teknisiä tietoja tai vääriä kuvia. Näistä virheistä ei voi johtaa mitään oikeuksia.",
+              "Billeder af produkter er til illustrationsformål og kan afvige fra det produkt, der faktisk leveres, på grund af den istandsatte karakter af den tilbudte hardware.",
+              "ServerPuntilla on oikeus peruuttaa tai muuttaa tilausta, jos tarjouksessa on ilmeinen virhe, kuten selvä hintavirhe tai väärin esitetty tuotteen ominaisuus.",
+              "Tarjous on voimassa niin kauan kuin varastoa riittää. Jos tuote ei ole (tai ei enää ole) saatavilla, ServerPunt ilmoittaa asiakkaalle mahdollisimman pian."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 4. Sopimuksen tekeminen",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Aftalen dannes på det tidspunkt, hvor Kunden accepterer ServerPunts tilbud ved at afgive en ordre via hjemmesiden, og denne ordre bekræftes af ServerPunt via e-mail.",
+              {
+                "text": "ServerPuntilla on oikeus kieltäytyä tilauksesta tai asettaa lisäehtoja, mukaan lukien jos:",
+                "sublist": [
+                  "asiakas on antanut virheellisiä tai puutteellisia tietoja;",
+                  "aiemmat maksusitoumukset eivät ole täyttyneet;",
+                  "on kohtuullisia syitä epäillä Asiakkaan maksukykyä."
+                ]
+              },
+              "Tilauksen tekemisen jälkeen asiakas saa tilausvahvistuksen sähköpostitse. Tämä vahvistus ei ole lasku.",
+              "Ilmeiset virheet tai virheet tilausvahvistuksessa eivät sido ServerPunt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 5. ServerPunt:n muutokset ja peruuttaminen",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Jos sopimuksen tekemisen jälkeen käy ilmi, että tilattu tuote ei ole saatavilla (tai ei enää ole saatavilla) tai sitä ei voida toimittaa, on ServerPunt oikeutettu purkamaan sopimuksen.",
+              "Jos tässä artiklassa mainittu purkaminen tapahtuu, ServerPunt palauttaa kaikki asiakkaan jo maksamat summat mahdollisimman nopeasti, kuitenkin viimeistään 14 päivän kuluessa."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 6. Hinnat",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kaikki verkkosivustolla ilmoitetut hinnat ovat euroissa ja sisältävät arvonlisäveron, ellei toisin nimenomaisesti mainita.",
+              "Yritysasiakkaille hinnat voidaan näyttää ilman arvonlisäveroa. Tällöin tämä ilmenee selvästi tarjouksessa.",
+              "Mahdolliset toimituskulut, hallintokulut tai muut lisäkustannukset ilmoitetaan selvästi asiakkaalle ennen sopimuksen tekemistä.",
+              "ServerPunt pidättää itsellään oikeuden muuttaa hintoja. Hintamuutokset eivät vaikuta jo tehtyihin sopimuksiin."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 7. Maksu",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Maksu on suoritettava verkkosivustolla tarjottujen maksutapojen kautta, ellei toisin ole kirjallisesti sovittu.",
+              "ServerPunt on oikeutettu käsittelemään tilausta vasta sen jälkeen, kun täydellinen maksu on vastaanotettu, ellei toisin ole nimenomaisesti sovittu.",
+              "Tilitapahtumassa tai laskulla maksettaessa (vain yritysasiakkaille) sovelletaan laskussa mainittuja maksuehtoja.",
+              "Jos Asiakas laiminlyö maksujen hoitamisen ajallaan, Asiakas on lain mukaan maksunsa laiminlyönyt. Siitä hetkestä lähtien ServerPunt on oikeutettu perimään laissa määrättyä (kaupallista) korkoa.",
+              "Kohtuulliset kulut, jotka aiheutuvat maksun saamisesta ilman oikeudenkäyntiä, on asiakkaan maksettava.",
+              "Liiketoimintaa harjoittaville asiakkaille maksuaika on 14 päivää laskun päiväyksestä, ellei toisin ole kirjallisesti sovittu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 8. Laskutus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Laskut toimitetaan sähköisesti, ellei toisin ole sovittu.",
+              "Indsigelser mod en faktura skal meddeles skriftligt til ServerPunt inden for 7 dage efter fakturadatoen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 9. Toimitus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Levering af Produkter sker på den leveringsadresse, som Kunden har angivet ved afgivelse af ordren, medmindre andet er aftalt skriftligt.",
+              "ServerPunt vil behandle og sende ordrer med den størst mulige omhu.",
+              "Hvis levering til en aftalt adresse viser sig at være umulig, er ServerPunt berettiget til at gøre Produktet tilgængeligt for Kunden på en anden måde eller at ophæve Aftalen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 10. Toimitusajat",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt-merkityt toimitusajat ovat ohjeellisia eivätkä muodosta kiinteitä määräaikoja, ellei toisin ole nimenomaisesti sovittu kirjallisesti.",
+              "Toimitusajan ylittäminen ei anna Asiakkaalle oikeutta korvaukseen tai Sopimuksen purkamiseen, ellei ServerPuntn taholta ole olemassa tuottamuksellista tai törkeää huolimattomuutta.",
+              "Hvis leveringen er forsinket, eller en ordre ikke kan opfyldes helt eller delvist, vil ServerPunt informere kunden så hurtigt som muligt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 11. Riskin siirtyminen ja kuljetusvahingot",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Tuotteiden häviön tai vahingon riski siirtyy kuluttajalle siinä vaiheessa, kun tuote vastaanotetaan.",
+              "Ammattiasiakkaiden osalta riski siirtyy siihen aikaan, kun tuote lähetetään.",
+              "Asiakkaan on heti vastaanotettuaan tarkastettava Tuote kuljetusvahinkojen ja näkyvien virheiden varalta. Mahdolliset vahingot tai viat on ilmoitettava kirjallisesti ServerPunt:lle 48 tunnin kuluessa vastaanottamisesta, liitteenä valokuvat Tuotteesta ja pakkauksesta.",
+              "Jos kuljetusvahingot raportoidaan ajallaan ja oikein, ServerPunt järjestää oman harkintansa mukaan korjauksen, vaihdon tai hyvityksen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 12. Kerääminen",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Jos nouto on sovittu, asiakkaan tulee noutaa tuote sovittuna aikana ja paikassa.",
+              "Noudettaessa riski siirtyy asiakkaalle sillä hetkellä, kun tuote luovutetaan."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 13. Peruuttamisoikeus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Forbrugeren har ret til at ophæve aftalen vedrørende køb af et produkt inden for 14 dage efter modtagelsen uden at angive nogen grund.",
+              "Peruutusoikeusaika päättyy 14 päivän kuluttua siitä päivästä, jona Kuluttaja tai heidän määräämänsä kolmas osapuoli vastaanotti Tuotteen.",
+              "Peruuttamisoikeuden käyttämiseksi kuluttajan on ilmoitettava ServerPunt:lle peruuttamisajanjakson aikana sähköpostitse tai muulla yksiselitteisellä ilmoituksella päätöksestään purkaa sopimus."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 14. Vetäytymisen seuraukset",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Jos kuluttaja peruu sopimuksen, hän saa kaikki siihen mennessä suoritetut maksut, mukaan lukien mahdolliset tavanomaiset toimituskulut, viimeistään 14 päivän kuluessa siitä päivästä, jona ServerPunt sai tiedon peruuttamisesta.",
+              "ServerPunt voi pidättää hyvityksen, kunnes tuote on vastaanotettu tai kunnes kuluttaja on osoittanut, että tuote on palautettu, sen mukaan, kumpi tapahtuu ensin.",
+              "Hyvitykset suoritetaan samalla maksutavalla, joka käytettiin alkuperäisessä tapahtumassa, ellei toisin sovita."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 15. Palautusehdot",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "I løbet af fortrydelsesperioden skal forbrugeren håndtere produktet og emballagen med forsigtighed. Produktet må kun pakkes ud og anvendes i det omfang, det er nødvendigt for at fastslå dets art, egenskaber og funktion.",
+              "Jos tuotetta on käytetty enemmän kuin sallittu, kuluttaja on vastuussa tuotteen arvon alenemisesta.",
+              "Kuluttaja on vastuussa tuotteen oikeasta ja asianmukaisesta palauttamisesta."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 16. Returudgifter",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Omkostningerne ved returfragt bæres af forbrugeren, medmindre andet er aftalt.",
+              "Hvis ServerPunt har afhentet Produktet fra Forbrugeren, vil omkostningerne herved blive opkrævet hos Forbrugeren.",
+              "Palautukset on lähetettävä ServerPuntn liikeosoitteeseen Kraaivenstraat 36-07, 5048 AB Tilburg, ellei toisin ole sovittu kirjallisesti."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 17. Undtagelse af fortrydelsesretten",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Retten til at fortryde er udelukket for:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "yritysasiakkaat;",
+              "Tuotteet, joita niiden luonteen vuoksi ei voi palauttaa;",
+              "Tuotteet, jotka ovat selvästi henkilökohtaisesti räätälöityjä tai erikoiskokoelmia;",
+              "Tuotteet, joiden pakkauksen tiiviys on rikottu hygienian tai turvallisuuden vuoksi, missä se on relevanttia."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "Artikkeli 18. Takuu ja vaatimustenmukaisuus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt takaa, että toimitetut tuotteet noudattavat sopimusta, tarjouksessa mainittuja eritelmiä sekä kohtuullisia vaatimuksia luotettavuudesta ja käyttökelpoisuudesta ottaen huomioon tuotteiden kunnostetun luonteen.",
+              "Kunnetut tuotteet ovat käytettyjä tavaroita ja voivat osoittaa käytön merkkejä. Poikkeamat uudenveroisesta tilasta, kuten pienet kosmeettiset vauriot, eivät ole virhe ja eivät oikeuta asiakasta vaihtoon, korjaukseen tai sopimuksen purkuun.",
+              "Kuluttajille pätee lakisääteinen takuu. Tämä tarkoittaa, että tuotteen on tehtävä se, mitä kuluttaja kohtuudella voi odottaa siitä. ServerPunt ei voi sulkea pois tai rajoittaa tätä lakisääteistä takuuta.",
+              "Kaikki ServerPunt:n antamat lisätakuut ilmoitetaan nimenomaisesti kirjallisesti tuotteen yhteydessä, eikä ne vaikuta lakisääteiseen takuuseen.",
+              "Liiketoimintakauppojen osalta sovelletaan vain sitä takuuta, joka on nimenomaisesti ServerPunt:n ilmoittama. Tässä puuttuessa ei sovelleta muita takuita.",
+              "Jos tuotteen kohdalla ei ole ilmoitettu lisätakuuaikaa, pätee vain kuluttajille lainmukainen takuu, eikä yritysasiakkaille ole voimassa ylimääräistä takuuta."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 19. Virheiden ilmoittaminen",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Asiakas on velvollinen tarkastamaan tuotteen virheiden varalta mahdollisimman pian vastaanoton jälkeen.",
+              "Viat, jotka eivät olleet näkyvissä vastaanotettaessa, on kuluttajan ilmoitettava kohtuullisessa ajassa havaitsemisen jälkeen.",
+              "Yritysasiakkaiden on ilmoitettava virheistä kirjallisesti 7 päivän kuluessa vastaanottamisesta. Tämän laiminlyönti johtaa oikeuden menettämiseen korjaukseen, vaihtoon tai mihinkään muuhun hyvitykseen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 20. Korjaus ja vaihto",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Jos tuote osoittautuu sopimuksen vastaiseksi, ServerPunt korjaa tai vaihtaa tuotteen oman harkintansa mukaan, ellei se ole mahdotonta tai aiheuta kohtuuttomia kustannuksia.",
+              "Jos korjaus tai vaihto ei ole mahdollista, ServerPunt voi edetä (osittaiseen) hyvitykseen tai sopimuksen purkamiseen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 21. Vastuu",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPuntn vastuu rajoittuu summaan, jonka Asiakas on maksanut kyseisestä Tuotteesta, enimmäismääränä laskutusmäärä.",
+              {
+                "text": "ServerPunt ei ole koskaan vastuussa epäsuorista vahingoista, mukaan lukien mutta ei rajoittuen seuraaviin:",
+                "sublist": [
+                  "seurausvahinko;",
+                  "menetetty voitto;",
+                  "menetetyt säästöt;",
+                  "tietojen menetys;",
+                  "liiketoimintavahinko",
+                  "vahinkoa liiketoiminnan keskeytyksen vuoksi."
+                ]
+              },
+              {
+                "text": "ServerPunt ei ole vastuussa aiheutuneesta vahingosta, joka johtuu:",
+                "sublist": [
+                  "epäsopiva tai virheellinen tuotteen käyttö;",
+                  "käyttöä ServerPunt:n antamien eritelmien ulkopuolella;",
+                  "asiakkaan tekemät korjaukset tai muutokset;",
+                  "käyttö yhdessä viallisten tai sopimattomien oheislaitteiden kanssa."
+                ]
+              },
+              "Tässä artiklassa asetetut vastuuvapaussäännökset eivät koske, jos vahinko johtuu tahallisuudesta tai ServerPuntn törkeästä huolimattomuudesta, tai siltä osin kuin vastuuta ei voida sulkea pois pakottavan lainsäädännön mukaan."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 22. Korvaus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Asiakas pitää ServerPunt vapaina kaikista kolmansien osapuolten vaatimuksista, jotka koskevat toimitettujen tuotteiden käyttöä.",
+              "Asiakas on vastuussa riittävien varmuuskopioiden tekemisestä. ServerPunt ei ole vastuussa tietojen menetyksestä tai vahingoittumisesta, syystä riippumatta."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 23. Ylivoimainen este",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt ei ole velvollinen täyttämään mitään velvollisuutta Asiakasta kohtaan, jos sen estää tekemästä niin ylivoimainen este.",
+              {
+                "text": "Force majeure omfatter under enhver omstændighed enhver situation uden for ServerPunts kontrol, der midlertidigt eller permanent forhindrer opfyldelse af forpligtelser, herunder men ikke begrænset til:",
+                "sublist": [
+                  "häiriöt kuljettajilla tai toimittajilla;",
+                  "kuljetuksessa tapahtuvat viivästykset tai virheet;",
+                  "ostosongelmia tai varaston puutteita;",
+                  "sähkökatkot;",
+                  "internet- tai verkkovirhe;",
+                  "tuli, vesivahinko tai muut tapaturmat;",
+                  "hallituksen toimet;",
+                  "epidemiat, pandemiat ja niihin liittyvät rajoitukset."
+                ]
+              },
+              "Jos force majeure -tilanne jatkuu yli 30 päivää, sekä ServerPunt että asiakas ovat oikeutettuja purkamaan sopimuksen kirjallisesti, ilman mitään velvollisuutta maksaa korvausta tässä tapauksessa.",
+              "Jos ServerPunt on jo osittain täyttänyt velvoitteensa ylivoimaisen esteen sattuessa tai voi edelleen täyttää ne, ServerPunt:llä on oikeus laskuttaa tai hyvittää tuo osa erikseen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 24. Valitukset",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Klager vedrørende opfyldelsen af Aftalen skal indsendes til ServerPunt skriftligt, fuldt ud og klart beskrevet, inden for rimelig tid efter at Kunden har identificeret fejlen.",
+              {
+                "text": "Valituksia voidaan lähettää kautta:",
+                "sublist": [
+                  "sähköposti: info@serverpunt.com",
+                  "tai kirjallisesti postitse ServerPunt:n liikeosoitteeseen."
+                ]
+              },
+              "ServerPunt vastaa lähetettyihin valituksiin 14 päivän kuluessa vastaanottamisesta. Jos valitus vaatii ennakoitavasti pidemmän käsittelyajan, ServerPunt tiedottaa Asiakasta tämän ajan kuluessa.",
+              "Jos valitusta ei voida ratkaista keskinäisellä sopimuksella, syntyy riita, joka voidaan saattaa toimivaltaiselle tuomioistuimelle näissä yleisissä ehdoissa mainitulla tavalla."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 25. Sovellettava laki",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Hollannin laki koskee yksinomaan kaikkia sopimuksia ServerPunt:n ja asiakkaan välillä, joita nämä yleiset ehdot koskevat.",
+              "Tvister, der opstår som følge af eller vedrører Aftalen, skal indbringes udelukkende for den kompetente domstol i den retskreds, hvor ServerPunt er etableret, medmindre ufravigelig lovgivning bestemmer andet."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikkeli 26. Lopulliset määräykset",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt on oikeutettu muuttamaan tai täydentämään näitä yleisiä ehtoja. Muutetut ehdot julkaistaan ajoissa verkkosivustolla ja ne koskevat tulevia sopimuksia.",
+              "Jos näiden yleisten ehtojen määräykset osoittautuvat pätemättömiksi tai mitätöidään, se ei vaikuta jäljellä olevien määräysten voimassaoloon.",
+              "Nämä yleiset ehdot ja edellytykset on viimeksi muutettu 22. joulukuuta 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Yhteystiedot",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "vat": "VAT: NL868250983B01",
+      "emailLabel": "Sähköposti:",
+      "websiteLabel": "Kotisivu:"
+    }
+  },
+  "privacy": {
+    "title": "Tietosuojakäytäntö",
+    "lastModified": "Viimeksi muutettu: 5. helmikuuta 2026",
+    "sections": [
+      {
+        "title": "1. Tietojen käsittelijä",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), joka sijaitsee osoitteessa Kraaivenstraat 36-07, 5048 AB Tilburg, on rekisteröity Hollannin kauppakamarissa numerolla 97831441, ja on vastuussa tämän tietosuojakäytännön mukaisesta henkilötietojen käsittelystä."
+          },
+          {
+            "type": "p",
+            "text": "Yhteystiedot: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Henkilökohtaiset tiedot, joita käsittelemme",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt käsittelee henkilötietoja, koska käytät verkkosivustoamme ja palveluitamme, ja/tai koska luovutat meille nämä tiedot itse. Tämä sisältää muun muassa:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "etunimi ja sukunimi",
+              "osoitetiedot",
+              "sähköpostiosoite",
+              "puhelinnumero",
+              "betalings- og fakturadetaljer",
+              "IP-osoite",
+              "tilaushistoria",
+              "kirjeenvaihtotiedot"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Käsittelyn tarkoitus ja oikeudellinen peruste",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt käsittelee henkilötietoja yksinomaan seuraaviin tarkoituksiin ja vastaavien oikeudellisten perusteiden nojalla:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sopimuksen täyttäminen: tilausten käsittely, tuotteiden toimitus, sopimuksesta viestiminen",
+              "Oikeudellinen velvoite: laskutus, kirjanpito, verovelvoitteet",
+              "Oikeutettu etu: asiakaspalvelu, palveluiden parantaminen, petosten ehkäisy",
+              "Suostumus: uutiskirjeet ja markkinointiviestintä (jos sovellettavissa)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Säilytysajat",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt ei säilytä henkilötietoja pidempään kuin on tarpeen niitä varten kerättyjen tarkoitusten toteuttamiseksi, ottaen huomioon laissa säädetyt säilytysajat:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ordre- og fakturadata: 7 år (lovpligtig skatteopbevaringspligt)",
+              "Asiakaskommunikointi: enintään 2 vuotta",
+              "Tili- ja yhteystiedot: niin kauan kuin asiakassuhde on aktiivinen"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Henkilötietojen jakaminen kolmannelle osapuolelle",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt luovuttaa henkilötietoja kolmansille osapuolille vain, jos se on tarpeen sopimuksen täyttämiseksi tai lakisääteisen velvoitteen noudattamiseksi."
+          },
+          {
+            "type": "p",
+            "text": "Tämä sisältää muun muassa:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "maksupalveluntarjoajat",
+              "kantajat",
+              "kirjanpito-ohjelmisto",
+              "hosting- ja IT-palveluntarjoajat"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Missä se on laillisesti vaadittua, näiden osapuolten kanssa on tehty tietojenkäsittelysopimuksia."
+          }
+        ]
+      },
+      {
+        "title": "6. Evästeet",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt bruger funktionelle og analytiske cookies, der har ingen eller kun en mindre indvirkning på besøgendes privatliv."
+          },
+          {
+            "type": "p",
+            "text": "Näitä evästeitä käytetään:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "varmistaa, että verkkosivusto toimii oikein teknisestä näkökulmasta",
+              "saada tietoa verkkosivuston käytöstä ja parantaa verkkosivustoa."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Seurantaevästeitä ei aseteta ilman ennakkosuostumusta."
+          }
+        ]
+      },
+      {
+        "title": "7. Henkilötietojen turvallisuus",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt ryhtyy asianmukaisiin teknisiin ja organisatorisiin toimiin henkilötietojen suojaamiseksi katoamiselta, väärinkäytöltä, luvattomalta pääsyltä ja ei-toivotulta luovuttamiselta."
+          }
+        ]
+      },
+      {
+        "title": "8. Rekisteröidyn oikeudet",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Sinulla on oikeus:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "saada pääsy henkilökohtaisiin tietoihisi;",
+              "oikaista tai poistaa tietosi;",
+              "vastustaa käsittelyä;",
+              "pyytää käsittelyn rajoittamista;",
+              "saada tietosi siirretyksi (tietojen siirrettävyys)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Pyyntöjä voidaan lähettää info@serverpunt.com kautta. Sinulla on myös oikeus tehdä valitus Hollannin tietosuojaviranomaiselle (Autoriteit Persoonsgegevens)."
+          }
+        ]
+      },
+      {
+        "title": "9. Muutokset",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt pidättää itsellään oikeuden muuttaa tätä tietosuojakäytäntöä. Uusin versio on aina saatavilla verkkosivustolla."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Yhteystiedot",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "emailLabel": "Sähköposti:",
+      "websiteLabel": "Kotisivu:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Evästekäytäntö",
+    "lastModified": "Viimeksi muutettu: 9. helmikuuta 2026",
+    "intro": "Tämä evästekäytäntö koskee ServerPunt-verkkosivustoa, joka sijaitsee osoitteessa Kraaivenstraat 36-07, 5048 AB Tilburg, ja johon voidaan ottaa yhteyttä sähköpostitse info@serverpunt.com.",
+    "sections": [
+      {
+        "title": "1. Mitä evästeet ovat?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Evästeet ovat pieniä tekstitiedostoja, jotka tallennetaan tietokoneellesi, tabletille tai älypuhelimelle, kun vierailet verkkosivustolla. Evästeet varmistavat, että verkkosivusto toimii oikein, ja ne voivat kerätä tietoa verkkosivuston käytöstä."
+          }
+        ]
+      },
+      {
+        "title": "2. Mitä evästeitä ServerPunt käyttää?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt käyttää seuraavia evästytyyppejä:"
+          },
+          {
+            "type": "p",
+            "text": "a. Funktionaaliset evästeet (välttämättömät)"
+          },
+          {
+            "type": "p",
+            "text": "Nämä evästeet ovat tarpeellisia, jotta verkkosivusto toimii oikein. Ilman näitä evästeitä jotkin verkkosivuston osat eivät toimi oikein."
+          },
+          {
+            "type": "p",
+            "text": "Esimerkkejä:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Evästeasetusten muistaminen",
+              "Lataa sivut oikein",
+              "Perussivuston toiminnallisuus"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Näihin evästeisiin ei tarvita suostumusta."
+          },
+          {
+            "type": "p",
+            "text": "b. Analyyttiset evästeet"
+          },
+          {
+            "type": "p",
+            "text": "Analyyttiset evästeet antavat meille tietoa siitä, miten verkkosivustoamme käytetään. Tämä antaa meille mahdollisuuden parantaa verkkosivustoa ja tehdä siitä käyttäjäystävällisempi."
+          },
+          {
+            "type": "p",
+            "text": "Esimerkkejä:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Vierailijoiden määrä",
+              "Suositut sivut",
+              "Kuinka vierailijat selaavat verkkosivustoa"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Missä se on mahdollista, nämä tiedot anonymisoidaan eivätkä ne ole jäljitettävissä yksittäisiin henkilöihin."
+          },
+          {
+            "type": "p",
+            "text": "c. Markkinointi- ja seurantaevästeet (valinnainen)"
+          },
+          {
+            "type": "p",
+            "text": "Missä se on relevanttia, markkinointikeksejä voidaan käyttää näyttämään relevanttia sisältöä tai mainoksia ja mittaamaan kampanjoiden tehokkuutta."
+          },
+          {
+            "type": "p",
+            "text": "Nämä evästeet asetetaan vain nimenomaisella suostumuksella."
+          }
+        ]
+      },
+      {
+        "title": "3. Kolmannen osapuolen evästeet",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kolmas osapuoli (kuten analyysi- tai markkinointipalvelut) voi asettaa evästeitä verkkosivustomme kautta. ServerPunt ei hallitse suoraan näiden osapuolten evästeiden käyttöä. Suosittelemme myös tutustumaan näiden kolmansien osapuolten eväste- ja yksityisyyskäytäntöihin."
+          }
+        ]
+      },
+      {
+        "title": "4. Hallinnoi tai poista evästeitä",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Voit hallita tai poistaa evästeitä milloin tahansa selaimen asetusten kautta. Huomaa, että evästeiden poistaminen käytöstä voi vaikuttaa verkkosivuston toimintaan."
+          },
+          {
+            "type": "p",
+            "text": "Lisätietoja selaimittain:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Ændringer i denne cookiepolitik",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt pidättää oikeuden muuttaa tätä evästekäytäntöä. Suosittelemme tarkistamaan tämän sivun säännöllisesti pysyäksesi ajan tasalla mahdollisista muutoksista."
+          }
+        ]
+      },
+      {
+        "title": "6. Yhteystiedot",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Onko sinulla kysymyksiä evästekäytännöstämme tai siitä, kuinka käsittelemme tietoja? Olet tervetullut ottamaan meihin yhteyttä:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "Tietoja ServerPunt",
+    "intro1": "ServerPunt erikoistuu kunnostetun laitteiston ostamiseen ja myymiseen yksityishenkilöille ja yrityksille. Uskomme, että ammattilaistason laitteiston ei tarvitse olla uutta toimiakseen luotettavasti, tehokkaasti ja kestävällisesti.",
+    "intro2": "Näytöistä ja kannettavista tietokoneista täydellisiin palvelimiin ja palvelinkomponentteihin: kaikki tarjoamamme tuotteet on huolellisesti testattu, tarkastettu ja kunnostettu tarpeen mukaan. Tämä antaa korkealaatuiselle laitteistolle uuden elämän, kilpailukykyiseen hintaan ja minimoiduilla ympäristövaikutuksilla.",
+    "servers": {
+      "title": "Erikoistunut palvelinratkaisuihin",
+      "p1": "Vahvuutemme on räätälöidyissä ratkaisuissa. Emme tarjoa pelkästään yksittäisiä palvelimia ja komponentteja — autamme aktiivisesti määrittämään oikeat kokoonpanot tiettyihin työkuormiin, skaalautuvuuteen ja kasvuun. Teknisen tietämyksemme ja käytännön kokemuksemme ansiosta voimme reagoida nopeasti ja antaa kohdistettua neuvontaa.",
+      "p2": "ServerPunt:ssä läpinäkyvyys ja laatu ovat aina etusijalla. Meille kunnostettu laitteisto tarkoittaa:",
+      "bullet1Title": "Kohtuuhintainen laatu",
+      "bullet1Text": "ilman että tingitään suorituskyvystä",
+      "bullet2Title": "Kestävä valinta",
+      "bullet2Text": "uudelleenkäytön kautta",
+      "bullet3Title": "Nopea toimitus",
+      "bullet3Text": "henkilökohtainen kontakti",
+      "p3": "Kiitos teknisen tietämyksemme palvelimista ja komponenteista voimme osallistua ajatuksiin, neuvoa ja reagoida nopeasti tarpeen tullen."
+    },
+    "audience": {
+      "title": "Keitä varten me työskentelemme",
+      "p1": "Työskentelemme yksityishenkilöiden kanssa, jotka etsivät ammattimaista laitteistoa kilpailukykyiseen hintaan, sekä yritysten kanssa, jotka haluavat laajentaa tai uusia järjestelmiään. Riippumatta siitä, onko kyse yksittäisestä ostosta vai suuremmasta laajennuksesta, tarkastelemme yhdessä, mikä sopii parhaiten.",
+      "p2": "ServerPunt on enemmän kuin pelkkä toimittaja. Me olemme tekninen kumppani, joka ajattelee mukana, neuvoo ja toimittaa — nykyisten vaatimusten ja tulevaisuuden kasvun mukaisesti."
+    },
+    "values": {
+      "title": "Miksi ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Tekninen asiantuntemus",
+          "description": "Vankkaa tietoa palvelimista ja infrastruktuurista"
+        },
+        {
+          "icon": "✅",
+          "title": "Laatukontrolli",
+          "description": "Jokainen tuote testataan ja tarkastetaan huolellisesti"
+        },
+        {
+          "icon": "🌱",
+          "title": "Kestävä",
+          "description": "Laitteiston uudelleenkäyttö minimaalilla vaikutuksella"
+        },
+        {
+          "icon": "💰",
+          "title": "Kilpailukykyisesti hinnoiteltu",
+          "description": "Ammattilaistason laatu edulliseen hintaan"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kysymyksiä tai tarvitsetko neuvoja?",
+      "description": "Olet tervetullut ottamaan meihin yhteyttä. Autamme sinua mielellämme löytämään parhaan ratkaisun tilanteeseesi.",
+      "emailLabel": "Sähköposti:",
+      "addressLabel": "Osoite:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

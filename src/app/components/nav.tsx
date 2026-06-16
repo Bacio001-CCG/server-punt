@@ -1,7 +1,6 @@
 "use client";
-import Link from "next/link";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useEffect, useState, useRef } from "react";
-import { usePathname, useRouter } from "next/navigation";
 import Cart from "./cart";
 import useCart from "@/hooks/useCart";
 import { SelectBrand, SelectCategory, SelectProduct } from "@/database/schema";
@@ -11,6 +10,8 @@ import { searchProducts } from "@/lib/products";
 import Image from "next/image";
 import { Search, Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./locale-switcher";
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +29,8 @@ export default function Nav() {
     const pathname = usePathname();
     const router = useRouter();
     const searchRef = useRef<HTMLDivElement>(null);
+    const t = useTranslations("nav");
+    const tCommon = useTranslations("common");
 
     useEffect(() => {
         async function fetchCategories() {
@@ -142,7 +145,7 @@ export default function Nav() {
                                     setIsMobileMenuOpen(!isMobileMenuOpen)
                                 }
                                 className="md:hidden p-2 -ml-2"
-                                aria-label="Toggle menu"
+                                aria-label={tCommon("toggleMenu")}
                             >
                                 {isMobileMenuOpen ? (
                                     <X size={24} />
@@ -175,7 +178,7 @@ export default function Nav() {
                                                 }`}
                                             href="/"
                                         >
-                                            Home
+                                            {t("home")}
                                         </Link>
                                     </li>
                                     <li>
@@ -186,12 +189,23 @@ export default function Nav() {
                                                 }`}
                                             href="/products"
                                         >
-                                            Producten
+                                            {t("products")}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className={`text-sm font-medium transition-colors ${pathname === "/configurator"
+                                                ? "font-bold text-primary"
+                                                : "text-muted-foreground hover:text-primary"
+                                                }`}
+                                            href="/configurator"
+                                        >
+                                            {t("configurator")}
                                         </Link>
                                     </li>
                                     <li className="relative group">
                                         <span className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground cursor-pointer">
-                                            Categorieën
+                                            {t("categories")}
                                         </span>
                                         <ul
                                             className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[50vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
@@ -217,7 +231,7 @@ export default function Nav() {
                                     </li>
                                     <li className="relative group">
                                         <span className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground cursor-pointer">
-                                            Merken
+                                            {t("brands")}
                                         </span>
                                         <ul
                                             className="absolute left-0 hidden mt-0 w-48 overflow-hidden max-h-[50vh] overflow-y-auto bg-white border rounded-lg shadow-lg group-hover:block group-hover:pointer-events-auto z-10"
@@ -245,7 +259,7 @@ export default function Nav() {
                                                 }`}
                                             href="/about-us"
                                         >
-                                            Over ons
+                                            {t("aboutUs")}
                                         </Link>
                                     </li>
                                 </ul>
@@ -261,7 +275,7 @@ export default function Nav() {
                                 <div className="relative w-full">
                                     <input
                                         type="text"
-                                        placeholder="Zoek producten..."
+                                        placeholder={tCommon("searchProducts")}
                                         value={searchQuery}
                                         onChange={(e) =>
                                             setSearchQuery(e.target.value)
@@ -274,7 +288,7 @@ export default function Nav() {
                                     <button
                                         type="submit"
                                         className="absolute right-2 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-primary transition-colors"
-                                        aria-label="Search"
+                                        aria-label={tCommon("search")}
                                     >
                                         <Search size={18} />
                                     </button>
@@ -328,8 +342,9 @@ export default function Nav() {
                                                 className="text-sm text-primary hover:text-primary/80 font-medium flex items-center justify-between"
                                             >
                                                 <span>
-                                                    Bekijk alle {totalResults}{" "}
-                                                    resultaten
+                                                    {tCommon("viewAllResults", {
+                                                        count: totalResults,
+                                                    })}
                                                 </span>
                                                 <Search size={16} />
                                             </Link>
@@ -344,21 +359,23 @@ export default function Nav() {
                                 searchResults.length === 0 && (
                                     <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4">
                                         <p className="text-sm text-gray-500 text-center">
-                                            Geen producten gevonden voor "
-                                            {searchQuery}"
+                                            {tCommon("noProductsFound", {
+                                                query: searchQuery,
+                                            })}
                                         </p>
                                     </div>
                                 )}
                         </div>
 
-                        {/* Cart Button */}
-                        <div>
+                        {/* Cart Button & Locale */}
+                        <div className="flex items-center gap-2">
+                            <LocaleSwitcher />
                             <div className="relative">
                                 <div className="relative">
                                     <button
                                         onClick={() => setIsOpen(!isOpen)}
                                         className="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all duration-200 ease-in-out outline-none focus:shadow-lg focus-visible:border-ring active:shadow disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 size-9 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground hover:shadow-md focus-visible:ring-2 focus-visible:ring-accent/40 dark:border-input dark:bg-input/30 dark:hover:bg-input/50 relative h-9 w-9 rounded-full"
-                                        aria-label="Open cart"
+                                        aria-label={tCommon("openCart")}
                                         type="button"
                                     >
                                         <svg
@@ -417,7 +434,7 @@ export default function Nav() {
                         <div className="relative w-full">
                             <input
                                 type="text"
-                                placeholder="Zoek producten..."
+                                placeholder={tCommon("searchProducts")}
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 className="w-full px-4 py-2 pr-10 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
@@ -441,7 +458,7 @@ export default function Nav() {
                                 : "text-muted-foreground hover:bg-gray-100"
                                 }`}
                         >
-                            Home
+                            {t("home")}
                         </Link>
 
                         <Link
@@ -451,7 +468,17 @@ export default function Nav() {
                                 : "text-muted-foreground hover:bg-gray-100"
                                 }`}
                         >
-                            Producten
+                            {t("products")}
+                        </Link>
+
+                        <Link
+                            href="/configurator"
+                            className={`px-4 py-3 rounded-lg transition-colors ${pathname === "/configurator"
+                                ? "bg-primary text-primary-foreground font-semibold"
+                                : "text-muted-foreground hover:bg-gray-100"
+                                }`}
+                        >
+                            {t("configurator")}
                         </Link>
 
                         {/* Categories Accordion */}
@@ -464,7 +491,7 @@ export default function Nav() {
                                 }
                                 className="w-full flex items-center justify-between px-4 py-3 text-muted-foreground hover:bg-gray-100 rounded-lg transition-colors"
                             >
-                                <span>Categorieën</span>
+                                <span>{t("categories")}</span>
                                 <ChevronDown
                                     size={20}
                                     className={`transform transition-transform ${mobileCategoriesOpen ? "rotate-180" : ""
@@ -498,7 +525,7 @@ export default function Nav() {
                                 }
                                 className="w-full flex items-center justify-between px-4 py-3 text-muted-foreground hover:bg-gray-100 rounded-lg transition-colors"
                             >
-                                <span>Merken</span>
+                                <span>{t("brands")}</span>
                                 <ChevronDown
                                     size={20}
                                     className={`transform transition-transform ${mobileBrandsOpen ? "rotate-180" : ""
@@ -529,7 +556,7 @@ export default function Nav() {
                                 : "text-muted-foreground hover:bg-gray-100"
                                 }`}
                         >
-                            Over ons
+                            {t("aboutUs")}
                         </Link>
                     </nav>
                 </div>

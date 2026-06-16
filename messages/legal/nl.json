@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Algemene Voorwaarden",
+    "lastModified": "Laatst gewijzigd: 22 december 2025",
+    "sections": [
+      {
+        "title": "Artikel 1. Definities",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "In deze algemene voorwaarden wordt verstaan onder:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "ServerPunt / NetwerkPunt",
+                "text": "de vennootschap onder firma NetwerkPunt, handelend onder de naam ServerPunt, gevestigd aan de Kraaivenstraat 36-07, 5048 AB Tilburg, ingeschreven bij de Kamer van Koophandel onder nummer 97831441."
+              },
+              {
+                "term": "Klant",
+                "text": "iedere natuurlijke persoon of rechtspersoon die een Overeenkomst aangaat of wil aangaan met ServerPunt."
+              },
+              {
+                "term": "Consument",
+                "text": "de Klant die een natuurlijke persoon is en handelt voor doeleinden die buiten zijn bedrijfs- of beroepsactiviteit vallen."
+              },
+              {
+                "term": "Zakelijke klant",
+                "text": "de Klant die handelt in de uitoefening van een beroep of bedrijf."
+              },
+              {
+                "term": "Overeenkomst",
+                "text": "iedere overeenkomst die tussen ServerPunt en Klant tot stand komt, waaronder begrepen koop op afstand via de Website, en alle daaruit voortvloeiende verbintenissen."
+              },
+              {
+                "term": "Website",
+                "text": "de website van ServerPunt via welke producten worden aangeboden en bestellingen kunnen worden geplaatst, te weten https://serverpunt.com/."
+              },
+              {
+                "term": "Product(en)",
+                "text": "alle door ServerPunt aangeboden zaken, waaronder begrepen refurbished IT-hardware, servers, serveronderdelen en accessoires."
+              },
+              {
+                "term": "Refurbished",
+                "text": "gebruikte hardware die door ServerPunt is gecontroleerd, getest en waar nodig gereinigd en/of hersteld, en vervolgens opnieuw wordt aangeboden. Refurbished producten kunnen gebruikssporen vertonen en afwijken van nieuwstaat."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 2. Toepasselijkheid",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Deze algemene voorwaarden zijn van toepassing op elk aanbod van ServerPunt en op elke tot stand gekomen Overeenkomst tussen ServerPunt en de Klant.",
+              "Afwijkingen van deze algemene voorwaarden zijn alleen geldig indien deze uitdrukkelijk en schriftelijk (waaronder per e-mail) door ServerPunt zijn bevestigd.",
+              "De toepasselijkheid van (inkoop)voorwaarden van de Klant wordt uitdrukkelijk uitgesloten, tenzij deze door ServerPunt uitdrukkelijk en schriftelijk zijn aanvaard.",
+              "Indien enige bepaling uit deze algemene voorwaarden geheel of gedeeltelijk nietig is of vernietigd wordt, blijven de overige bepalingen volledig van kracht. In dat geval zullen partijen de betreffende bepaling vervangen door een bepaling die zoveel mogelijk aansluit bij doel en strekking van de oorspronkelijke bepaling.",
+              "In geval van strijdigheid tussen de inhoud van de Website en deze algemene voorwaarden, prevaleren deze algemene voorwaarden, tenzij uitdrukkelijk anders is aangegeven."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 3. Het aanbod",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Alle aanbiedingen en productomschrijvingen op de Website van ServerPunt zijn vrijblijvend, tenzij uitdrukkelijk anders vermeld.",
+              "ServerPunt stelt de informatie op de Website met de grootst mogelijke zorg samen. Desondanks kunnen kennelijke vergissingen of fouten voorkomen, zoals typefouten, prijsfouten, onjuiste specificaties of onjuiste afbeeldingen. Aan dergelijke fouten kunnen geen rechten worden ontleend.",
+              "Afbeeldingen van Producten dienen ter illustratie en kunnen afwijken van het daadwerkelijk geleverde Product, mede gezien het refurbished karakter van de aangeboden hardware.",
+              "ServerPunt is gerechtigd een bestelling te annuleren of aan te passen indien sprake is van een kennelijke fout in het aanbod, zoals een evidente prijsfout of een onjuist weergegeven producteigenschap.",
+              "Het aanbod geldt zolang de voorraad strekt. Indien een Product niet (meer) leverbaar is, zal ServerPunt de Klant hierover zo spoedig mogelijk informeren."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 4. Totstandkoming van de overeenkomst",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "De Overeenkomst komt tot stand op het moment dat de Klant het aanbod van ServerPunt aanvaardt door het plaatsen van een bestelling via de Website en deze bestelling door ServerPunt per e-mail is bevestigd.",
+              {
+                "text": "ServerPunt is gerechtigd een bestelling te weigeren of aanvullende voorwaarden te stellen, onder meer indien:",
+                "sublist": [
+                  "de Klant onjuiste of onvolledige gegevens heeft verstrekt;",
+                  "eerdere betalingsverplichtingen niet zijn nagekomen;",
+                  "er gegronde redenen bestaan om aan de betalingscapaciteit van de Klant te twijfelen."
+                ]
+              },
+              "Na het plaatsen van een bestelling ontvangt de Klant een orderbevestiging per e-mail. Deze bevestiging vormt geen factuur.",
+              "Kennelijke vergissingen of fouten in de orderbevestiging binden ServerPunt niet."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 5. Wijzigingen en annulering door ServerPunt",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Indien na het sluiten van de Overeenkomst blijkt dat het bestelde Product niet (meer) beschikbaar is of niet geleverd kan worden, is ServerPunt gerechtigd de Overeenkomst te ontbinden.",
+              "In geval van ontbinding zoals bedoeld in dit artikel zal ServerPunt eventueel reeds door de Klant betaalde bedragen zo spoedig mogelijk, doch uiterlijk binnen 14 dagen, terugbetalen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 6. Prijzen",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Alle op de Website vermelde prijzen zijn in euro's en inclusief btw, tenzij uitdrukkelijk anders vermeld.",
+              "Voor zakelijke klanten kunnen prijzen exclusief btw worden weergegeven. In dat geval wordt dit duidelijk bij het aanbod vermeld.",
+              "Eventuele verzendkosten, administratiekosten of andere bijkomende kosten worden vóór het sluiten van de Overeenkomst duidelijk aan de Klant gecommuniceerd.",
+              "ServerPunt behoudt zich het recht voor om prijzen te wijzigen. Prijswijzigingen hebben geen invloed op reeds tot stand gekomen Overeenkomsten."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 7. Betaling",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Betaling dient te geschieden via de op de Website aangeboden betaalmethoden, tenzij schriftelijk anders overeengekomen.",
+              "ServerPunt is gerechtigd een bestelling pas in behandeling te nemen nadat de volledige betaling is ontvangen, tenzij uitdrukkelijk anders overeengekomen.",
+              "In geval van betaling achteraf of betaling op factuur (uitsluitend voor zakelijke klanten) geldt de op de factuur vermelde betalingstermijn.",
+              "Indien de Klant niet tijdig aan zijn betalingsverplichting voldoet, is de Klant van rechtswege in verzuim. Vanaf dat moment is ServerPunt gerechtigd wettelijke (handels)rente in rekening te brengen.",
+              "Alle redelijke kosten ter verkrijging van voldoening buiten rechte komen voor rekening van de Klant.",
+              "Voor zakelijke klanten geldt een betalingstermijn van 14 dagen na factuurdatum, tenzij schriftelijk anders overeengekomen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 8. Facturatie",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Facturen worden elektronisch verstrekt, tenzij anders overeengekomen.",
+              "Bezwaren tegen een factuur dienen binnen 7 dagen na factuurdatum schriftelijk aan ServerPunt te worden gemeld."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 9. Levering",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Levering van Producten vindt plaats op het door de Klant bij de bestelling opgegeven afleveradres, tenzij schriftelijk anders overeengekomen.",
+              "ServerPunt zal bestellingen met de grootst mogelijke zorg verwerken en verzenden.",
+              "Indien levering op een afgesproken adres niet mogelijk blijkt, is ServerPunt gerechtigd het Product op een andere wijze aan de Klant ter beschikking te stellen of de Overeenkomst te ontbinden."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 10. Levertijden",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Door ServerPunt opgegeven levertijden zijn indicatief en vormen geen fatale termijnen, tenzij uitdrukkelijk schriftelijk anders overeengekomen.",
+              "Overschrijding van een levertijd geeft de Klant geen recht op schadevergoeding of ontbinding van de Overeenkomst, tenzij sprake is van opzet of grove nalatigheid van ServerPunt.",
+              "Indien levering vertraagd is of een bestelling niet of slechts gedeeltelijk kan worden uitgevoerd, zal ServerPunt de Klant hierover zo spoedig mogelijk informeren."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 11. Risico-overgang en transportschade",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Het risico van verlies of beschadiging van Producten gaat over op de Consument op het moment van feitelijke ontvangst van het Product.",
+              "Voor zakelijke klanten gaat het risico over op het moment van verzending van het Product.",
+              "De Klant dient het Product direct na ontvangst te controleren op transportschade en zichtbare gebreken. Eventuele schade of gebreken dienen binnen 48 uur na ontvangst schriftelijk aan ServerPunt te worden gemeld, onder bijvoeging van foto's van het Product en de verpakking.",
+              "Indien transportschade tijdig en correct is gemeld, zal ServerPunt naar eigen keuze zorgdragen voor herstel, vervanging of terugbetaling."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 12. Afhalen",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Indien afhalen is overeengekomen, dient de Klant het Product op het afgesproken tijdstip en adres af te halen.",
+              "Bij afhalen gaat het risico over op de Klant op het moment van overdracht van het Product."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 13. Herroepingsrecht",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "De Consument heeft het recht de Overeenkomst met betrekking tot de aankoop van een Product binnen 14 dagen na ontvangst zonder opgave van redenen te ontbinden.",
+              "De herroepingstermijn verstrijkt 14 dagen na de dag waarop de Consument, of een door hem aangewezen derde, het Product heeft ontvangen.",
+              "Om gebruik te maken van het herroepingsrecht dient de Consument ServerPunt binnen de herroepingstermijn via e-mail of een andere ondubbelzinnige verklaring op de hoogte te stellen van de beslissing de Overeenkomst te ontbinden."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 14. Gevolgen van herroeping",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Indien de Consument de Overeenkomst herroept, ontvangt hij alle betalingen die tot dan toe zijn gedaan, inclusief eventuele standaard verzendkosten, uiterlijk binnen 14 dagen na de dag waarop ServerPunt van de herroeping op de hoogte is gesteld, terug.",
+              "ServerPunt mag wachten met terugbetalen tot het Product is ontvangen, of totdat de Consument heeft aangetoond dat het Product is teruggezonden, afhankelijk van welk tijdstip eerst valt.",
+              "Terugbetaling geschiedt via hetzelfde betaalmiddel als waarmee de oorspronkelijke transactie is verricht, tenzij anders overeengekomen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 15. Retourvoorwaarden",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Tijdens de herroepingstermijn dient de Consument zorgvuldig om te gaan met het Product en de verpakking. Het Product mag slechts worden uitgepakt en gebruikt voor zover dat nodig is om de aard, kenmerken en werking vast te stellen.",
+              "Indien het Product meer is gebruikt dan toegestaan, is de Consument aansprakelijk voor de waardevermindering van het Product.",
+              "De Consument is verantwoordelijk voor een correcte en deugdelijke retourverzending van het Product."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 16. Retourkosten",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "De kosten voor retourzending zijn voor rekening van de Consument, tenzij anders overeengekomen.",
+              "Indien ServerPunt het Product bij de Consument heeft opgehaald, worden de kosten hiervan aan de Consument doorberekend.",
+              "Retourzendingen dienen te worden verzonden naar het vestigingsadres van ServerPunt aan de Kraaivenstraat 36-07, 5048 AB Tilburg, tenzij schriftelijk anders overeengekomen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 17. Uitsluiting herroepingsrecht",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Het herroepingsrecht is uitgesloten voor:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "zakelijke klanten;",
+              "Producten die naar aard niet kunnen worden teruggezonden;",
+              "Producten die duidelijk persoonlijk of op maat zijn samengesteld;",
+              "Producten waarvan de verzegeling is verbroken om redenen van hygiëne of veiligheid, indien van toepassing."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "Artikel 18. Garantie & conformiteit",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt staat ervoor in dat de geleverde Producten voldoen aan de Overeenkomst, de in het aanbod vermelde specificaties en de redelijke eisen van deugdelijkheid en bruikbaarheid, rekening houdend met het refurbished karakter van de Producten.",
+              "Refurbished Producten zijn gebruikte goederen en kunnen gebruikssporen vertonen. Afwijkingen ten opzichte van nieuwstaat, zoals lichte cosmetische beschadigingen, vormen geen gebrek en geven geen recht op vervanging, herstel of ontbinding.",
+              "Voor Consumenten geldt de wettelijke garantie. Dit betekent dat een Product datgene moet doen wat de Consument er in redelijkheid van mag verwachten. ServerPunt kan deze wettelijke garantie niet uitsluiten of beperken.",
+              "Eventuele aanvullende garantie die door ServerPunt wordt verstrekt, wordt uitdrukkelijk en schriftelijk vermeld bij het Product en laat de wettelijke garantie onverlet.",
+              "Voor zakelijke klanten geldt uitsluitend de door ServerPunt uitdrukkelijk verstrekte garantie. Bij gebreke daarvan geldt geen aanvullende garantie.",
+              "Indien bij een Product geen aanvullende garantieperiode wordt vermeld, geldt uitsluitend de wettelijke garantie voor Consumenten en geen aanvullende garantie voor zakelijke klanten."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 19. Melding van gebreken",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "De Klant is verplicht het Product zo spoedig mogelijk na ontvangst te controleren op gebreken.",
+              "Gebreken die niet zichtbaar waren bij ontvangst dienen door de Consument binnen bekwame tijd na ontdekking te worden gemeld.",
+              "Zakelijke klanten dienen gebreken binnen 7 dagen na ontvangst schriftelijk te melden. Bij gebreke hiervan vervalt het recht op herstel, vervanging of enige andere compensatie."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 20. Herstel en vervanging",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Indien een Product niet conform de Overeenkomst blijkt te zijn, zal ServerPunt het Product naar eigen keuze herstellen of vervangen, tenzij dit onmogelijk is of onevenredige kosten met zich meebrengt.",
+              "Indien herstel of vervanging niet mogelijk is, kan ServerPunt overgaan tot (gedeeltelijke) terugbetaling of ontbinding van de Overeenkomst."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 21. Aansprakelijkheid",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "De aansprakelijkheid van ServerPunt is beperkt tot het bedrag dat voor het betreffende Product door de Klant is betaald, met een absoluut maximum van het factuurbedrag.",
+              {
+                "text": "ServerPunt is nimmer aansprakelijk voor indirecte schade, waaronder begrepen maar niet beperkt tot:",
+                "sublist": [
+                  "gevolgschade;",
+                  "gederfde winst;",
+                  "gemiste besparingen;",
+                  "dataverlies;",
+                  "bedrijfsschade;",
+                  "schade door bedrijfsstilstand."
+                ]
+              },
+              {
+                "text": "ServerPunt is niet aansprakelijk voor schade die is ontstaan door:",
+                "sublist": [
+                  "onoordeelkundig of onjuist gebruik van het Product;",
+                  "gebruik buiten de door ServerPunt opgegeven specificaties;",
+                  "zelf uitgevoerde reparaties of aanpassingen;",
+                  "gebruik in combinatie met ondeugdelijke of ongeschikte randapparatuur."
+                ]
+              },
+              "De in dit artikel opgenomen beperkingen van aansprakelijkheid gelden niet indien de schade het gevolg is van opzet of grove nalatigheid van ServerPunt, of voor zover aansprakelijkheid niet kan worden uitgesloten op grond van dwingend recht."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 22. Vrijwaring",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "De Klant vrijwaart ServerPunt tegen alle aanspraken van derden die verband houden met het gebruik van de geleverde Producten.",
+              "De Klant is verantwoordelijk voor het maken van adequate back-ups van data. ServerPunt is niet aansprakelijk voor verlies of beschadiging van data, ongeacht de oorzaak."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 23. Overmacht",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt is niet gehouden tot het nakomen van enige verplichting jegens de Klant indien zij daartoe gehinderd wordt als gevolg van overmacht.",
+              {
+                "text": "Onder overmacht wordt in ieder geval verstaan elke van de wil van ServerPunt onafhankelijke omstandigheid die de nakoming van verplichtingen tijdelijk of blijvend verhindert, waaronder mede begrepen:",
+                "sublist": [
+                  "storingen bij vervoerders of leveranciers;",
+                  "vertragingen of uitval in transport;",
+                  "inkoopproblemen of voorraadtekorten;",
+                  "stroomstoringen;",
+                  "internet- of netwerkstoringen;",
+                  "brand, waterschade of andere calamiteiten;",
+                  "overheidsmaatregelen;",
+                  "epidemieën, pandemieën en daarmee samenhangende beperkingen."
+                ]
+              },
+              "Indien de overmachtssituatie langer dan 30 dagen voortduurt, zijn zowel ServerPunt als de Klant gerechtigd de Overeenkomst schriftelijk te ontbinden, zonder dat er in dat geval een verplichting tot schadevergoeding bestaat.",
+              "Indien ServerPunt bij het intreden van de overmacht al gedeeltelijk aan haar verplichtingen heeft voldaan, of deze kan nakomen, is ServerPunt gerechtigd dat deel afzonderlijk te factureren of te verrekenen."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 24. Klachten",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Klachten over de uitvoering van de Overeenkomst dienen binnen bekwame tijd nadat de Klant het gebrek heeft geconstateerd, volledig en duidelijk omschreven schriftelijk te worden ingediend bij ServerPunt.",
+              {
+                "text": "Klachten kunnen worden ingediend via:",
+                "sublist": [
+                  "e-mail: info@serverpunt.com",
+                  "of schriftelijk per post naar het vestigingsadres van ServerPunt."
+                ]
+              },
+              "ServerPunt zal ingediende klachten binnen 14 dagen na ontvangst beantwoorden. Indien een klacht een voorzienbaar langere verwerkingstijd vereist, zal ServerPunt de Klant hiervan binnen deze termijn op de hoogte stellen.",
+              "Indien een klacht niet in onderling overleg kan worden opgelost, ontstaat een geschil dat kan worden voorgelegd aan de bevoegde rechter, zoals bepaald in deze algemene voorwaarden."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 25. Toepasselijk recht",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Op alle Overeenkomsten tussen ServerPunt en de Klant waarop deze algemene voorwaarden van toepassing zijn, is uitsluitend Nederlands recht van toepassing.",
+              "Geschillen die voortvloeien uit of verband houden met de Overeenkomst zullen uitsluitend worden voorgelegd aan de bevoegde rechter in het arrondissement waar ServerPunt is gevestigd, tenzij dwingend recht anders voorschrijft."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Artikel 26. Slotbepalingen",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt is gerechtigd deze algemene voorwaarden te wijzigen of aan te vullen. Gewijzigde voorwaarden worden tijdig via de Website bekendgemaakt en zijn van toepassing op toekomstige Overeenkomsten.",
+              "Indien bepalingen uit deze algemene voorwaarden nietig blijken te zijn of worden vernietigd, tast dit niet de geldigheid van de overige bepalingen aan.",
+              "Deze algemene voorwaarden zijn voor het laatst gewijzigd op 22 december 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Contact",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "KvK: 97831441",
+      "vat": "BTW: NL868250983B01",
+      "emailLabel": "E-mail:",
+      "websiteLabel": "Website:"
+    }
+  },
+  "privacy": {
+    "title": "Privacyverklaring",
+    "lastModified": "Laatst gewijzigd: 5 februari 2026",
+    "sections": [
+      {
+        "title": "1. Verantwoordelijke",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), gevestigd aan de Kraaivenstraat 36-07, 5048 AB Tilburg, ingeschreven bij de Kamer van Koophandel onder nummer 97831441, is verantwoordelijk voor de verwerking van persoonsgegevens zoals beschreven in deze privacyverklaring."
+          },
+          {
+            "type": "p",
+            "text": "Contact: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Persoonsgegevens die wij verwerken",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt verwerkt persoonsgegevens doordat je gebruik maakt van onze website en diensten, en/of omdat je deze zelf aan ons verstrekt. Het betreft onder meer:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "voor- en achternaam",
+              "adresgegevens",
+              "e-mailadres",
+              "telefoonnummer",
+              "betaal- en factuurgegevens",
+              "IP-adres",
+              "bestelgeschiedenis",
+              "correspondentiegegevens"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Doeleinden en rechtsgronden van verwerking",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt verwerkt persoonsgegevens uitsluitend voor de volgende doeleinden en op basis van de daarbij behorende rechtsgronden:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Uitvoering van de overeenkomst: verwerken van bestellingen, levering van producten, communicatie over de overeenkomst",
+              "Wettelijke verplichting: facturatie, boekhouding, fiscale verplichtingen",
+              "Gerechtvaardigd belang: klantenservice, verbetering van dienstverlening, fraudepreventie",
+              "Toestemming: nieuwsbrieven en marketingcommunicatie (indien van toepassing)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Bewaartermijnen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt bewaart persoonsgegevens niet langer dan noodzakelijk is voor de doeleinden waarvoor deze zijn verzameld, met inachtneming van wettelijke bewaartermijnen:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Bestel- en factuurgegevens: 7 jaar (fiscale bewaarplicht)",
+              "Klantcommunicatie: maximaal 2 jaar",
+              "Account- en contactgegevens: zolang de klantrelatie actief is"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Delen van persoonsgegevens met derden",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt verstrekt persoonsgegevens uitsluitend aan derden indien dit noodzakelijk is voor de uitvoering van de overeenkomst of om te voldoen aan een wettelijke verplichting."
+          },
+          {
+            "type": "p",
+            "text": "Dit betreft onder meer:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "betaalproviders",
+              "vervoerders",
+              "boekhoudsoftware",
+              "hosting- en IT-dienstverleners"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Met deze partijen zijn, waar wettelijk vereist, verwerkersovereenkomsten gesloten."
+          }
+        ]
+      },
+      {
+        "title": "6. Cookies",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt maakt gebruik van functionele en analytische cookies die geen of geringe inbreuk maken op de privacy van bezoekers."
+          },
+          {
+            "type": "p",
+            "text": "Deze cookies worden gebruikt om:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "de website technisch goed te laten functioneren;",
+              "inzicht te krijgen in het gebruik van de website en deze te verbeteren."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Er worden geen trackingcookies geplaatst zonder voorafgaande toestemming."
+          }
+        ]
+      },
+      {
+        "title": "7. Beveiliging van persoonsgegevens",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt neemt passende technische en organisatorische maatregelen om persoonsgegevens te beveiligen tegen verlies, misbruik, onbevoegde toegang en ongewenste openbaarmaking."
+          }
+        ]
+      },
+      {
+        "title": "8. Rechten van betrokkenen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Je hebt het recht om:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "je persoonsgegevens in te zien;",
+              "je gegevens te laten corrigeren of verwijderen;",
+              "bezwaar te maken tegen verwerking;",
+              "beperking van verwerking te verzoeken;",
+              "je gegevens over te laten dragen (dataportabiliteit)."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Verzoeken kunnen worden ingediend via info@serverpunt.com. Daarnaast heb je het recht een klacht in te dienen bij de Autoriteit Persoonsgegevens."
+          }
+        ]
+      },
+      {
+        "title": "9. Wijzigingen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt behoudt zich het recht voor deze privacyverklaring te wijzigen. De meest actuele versie is altijd beschikbaar op de website."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Contact",
+      "company": "ServerPunt / NetwerkPunt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "KvK: 97831441",
+      "emailLabel": "E-mail:",
+      "websiteLabel": "Website:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookiebeleid",
+    "lastModified": "Laatst gewijzigd: 9 februari 2026",
+    "intro": "Dit cookiebeleid is van toepassing op de website van ServerPunt, gevestigd aan Kraaivenstraat 36-07, 5048 AB Tilburg, en bereikbaar via info@serverpunt.com.",
+    "sections": [
+      {
+        "title": "1. Wat zijn cookies?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cookies zijn kleine tekstbestanden die bij een bezoek aan een website op je computer, tablet of smartphone worden opgeslagen. Cookies zorgen ervoor dat een website goed functioneert en kunnen informatie verzamelen over het gebruik van de website."
+          }
+        ]
+      },
+      {
+        "title": "2. Welke cookies gebruikt ServerPunt?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt maakt gebruik van de volgende soorten cookies:"
+          },
+          {
+            "type": "p",
+            "text": "a. Functionele cookies (noodzakelijk)"
+          },
+          {
+            "type": "p",
+            "text": "Deze cookies zijn nodig om de website goed te laten werken. Zonder deze cookies kunnen bepaalde onderdelen van de website niet correct functioneren."
+          },
+          {
+            "type": "p",
+            "text": "Voorbeelden:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Het onthouden van cookievoorkeuren",
+              "Het correct laden van pagina's",
+              "Basisfunctionaliteit van de website"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Voor deze cookies is geen toestemming vereist."
+          },
+          {
+            "type": "p",
+            "text": "b. Analytische cookies"
+          },
+          {
+            "type": "p",
+            "text": "Met analytische cookies krijgen wij inzicht in het gebruik van onze website. Hiermee kunnen wij de website verbeteren en gebruiksvriendelijker maken."
+          },
+          {
+            "type": "p",
+            "text": "Voorbeelden:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Aantal bezoekers",
+              "Populaire pagina's",
+              "Hoe bezoekers door de website navigeren"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Waar mogelijk worden deze gegevens geanonimiseerd en kunnen ze niet worden herleid tot individuele personen."
+          },
+          {
+            "type": "p",
+            "text": "c. Marketing- en trackingcookies (optioneel)"
+          },
+          {
+            "type": "p",
+            "text": "Indien van toepassing kunnen marketingcookies worden gebruikt om relevante content of advertenties te tonen en om het effect van campagnes te meten."
+          },
+          {
+            "type": "p",
+            "text": "Deze cookies worden alleen geplaatst na expliciete toestemming."
+          }
+        ]
+      },
+      {
+        "title": "3. Cookies van derden",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Het kan voorkomen dat derde partijen (zoals analytics- of marketingdiensten) cookies plaatsen via onze website. ServerPunt heeft geen directe invloed op het gebruik van cookies door deze partijen. Wij adviseren om ook het cookie- en privacybeleid van deze derden te raadplegen."
+          }
+        ]
+      },
+      {
+        "title": "4. Cookies beheren of verwijderen",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Je kunt cookies op elk moment zelf beheren of verwijderen via de instellingen van je browser. Houd er rekening mee dat het uitschakelen van cookies invloed kan hebben op de werking van de website."
+          },
+          {
+            "type": "p",
+            "text": "Meer informatie per browser:"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/nl/kb/cookies-verwijderen-gegevens-wissen-websites-opgeslagen"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/nl-nl/microsoft-edge/cookies-verwijderen-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/nl-nl/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Wijzigingen in dit cookiebeleid",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt behoudt zich het recht voor om dit cookiebeleid te wijzigen. Wij raden aan deze pagina regelmatig te bekijken om op de hoogte te blijven van eventuele aanpassingen."
+          }
+        ]
+      },
+      {
+        "title": "6. Contact",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Heb je vragen over ons cookiebeleid of de manier waarop wij omgaan met gegevens? Neem dan gerust contact met ons op:"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServerPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "Over ServerPunt",
+    "intro1": "ServerPunt is gespecialiseerd in de inkoop en verkoop van refurbished hardware voor particulieren en bedrijven. Wij geloven dat professionele hardware niet nieuw hoeft te zijn om betrouwbaar, krachtig en toekomstbestendig te presteren.",
+    "intro2": "Van monitoren en laptops tot complete servers en serveronderdelen: alle producten die wij aanbieden worden zorgvuldig getest, gecontroleerd en waar nodig opgeknapt. Zo geven wij hoogwaardige hardware een tweede leven, tegen een scherpe prijs en met minimale impact op het milieu.",
+    "servers": {
+      "title": "Gespecialiseerd in serveroplossingen",
+      "p1": "Onze kracht ligt in maatwerk. Wij leveren niet alleen losse servers en onderdelen, maar denken actief mee over de juiste configuraties voor specifieke workloads, schaalbaarheid en groei. Dankzij onze technische kennis en praktische ervaring kunnen wij snel schakelen en doelgericht adviseren.",
+      "p2": "Bij ServerPunt staan transparantie en kwaliteit altijd voorop. Refurbished hardware betekent bij ons:",
+      "bullet1Title": "Betaalbare kwaliteit",
+      "bullet1Text": "zonder in te leveren op prestaties",
+      "bullet2Title": "Een duurzame keuze",
+      "bullet2Text": "door hergebruik",
+      "bullet3Title": "Snelle levering",
+      "bullet3Text": "met persoonlijk contact",
+      "p3": "Dankzij onze technische kennis van servers en onderdelen kunnen we meedenken, adviseren en snel schakelen wanneer dat nodig is."
+    },
+    "audience": {
+      "title": "Voor wie wij werken",
+      "p1": "We werken voor particulieren die op zoek zijn naar professionele hardware voor een scherpe prijs, maar ook voor bedrijven die hun systemen willen uitbreiden of vernieuwen. Of het nu gaat om een enkele aankoop of een grotere uitbreiding, we kijken samen naar wat het beste past.",
+      "p2": "ServerPunt is meer dan alleen een leverancier. We zijn een technische partner die meedenkt, adviseert en levert, afgestemd op de eisen van vandaag en de groei van morgen."
+    },
+    "values": {
+      "title": "Waarom ServerPunt?",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Technische expertise",
+          "description": "Gedegen kennis van servers en infrastructuur"
+        },
+        {
+          "icon": "✅",
+          "title": "Kwaliteitscontrole",
+          "description": "Elk product wordt grondig getest en gecontroleerd"
+        },
+        {
+          "icon": "🌱",
+          "title": "Duurzaam",
+          "description": "Hergebruik van hardware met minimale impact"
+        },
+        {
+          "icon": "💰",
+          "title": "Scherp geprijsd",
+          "description": "Professionele kwaliteit tegen betaalbare prijzen"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Vragen of advies nodig?",
+      "description": "Neem gerust contact met ons op. We denken graag met je mee over de beste oplossing voor jouw situatie.",
+      "emailLabel": "E-mail:",
+      "addressLabel": "Adres:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

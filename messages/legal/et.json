@@ -1,0 +1,831 @@
+{
+  "tos": {
+    "title": "Tingimused ja sätted",
+    "lastModified": "Viimati muudetud: 22. detsember 2025",
+    "sections": [
+      {
+        "title": "1. artikkel. Määratlused",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nendes üldtingimustes on järgmistele terminitele allpool toodud tähendus:"
+          },
+          {
+            "type": "definitions",
+            "items": [
+              {
+                "term": "Serveri Punkt / Võrgu Punkt",
+                "text": "partnerība NetwerkPunt, kas darbojas zem nosaukuma ServerPunt, ar adresi Kraaivenstraat 36-07, 5048 AB Tilburg, reģistrēta Nīderlandes Tirdzniecības kamerā ar numuru 97831441."
+              },
+              {
+                "term": "Klient",
+                "text": "iga füüsiline isik või juriidiline isik, kes sõlmib või soovib sõlmida lepingut ServerPunt-ga."
+              },
+              {
+                "term": "Tarbija",
+                "text": "Kliendi, kes on füüsiline isik ja tegutseb eesmärkidel, mis ei ole seotud tema kaubanduse, ettevõtluse, ametiga või erialaga."
+              },
+              {
+                "term": "Ettevõtte klient",
+                "text": "klient, tegutsedes kutse- või ärialase tegevuse käigus."
+              },
+              {
+                "term": "Leping",
+                "text": "kõik kokkulepped, mis sõlmitakse ServerPunt ja Kliendi vahel, sealhulgas kaugmüügi kaudu Veebisaidi kaudu, ning kõik sellest tulenevad kohustused."
+              },
+              {
+                "term": "Veebisait",
+                "text": "ServerPunt veebileht, mille kaudu pakutakse tooteid ja saab teha tellimusi, nimelt https://serverpunt.com/."
+              },
+              {
+                "term": "Toode(-d)",
+                "text": "kõik tooted, mida pakub ServerPunt, sealhulgas taastatud IT-riistvara, serverid, serverikomponendid ja tarvikud."
+              },
+              {
+                "term": "Taastatud",
+                "text": "kasutatud seadmed, mis on kontrollitud, testitud ja vajadusel puhastatud ja/või parandatud ServerPunt ning seejärel uuesti pakutud. Taastatud toodetel võivad olla kasutamise jäljed ja need võivad erineda uue seisukorra omadest."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "2. artikkel. Kohaldumine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Need üldised reeglid ja tingimused kehtivad iga ServerPunt pakutava pakkumise ja iga lepinguga, mis on sõlmitud ServerPunt ja kliendi vahel.",
+              "Nende üldtingimuste ja -reeglite erandid kehtivad ainult siis, kui ServerPunt on need kirjalikult (kaasa arvatud e-posti teel) kinnitanud.",
+              "Klienta (pirkuma) noteikumi ir izslēgti, ja vien tie nav izteikti rakstiski apstiprināti ServerPunt.",
+              "Ja mõni nendest üldtingimustest või sätetest on täielikult või osaliselt kehtetu või tühistatud, jäävad ülejäänud sätted täielikult kehtima. Sellisel juhul asendavad pooled vastava sätte sättesse, mis võimalikult palju läheneb algse sätte eesmärgile ja kavatsusele.",
+              "Ja tekib vastuolu saidi sisu ja nende üldtingimuste vahel, siis eelistatakse neid üldtingimusi, kui pole selgesõnaliselt märgitud teisiti."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. artikkel. Pakkumine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kõik pakkumised ja toodete kirjeldused ServerPunt veebilehel ei ole siduvad, kui ei ole selgesõnaliselt märgitud teisiti.",
+              "ServerPunt kogub teavet Veebisaidi kohta maksimaalse hoolikusega. Siiski võivad esineda ilmnevead või vead, näiteks trükivead, hinnavead, valed spetsifikatsioonid või valed pildid. Nendest vigadest ei teki mingeid õigusi.",
+              "Produktu attēli ir ilustratīvi un var atšķirties no faktiski piegādātā produkta, ņemot vērā piedāvātā aparatūras atjaunotā rakstura īpatnības.",
+              "ServerPunt on õigus tühistada või muuta tellimust, kui pakkumises on ilmne viga, näiteks selge hinnaviga või valesti kujutatud toote omadus.",
+              "Pakkumine kehtib seni, kuni kaup on laos. Kui toode ei ole (või ei ole enam) saadaval, ServerPunt teavitab klienti võimalikult kiiresti."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. artikkel. Lepingu sõlmimine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Līgums tiek noslēgts tajā brīdī, kad Klients pieņem ServerPunt piedāvājumu, veicot pasūtījumu caur mājaslapu, un šo pasūtījumu apstiprina ServerPunt pa e-pastu.",
+              {
+                "text": "ServerPunt on õigus tellimus tagasi lükata või kehtestada täiendavaid tingimusi, sealhulgas kui:",
+                "sublist": [
+                  "klient on andnud vale või puudulikku teavet;",
+                  "eelnevad maksekohustused ei ole täidetud;",
+                  "On põhjendatud põhjused kahelda kliendi maksevõimes."
+                ]
+              },
+              "Pärast tellimuse sooritamist saab klient tellimuse kinnituse e-posti teel. See kinnitus ei moodusta arvet.",
+              "Ilmsed vead või eksimused tellimuse kinnitamisel ei tekita kohustusi ServerPunt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. artikkel. ServerPunt muudatused ja tühistamine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ja lepingu sõlmimise järel selgub, et tellitud toode ei ole (või enam ei ole) saadaval või seda ei saa tarnida, on ServerPunt-l õigus leping lõpetada.",
+              "Lõpetamise korral, mis on nimetatud käesolevas paragrahvis, tagastab ServerPunt kõik summad, mida klient on juba maksnud, nii kiiresti kui võimalik, kuid mitte hiljem kui 14 päeva jooksul."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "6. artikkel. Hinnad",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kõik veebisaidil näidatud hinnad on eurodes ja sisaldavad käibemaksu, välja arvatud juhul, kui on selgelt märgitud teisiti.",
+              "Ettevõtete klientidele võidakse hinnad näidata ilma käibemaksuta. Sellisel juhul märgitakse see selgelt pakkumises.",
+              "Kõik kohaletoimetamiskulud, halduskulud või muud lisakulud teatatakse kliendile selgelt enne lepingu sõlmimist.",
+              "ServerPunt jätab endale õiguse hindu muuta. Hinnamuudatused ei mõjuta juba sõlmitud lepinguid."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "7. artikkel. Makse",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Makse tuleb teha veebilehel pakutavate makseviiside kaudu, välja arvatud juhul, kui on kirjalikult kokku lepitud teisiti.",
+              "ServerPunt on õigus tellimust töödelda alles pärast täieliku makse laekumist, välja arvatud juhul, kui on kokku lepitud teisiti.",
+              "Juhul, kui toimub ettemakset või arvega maksmist (ainult ettevõtete klientidele), kehtib arvel märgitud maksetähtaeg.",
+              "Ja klient ei täida oma maksekohustust õigeaegselt, loetakse klient seaduse järgi viivitanuks. Sellest hetkest alates on ServerPunt-l õigus kohaldada seaduses sätestatud (kaubanduslikke) intresse.",
+              "Kõik põhjendatud kulud, mis on tekkinud makse saamisel väljaspool kohtu, katab klient.",
+              "Ettevõtte klientidele kehtestatakse maksetähtaeg 14 päeva arve kuupäevast, kui kirjalikku teisiti kokkulepet ei ole saavutatud."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "8. artikkel. Arveldamine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Arve esitatakse elektrooniliselt, välja arvatud juhul, kui on saavutatud muu kokkulepe.",
+              "Pretenzijas pret rēķinu jāiesniedz rakstiski ServerPunt laikā līdz 7 dienām pēc rēķina datuma."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "9. artikkel. Tarne",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Preču piegāde notiek uz piegādes adresi, ko Klients norādījis pasūtījuma veikšanas brīdī, ja vien rakstiski nav panākta cita vienošanās.",
+              "ServerPunt töödeldakse ja saadetakse tellimused maksimaalse hoolikusega.",
+              "Ja piegāde uz saskaņoto adresi izrādās neiespējama, ServerPunt ir tiesīgs padarīt Produktu pieejamu Klientam citādi vai atcelt Līgumu."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "10. artikkel. Tarneajad",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt toodud tarneajad on suunavad ja ei loo kohustuslikke tähtaegu, välja arvatud juhul, kui kirjalikult on kokkulepitud teisiti.",
+              "Tarneaja ületamine ei anna Kliendile õigust kompensatsioonile või Lepingu lõpetamisele, välja arvatud juhul, kui ServerPunt on tegutsenud tahtlikult või raske hooletuse tõttu.",
+              "Ja piegāde tiek kavēta vai pasūtījumu nevar izpildīt pilnībā vai daļēji, ServerPunt informēs klientu pēc iespējas ātrāk."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "11. artikkel. Riski üleminek ja transpordikahjustused",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Toote kadumise või kahjustumise risk läheb üle Tarbijale hetkel, kui Toode tegelikult kätte saadakse.",
+              "Ettevõtte klientidele kandub risk üle hetkel, kui toode saadetakse.",
+              "Kliendil tuleb pärast kättesaamist kohe kontrollida, kas tootel on transpordikahjusid ja nähtavaid defekte. Kõik kahjustused või defektid tuleb ServerPunt-le kirjalikult teatada 48 tunni jooksul pärast kättesaamist, lisades tootest ja pakendist fotod.",
+              "Ja transpordikahjudest teatatakse õigeaegselt ja õigesti, tagab ServerPunt oma äranägemise järgi remondi, asenduse või hüvitise."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "12. artikkel. Kättesaamine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ja on saavutatud kokkulepe kättesaamise kohta, peab Klient saama Toote ühtsel ajal ja aadressil.",
+              "Pärast kauba kättesaamist läheb risk üle kliendile hetkest, kui kaup üle antakse."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "13. artikkel. Taganemisõigus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Patērētājam ir tiesības izbeigt līgumu par produkta iegādi 14 dienu laikā pēc saņemšanas, nepamatojot iemeslu.",
+              "Taganemistähtaeg lõpeb 14 päeva möödumisel päevast, mil Tarbija või tema volitatud kolmas isik toote kätte sai.",
+              "Tagam õiguse kasutada taganemisõigust peab Tarbija teavitama ServerPunt taganemisaja jooksul e-posti või muul selgesõnalises teates oma otsusest Leping lõpetada."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "14. artikkel. Taganemise tagajärjed",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Ja tarbija lepingu lõpetab, saab ta kõik seni tehtud maksed, sealhulgas kõik standardsed kohaletoimetamise kulud, hiljemalt 14 päeva jooksul alates päevast, millel ServerPunt teavitati lepingu lõpetamisest.",
+              "ServerPunt võib peatada tagasimakse kuni hetkeni, kuni toode on kätte saadud, või kuni tarbija on tõendanud, et toode on tagastatud, olenevalt sellest, kumb toimub varem.",
+              "Tagasimaksed tehakse sama maksemeetodi kaudu, mida kasutati algses tehingus, kui ei ole kokku lepitud teisiti."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "15. artikkel. Tagastustingimused",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Pārdomu perioda laikā patērētājam jāapstrādā produkts un iepakojums uzmanīgi. Produktu drīkst izpakot un lietot tikai tādā apmērā, kā nepieciešams, lai noteiktu tā veidu, īpašības un funkcijas.",
+              "Ja toodet on kasutatud rohkem kui lubatud, on tarbija vastutav toodet väärtuse vähenemise eest.",
+              "Tarbijal on kohustus tagastada toode õigesti ja nõuetekohaselt."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "16. artikkel. Tagastamiskulud",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Atgriešanas kravas izmaksas sedz patērētājs, ja vien nav panākta cita vienošanās.",
+              "Ja ServerPunt ir saņēmis produktu no patērētāja, šīs izmaksas tiks iekasētas no patērētāja.",
+              "Kaubad tuleb saata ServerPunt äriaadressile Kraaivenstraat 36-07, 5048 AB Tilburg, välja arvatud juhul, kui on kirjalikult kokku lepitud teisiti."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "17. pants. Atteikšanās no atteikšanās tiesībām izņēmums",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tiesības atsaukties ir izslēgtas šādiem:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "ettevõtete kliendid;",
+              "Tooteid, mida nende olemuse tõttu ei saa tagastada;",
+              "Toode, mis on selgelt personaliseeritud või eritellimusel valmistatud;",
+              "Toode, mille pakendi kinnitus on kahjustatud hügieeni või ohutuse kaalutlustel, kui kohaldatav."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "warranty",
+        "title": "18. artikkel. Garantii ja vastavus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt garanteerib, et tarnitud tooted vastavad lepingule, pakkumises märgitud spetsifikatsioonidele ning mõistlikele usaldusväärsuse ja kasutatavuse nõuetele, arvestades toodete uuendatud olemust.",
+              "Renoveeritud tooted on kasutatud ja võivad näidata kasutamise märke. Erinevused uue seisukorraga, näiteks väikesed kosmeetilised kahjustused, ei loeta defektiks ning ei anna kliendile õigust seadme vahetamiseks, parandamiseks ega lepingu lõpetamiseks.",
+              "Tarbijatele kohaldatavad seaduses sätestatud garantiid. See tähendab, et toote toimimine peab vastama sellele, mida tarbija võib õigustatult oodata. ServerPunt ei saa seda seaduses sätestatud garantiid välistada ega piirata.",
+              "Kõik täiendavad garantii, mida pakub ServerPunt, on selgelt kirjalikult toodud koos tootega ja ei mõjuta seaduses sätestatud garantiid.",
+              "Ettevõtte klientidele kehtib ainult see garantii, mida selgelt tagab ServerPunt. Kui seda pole, ei kehti ühtegi täiendavat garantiid.",
+              "Ja tootel ei ole märgitud täiendavat garantiiperioodi, kehtib tarbijatele ainult seaduses sätestatud garantii, kuid ettevõtte klientidele ei kehti ükski täiendav garantii."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "19. artikkel. Puuduste teatamine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kliendil on kohustus võimalikult kiiresti peale kättesaamist kontrollida toodet defektide suhtes.",
+              "Defektidest, mis ei olnud nähtavad vastuvõtmisel, tuleb tarbijale teatada mõistliku aja jooksul pärast nende avastamist.",
+              "Ettevõtte klientidel tuleb kirjalikult teatada defektidest 7 päeva jooksul pärast nende saamist. Seda tegemata jätmisel kaotatakse õigus remondile, vahetusele või muule hüvitisele."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "20. artikkel. Parandamine ja asendamine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Kui toode tõendab, et see ei vasta lepingule, parandab või asendab ServerPunt toote oma äranägemise järgi, välja arvatud juhul, kui see on võimatu või põhjustab ebamõistlikke kulusid.",
+              "Ja remonti või vahetus ei ole võimalik, ServerPunt võib jätkata (osalise) tagasimakse või leping lõpetamisega."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "21. artikkel. Vastutus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt vastutus on piiratud summaga, mille Klient on vastava toote eest tasunud, absoluutse maksimaalse arve summaga.",
+              {
+                "text": "ServerPunt ei vastuta kaudsete kahjude eest, sealhulgas, kuid mitte ainult:",
+                "sublist": [
+                  "segatud kahjustused;",
+                  "kaotatud kasum",
+                  "kaotatud sääst",
+                  "andmekadu;",
+                  "ettevõtluse kahjumid;",
+                  "kahjud ettevõtlustegevuse katkestamise tõttu."
+                ]
+              },
+              {
+                "text": "ServerPunt ei vastuta kahjude eest, mida põhjustasid:",
+                "sublist": [
+                  "Vale või valesti toodete kasutamine;",
+                  "kasutage väljaspool ServerPunt antud spetsifikatsioone;",
+                  "remont või muudatused, mida on teinud klient;",
+                  "kasuta koos defektse või sobimatu perifeerse seadmega."
+                ]
+              },
+              "Käesolevas lõikes sätestatud vastutuse piirangud ei kehti, kui kahju on tekkinud ServerPunt tahtliku teo või raske hooletuse tõttu või sellisel määral, mil seadusest tulenevalt ei ole võimalik vastutust välistada."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "22. artikkel. Hüvitamine",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Klient hüvitab ServerPunt kõikide kolmandate isikute nõuete eest, mis on seotud tarnitud toodete kasutamisega.",
+              "Klient vastutab andmete nõuetekohase varukoopia tegemise eest. ServerPunt ei vastuta andmete kadumise või kahjustumise eest, olenemata põhjusest."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "23. artikkel. Vääramatu jõud",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPunt ei ole kohustatud täitma mingeid kohustusi kliendi ees, kui seda takistavad force majeure asjaolud.",
+              {
+                "text": "Neatkarīgi no apstākļiem, force majeure ietver jebkuru situāciju ārpus ServerPunt kontroles, kas īslaicīgi vai pastāvīgi traucē saistību izpildi, tostarp, bet ne tikai:",
+                "sublist": [
+                  "häired vedajates või tarnijates;",
+                  "transpordiviivitused või ebaõnnestumised;",
+                  "ostuprobleemid või varude puudus;",
+                  "voolukatkestused;",
+                  "interneti või võrgu tõrked;",
+                  "tulekahjust, veekahjust või muud õnnetused;",
+                  "valitsemistoimingud;",
+                  "epideemiad, pandeemiad ja nendega seotud piirangud."
+                ]
+              },
+              "Ja force majeure olukord kestab kauem kui 30 päeva, on nii ServerPunt kui ka Klientil õigus leping kirjalikult lõpetada, sel juhul ilma igasuguste kohustusteta maksta kompensatsiooni.",
+              "Ja ServerPunt on juba osaliselt täitnud oma kohustused force majeure juhtumi korral või saab neid veel täita, on ServerPunt õigus selle osa eraldi arvestada või settleerida."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "24. artikkel. Kaebused",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Sūdzības par Līguma izpildi jāiesniedz ServerPunt rakstiski, pilnībā un skaidri aprakstītas, saprātīgā termiņā pēc tam, kad Klients ir identificējis kļūdu.",
+              {
+                "text": "Kaebusi saab esitada, kasutades:",
+                "sublist": [
+                  "e-post: info@serverpunt.com",
+                  "või kirjalikult posti teel ServerPunt ettevõtte aadressile."
+                ]
+              },
+              "ServerPunt vastab esitatud kaebustele 14 päeva jooksul alates kättesaamise päevast. Kui kaebus nõuab arvestatavalt pikemat töötlemise aega, teavitab ServerPunt Kliendi sellest tähtajast.",
+              "Ja kaebust ei ole võimalik lahendada vastastikusel kokkuleppel, tekib vaidlus, mida saab esitada pädevale kohtule, nagu on sätestatud nendes üldtingimustes."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "25. artikkel. Kohaldatav õigus",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "Hollandi seadus kehtib ainult kõigile lepingutele ServerPunt ja kliendi vahel, millele kehtivad need üldtingimused.",
+              "Strīdi, kas rodas sakarā ar vai attiecībā uz Līgumu, jāiesniedz tikai kompetentajā tiesā tās jurisdikcijas teritorijā, kur ServerPunt ir izveidots, ja vien nepārvarami tiesību akti nenosaka citādi."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "26. artikkel. Lõppsätted",
+        "blocks": [
+          {
+            "type": "ol",
+            "items": [
+              "ServerPuntl on õigus neid üldisi tingimusi muuta või täiendada. Muudetud tingimused avaldatakse õigel ajal veebisaidil ja kehtivad edasiste lepinguliste suhete suhtes.",
+              "Ja need üldised reeglid ja tingimused tunnistatakse kehtetuks või tühistatakse, ei mõjuta see teiste reeglite kehtivust.",
+              "Need üldised sätted ja tingimused muudeti viimati 22. detsembril 2025."
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "Serveri Punkt / Võrgu Punkt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "vat": "VAT: NL868250983B01",
+      "emailLabel": "E-post:",
+      "websiteLabel": "Veebileht:"
+    }
+  },
+  "privacy": {
+    "title": "Privaatsuspoliitika",
+    "lastModified": "Viimati muudetud: 5. veebruar 2026",
+    "sections": [
+      {
+        "title": "1. Andmete vastutav isik",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt (NetwerkPunt V.O.F.), mis asub Kraaivenstraat 36-07, 5048 AB Tilburg, on registreeritud Hollandi Kaubanduskojaga numbriga 97831441 ning vastutab isikuandmete töötlemise eest, nagu on kirjeldatud selles privaatsuspoliitikas."
+          },
+          {
+            "type": "p",
+            "text": "Võtke ühendust: info@serverpunt.com"
+          }
+        ]
+      },
+      {
+        "title": "2. Isikuandmed, mida me töötleme",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt töötleb isikuandmeid, kuna te kasutate meie veebisaiti ja teenuseid ning/või kuna te edastate need andmed meile ise. See hõlmab muu hulgas:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "eesnimi ja perekonnanimi",
+              "aadressiandmed",
+              "e-posti aadress",
+              "telefoninumber",
+              "maksājumu un rēķina detaļas",
+              "IP-aadress",
+              "korrespondentsi andmed",
+              "3. Andmetöötluse eesmärgid ja õiguslikud alused"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ServerPunt töötleb isikuandmeid ainult järgmiste eesmärkide jaoks ja vastava õigusaluse alusel:",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lepingu täitmine: tellimuste töötlemine, toodete kohaletoimetamine, suhtlus lepingu kohta"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Juriidilised kohustused: arvete väljastamine, raamatupidamine, maksukohustused",
+              "Õigustatud huvi: klientide teenindamine, teenuste parandamine, pettuste ennetamine",
+              "Nõusolek: infolehed ja turunduskommunikatsioon (kui kohaldatav)",
+              "4. Säilitamisaeg"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ServerPunt ei säilita isikuandmeid kauem kui on vajalik nende eesmärkide saavutamiseks, milleks need on kogutud, arvestades seaduses sätestatud säilitustähtaegu:",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tellimuste ja arvete andmed: 7 aastat (seadusega ettenähtud maksukohustuse säilitamise tähtaeg)"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Pasūtījumu un rēķinu dati: 7 gadi (likumā noteikta nodokļu glabāšanas prasība)",
+              "Konto- ja kontaktandmed: kuni kliendisuhted on aktiivsed",
+              "5. Isikuandmete jagamine kolmandate osapooltega"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ServerPunt annab isikuandmeid kolmandatele isikutele ainult siis, kui see on vajalik lepingutingimuste täitmiseks või juriidiliste kohustuste täitmiseks.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "See hõlmab muu hulgas:"
+          },
+          {
+            "type": "p",
+            "text": "makseteenuse osutajad"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "raamatupidamistarkvara",
+              "kogunemiste ja IT-teenuste pakkujad",
+              "Kui seadusega nõutud, on nende osapooltega sõlmitud andmetöötluslepingud.",
+              "6. Küpsised"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "ServerPunt kasutab funktsionaalseid ja analüütilisi küpsiseid, millel puudub või on ainult väike mõju külastaja privaatsusele."
+          }
+        ]
+      },
+      {
+        "title": "Neid küpsiseid kasutatakse selleks, et:",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt izmanto funkcionālās un analītiskās sīkdatnes, kas nerada vai rada tikai nelielu ietekmi uz apmeklētāju privātumu."
+          },
+          {
+            "type": "p",
+            "text": " saada ülevaade veebisaidi kasutamisest ja parandada veebisaiti."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Jälgimisküpsiseid ei paigaldata ilma eelneva nõusolekuta.",
+              "7. Isikuandmete turvalisus"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "ServerPunt viib läbi asjakohaseid tehnilisi ja organisatsioonilisi meetmeid, et kaitsta isikuandmeid kaotuse, väärkasutuse, volitamata juurdepääsu ja soovimatu avalikustamise eest."
+          }
+        ]
+      },
+      {
+        "title": "8. Andmesubjekti õigused",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Teil on õigus:"
+          }
+        ]
+      },
+      {
+        "title": "kaebleb kohtlemise vastu;",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "edastada oma andmeid (andmete ülekantavus)."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Taotlusi saab esitada, kirjutades aadressile info@serverpunt.com. Teil on samuti õigus esitada kaebus Hollandi andmekaitseasutusele (Autoriteit Persoonsgegevens).",
+              "9. Muudatused",
+              "ServerPunt jätab endale õiguse seda privaatsuspoliitikat muuta. Alati on saadaval kõige uuem versioon veebilehel.",
+              "Küpsisepoliitika",
+              "Viimati muudetud: 9. veebruar 2026"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "See küpsiste poliitika kehtib ServerPunt veebisaidil, mis asub Kraaivenstraat 36-07, 5048 AB Tilburg ja on kättesaadav info@serverpunt.com kaudu."
+          }
+        ]
+      },
+      {
+        "title": "1. Mis on küpsised?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Küpsised on väikesed tekstifailid, mis salvestatakse teie arvutisse, tahvelarvutisse või nutitelefoni, kui külastate veebisaiti. Küpsised tagavad, et veebisait toimib õigesti, ja võivad koguda teavet veebisaidi kasutamise kohta."
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Kontakt",
+      "company": "Serveri Punkt / Võrgu Punkt",
+      "addressLine1": "Kraaivenstraat 36-07",
+      "addressLine2": "5048 AB Tilburg",
+      "coc": "Chamber of Commerce: 97831441",
+      "emailLabel": "E-post:",
+      "websiteLabel": "Veebileht:"
+    }
+  },
+  "cookiePolicy": {
+    "title": "2. Millistes küpsistes ServerPunt kasutatakse?",
+    "lastModified": "ServerPunt kasutab järgmisi küpsiste tüüpe:",
+    "intro": "a. Funktsionaalsed küpsised (vajalikud)",
+    "sections": [
+      {
+        "title": "Need küpsised on vajalikud, et veebisait töötaks korralikult. Ilma nende küpsisteta ei saa mõned veebisaidi osad korralikult toimida.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Näited:"
+          }
+        ]
+      },
+      {
+        "title": "Meeldetuletus küpsise seadete kohta",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lehe korrektne laadimine"
+          },
+          {
+            "type": "p",
+            "text": "Võrgupaiga põhiline funktsionaalsus"
+          },
+          {
+            "type": "p",
+            "text": "Neile küpsistele ei ole nõusolekut vaja."
+          },
+          {
+            "type": "p",
+            "text": "b. Analüütilised küpsised"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Analüütilised küpsised annavad meile ülevaate sellest, kuidas meie veebisaiti kasutatakse. See võimaldab meil veebisaiti parandada ja muuta see kasutajasõbralikumaks.",
+              "Külastajate arv",
+              "Populaarsed lehed"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Kuidas külastajad veebisaidil liiguvad"
+          },
+          {
+            "type": "p",
+            "text": "Kus see võimalik on, neid andmeid anonümiseeritakse ja neid ei saa seostada konkreetsete inimestega."
+          },
+          {
+            "type": "p",
+            "text": "c. Turunduse ja jälgimise küpsised (valikuline)"
+          },
+          {
+            "type": "p",
+            "text": "b. Analüütilised küpsised"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ja see kehtib, saab turundusküpsiseid kasutada asjakohase sisu või reklaamide kuvamiseks ja kampaaniate tõhususe mõõtmiseks.",
+              "Need küpsised paigutatakse ainult selge nõusoleku alusel.",
+              "3. Kolmandate osapoolte küpsised"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Kolmandad isikud (näiteks analüütika või turundusteenused) võivad paigutada küpsiseid meie veebilehe kaudu. ServerPunt ei kontrolli otseselt küpsiste kasutamist nende isikute poolt. Soovitame samuti tutvuda nende kolmandate isikute küpsiste ja privaatsuspoliitikaga."
+          },
+          {
+            "type": "p",
+            "text": "4. Küpsiste haldamine või kustutamine"
+          },
+          {
+            "type": "p",
+            "text": "Te saate hallata või kustutada küpsiseid igal ajal, kasutades brauseri seadeid. Pange tähele, et küpsiste keelamine võib mõjutada veebisaidi toimimist."
+          },
+          {
+            "type": "p",
+            "text": "Rohkem teavet veebibrauseri kohta:"
+          }
+        ]
+      },
+      {
+        "title": "5. Muudatused selles küpsiste poliitikas",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt jätab endale õiguse seda küpsiste poliitikat muuta. Soovitame regulaarselt seda lehte kontrollida, et olla teadlik kõikidest muudatustest."
+          }
+        ]
+      },
+      {
+        "title": "6. Kontakt",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kas teil on küsimusi meie küpsiste poliitika või andmetöötluse kohta? Palun võtke meiega vabalt ühendust:"
+          },
+          {
+            "type": "p",
+            "text": "ServerPunt"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Google Chrome",
+                "url": "https://support.google.com/chrome/answer/95647"
+              },
+              {
+                "label": "Mozilla Firefox",
+                "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+              },
+              {
+                "label": "Microsoft Edge",
+                "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              },
+              {
+                "label": "Safari",
+                "url": "https://support.apple.com/guide/safari/sfri11471/mac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Muudatused selles küpsiste poliitikas",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ServerPunt on spetsialiseerunud taastatud riistvara ostmisele ja müümisele eraisikutele ja ettevõtetele. Me usume, et professionaalse riistvara ei pea olema uus, et see töötaks usaldusväärselt, võimsalt ja jätkusuutlikult."
+          }
+        ]
+      },
+      {
+        "title": "Alates monitoridest ja sülearvutitest kuni täielike serverite ja serverikomponentideni: kõik tooted, mida me pakume, on hoolikalt testitud, kontrollitud ja vajadusel uuendatud. See tagab kõrgekvaliteedilisele riistvarale teise elu konkurentsivõimelise hinnaga ja minimaalne keskkonnamõju.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Spetsialiseerunud serverilahendustes"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "",
+      "company": "ServeriPunt",
+      "addressLine1": "📍 Kraaivenstraat 36-07, 5048 AB Tilburg",
+      "addressLine2": "",
+      "emailLabel": "📧"
+    }
+  },
+  "aboutUs": {
+    "title": "ServerPunt ettevõttes on läbipaistvus ja kvaliteet alati esikohal. Meil tähendab uuendatud riistvara:",
+    "intro1": "Saadav kvaliteet",
+    "intro2": "ei hoolides jõudlusest",
+    "servers": {
+      "title": "Jätkusuutlik valik",
+      "p1": "taaskasutamise kaudu",
+      "p2": "Kiire kohaletoimetamine",
+      "bullet1Title": "isikliku kontaktiga",
+      "bullet1Text": "Tänu meie tehnilistele teadmistele serverite ja komponentide kohta saame osaleda mõtlemises, anda nõu ja reageerida kiiresti, kui see on vajalik.",
+      "bullet2Title": "Kellele me töötame",
+      "bullet2Text": "Me töötame eraisikutega, kes otsivad professionaalset varustust konkurentsivõimelise hinnaga, ning ettevõtetega, kes soovivad oma süsteeme laiendada või uuendada. Olenemata sellest, kas tegemist on ühe ostu või suurema laiendusega, vaatame koos, mis sobib kõige paremini.",
+      "bullet3Title": "ServerPunt on rohkem kui lihtsalt tarnija. Me oleme tehniline partner, kes mõtleb kaasa, annab nõuandeid ja tarnib — vastavalt kaasaegsetele nõudmistele ja tulevasele kasvule.",
+      "bullet3Text": "Miks ServerPunt?",
+      "p3": "Tehnilised oskused"
+    },
+    "audience": {
+      "title": "Tugevad teadmised serveritest ja infrastruktuurist",
+      "p1": "Kvaliteedikontroll",
+      "p2": "Iga toode kontrollitakse ja inspekteeritakse hoolikalt"
+    },
+    "values": {
+      "title": "Jätkusuutlik",
+      "items": [
+        {
+          "icon": "🔧",
+          "title": "Seadmete korduvkasutamine minimaalsete mõjudega",
+          "description": "Konkurentsivõimelised hinnad"
+        },
+        {
+          "icon": "✅",
+          "title": "Professionaalne kvaliteet taskukohaste hindadega",
+          "description": "Küsimusi või vajad nõu?"
+        },
+        {
+          "icon": "🌱",
+          "title": "Tunnetage end vaba meiega ühendust võtma. Me aitame meelsasti teil leida parima lahenduse teie olukorrale.",
+          "description": "Aadress:"
+        },
+        {
+          "icon": "💰",
+          "title": "Konkurētspējīgi cenoti",
+          "description": "Professionaalne kvaliteet taskukohaste hindadega"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Jautājumi vai nepieciešama padoma?",
+      "description": "Jūs esat laipni aicināts sazināties ar mums. Mēs ar prieku palīdzēsim jums atrast labāko risinājumu jūsu situācijai.",
+      "emailLabel": "E-post:",
+      "addressLabel": "Aadress:",
+      "address": "Kraaivenstraat 36-07, 5048 AB Tilburg"
+    }
+  }
+}

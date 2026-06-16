@@ -1,15 +1,27 @@
 "use client";
 import useCart from "@/hooks/useCart";
+import { formatPricePlain } from "@/lib/format";
 import { Trash } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useMemo, useState, useEffect } from "react";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Cart({
     deliveryMethod,
+    countryCode = "nl",
+    companyName = "",
+    vatNumber = "",
 }: {
     deliveryMethod?: "delivery" | "pickup";
+    countryCode?: string;
+    companyName?: string;
+    vatNumber?: string;
 }) {
+    const t = useTranslations("checkout");
+    const tCommon = useTranslations("common");
+    const tCart = useTranslations("cart");
+    const locale = useLocale();
     const {
         products,
         removeProduct,
@@ -29,15 +41,24 @@ export default function Cart({
         [products, getGroupedProducts]
     );
 
-    const shippingCost = deliveryMethod === "pickup" ? 0 : getShippingCost();
+    const hasCompany = companyName.trim().length > 0;
+    const shippingCost =
+        deliveryMethod === "pickup" ? 0 : getShippingCost(countryCode);
+    const vatPrice = getVatPrice(
+        deliveryMethod === "delivery",
+        countryCode,
+        vatNumber,
+        hasCompany
+    );
 
-    // Don't render until mounted to avoid hydration mismatch
     if (!mounted) {
         return (
             <div className="flex flex-col gap-5">
-                <h2 className="text-3xl font-bold mb-2">Producten</h2>
+                <h2 className="text-3xl font-bold mb-2">{t("products")}</h2>
                 <ul className="space-y-4 bg-white p-5 rounded-lg border border-border">
-                    <p className="text-center text-gray-500">Laden...</p>
+                    <p className="text-center text-gray-500">
+                        {tCommon("loading")}
+                    </p>
                 </ul>
             </div>
         );
@@ -45,12 +66,12 @@ export default function Cart({
 
     return (
         <div className="flex flex-col gap-5">
-            <h2 className="text-3xl font-bold mb-2">Producten</h2>
+            <h2 className="text-3xl font-bold mb-2">{t("products")}</h2>
 
             <ul className="space-y-4 bg-white p-5 rounded-lg border border-border">
                 {groupedProducts.length === 0 && (
                     <p className="text-center text-gray-500">
-                        Je winkelwagen is leeg.
+                        {tCart("empty")}
                     </p>
                 )}
                 {groupedProducts.map((item) => {
@@ -82,8 +103,15 @@ export default function Cart({
                             <div className="flex justify-between w-full items-start">
                                 <div className="space-y-1">
                                     <h3 className=" text-sm md:text-md text-gray-900">
-                                        {item.product.name}
+                                        {item.product.bundleLabel ??
+                                            item.product.name}
                                     </h3>
+                                    {item.product.bundleLabel && (
+                                        <p className="text-xs text-gray-500">
+                                            {tCommon("base")}:{" "}
+                                            {item.product.name}
+                                        </p>
+                                    )}
                                     {item.product.configuredItems &&
                                         item.product.configuredItems.length >
                                             0 && (
@@ -104,7 +132,7 @@ export default function Cart({
                                     <dl className="mt-1 space-y-px text-xs sm:text-sm text-gray-600">
                                         <div>
                                             <dt className="inline mr-1">
-                                                Aantal:
+                                                {tCommon("quantity")}:
                                             </dt>
                                             <dd className="inline">
                                                 {item.quantity}x
@@ -112,17 +140,15 @@ export default function Cart({
                                         </div>
                                         <div>
                                             <dt className="inline mr-1">
-                                                Prijs:
+                                                {tCommon("price")}:
                                             </dt>
                                             <dd className="inline">
                                                 €
-                                                {String(
-                                                    (
-                                                        unitTotal *
-                                                        item.quantity
-                                                    ).toFixed(2)
-                                                ).replace(".", ",")}{" "}
-                                                Excl. BTW
+                                                {formatPricePlain(
+                                                    unitTotal * item.quantity,
+                                                    locale
+                                                )}{" "}
+                                                {tCommon("exclVat")}
                                             </dd>
                                         </div>
                                     </dl>
@@ -143,27 +169,20 @@ export default function Cart({
                 })}
                 <li className=" text-right w-fit float-end">
                     <span className="text-muted-foreground text-sm">
-                        Prijs Excl. BTW: €{" "}
-                        {String(getTotalPrice().toFixed(2)).replace(".", ",")}
+                        {t("priceExclVat")}: €
+                        {formatPricePlain(getTotalPrice(), locale)}
                     </span>
                     <br />
                     <span className="text-muted-foreground text-sm">
-                        BTW: €{" "}
-                        {String(
-                            getVatPrice(deliveryMethod === "delivery").toFixed(
-                                2
-                            )
-                        ).replace(".", ",")}
+                        {tCommon("vat")}: €
+                        {formatPricePlain(vatPrice, locale)}
                     </span>
                     <br />
                     {deliveryMethod !== "pickup" && (
                         <>
                             <span className="text-muted-foreground text-sm">
-                                Verzendkosten: €{" "}
-                                {String(shippingCost.toFixed(2)).replace(
-                                    ".",
-                                    ","
-                                )}
+                                {t("shippingCosts")}: €
+                                {formatPricePlain(shippingCost, locale)}
                             </span>
                             <br />
                         </>
@@ -171,14 +190,11 @@ export default function Cart({
                     <hr className="border border-border my-1" />
 
                     <span className="font-bold text-sm">
-                        Totaal: €{" "}
-                        {String(
-                            (
-                                getTotalPrice() +
-                                getVatPrice(deliveryMethod === "delivery") +
-                                shippingCost
-                            ).toFixed(2)
-                        ).replace(".", ",")}
+                        {tCommon("total")}: €
+                        {formatPricePlain(
+                            getTotalPrice() + vatPrice + shippingCost,
+                            locale
+                        )}
                     </span>
                 </li>
             </ul>
