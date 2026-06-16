@@ -10,6 +10,7 @@ import { searchProducts } from "@/lib/products";
 import Image from "next/image";
 import { Search, Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { truncateText } from "@/lib/format-text";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./locale-switcher";
 
@@ -154,12 +155,16 @@ export default function Nav() {
                                 )}
                             </button>
 
-                            <Link className="flex items-center" href="/">
+                            <Link
+                                className="flex items-center"
+                                href="/"
+                                aria-label={t("logoHome")}
+                            >
                                 <Image
                                     src="/logo.png"
                                     width={60}
                                     height={60}
-                                    alt="Logo"
+                                    alt=""
                                     className="w-10 h-10 sm:w-[60px] sm:h-[60px]"
                                 />
                                 <span className="text-base sm:text-xl font-bold tracking-tight text-black">
@@ -222,8 +227,18 @@ export default function Nav() {
                                                                 category.name
                                                             )}`}
                                                             className="block px-4 py-2 text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground"
+                                                            title={category.name}
+                                                            aria-label={t(
+                                                                "categoryLink",
+                                                                {
+                                                                    name: category.name,
+                                                                }
+                                                            )}
                                                         >
-                                                            {category.name}
+                                                            {truncateText(
+                                                                category.name,
+                                                                28
+                                                            )}
                                                         </Link>
                                                     </li>
                                                 ))}
@@ -244,8 +259,16 @@ export default function Nav() {
                                                             brand.name
                                                         )}`}
                                                         className="block px-4 py-2 text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground"
+                                                        title={brand.name}
+                                                        aria-label={t(
+                                                            "brandLink",
+                                                            { name: brand.name }
+                                                        )}
                                                     >
-                                                        {brand.name}
+                                                        {truncateText(
+                                                            brand.name,
+                                                            28
+                                                        )}
                                                     </Link>
                                                 </li>
                                             ))}
@@ -305,6 +328,11 @@ export default function Nav() {
                                                 href={`/product/${product.id}`}
                                                 onClick={handleResultClick}
                                                 className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-md transition-colors"
+                                                aria-label={tCommon(
+                                                    "viewProductAria",
+                                                    { name: product.name }
+                                                )}
+                                                title={product.name}
                                             >
                                                 <div className="w-12 h-12 flex-shrink-0 bg-gray-100 rounded overflow-hidden">
                                                     <Image
@@ -320,7 +348,10 @@ export default function Nav() {
                                                 </div>
                                                 <div className="flex-1 min-w-0">
                                                     <p className="text-sm font-medium text-gray-900 truncate">
-                                                        {product.name}
+                                                        {truncateText(
+                                                            product.name,
+                                                            42
+                                                        )}
                                                     </p>
                                                     <p className="text-sm text-primary font-semibold">
                                                         €
@@ -424,9 +455,9 @@ export default function Nav() {
             )}
 
             {/* Mobile Menu Sidebar */}
+            {isMobileMenuOpen && (
             <div
-                className={`fixed top-[65px] left-0 bottom-0 w-[280px] bg-white z-30 md:hidden transform transition-transform duration-300 ease-in-out overflow-y-auto ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-                    }`}
+                className={`fixed top-[65px] left-0 bottom-0 w-[280px] bg-white z-30 md:hidden transform transition-transform duration-300 ease-in-out overflow-y-auto translate-x-0`}
             >
                 <div className="flex flex-col p-4 space-y-4">
                     {/* Mobile Search */}
@@ -509,8 +540,15 @@ export default function Nav() {
                                                     category.name
                                                 )}`}
                                                 className="block px-4 py-2 text-sm text-muted-foreground hover:bg-gray-100 rounded-lg"
+                                                title={category.name}
+                                                aria-label={t("categoryLink", {
+                                                    name: category.name,
+                                                })}
                                             >
-                                                {category.name}
+                                                {truncateText(
+                                                    category.name,
+                                                    28
+                                                )}
                                             </Link>
                                         ))}
                                 </div>
@@ -541,8 +579,12 @@ export default function Nav() {
                                                 brand.name
                                             )}`}
                                             className="block px-4 py-2 text-sm text-muted-foreground hover:bg-gray-100 rounded-lg"
+                                            title={brand.name}
+                                            aria-label={t("brandLink", {
+                                                name: brand.name,
+                                            })}
                                         >
-                                            {brand.name}
+                                            {truncateText(brand.name, 28)}
                                         </Link>
                                     ))}
                                 </div>
@@ -561,6 +603,7 @@ export default function Nav() {
                     </nav>
                 </div>
             </div>
+            )}
         </>
     );
 }

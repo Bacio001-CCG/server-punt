@@ -57,9 +57,9 @@ export function CookieConsent({ variant = "default", mode = false }) {
             <div className="dark:bg-card bg-background rounded-lg sm:rounded-md border border-border shadow-lg">
                 <div className="grid gap-2">
                     <div className="border-b border-border h-12 sm:h-14 flex items-center justify-between p-3 sm:p-4">
-                        <h1 className="text-base sm:text-lg font-medium">
+                        <p className="text-base sm:text-lg font-medium" role="heading" aria-level={2}>
                             {t("title")}
-                        </h1>
+                        </p>
                         <CookieIcon className="h-4 w-4 sm:h-[1.2rem] sm:w-[1.2rem]" />
                     </div>
                     <div className="p-3 sm:p-4">
@@ -113,9 +113,9 @@ export function CookieConsent({ variant = "default", mode = false }) {
         >
             <div className="m-0 sm:m-3 dark:bg-card bg-background border border-border rounded-lg shadow-lg">
                 <div className="flex items-center justify-between p-3">
-                    <h1 className="text-base sm:text-lg font-medium">
+                    <p className="text-base sm:text-lg font-medium" role="heading" aria-level={2}>
                         {t("title")}
-                    </h1>
+                    </p>
                     <CookieIcon className="h-4 w-4 sm:h-[1.2rem] sm:w-[1.2rem]" />
                 </div>
                 <div className="p-3 -mt-2">

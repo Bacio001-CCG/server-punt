@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "ServerPunt - Affordable Servers and Components | Refurbished Hardware Europe",
-    "description": "Buy refurbished servers, server components and IT hardware at ServerPunt. Competitive prices, highest quality. Dell, HP, IBM servers and more. Shipping throughout the EU.",
-    "keywords": "refurbished servers, server components, dell servers, hp servers, ibm servers, server parts, it hardware, europe, cheap servers, enterprise hardware",
-    "ogTitle": "ServerPunt - Affordable Refurbished Servers and Components",
-    "ogDescription": "Specialist in refurbished servers and IT hardware. Dell, HP, IBM servers and components at competitive prices. Reliable and fast delivery throughout the EU."
+    "title": "Refurbished servers & parts | ServerPunt",
+    "description": "ServerPunt is your one-stop shop for refurbished servers, RAM, CPUs and storage. Enterprise hardware from Dell and HP with fast EU delivery.",
+    "keywords": "refurbished servers, server parts, dell servers, hp servers, ram, cpu, storage, enterprise hardware, serverpunt",
+    "ogTitle": "Refurbished servers & parts | ServerPunt",
+    "ogDescription": "Your one-stop shop for refurbished servers and components. Competitive prices, tested quality and delivery across Europe."
   },
   "common": {
     "exclVat": "Excl. VAT",
@@ -34,7 +34,9 @@
     "newArrivalTooltip": "New on the site",
     "brandNew": "Brand new",
     "brandNewTooltip": "Not refurbished",
-    "refurbished": "Refurbished"
+    "refurbished": "Refurbished",
+    "viewProduct": "View product",
+    "viewProductAria": "View product: {name}"
   },
   "nav": {
     "home": "Home",
@@ -42,7 +44,10 @@
     "configurator": "Configurator",
     "categories": "Categories",
     "brands": "Brands",
-    "aboutUs": "About us"
+    "aboutUs": "About us",
+    "categoryLink": "Category {name}",
+    "brandLink": "Brand {name}",
+    "logoHome": "ServerPunt — go to homepage"
   },
   "localeSwitcher": {
     "label": "Language",
@@ -72,12 +77,13 @@
   "hero": {
     "title": "Your one-stop shop for",
     "titleHighlight": "servers",
-    "subtitle": "Discover our extensive selection of high-quality servers, perfectly tailored to your business needs. Reliability, performance and excellent customer service",
+    "subtitle": "Your one-stop shop for refurbished servers and enterprise hardware — reliable, competitively priced and delivered across the EU.",
     "configuratorCta": "Server configurator",
     "viewProducts": "View our products",
     "contactUs": "Contact us",
     "shippingEu": "Shipping throughout the EU",
-    "shipsAsap": "Ships ASAP"
+    "shipsAsap": "Ships ASAP",
+    "imageAlt": "Refurbished servers at ServerPunt"
   },
   "cart": {
     "empty": "Your cart is empty.",
@@ -162,8 +168,12 @@
     "aboutUs": "About us",
     "terms": "Terms and conditions",
     "privacy": "Privacy policy",
-    "warranty": "Warranty policy",
+    "warranty": "Warranty terms",
+    "warrantyPolicy": "Warranty policy",
     "refurbishedNotice": "Refurbished products may show signs of use. Warranty applies in accordance with our <warrantyLink>warranty policy</warrantyLink>.",
+    "homeLogo": "Go to homepage",
+    "instagram": "ServerPunt on Instagram",
+    "linkedin": "ServerPunt on LinkedIn",
     "copyright": "© {year} ServerPunt VOF. All Rights Reserved."
   },
   "cookie": {
@@ -222,9 +232,14 @@
     "min": "Min",
     "max": "Max"
   },
+  "homeProducts": {
+    "title": "Servers & parts",
+    "subtitle": "Browse refurbished servers, memory, processors and storage for your infrastructure.",
+    "viewAll": "All products"
+  },
   "featured": {
-    "title": "Best Sellers",
-    "subtitle": "Our best-selling products, chosen by our customers for their quality and reliability.",
+    "title": "Top-selling servers",
+    "subtitle": "Popular refurbished servers and components from our catalog, chosen for quality and reliability.",
     "previous": "Previous",
     "next": "Next",
     "goToSlide": "Go to slide {index}"

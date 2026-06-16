@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
 import ConfiguratorWizard from "@/app/components/configurator/configurator-wizard";
 import { getTranslations } from "next-intl/server";
+import { buildAlternateLanguages } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-    const t = await getTranslations("configurator");
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "configurator" });
 
     return {
-        title: `${t("title")} | ServerPunt`,
+        title: t("title"),
         description: t("pageMetaDescription"),
+        alternates: buildAlternateLanguages(locale, "configurator"),
     };
 }
 

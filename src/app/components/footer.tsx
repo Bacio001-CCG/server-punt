@@ -15,13 +15,14 @@ export default function Footer() {
                         <Link
                             href="/"
                             className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900"
+                            aria-label={t("homeLogo")}
                         >
                             <Image
                                 width={48}
                                 height={48}
                                 src="/logo.png"
                                 className="mr-1"
-                                alt="ServerPunt Logo"
+                                alt=""
                             />
                             ServerPunt
                         </Link>
@@ -97,7 +98,7 @@ export default function Footer() {
                                     href="/tos#warranty"
                                     className="text-foreground underline-offset-2 hover:underline"
                                 >
-                                    {chunks}
+                                    {t("warrantyPolicy")}
                                 </Link>
                             ),
                         })}
@@ -133,6 +134,7 @@ export default function Footer() {
                             <Link
                                 href="https://www.instagram.com/serverpunt/"
                                 className="text-gray-500 hover:text-gray-900"
+                                aria-label={t("instagram")}
                             >
                                 <svg
                                     className="w-5 h-5"
@@ -152,6 +154,7 @@ export default function Footer() {
                             <Link
                                 href="https://www.linkedin.com/in/serverpunt-bb583136a/"
                                 className="text-gray-500 hover:text-gray-900"
+                                aria-label={t("linkedin")}
                             >
                                 <svg
                                     className="w-5 h-5"

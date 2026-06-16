@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
 import { getVatRate } from "@/lib/company-fields";
 
+import { truncateText } from "@/lib/format-text";
+
 export default function Card({
     name,
     image,
@@ -36,10 +38,14 @@ export default function Card({
         !Number.isNaN(createdDate.getTime()) &&
         Date.now() - createdDate.getTime() < 10 * 24 * 60 * 60 * 1000;
 
+    const linkLabel = truncateText(name, 48);
+
     return (
         <Link
             className="group relative flex flex-col space-y-4 overflow-hidden rounded-2xl transition-all duration-300"
             href={href}
+            aria-label={t("viewProductAria", { name })}
+            title={name}
         >
             <div className="relative aspect-[4/3] overflow-hidden ">
                 <div className="absolute left-2 top-2 z-10 flex flex-col gap-2">
@@ -110,7 +116,7 @@ export default function Card({
                         !price && "text-center"
                     } mb-1 text-lg font-medium`}
                 >
-                    {name}
+                    <span aria-hidden="true">{linkLabel}</span>
                 </div>
                 {price && (
                     <div className="text-sm text-muted-foreground">

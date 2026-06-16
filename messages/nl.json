@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "ServerPunt - Betaalbare Servers en Componenten | Refurbished Hardware Nederland",
-    "description": "Koop refurbished servers, servercomponenten en IT-hardware bij ServerPunt. Scherpe prijzen, hoogste kwaliteit. Dell, HP, IBM servers en meer. Verzending door heel de EU.",
-    "keywords": "refurbished servers, server componenten, dell servers, hp servers, ibm servers, serveronderdelen, it hardware, europa, goedkope servers, enterprise hardware",
-    "ogTitle": "ServerPunt - Betaalbare Refurbished Servers en Componenten",
-    "ogDescription": "Specialist in refurbished servers en IT-hardware. Dell, HP, IBM servers en componenten tegen scherpe prijzen. Betrouwbaar en snel geleverd door heel de EU."
+    "title": "Refurbished servers & onderdelen | ServerPunt",
+    "description": "ServerPunt is uw one-stop shop voor refurbished servers, RAM, CPU's en opslag. Enterprise hardware van Dell en HP, snelle levering door de EU.",
+    "keywords": "refurbished servers, server onderdelen, dell servers, hp servers, ram, cpu, opslag, enterprise hardware, serverpunt",
+    "ogTitle": "Refurbished servers & onderdelen | ServerPunt",
+    "ogDescription": "Uw one-stop shop voor refurbished servers en servercomponenten. Scherpe prijzen, geteste kwaliteit en levering door heel Europa."
   },
   "common": {
     "exclVat": "Excl. BTW",
@@ -34,7 +34,8 @@
     "newArrivalTooltip": "Nieuw op de site",
     "brandNew": "Gloednieuw",
     "brandNewTooltip": "Niet refurbished",
-    "refurbished": "Refurbished"
+    "viewProduct": "Bekijk product",
+    "viewProductAria": "Bekijk product: {name}"
   },
   "nav": {
     "home": "Home",
@@ -42,7 +43,10 @@
     "configurator": "Configurator",
     "categories": "Categorieën",
     "brands": "Merken",
-    "aboutUs": "Over ons"
+    "aboutUs": "Over ons",
+    "categoryLink": "Categorie {name}",
+    "brandLink": "Merk {name}",
+    "logoHome": "ServerPunt — naar startpagina"
   },
   "localeSwitcher": {
     "label": "Taal",
@@ -72,12 +76,13 @@
   "hero": {
     "title": "Uw one-stop shop voor",
     "titleHighlight": "servers",
-    "subtitle": "Ontdek onze uitgebreide selectie van hoogwaardige servers, perfect afgestemd op uw zakelijke behoeften. Betrouwbaarheid, prestaties en uitstekende klantenservice",
+    "subtitle": "Uw one-stop shop voor refurbished servers en enterprise hardware — betrouwbaar, scherp geprijsd en snel geleverd in de EU.",
     "configuratorCta": "Server configurator",
     "viewProducts": "Bekijk ons aanbod",
     "contactUs": "Contacteer ons",
     "shippingEu": "Verzending door heel de EU",
-    "shipsAsap": "z.s.m. verzonden"
+    "shipsAsap": "z.s.m. verzonden",
+    "imageAlt": "Refurbished servers bij ServerPunt"
   },
   "cart": {
     "empty": "Je winkelwagen is leeg.",
@@ -162,8 +167,12 @@
     "aboutUs": "Over ons",
     "terms": "Algemene voorwaarden",
     "privacy": "Privacy beleid",
-    "warranty": "Garantie beleid",
+    "warranty": "Garantievoorwaarden",
+    "warrantyPolicy": "Garantiebeleid",
     "refurbishedNotice": "Refurbished producten kunnen gebruikssporen vertonen. Garantie is van toepassing conform ons <warrantyLink>garantiebeleid</warrantyLink>.",
+    "homeLogo": "Naar startpagina",
+    "instagram": "ServerPunt op Instagram",
+    "linkedin": "ServerPunt op LinkedIn",
     "copyright": "© {year} ServerPunt VOF. All Rights Reserved."
   },
   "cookie": {
@@ -222,9 +231,14 @@
     "min": "Min",
     "max": "Max"
   },
+  "homeProducts": {
+    "title": "Servers & onderdelen",
+    "subtitle": "Blader door refurbished servers, geheugen, processors en opslag — alles voor uw serveromgeving.",
+    "viewAll": "Alle producten"
+  },
   "featured": {
-    "title": "Meest Verkocht",
-    "subtitle": "Onze best verkochte producten, gekozen door onze klanten vanwege hun kwaliteit en betrouwbaarheid.",
+    "title": "Meest verkochte servers",
+    "subtitle": "Populaire refurbished servers en componenten uit ons aanbod, gekozen door klanten om kwaliteit en betrouwbaarheid.",
     "previous": "Vorige",
     "next": "Volgende",
     "goToSlide": "Ga naar slide {index}"

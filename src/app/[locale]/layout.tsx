@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Nav from "../components/nav";
@@ -11,6 +11,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { getSiteUrl } from "@/lib/seo";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -21,6 +22,11 @@ const geistMono = Geist_Mono({
     variable: "--font-geist-mono",
     subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+};
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -33,19 +39,32 @@ export async function generateMetadata({
 }): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "metadata" });
+    const siteUrl = getSiteUrl();
 
     return {
-        title: t("title"),
+        metadataBase: new URL(siteUrl),
+        title: {
+            default: t("title"),
+            template: "%s | ServerPunt",
+        },
         description: t("description"),
         keywords: t("keywords"),
         authors: [{ name: "ServerPunt" }],
         creator: "ServerPunt",
         publisher: "ServerPunt",
         robots: "index, follow",
+        icons: {
+            icon: "/logo.png",
+            apple: [
+                {
+                    url: "/logo.png",
+                    sizes: "180x180",
+                    type: "image/png",
+                },
+            ],
+        },
         openGraph: {
             type: "website",
-            locale: locale === "nl" ? "nl_NL" : "en_GB",
-            url: "https://serverpunt.com",
             siteName: "ServerPunt",
             title: t("ogTitle"),
             description: t("ogDescription"),
@@ -63,13 +82,6 @@ export async function generateMetadata({
             title: t("ogTitle"),
             description: t("ogDescription"),
             images: ["/logo.png"],
-        },
-        alternates: {
-            canonical: "https://serverpunt.com",
-            languages: {
-                "nl-NL": "https://serverpunt.com/nl",
-                "en-GB": "https://serverpunt.com/en",
-            },
         },
         category: "technology",
     };
@@ -90,6 +102,7 @@ export default async function LocaleLayout({
 
     setRequestLocale(locale);
     const messages = await getMessages();
+    const siteUrl = getSiteUrl();
 
     return (
         <html lang={locale} className="scroll-smooth">
@@ -99,10 +112,6 @@ export default async function LocaleLayout({
                     rel="preconnect"
                     href="https://fonts.gstatic.com"
                     crossOrigin="anonymous"
-                />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
                 />
                 <meta name="geo.region" content="EU" />
                 <script
@@ -114,8 +123,8 @@ export default async function LocaleLayout({
                             name: "ServerPunt",
                             description:
                                 "Specialist in refurbished servers en IT-hardware",
-                            url: "https://serverpunt.com",
-                            logo: "https://serverpunt.com/logo.png",
+                            url: siteUrl,
+                            logo: `${siteUrl}/logo.png`,
                             address: {
                                 "@type": "PostalAddress",
                                 streetAddress: "Kraaivenstraat 36-07",

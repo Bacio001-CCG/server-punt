@@ -84,7 +84,7 @@ export default async function Hero() {
                     <div className="relative mx-auto hidden aspect-square w-full max-w-md overflow-hidden lg:block">
                         <div className="absolute inset-0 z-10 bg"></div>
                         <Image
-                            alt="Shopping experience"
+                            alt={t("imageAlt")}
                             decoding="async"
                             className="object-cover"
                             width={400}
