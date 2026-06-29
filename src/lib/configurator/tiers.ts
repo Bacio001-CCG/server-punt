@@ -19,14 +19,14 @@ export const tierMeta: Record<
     budget: {
         label: "Budget",
         description:
-            "Essentiële configuratie — lagere kosten, voldoende voor lichte workloads.",
+            "Essentiële configuratie. Lagere kosten, voldoende voor lichte workloads.",
         budgetFactor: 0.42,
         pickMode: "budget",
     },
     normaal: {
         label: "Normaal",
         description:
-            "Gebalanceerde setup — andere server en onderdelen, passend bij de meeste use-cases.",
+            "Gebalanceerde setup. Andere server en onderdelen, passend bij de meeste use-cases.",
         budgetFactor: 0.68,
         pickMode: "normaal",
         recommended: true,
@@ -34,7 +34,7 @@ export const tierMeta: Record<
     duur: {
         label: "Duur",
         description:
-            "Premium configuratie — krachtigere hardware en ruimere specs binnen uw maximumbudget.",
+            "Premium configuratie. Krachtigere hardware en ruimere specs binnen uw maximumbudget.",
         budgetFactor: 0.92,
         pickMode: "duur",
     },

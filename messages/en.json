@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Refurbished servers & Intel Xeon | ServerPunt",
-    "description": "ServerPunt is your one-stop shop for refurbished servers, Intel Xeon CPUs, RAM and storage in stock. Dell and HP enterprise hardware — prices excl. and incl. VAT with fast EU delivery.",
-    "keywords": "refurbished servers, intel xeon, server parts, dell servers, hp servers, ram, cpu, storage, in stock, enterprise hardware, serverpunt",
-    "ogTitle": "Refurbished servers & Intel Xeon | ServerPunt",
-    "ogDescription": "Refurbished servers and Intel Xeon components in stock. Competitive excl. VAT pricing, tested quality and delivery across Europe."
+    "title": "Refurbished Intel and AMD servers | ServerPunt",
+    "description": "ServerPunt is your one-stop shop for refurbished Intel and AMD servers, RAM and storage in stock. Dell and HP enterprise hardware. Prices excl. and incl. VAT with fast EU delivery.",
+    "keywords": "refurbished servers, intel servers, amd servers, server parts, dell servers, hp servers, ram, cpu, storage, in stock, enterprise hardware, serverpunt",
+    "ogTitle": "Refurbished Intel and AMD servers | ServerPunt",
+    "ogDescription": "Refurbished Intel and AMD servers in stock. Competitive excl. VAT pricing, tested quality and delivery across Europe."
   },
   "common": {
     "exclVat": "Excl. VAT",
@@ -47,7 +47,7 @@
     "aboutUs": "About us",
     "categoryLink": "Category {name}",
     "brandLink": "Brand {name}",
-    "logoHome": "ServerPunt — go to homepage"
+    "logoHome": "Go to ServerPunt homepage"
   },
   "localeSwitcher": {
     "label": "Language",
@@ -75,9 +75,9 @@
     "lt": "Lietuvių"
   },
   "hero": {
-    "title": "Refurbished servers — your one-stop shop for",
-    "titleHighlight": "enterprise hardware",
-    "subtitle": "Intel Xeon servers, RAM and storage in stock — reliable, competitively priced excl. VAT and delivered across the EU.",
+    "title": "Your one-stop shop for refurbished",
+    "titleHighlight": "servers and parts",
+    "subtitle": "Intel and AMD servers, RAM and storage in stock. Reliable, competitively priced excl. VAT and delivered across the EU.",
     "configuratorCta": "Server configurator",
     "viewProducts": "View our products",
     "contactUs": "Contact us",
@@ -233,13 +233,13 @@
     "max": "Max"
   },
   "homeProducts": {
-    "title": "Refurbished servers & Intel Xeon parts",
-    "subtitle": "Browse servers, memory and storage in stock — prices excl. and incl. VAT for your infrastructure.",
+    "title": "Refurbished Intel and AMD servers",
+    "subtitle": "Browse servers, memory and storage in stock. Prices excl. and incl. VAT for your infrastructure.",
     "viewAll": "All products"
   },
   "featured": {
     "title": "Top-selling refurbished servers",
-    "subtitle": "Popular Intel Xeon servers and components in stock — chosen for quality and reliability.",
+    "subtitle": "Popular refurbished Intel and AMD servers in stock. Chosen for quality and reliability.",
     "previous": "Previous",
     "next": "Next",
     "goToSlide": "Go to slide {index}"
@@ -291,7 +291,7 @@
     "title": "Server Configurator",
     "pageTitle": "Server configurator",
     "pageSubtitle": "Tell us what you will use the server for, how much capacity you need and what your budget is. We combine servers, memory and storage from our inventory into concrete options.",
-    "pageMetaDescription": "Choose your server purpose, provide specifications and budget — we assemble configuration options from our current inventory.",
+    "pageMetaDescription": "Choose your server purpose, provide specifications and budget. We assemble configuration options from our current inventory.",
     "steps": {
       "useCase": "Purpose",
       "details": "Specifications",
@@ -311,7 +311,7 @@
     "describeUseHint": "At least {min} characters if you don't choose a category. Max. 2000 characters.",
     "orChooseCategory": "or choose a category",
     "detailsTitle": "Specifications",
-    "detailsSubtitle": "{useCase} — help us estimate the scale.",
+    "detailsSubtitle": "{useCase}. Help us estimate the scale.",
     "yourDescription": "Your description:",
     "vmCount": "How many VMs do you want to run?",
     "siteCount": "Number of websites or applications",
@@ -323,9 +323,9 @@
     "storageSize": "Required storage (TB)",
     "developerCount": "Number of developers / environments",
     "generalHint": "For general business IT, we base our recommendation on a standard workload. You can specify your budget in the next step.",
-    "highAvailability": "High availability — redundancy (double server capacity)",
+    "highAvailability": "High availability, redundancy (double server capacity)",
     "budgetTitle": "What is your budget?",
-    "budgetSubtitle": "Total amount excl. VAT for hardware — we search our current inventory.",
+    "budgetSubtitle": "Total amount excl. VAT for hardware. We search our current inventory.",
     "maxBudget": "Maximum budget (€)",
     "budgetInclVat": "Incl. VAT approx. €{amount}",
     "customRequest": "Additional requirements (optional)",
@@ -374,7 +374,7 @@
       },
       "general": {
         "label": "General business IT",
-        "description": "Mix of workloads — file server, AD, monitoring and more."
+        "description": "Mix of workloads: file server, AD, monitoring and more."
       }
     },
     "roles": {

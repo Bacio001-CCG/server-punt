@@ -32,7 +32,7 @@ export const useCaseDescriptions: Record<UseCase, string> = {
     development:
         "CI/CD, staging omgevingen en interne tooling.",
     general:
-        "Mix van workloads — file server, AD, monitoring en meer.",
+        "Mix van workloads: file server, AD, monitoring en meer.",
 };
 
 export type ComponentRole = "server" | "memory" | "storage" | "cpu";

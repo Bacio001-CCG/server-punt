@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Refurbished servers & Intel Xeon | ServerPunt",
-    "description": "ServerPunt is uw one-stop shop voor refurbished servers, Intel Xeon CPU's, RAM en opslag op voorraad. Enterprise hardware van Dell en HP — prijzen excl. en incl. BTW, snelle EU-levering.",
-    "keywords": "refurbished servers, intel xeon, server onderdelen, dell servers, hp servers, ram, cpu, opslag, voorraad, enterprise hardware, serverpunt",
-    "ogTitle": "Refurbished servers & Intel Xeon | ServerPunt",
-    "ogDescription": "Refurbished servers en Intel Xeon componenten op voorraad. Scherpe prijzen excl. BTW, geteste kwaliteit en levering door heel Europa."
+    "title": "Refurbished Intel en AMD servers | ServerPunt",
+    "description": "ServerPunt is uw one-stop shop voor refurbished Intel en AMD servers, RAM en opslag op voorraad. Enterprise hardware van Dell en HP. Prijzen excl. en incl. BTW, snelle EU-levering.",
+    "keywords": "refurbished servers, intel servers, amd servers, server onderdelen, dell servers, hp servers, ram, cpu, opslag, voorraad, enterprise hardware, serverpunt",
+    "ogTitle": "Refurbished Intel en AMD servers | ServerPunt",
+    "ogDescription": "Refurbished Intel en AMD servers op voorraad. Scherpe prijzen excl. BTW, geteste kwaliteit en levering door heel Europa."
   },
   "common": {
     "exclVat": "Excl. BTW",
@@ -46,7 +46,7 @@
     "aboutUs": "Over ons",
     "categoryLink": "Categorie {name}",
     "brandLink": "Merk {name}",
-    "logoHome": "ServerPunt — naar startpagina"
+    "logoHome": "ServerPunt naar startpagina"
   },
   "localeSwitcher": {
     "label": "Taal",
@@ -74,9 +74,9 @@
     "lt": "Lietuvių"
   },
   "hero": {
-    "title": "Refurbished servers — uw one-stop shop voor",
-    "titleHighlight": "enterprise hardware",
-    "subtitle": "Intel Xeon servers, RAM en opslag op voorraad — betrouwbaar, scherp geprijsd excl. BTW en snel geleverd in de EU.",
+    "title": "Uw one-stop shop voor refurbished",
+    "titleHighlight": "servers en onderdelen",
+    "subtitle": "Intel en AMD servers, RAM en opslag op voorraad. Betrouwbaar, scherp geprijsd excl. BTW en snel geleverd in de EU.",
     "configuratorCta": "Server configurator",
     "viewProducts": "Bekijk ons aanbod",
     "contactUs": "Contacteer ons",
@@ -232,13 +232,13 @@
     "max": "Max"
   },
   "homeProducts": {
-    "title": "Refurbished servers & Intel Xeon onderdelen",
-    "subtitle": "Blader door servers, geheugen en opslag op voorraad — prijzen excl. en incl. BTW voor uw serveromgeving.",
+    "title": "Refurbished Intel en AMD servers",
+    "subtitle": "Blader door servers, geheugen en opslag op voorraad. Prijzen excl. en incl. BTW voor uw serveromgeving.",
     "viewAll": "Alle producten"
   },
   "featured": {
     "title": "Meest verkochte refurbished servers",
-    "subtitle": "Populaire Intel Xeon servers en componenten op voorraad — gekozen door klanten om kwaliteit en betrouwbaarheid.",
+    "subtitle": "Populaire refurbished Intel en AMD servers op voorraad. Gekozen door klanten om kwaliteit en betrouwbaarheid.",
     "previous": "Vorige",
     "next": "Volgende",
     "goToSlide": "Ga naar slide {index}"
@@ -290,7 +290,7 @@
     "title": "Server Configurator",
     "pageTitle": "Server configurator",
     "pageSubtitle": "Vertel ons waarvoor u de server gebruikt, hoeveel capaciteit u nodig heeft en wat uw budget is. Wij combineren servers, geheugen en opslag uit ons aanbod tot concrete opties.",
-    "pageMetaDescription": "Kies uw server-doel, geef specificaties en budget op — wij stellen configuratie-opties samen uit ons actuele aanbod.",
+    "pageMetaDescription": "Kies uw server-doel, geef specificaties en budget op. Wij stellen configuratie-opties samen uit ons actuele aanbod.",
     "steps": {
       "useCase": "Doel",
       "details": "Specificaties",
@@ -310,7 +310,7 @@
     "describeUseHint": "Minimaal {min} tekens als u geen categorie kiest. Max. 2000 tekens.",
     "orChooseCategory": "of kies een categorie",
     "detailsTitle": "Specificaties",
-    "detailsSubtitle": "{useCase} — help ons de schaal inschatten.",
+    "detailsSubtitle": "{useCase}. Help ons de schaal inschatten.",
     "yourDescription": "Uw omschrijving:",
     "vmCount": "Hoeveel VM's wilt u draaien?",
     "siteCount": "Aantal websites of applicaties",
@@ -322,9 +322,9 @@
     "storageSize": "Benodigde opslag (TB)",
     "developerCount": "Aantal ontwikkelaars / omgevingen",
     "generalHint": "Voor algemene bedrijfs-IT baseren we de aanbeveling op een standaard workload. U kunt in de volgende stap uw budget aangeven.",
-    "highAvailability": "Hoge beschikbaarheid — redundantie (dubbele server-capaciteit)",
+    "highAvailability": "Hoge beschikbaarheid, redundantie (dubbele server-capaciteit)",
     "budgetTitle": "Wat is uw budget?",
-    "budgetSubtitle": "Totaalbedrag excl. BTW voor hardware — wij zoeken in ons actuele aanbod.",
+    "budgetSubtitle": "Totaalbedrag excl. BTW voor hardware. Wij zoeken in ons actuele aanbod.",
     "maxBudget": "Maximaal budget (€)",
     "budgetInclVat": "Incl. BTW circa €{amount}",
     "customRequest": "Aanvullende wensen (optioneel)",
@@ -373,7 +373,7 @@
       },
       "general": {
         "label": "Algemene bedrijfs-IT",
-        "description": "Mix van workloads — file server, AD, monitoring en meer."
+        "description": "Mix van workloads: file server, AD, monitoring en meer."
       }
     },
     "roles": {
