@@ -40,6 +40,7 @@ export default function Body({
     const presetAppliedRef = useRef(false);
     const t = useTranslations("product");
     const tHero = useTranslations("hero");
+    const tCheckout = useTranslations("checkout");
     const tCommon = useTranslations("common");
 
     useEffect(() => {
@@ -687,7 +688,7 @@ flex flex-col items-center
                             <Alert className="">
                                 <Truck className="h-4 w-4 sm:h-5 sm:w-5" />
                                 <AlertTitle className="font-semibold text-sm sm:text-base">
-                                    {tCommon("delivery")}
+                                    {tCheckout("delivery")}
                                 </AlertTitle>
                                 <AlertDescription className="text-xs sm:text-sm">
                                     {tHero("shipsAsap")}
