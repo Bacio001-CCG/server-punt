@@ -1,10 +1,10 @@
 {
   "metadata": {
     "title": "Refurbished Intel and AMD servers | ServerPunt",
-    "description": "ServerPunt is your one-stop shop for refurbished Intel and AMD servers, RAM and storage in stock. Dell and HP enterprise hardware. Prices excl. and incl. VAT with fast EU delivery.",
+    "description": "ServerPunt is your one-stop shop for refurbished Intel and AMD servers, RAM and storage in stock. Dell and HP enterprise hardware. Prices excl. and incl. VAT with delivery within 7 working days across the EU.",
     "keywords": "refurbished servers, intel servers, amd servers, server parts, dell servers, hp servers, ram, cpu, storage, in stock, enterprise hardware, serverpunt",
     "ogTitle": "Refurbished Intel and AMD servers | ServerPunt",
-    "ogDescription": "Refurbished Intel and AMD servers in stock. Competitive excl. VAT pricing, tested quality and delivery across Europe."
+    "ogDescription": "Refurbished Intel and AMD servers in stock. Competitive excl. VAT pricing, tested quality and delivery within 7 working days across Europe."
   },
   "common": {
     "exclVat": "Excl. VAT",
@@ -36,7 +36,8 @@
     "brandNewTooltip": "Not refurbished",
     "refurbished": "Refurbished",
     "viewProduct": "View product",
-    "viewProductAria": "View product: {name}"
+    "viewProductAria": "View product: {name}",
+    "lowStock": "Only {count} left"
   },
   "nav": {
     "home": "Home",
@@ -75,15 +76,16 @@
     "lt": "Lietuvių"
   },
   "hero": {
-    "title": "Your one-stop shop for refurbished",
-    "titleHighlight": "servers and parts",
-    "subtitle": "Intel and AMD servers, RAM and storage in stock. Reliable, competitively priced excl. VAT and delivered across the EU.",
+    "title": "Refurbished enterprise servers",
+    "titleHighlight": "fully tested & warranted",
+    "subtitle": "Intel and AMD servers, RAM and storage in stock. Reliable, competitively priced excl. VAT and delivered within 7 working days across the EU.",
     "configuratorCta": "Server configurator",
     "viewProducts": "View our products",
     "contactUs": "Contact us",
     "shippingEu": "Shipping throughout the EU",
-    "shipsAsap": "Ships ASAP",
-    "imageAlt": "Refurbished servers at ServerPunt"
+    "shipsAsap": "Delivery within 7 working days",
+    "imageAlt": "Refurbished servers at ServerPunt",
+    "valueProposition": "2-year warranty · 24-hour testing · Free support · Delivery within 7 working days across the EU."
   },
   "cart": {
     "empty": "Your cart is empty.",
@@ -233,8 +235,8 @@
     "max": "Max"
   },
   "homeProducts": {
-    "title": "Refurbished Intel and AMD servers",
-    "subtitle": "Browse servers, memory and storage in stock. Prices excl. and incl. VAT for your infrastructure.",
+    "title": "Refurbished servers in stock",
+    "subtitle": "Popular servers, storage and components — selected for reliability, not just price.",
     "viewAll": "All products"
   },
   "featured": {
@@ -245,8 +247,8 @@
     "goToSlide": "Go to slide {index}"
   },
   "categoriesSection": {
-    "title": "Categories",
-    "subtitle": "Browse the product categories we offer."
+    "title": "Shop by category",
+    "subtitle": "Start with servers, storage or networking. Accessories are available in the full catalogue."
   },
   "product": {
     "brandNewTitle": "Brand New Product",
@@ -261,7 +263,9 @@
     "termsTitle": "Terms and conditions apply",
     "termsDescription": "Please note: Once you place an order on our website, our Terms and Conditions apply.",
     "addToCart": "Add",
-    "addedToCart": "Product added to cart!"
+    "addedToCart": "Product added to cart!",
+    "warrantyTitle": "Warranty applies",
+    "warrantyDescription": "Warranty applies to this product in accordance with our warranty policy."
   },
   "whatsapp": {
     "supportLabel": "WhatsApp support",
@@ -474,5 +478,94 @@
     "hintCyVat": "CY + 8 digits + letter",
     "hintGrGemi": "9-12 digits (optional)",
     "hintGrVat": "EL + 9 digits, e.g. EL123456789"
+  },
+  "trustBar": {
+    "ariaLabel": "Key benefits of ServerPunt",
+    "warranty": "2-year warranty",
+    "tested": "24-hour tested",
+    "support": "Free support",
+    "delivery": "Within 7 working days",
+    "customers": "500+ business customers",
+    "deliveryRate": "99.8% delivered without issues"
+  },
+  "socialProof": {
+    "rating": "4.9/5 on Trustpilot",
+    "reviews": "{count} reviews",
+    "sold": "500+ servers sold",
+    "location": "Dutch refurbisher",
+    "trustpilotCta": "Read our reviews on Trustpilot"
+  },
+  "whyUs": {
+    "title": "Why businesses choose ServerPunt",
+    "subtitle": "Refurbished means tested quality, business-grade service and clear delivery — not just a lower price tag.",
+    "items": [
+      {
+        "title": "Every server fully tested",
+        "description": "Hardware is tested for 24 hours by engineers before it ships."
+      },
+      {
+        "title": "Ready to deploy",
+        "description": "Servers arrive as described and ready for production or virtualisation."
+      },
+      {
+        "title": "2-year warranty",
+        "description": "Additional warranty under our policy, with fast handling if issues arise."
+      },
+      {
+        "title": "Delivery within 7 working days",
+        "description": "EU-wide shipping with clear lead times and tracking after dispatch."
+      },
+      {
+        "title": "Business invoicing",
+        "description": "Order with VAT number, company details and transparent excl./incl. VAT pricing."
+      },
+      {
+        "title": "Personal support",
+        "description": "Phone and email support from people who understand servers."
+      }
+    ]
+  },
+  "aboutTeaser": {
+    "eyebrow": "About ServerPunt",
+    "title": "More than a webshop — a technical partner",
+    "description": "From Tilburg we refurbish and test enterprise servers and components every day. We combine technical expertise with personal contact so you can invest in refurbished hardware with confidence.",
+    "cta": "Learn more about our team and process",
+    "stats": [
+      {
+        "value": "5000+",
+        "label": "parts in stock"
+      },
+      {
+        "value": "24h",
+        "label": "testing per server"
+      },
+      {
+        "value": "500+",
+        "label": "business customers"
+      }
+    ]
+  },
+  "productTrust": {
+    "title": "Your peace of mind with ServerPunt",
+    "warranty": "24-month warranty",
+    "delivery": "Delivery within 7 working days",
+    "returns": "14-day right of withdrawal (consumers)",
+    "support": "Phone & email support",
+    "tested": "Tested by engineers",
+    "value": "Refurbished — save up to 80% vs. new",
+    "lowStock": "Only {count} left",
+    "inStockReady": "In stock — ready to ship"
+  },
+  "productUseCases": {
+    "title": "Ideal for",
+    "items": [
+      "VMware",
+      "Proxmox",
+      "Hyper-V",
+      "TrueNAS",
+      "Backups",
+      "AI inference",
+      "SQL servers"
+    ]
   }
 }

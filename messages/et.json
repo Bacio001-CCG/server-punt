@@ -34,7 +34,8 @@
     "newArrivalTooltip": "Uus saidil",
     "brandNew": "Täiesti uus",
     "brandNewTooltip": "Pole uuendatud",
-    "refurbished": "Uuendatud"
+    "refurbished": "Uuendatud",
+    "lowStock": "Only {count} left"
   },
   "nav": {
     "home": "Avaleht",
@@ -70,14 +71,15 @@
     "lt": "Lietuvių"
   },
   "hero": {
-    "title": "Teie ühekordne pood",
-    "titleHighlight": "serverid",
+    "title": "Refurbished enterprise servers",
+    "titleHighlight": "fully tested & warranted",
     "subtitle": "Avastage meie lai valik kvaliteetseid servereid, mis on täiuslikult kohandatud teie ärivajadustele. Usaldusväärsus, jõudlus ja suurepärane klienditeenindus",
     "configuratorCta": "Serveri konfiguratsioonitarkvara",
     "viewProducts": "Vaata meie tooteid",
     "contactUs": "Võta meiega ühendust",
     "shippingEu": "Saatmine kogu EL-is",
-    "shipsAsap": "Laevad nii kiiresti kui võimalik"
+    "shipsAsap": "Tarne 7 tööpäeva jooksul",
+    "valueProposition": "2-year warranty · 24-hour testing · Free support · Delivery within 7 working days across the EU."
   },
   "cart": {
     "empty": "Teie ostukorv on tühi.",
@@ -230,8 +232,8 @@
     "goToSlide": "Mine slaidile {index}"
   },
   "categoriesSection": {
-    "title": "Kategooriad",
-    "subtitle": "Sirvige meie pakutavaid tootekategooriaid."
+    "title": "Shop by category",
+    "subtitle": "Start with servers, storage or networking. Accessories are available in the full catalogue."
   },
   "product": {
     "brandNewTitle": "Täiesti uus toode",
@@ -246,7 +248,9 @@
     "termsTitle": "Kehtivad tingimused",
     "termsDescription": "Palun pange tähele: Kui esitate meie veebilehel tellimuse, kehtivad meie Tingimused ja Tingimuste sätted.",
     "addToCart": "Lisa",
-    "addedToCart": "Toode lisatud ostukorvi!"
+    "addedToCart": "Toode lisatud ostukorvi!",
+    "warrantyTitle": "Garantii kehtib",
+    "warrantyDescription": "Sellele tootele kehtib garantii vastavalt meie garantiipoliitikale."
   },
   "whatsapp": {
     "supportLabel": "WhatsAppi tugi",
@@ -459,5 +463,98 @@
     "hintCyVat": "CY + 8 numbrit + täht",
     "hintGrGemi": "9-12 numbrit (valikuline)",
     "hintGrVat": "EL + 9 numbrit, nt EL123456789"
+  },
+  "trustBar": {
+    "ariaLabel": "Key benefits of ServerPunt",
+    "warranty": "2-year warranty",
+    "tested": "24-hour tested",
+    "support": "Free support",
+    "delivery": "Within 7 working days",
+    "customers": "500+ business customers",
+    "deliveryRate": "99.8% delivered without issues"
+  },
+  "socialProof": {
+    "rating": "4.9/5 on Trustpilot",
+    "reviews": "{count} reviews",
+    "sold": "500+ servers sold",
+    "location": "Dutch refurbisher",
+    "trustpilotCta": "Read our reviews on Trustpilot"
+  },
+  "whyUs": {
+    "title": "Why businesses choose ServerPunt",
+    "subtitle": "Refurbished means tested quality, business-grade service and clear delivery — not just a lower price tag.",
+    "items": [
+      {
+        "title": "Every server fully tested",
+        "description": "Hardware is tested for 24 hours by engineers before it ships."
+      },
+      {
+        "title": "Ready to deploy",
+        "description": "Servers arrive as described and ready for production or virtualisation."
+      },
+      {
+        "title": "2-year warranty",
+        "description": "Additional warranty under our policy, with fast handling if issues arise."
+      },
+      {
+        "title": "Delivery within 7 working days",
+        "description": "EU-wide shipping with clear lead times and tracking after dispatch."
+      },
+      {
+        "title": "Business invoicing",
+        "description": "Order with VAT number, company details and transparent excl./incl. VAT pricing."
+      },
+      {
+        "title": "Personal support",
+        "description": "Phone and email support from people who understand servers."
+      }
+    ]
+  },
+  "aboutTeaser": {
+    "eyebrow": "About ServerPunt",
+    "title": "More than a webshop — a technical partner",
+    "description": "From Tilburg we refurbish and test enterprise servers and components every day. We combine technical expertise with personal contact so you can invest in refurbished hardware with confidence.",
+    "cta": "Learn more about our team and process",
+    "stats": [
+      {
+        "value": "5000+",
+        "label": "parts in stock"
+      },
+      {
+        "value": "24h",
+        "label": "testing per server"
+      },
+      {
+        "value": "500+",
+        "label": "business customers"
+      }
+    ]
+  },
+  "productTrust": {
+    "title": "Your peace of mind with ServerPunt",
+    "warranty": "24-month warranty",
+    "delivery": "Delivery within 7 working days",
+    "returns": "14-day right of withdrawal (consumers)",
+    "support": "Phone & email support",
+    "tested": "Tested by engineers",
+    "value": "Refurbished — save up to 80% vs. new",
+    "lowStock": "Only {count} left",
+    "inStockReady": "In stock — ready to ship"
+  },
+  "productUseCases": {
+    "title": "Ideal for",
+    "items": [
+      "VMware",
+      "Proxmox",
+      "Hyper-V",
+      "TrueNAS",
+      "Backups",
+      "AI inference",
+      "SQL servers"
+    ]
+  },
+  "homeProducts": {
+    "title": "Refurbished servers in stock",
+    "subtitle": "Popular servers, storage and components — selected for reliability, not just price."
   }
 }

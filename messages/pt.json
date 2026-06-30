@@ -4,7 +4,7 @@
     "description": "Compre servidores recondicionados, componentes de servidor e hardware de TI na ServerPunt. Preços competitivos, máxima qualidade. Servidores Dell, HP, IBM e mais. Envio em toda a UE.",
     "keywords": "servidores recondicionados, componentes de servidor, servidores dell, servidores hp, servidores ibm, peças de servidor, hardware it, europa, servidores baratos, hardware empresarial",
     "ogTitle": "ServerPunt - Servidores recondicionados e componentes a preços acessíveis",
-    "ogDescription": "Especialistas em servidores recondicionados e hardware de TI. Servidores e componentes Dell, HP, IBM a preços competitivos. Entrega fiável e rápida em toda a UE."
+    "ogDescription": "Especialistas em servidores recondicionados e hardware de TI. Servidores e componentes Dell, HP, IBM a preços competitivos. Entrega fiável em 7 dias úteis em toda a UE."
   },
   "common": {
     "exclVat": "Sem IVA",
@@ -34,7 +34,8 @@
     "newArrivalTooltip": "Novo no site",
     "brandNew": "Novo",
     "brandNewTooltip": "Não recondicionado",
-    "refurbished": "Recondicionado"
+    "refurbished": "Recondicionado",
+    "lowStock": "Only {count} left"
   },
   "nav": {
     "home": "Início",
@@ -70,14 +71,15 @@
     "lt": "Lietuvių"
   },
   "hero": {
-    "title": "A sua loja completa de",
-    "titleHighlight": "servidores",
-    "subtitle": "Descubra a nossa vasta seleção de servidores de alta qualidade, perfeitamente adaptados às necessidades da sua empresa. Fiabilidade, desempenho e excelente apoio ao cliente",
+    "title": "Refurbished enterprise servers",
+    "titleHighlight": "fully tested & warranted",
+    "subtitle": "Servidores Intel e AMD, RAM e armazenamento em stock. Fiável, preços competitivos sem IVA e entrega em 7 dias úteis na UE.",
     "configuratorCta": "Configurador de servidores",
     "viewProducts": "Ver os nossos produtos",
     "contactUs": "Contacte-nos",
     "shippingEu": "Envio em toda a UE",
-    "shipsAsap": "Envio o mais rápido possível"
+    "shipsAsap": "Entrega em 7 dias úteis",
+    "valueProposition": "2-year warranty · 24-hour testing · Free support · Delivery within 7 working days across the EU."
   },
   "cart": {
     "empty": "O seu carrinho está vazio.",
@@ -230,8 +232,8 @@
     "goToSlide": "Ir para o diapositivo {index}"
   },
   "categoriesSection": {
-    "title": "Categorias",
-    "subtitle": "Explore as categorias de produtos que oferecemos."
+    "title": "Shop by category",
+    "subtitle": "Start with servers, storage or networking. Accessories are available in the full catalogue."
   },
   "product": {
     "brandNewTitle": "Produto novo",
@@ -246,7 +248,9 @@
     "termsTitle": "Aplicam-se os termos e condições",
     "termsDescription": "Nota: assim que efetuar uma encomenda no nosso website, aplicam-se os nossos Termos e Condições.",
     "addToCart": "Adicionar",
-    "addedToCart": "Produto adicionado ao carrinho!"
+    "addedToCart": "Produto adicionado ao carrinho!",
+    "warrantyTitle": "Garantia aplicável",
+    "warrantyDescription": "A garantia aplica-se a este produto de acordo com a nossa política de garantia."
   },
   "whatsapp": {
     "supportLabel": "Apoio WhatsApp",
@@ -459,5 +463,98 @@
     "hintCyVat": "CY + 8 dígitos + letra",
     "hintGrGemi": "9-12 dígitos (opcional)",
     "hintGrVat": "EL + 9 dígitos, ex. EL123456789"
+  },
+  "trustBar": {
+    "ariaLabel": "Key benefits of ServerPunt",
+    "warranty": "2-year warranty",
+    "tested": "24-hour tested",
+    "support": "Free support",
+    "delivery": "Within 7 working days",
+    "customers": "500+ business customers",
+    "deliveryRate": "99.8% delivered without issues"
+  },
+  "socialProof": {
+    "rating": "4.9/5 on Trustpilot",
+    "reviews": "{count} reviews",
+    "sold": "500+ servers sold",
+    "location": "Dutch refurbisher",
+    "trustpilotCta": "Read our reviews on Trustpilot"
+  },
+  "whyUs": {
+    "title": "Why businesses choose ServerPunt",
+    "subtitle": "Refurbished means tested quality, business-grade service and clear delivery — not just a lower price tag.",
+    "items": [
+      {
+        "title": "Every server fully tested",
+        "description": "Hardware is tested for 24 hours by engineers before it ships."
+      },
+      {
+        "title": "Ready to deploy",
+        "description": "Servers arrive as described and ready for production or virtualisation."
+      },
+      {
+        "title": "2-year warranty",
+        "description": "Additional warranty under our policy, with fast handling if issues arise."
+      },
+      {
+        "title": "Delivery within 7 working days",
+        "description": "EU-wide shipping with clear lead times and tracking after dispatch."
+      },
+      {
+        "title": "Business invoicing",
+        "description": "Order with VAT number, company details and transparent excl./incl. VAT pricing."
+      },
+      {
+        "title": "Personal support",
+        "description": "Phone and email support from people who understand servers."
+      }
+    ]
+  },
+  "aboutTeaser": {
+    "eyebrow": "About ServerPunt",
+    "title": "More than a webshop — a technical partner",
+    "description": "From Tilburg we refurbish and test enterprise servers and components every day. We combine technical expertise with personal contact so you can invest in refurbished hardware with confidence.",
+    "cta": "Learn more about our team and process",
+    "stats": [
+      {
+        "value": "5000+",
+        "label": "parts in stock"
+      },
+      {
+        "value": "24h",
+        "label": "testing per server"
+      },
+      {
+        "value": "500+",
+        "label": "business customers"
+      }
+    ]
+  },
+  "productTrust": {
+    "title": "Your peace of mind with ServerPunt",
+    "warranty": "24-month warranty",
+    "delivery": "Delivery within 7 working days",
+    "returns": "14-day right of withdrawal (consumers)",
+    "support": "Phone & email support",
+    "tested": "Tested by engineers",
+    "value": "Refurbished — save up to 80% vs. new",
+    "lowStock": "Only {count} left",
+    "inStockReady": "In stock — ready to ship"
+  },
+  "productUseCases": {
+    "title": "Ideal for",
+    "items": [
+      "VMware",
+      "Proxmox",
+      "Hyper-V",
+      "TrueNAS",
+      "Backups",
+      "AI inference",
+      "SQL servers"
+    ]
+  },
+  "homeProducts": {
+    "title": "Refurbished servers in stock",
+    "subtitle": "Popular servers, storage and components — selected for reliability, not just price."
   }
 }

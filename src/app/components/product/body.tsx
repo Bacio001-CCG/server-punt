@@ -14,6 +14,7 @@ import {
     InfoIcon,
     List,
     ListIcon,
+    Truck,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -38,6 +39,7 @@ export default function Body({
     const searchParams = useSearchParams();
     const presetAppliedRef = useRef(false);
     const t = useTranslations("product");
+    const tHero = useTranslations("hero");
     const tCommon = useTranslations("common");
 
     useEffect(() => {
@@ -681,6 +683,16 @@ flex flex-col items-center
                                 configuredProducts={getConfiguredProducts()}
                                 mainProductQuantity={mainProductQuantity}
                             />
+
+                            <Alert className="">
+                                <Truck className="h-4 w-4 sm:h-5 sm:w-5" />
+                                <AlertTitle className="font-semibold text-sm sm:text-base">
+                                    {tCommon("delivery")}
+                                </AlertTitle>
+                                <AlertDescription className="text-xs sm:text-sm">
+                                    {tHero("shipsAsap")}
+                                </AlertDescription>
+                            </Alert>
 
                             <Link href="/tos" className="w-full">
                                 <Alert className="">

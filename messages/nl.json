@@ -1,10 +1,10 @@
 {
   "metadata": {
     "title": "Refurbished Intel en AMD servers | ServerPunt",
-    "description": "ServerPunt is uw one-stop shop voor refurbished Intel en AMD servers, RAM en opslag op voorraad. Enterprise hardware van Dell en HP. Prijzen excl. en incl. BTW, snelle EU-levering.",
+    "description": "ServerPunt is uw one-stop shop voor refurbished Intel en AMD servers, RAM en opslag op voorraad. Enterprise hardware van Dell en HP. Prijzen excl. en incl. BTW, levering binnen 7 werkdagen in de EU.",
     "keywords": "refurbished servers, intel servers, amd servers, server onderdelen, dell servers, hp servers, ram, cpu, opslag, voorraad, enterprise hardware, serverpunt",
     "ogTitle": "Refurbished Intel en AMD servers | ServerPunt",
-    "ogDescription": "Refurbished Intel en AMD servers op voorraad. Scherpe prijzen excl. BTW, geteste kwaliteit en levering door heel Europa."
+    "ogDescription": "Refurbished Intel en AMD servers op voorraad. Scherpe prijzen excl. BTW, geteste kwaliteit en levering binnen 7 werkdagen door heel Europa."
   },
   "common": {
     "exclVat": "Excl. BTW",
@@ -35,7 +35,8 @@
     "brandNew": "Gloednieuw",
     "brandNewTooltip": "Niet refurbished",
     "viewProduct": "Bekijk product",
-    "viewProductAria": "Bekijk product: {name}"
+    "viewProductAria": "Bekijk product: {name}",
+    "lowStock": "Nog {count} beschikbaar"
   },
   "nav": {
     "home": "Home",
@@ -74,15 +75,16 @@
     "lt": "Lietuvių"
   },
   "hero": {
-    "title": "Uw one-stop shop voor refurbished",
-    "titleHighlight": "servers en onderdelen",
-    "subtitle": "Intel en AMD servers, RAM en opslag op voorraad. Betrouwbaar, scherp geprijsd excl. BTW en snel geleverd in de EU.",
+    "title": "Refurbished enterprise servers",
+    "titleHighlight": "volledig getest & met garantie",
+    "subtitle": "Intel en AMD servers, RAM en opslag op voorraad. Betrouwbaar, scherp geprijsd excl. BTW en levering binnen 7 werkdagen in de EU.",
     "configuratorCta": "Server configurator",
     "viewProducts": "Bekijk ons aanbod",
     "contactUs": "Contacteer ons",
     "shippingEu": "Verzending door heel de EU",
-    "shipsAsap": "z.s.m. verzonden",
-    "imageAlt": "Refurbished servers bij ServerPunt"
+    "shipsAsap": "Levering binnen 7 werkdagen",
+    "imageAlt": "Refurbished servers bij ServerPunt",
+    "valueProposition": "2 jaar garantie · 24 uur getest · Gratis support · Levering binnen 7 werkdagen door heel de EU."
   },
   "cart": {
     "empty": "Je winkelwagen is leeg.",
@@ -232,8 +234,8 @@
     "max": "Max"
   },
   "homeProducts": {
-    "title": "Refurbished Intel en AMD servers",
-    "subtitle": "Blader door servers, geheugen en opslag op voorraad. Prijzen excl. en incl. BTW voor uw serveromgeving.",
+    "title": "Refurbished servers op voorraad",
+    "subtitle": "Populaire servers, opslag en onderdelen — geselecteerd voor betrouwbaarheid, niet alleen prijs.",
     "viewAll": "Alle producten"
   },
   "featured": {
@@ -244,8 +246,8 @@
     "goToSlide": "Ga naar slide {index}"
   },
   "categoriesSection": {
-    "title": "Categorieën",
-    "subtitle": "Bekijk de product categorieën die wij aanbieden."
+    "title": "Shop per categorie",
+    "subtitle": "Begin bij servers, storage of networking. Accessoires vindt u via het volledige aanbod."
   },
   "product": {
     "brandNewTitle": "Gloednieuw Product",
@@ -260,7 +262,9 @@
     "termsTitle": "Voorwaarden van toepassing",
     "termsDescription": "Let op: Zodra u iets vanaf onze website bestelt, zijn onze Algemene Voorwaarden van toepassing.",
     "addToCart": "Toevoegen",
-    "addedToCart": "Product toegevoegd aan winkelwagen!"
+    "addedToCart": "Product toegevoegd aan winkelwagen!",
+    "warrantyTitle": "Garantie van toepassing",
+    "warrantyDescription": "Op dit product is garantie van toepassing conform ons garantiebeleid."
   },
   "whatsapp": {
     "supportLabel": "WhatsApp support",
@@ -473,5 +477,94 @@
     "hintCyVat": "CY + 8 cijfers + letter",
     "hintGrGemi": "9-12 cijfers (optioneel)",
     "hintGrVat": "EL + 9 cijfers, bijv. EL123456789"
+  },
+  "trustBar": {
+    "ariaLabel": "Belangrijkste voordelen van ServerPunt",
+    "warranty": "2 jaar garantie",
+    "tested": "24 uur getest",
+    "support": "Gratis support",
+    "delivery": "Binnen 7 werkdagen",
+    "customers": "500+ zakelijke klanten",
+    "deliveryRate": "99,8% probleemloos geleverd"
+  },
+  "socialProof": {
+    "rating": "4,9/5 op Trustpilot",
+    "reviews": "{count} reviews",
+    "sold": "500+ servers verkocht",
+    "location": "Nederlandse refurbisher",
+    "trustpilotCta": "Bekijk onze reviews op Trustpilot"
+  },
+  "whyUs": {
+    "title": "Waarom bedrijven ServerPunt kiezen",
+    "subtitle": "Refurbished betekent bij ons niet alleen een lagere prijs, maar ook geteste kwaliteit, zakelijke service en snelle levering.",
+    "items": [
+      {
+        "title": "Elke server volledig getest",
+        "description": "Hardware wordt 24 uur getest door engineers voordat deze wordt verzonden."
+      },
+      {
+        "title": "Direct inzetbaar",
+        "description": "Servers worden geleverd zoals beschreven, klaar voor productie of virtualisatie."
+      },
+      {
+        "title": "2 jaar garantie",
+        "description": "Aanvullende garantie conform ons garantiebeleid, met snelle afhandeling bij problemen."
+      },
+      {
+        "title": "Levering binnen 7 werkdagen",
+        "description": "EU-brede verzending met duidelijke levertijden en tracking na verzending."
+      },
+      {
+        "title": "Zakelijke factuur",
+        "description": "Bestellen met BTW-nummer, zakelijke gegevens en transparante prijzen excl. en incl. BTW."
+      },
+      {
+        "title": "Persoonlijke support",
+        "description": "Telefonische en e-mail support door mensen die servers begrijpen."
+      }
+    ]
+  },
+  "aboutTeaser": {
+    "eyebrow": "Over ServerPunt",
+    "title": "Meer dan een webshop — een technische partner",
+    "description": "Vanuit Tilburg reviseren en testen wij dagelijks enterprise servers en onderdelen. Wij combineren technische kennis met persoonlijk contact, zodat u met vertrouwen kunt investeren in refurbished hardware.",
+    "cta": "Lees meer over ons team en werkwijze",
+    "stats": [
+      {
+        "value": "5000+",
+        "label": "onderdelen op voorraad"
+      },
+      {
+        "value": "24u",
+        "label": "test per server"
+      },
+      {
+        "value": "500+",
+        "label": "zakelijke klanten"
+      }
+    ]
+  },
+  "productTrust": {
+    "title": "Uw zekerheid bij ServerPunt",
+    "warranty": "24 maanden garantie",
+    "delivery": "Levering binnen 7 werkdagen",
+    "returns": "14 dagen herroepingsrecht (consumenten)",
+    "support": "Telefonische & e-mail support",
+    "tested": "Getest door engineers",
+    "value": "Refurbished — tot 80% besparing t.o.v. nieuw",
+    "lowStock": "Nog {count} beschikbaar",
+    "inStockReady": "Op voorraad — direct leverbaar"
+  },
+  "productUseCases": {
+    "title": "Ideaal voor",
+    "items": [
+      "VMware",
+      "Proxmox",
+      "Hyper-V",
+      "TrueNAS",
+      "Backups",
+      "AI inference",
+      "SQL servers"
+    ]
   }
 }
